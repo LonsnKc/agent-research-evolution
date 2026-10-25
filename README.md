@@ -6,6 +6,7 @@
 [![Tracks](https://img.shields.io/badge/tracks-4-blue)](docs/tracks.md)
 [![Language](https://img.shields.io/badge/language-English%20%7C%20%E4%B8%AD%E6%96%87-informational)](#中文说明)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)](LICENSE)
+[![Community](https://img.shields.io/badge/community-LINUX%20DO-orange)](https://linux.do/)
 
 > English is the primary language of this README. A full Chinese version follows below: [中文说明](#中文说明).
 
@@ -86,6 +87,10 @@ The files under `research/` are the canonical research record, published verbati
 
 This work is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE). You may share and adapt the research notes — including commercially — as long as you give appropriate credit to LonsnKc and this repository, link to the license, and indicate if changes were made. Individual findings belong to their cited primary sources; please cite those for the underlying claims.
 
+## Community
+
+This project is shared and discussed with the community at [LINUX DO](https://linux.do/).
+
 ---
 
 ## 中文说明
@@ -138,3 +143,7 @@ This work is licensed under the [Creative Commons Attribution 4.0 International 
 ## 授权与引用
 
 本仓库的调研笔记采用 [CC BY 4.0（知识共享 署名 4.0 国际）](LICENSE) 授权：可以自由转载、改编，包括商用，条件是署名 LonsnKc 并注明出处为本仓库、附授权链接、并说明是否做过修改。具体结论请同时引用其标注的一手来源。
+
+## 社区
+
+本项目在 [LINUX DO](https://linux.do/) 社区交流分享。

@@ -1,0 +1,4 @@
+# Local working files never belong in this publication repository.
+.DS_Store
+*.tmp
+*~

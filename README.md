@@ -5,6 +5,7 @@
 [![Updates](https://img.shields.io/badge/updates-daily-success)](CHANGELOG.md)
 [![Tracks](https://img.shields.io/badge/tracks-4-blue)](docs/tracks.md)
 [![Language](https://img.shields.io/badge/language-English%20%7C%20%E4%B8%AD%E6%96%87-informational)](#中文说明)
+[![License](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)](LICENSE)
 
 > English is the primary language of this README. A full Chinese version follows below: [中文说明](#中文说明).
 
@@ -81,9 +82,9 @@ The files under `research/` are the canonical research record, published verbati
 
 **Out of scope:** source code, installable skill packages, benchmarks you can run, and any private working material. Companion design work exists but is published separately, if at all; this repository deliberately contains research findings only.
 
-## Rights and citation
+## License and citation
 
-Research notes © 2026 LonsnKc. You are welcome to read, link to, and cite this work with attribution to this repository. Individual findings belong to their cited primary sources; please cite those for the underlying claims.
+This work is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE). You may share and adapt the research notes — including commercially — as long as you give appropriate credit to LonsnKc and this repository, link to the license, and indicate if changes were made. Individual findings belong to their cited primary sources; please cite those for the underlying claims.
 
 ---
 
@@ -134,6 +135,6 @@ Research notes © 2026 LonsnKc. You are welcome to read, link to, and cite this 
 
 **只包含**调研进化这一项：总报告、四份轨道笔记与本仓库的说明文档。**不包含**源代码、可安装的技能包，以及任何私人工作材料与凭据。
 
-## 权利与引用
+## 授权与引用
 
-调研笔记 © 2026 LonsnKc。欢迎阅读、链接与引用，请注明出处为本仓库；具体结论请同时引用其标注的一手来源。
+本仓库的调研笔记采用 [CC BY 4.0（知识共享 署名 4.0 国际）](LICENSE) 授权：可以自由转载、改编，包括商用，条件是署名 LonsnKc 并注明出处为本仓库、附授权链接、并说明是否做过修改。具体结论请同时引用其标注的一手来源。

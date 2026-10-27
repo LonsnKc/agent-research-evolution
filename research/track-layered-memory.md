@@ -61,3 +61,31 @@
 2. REM、EcphoryRAG 的全部效果数字——论文自报，未独立复现；REM 的确切提交日未在正文确认。
 3. LangMem、Letta、Zep/Graphiti 在 2026-10-25 当日无可核实更新——这是“检索未见”，不是“官方确认无更新”；下轮应直接查各官方 changelog 页。
 
+
+---
+
+## 2026-10-27 轮次：缺口复核——Mem0 分数口径统一、v3 体系内演进、Zep v4、论文提交日确认
+
+### 已核实（一手为主）
+
+- **Mem0 LongMemEval 口径统一（修正上一轮「口径冲突」结论）**：无 Temporal Reasoning 时 top_200 93.4%（467/500）、top_50 90.4%（452/500）；加 Temporal Reasoning 后 top_200 94.4%、top_50 94.8%（500 题）；另有 94.8% 属于 Zep 的 DMR 基准，Mem0 未公布 DMR 结果。残留一处官方自相矛盾：同一篇 Temporal Reasoning 博客 Takeaways 节把 top_200 新值误标在 top_50 表述下，引用以 Results 节为准。全部数字均为厂商自报。
+- **Mem0 v3 体系内演进**：无 v4；当前线 TS SDK v3.1.0 / Python SDK v2.0.12；Memory Decay（平台 v3 search 专属，默认关闭，0.3×–1.5× 只重排不删除）；Temporal Reasoning（平台 v3 默认开启，写时时间 enrichment、读时意图分类加性重排、不预过滤，`reference_date` 可锚定）。OSS/平台分界为二手，须标注。
+- **Letta**：官方 changelog 内容一手——0.33.2 用 workflow 分析改进 memory 初始化，0.33.0 后台 worker 承担 incidental memory upkeep 与 post-turn Git 冲突修复；文档页（0.33.2）滞后于 GitHub（v0.34.12），引用以仓库为准；版本日期页面未显示，故不写。
+- **Zep v4 与 hyperedges**（官方博客一手）：2026-10-14 Context API、2026-10-15 hyperedges，v3 并行可用。
+- **论文提交日确认（一手）**：REM arXiv:2610.27377 v1 提交 2026-10-19（UTC 22:59:56），删除 track 笔记「提交日未核实」限定；EcphoryRAG arXiv:2510.08958 v1 提交 2025-10-10（内文 2025-10-13 为手稿日期）。
+
+### 检索未见（不是官方确认无更新）
+
+- 自 2026-10-25 以来：LangMem（取证不完整，无独立 changelog 页）、Letta、Zep/Graphiti 官方侧均检索未见新发布；Graphiti 官方 releases 未逐条拉取成功。
+
+### 已同步进 skill 参考
+
+- layered-memory.md：Mem0 分数警示改写为四格口径 + DMR 归属 + Takeaways 错误警示；新增 Mem0 v3 扩展行；Letta 行追加 upkeep 与文档滞后警示；Zep 行追加 v4 与 hyperedges；Evaluation 一节同步改写为分条件口径。
+
+### 剩余未核实缺口（更新）
+
+1. Mem0 全部基准分数仍为厂商自报，无独立复现（口径已统一，但真实性仍未验证）。
+2. REM/EcphoryRAG 效果数字仍为作者自报（提交日已确认，数字未变）。
+3. Graphiti 0.31.2 vs v0.30.2 两二手冲突，未决（不整合）。
+4. LangMem 最新版取证不完整；Letta FrontierMemory（2026-10-21）仅二手线索，不入技能。
+5. 已解决：Mem0 分数口径冲突（主口径已统一，仅剩博客一处标注错误）、REM/EcphoryRAG 提交日。

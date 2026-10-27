@@ -73,7 +73,7 @@ The files under `research/` are the canonical research record, published verbati
 | Item | State |
 | --- | --- |
 | Baseline research | 2026-10-23 (four-topic deep research) and 2026-10-24 (skills deep research) |
-| Evolution rounds published | Round 1 — 2026-10-25 (watermark 2026-10-24 → 2026-10-25) |
+| Evolution rounds published | Round 1 — 2026-10-25 (watermark 2026-10-24 → 2026-10-25); Round 2 — 2026-10-27 (watermark 2026-10-25 → 2026-10-27; the 2026-10-26 round was skipped) |
 | Research files | 5 (`research/report.md` + 4 track notes) |
 | Update cadence | Daily, with post-push verification |
 
@@ -132,7 +132,7 @@ This project is shared and discussed with the community at [LINUX DO](https://li
 | 项目 | 状态 |
 | --- | --- |
 | 基线调研 | 2026-10-23 四主题深研、2026-10-24 技能深研 |
-| 已发表轮次 | 第 1 轮——2026-10-25（水位 2026-10-24 → 2026-10-25） |
+| 已发表轮次 | 第 1 轮——2026-10-25（水位 2026-10-24 → 2026-10-25）；第 2 轮——2026-10-27（水位 2026-10-25 → 2026-10-27；2026-10-26 轮次因平台安全审查跳过） |
 | 调研文件 | 5 份（总报告 + 四份轨道笔记） |
 | 更新节奏 | 每日，推送后必核验 |
 

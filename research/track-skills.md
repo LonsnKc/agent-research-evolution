@@ -54,3 +54,28 @@
 6. AAIF 路线图（版本化发布、提案流程、安全指南）自 10-22 宣布后无任何落地文件；下轮应直接检查 AAIF 仓库/公告而非转述。
 7. DSH、Hermes/Ekko、Codex、Copilot、Windsurf/Cascade 本轮均无技能子系统官方更新；DS Bot v0.1.4 等社区动态未核实，不宜写入参考。
 
+
+---
+
+## 2026-10-27 轮次：缺口复核——OpenCode 开关、Cursor 归属纠正、Claude 钩子前移、AAIF 落地未见
+
+### 已核实（一手）
+
+- **OpenCode 三开关**：官方 CLI 与规则页列出总开关、`_PROMPT`、`_SKILLS` 三者语义；v2.0.30（2026-10-15）changelog 确认在 `.claude` 技能发现中执行总开关与 `_SKILLS` 开关；v2 只用 `.claude` 做技能发现、不加载 `CLAUDE.md` 提示词，故 `_PROMPT` 在 v2 基本为空操作；相邻开关 `OPENCODE_DISABLE_EXTERNAL_SKILLS` 顺带记录。
+- **Cursor 校验归属纠正**：Cursor 官方文档全文无任何数字阈值与拒绝规则；64/1024 为 Agent Skills 规范约束（name 1–64、description 1–1024、compatibility 1–500），正文「约 5000 tokens」「500 行」为规范建议且规范正文称正文无格式限制——均不得写成 Cursor 硬校验。
+- **Claude Code 钩子前移**：v2.1.299（2026-10-14）起 `UserPromptSubmit` 在技能/斜杠命令展开前运行，阻止提示即阻止内嵌 shell 命令；展开文本检查改用 `UserPromptExpansion`（展开前触发、可阻止、可追加 `additionalContext`、按 `command_name` 匹配）；该事件首发版本未核实，不写。
+- **AAIF**：2026-10-22 宣布新增四项目（总数达 10 个），名称、logo、组织与域名已移交；截至 2026-10-27 公开检索，未见已发布的版本化发布、正式提案流程、安全指南文件（检索未见 ≠ 证明不存在）。
+- **规范页**：agentskills.io 规范页更新戳仍为 2026-08-04T22:53:14.470Z（自验者亲自打开核对），无新版本；首页 2026-08-09 为另一页面戳。
+
+### 已同步进 skill 参考
+
+- skill-authoring.md：跨宿主兼容一节新增 OpenCode 开关、Claude 钩子、Cursor 归属纠正、AAIF 治理四条目；厂商宣布口径（70+ 平台、100 万技能、近 2.8 亿安装）标注为未独立核实。
+
+### 剩余未核实缺口（更新）
+
+1. `UserPromptExpansion` 首发版本号（changelog 页检索未命中）。
+2. Mobb.ai 审计数字原文（仍未打开）。
+3. Google Workspace skills 铺开「延迟」说法（官方博客正文仍无此表述）。
+4. AAIF 落地文件（版本化发布、提案流程、安全指南）持续检索。
+5. 已解决：OpenCode 开关、Cursor 校验归属、Claude 钩子前移、AAIF 宣布确认、规范页更新戳。
+6. DSH、Hermes/Ekko、Codex、Copilot、Windsurf/Cascade 本轮仍无技能子系统官方更新（检索未见）。

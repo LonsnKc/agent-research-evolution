@@ -42,3 +42,32 @@
 
 ---
 
+
+## 2026-10-27 轮次小结（缺口复核轮，水位 2026-10-25 → 2026-10-27；2026-10-26 轮次因平台安全审查跳过）
+
+### 窗口诚实性声明
+
+本轮是模板化改造（v0.1.0 基线）后的首个执行轮次，也是缺口复核轮：PRACTICAL.md 开始时三节全空，无实战待修正任务；本轮实质是把上一轮大批二手结论升级为一手，并推翻一项上一轮结论。凡属复核与补漏均明说，不冒充当日新闻。上一轮 research/refined 目录为空（无上一轮 verification.md 可复核），本轮自验为该模板下的首次自验。
+
+### 跨轨道结论
+
+1. **二手转一手是本轮主线（Harness / 技能 / 记忆三轨）**：LangChain 1.0、Agent Framework 1.0、AutoGen 存档、Harbor 现行格式、OpenCode 开关、Claude 钩子、Cursor 归属、Mem0 分数口径、Zep v4 等上一轮二手或存疑项，多数已升级为一手或得到纠正。
+2. **一项上一轮结论被官方原文推翻（Harness 轨）**：AgentKit「未见官方停用通知」→ OpenAI 官方 deprecations 文档确认 2026-06-03 宣布弃用、2026-11-30 停用（Evals 2026-10-31 起只读）。选型上 Agent Builder 与托管 Evals 已无新项目采用价值，迁移方向为 Agents SDK / Workspace Agents / Promptfoo。
+3. **网关供应链处置口径收紧（路由轨）**：LiteLLM 钉版从「1.106.2」推进为两段式（1.106.3/1.106.4 + 新 cosign 密钥），且「升级即安全」是错误处置——必须清 loader、重建环境、轮换凭证。1.106.3/1.106.4 为二手转述一手，登记为本轮唯一未验证暂定项。
+4. **评估数字必须带条件引用（记忆轨方法论收紧）**：Mem0 三数之争解决为「截断 × Temporal 条件」四格，另 94.8% DMR 归属 Zep；官方博客自身还有一处截断标注错误，引用须以 Results 节为准。教训：同一厂商的数字也须按条件拆分后引用。
+5. **规范与治理的「宣布 vs 落地」要分开（技能轨）**：AAIF 治理转移已确认，但版本化发布、提案流程、安全指南仍为提案；规范页更新戳仍为 2026-08-04。把宣布写成落地是本轮纠正的另一类错误。
+
+### 本轮文件变更
+
+- 调研产出：`research/20261027-1003/report.md + sources.md`（来源分级 A/B/C/V，含未打开清单）。
+- 提炼与自验：`refined/20261027-1003/delta.md`（20 条增量：R4 + H6 + M6 + S4）与 `verification.md`（执行者自验：通过 19 条、通过（未验证暂定）1 条、需修正 0 条、否决 0 条；独立抽查 4 条，含自验者亲自打开 OpenAI deprecations 页与 agentskills.io 规范页）。
+- 技能参考：四篇 references 增量编辑（SKILL.md 无改动；行数 97 / 62 / 61 / 93 / 94，均在红线内）；旧版整目录快照于 `versions/v0.1.0/`；VERSION 0.1.0 → 0.2.0。
+- 台账：STATE.md、CHANGELOG.md（v0.2.0）、PRACTICAL.md（新增未验证暂定 1 条）、四轨 track 笔记各追加 2026-10-27 小节、水位文件更新为 2026-10-27。
+- SKILL.md 级提案：无。SOUL.md 与全局配置无改动。
+
+### 剩余未核实缺口汇总（跨轨，下轮复核清单）
+
+- 路由：LiteLLM 官方 releases 页直接确认 1.106.3/1.106.4（未验证暂定首要项）；RouteLLM 提交历史页直接确认最后提交日；Dynamo v1.5.0 细节；Portkey 2.0 正式版；Railway/OpenCode 事件影响范围。
+- Harness：AgentExecutor 维护日期；AutoGen 存档日期与旧横幅原文；OTel GenAI 官方 spec；Anthropic 2026 年后续文章一手原文。
+- 记忆：Mem0 分数真实性（口径已统一，仍无独立复现）；Graphiti 版本冲突；LangMem 取证不完整；FrontierMemory 官方原文。
+- 技能：UserPromptExpansion 首发版本；Mobb.ai 原文；Google 铺开「延迟」说法；AAIF 落地文件持续检索。

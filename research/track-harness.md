@@ -47,3 +47,28 @@
 6. Anthropic 2026 年 harness/evals 后续文章（Demystifying evals、Managed Agents、Harness Design for Long-Running Application Development）一手原文。
 7. 下轮必查各仓库 releases 页在 2026-10-25 之后是否有更新。
 
+
+---
+
+## 2026-10-27 轮次：缺口复核——LangChain 1.0、Agent Framework 1.0、AutoGen 存档、AgentKit 官方停用全部一手确认
+
+### 已核实（一手）
+
+- **LangChain/LangGraph 1.0**：官方博客（2025-10-22）同步 GA、无破坏性变更承诺；`create_agent` 为前门、`create_react_agent` 已弃用；预置 middleware 为 PII 遮蔽、会话摘要、人工审批。官方原文无 AgentExecutor「维护至 2026-12」表述，该日期仍为二手，不写入技能。
+- **Agent Framework**：2025-10-01 发布；1.0 于 2026-04-03 发布（.NET + Python，MIT，含 Magentic-One 与 YAML 声明式 agent）；1.0 时 A2A 尚为 coming soon；Go SDK 在独立仓库。
+- **AutoGen**：当前官方 README 顶部横幅为 archived and no longer maintained；同页残留 maintenance mode 旧表述以横幅为准；存档日期与 2025-10 横幅逐字原文在当前页已不可见，不写死。
+- **AgentKit 官方停用（推翻上一轮结论）**：OpenAI 官方 deprecations 文档（自验者亲自打开核对）——2026-06-03 宣布弃用 Agent Builder 与 Evals 平台；2026-10-31 起既有 evals 只读；2026-11-30 起 Agent Builder、Evals dashboard 与 API、可复用 prompt 停用；ChatKit 仍可用；迁移方向为 Agents SDK、ChatGPT Workspace Agents、Promptfoo；未见 Connector Registry 停用条目。
+- **Harbor 现行格式**：官方 docs（2026-10-19 更新）——格式版本默认 "1.3"、verifier 超时默认 600 秒、agent 超时默认 null、多步任务 `[[steps]]` + `min_reward` 早停。**METR**：2024 年官方博客示例 `standard_version = "0.1.0"` 为旧版口径，不得当作现行版引用。
+
+### 已同步进 skill 参考
+
+- agent-harness.md：LangGraph、AutoGen、AgentKit 三条目由二手改写为一手（含 AgentKit 停用推翻）；Eval harness 一节追加 Harbor 现行格式纠正与 METR 旧版警示；旧二手表述（AgentExecutor 维护、AgentKit「未见官方通知」）已删除。
+
+### 剩余未核实缺口（更新）
+
+1. AgentExecutor 维护截止日期（官方原文无此表述，仍为二手）。
+2. AutoGen 存档具体日期与 2025-10 横幅逐字原文（当前页已不可见）。
+3. OTel GenAI 官方 spec 原文（仍未逐页核对）。
+4. Anthropic 2026 年 harness/evals 后续文章一手原文（仍未读）。
+5. 已解决：LangChain/LangGraph 1.0、Agent Framework 1.0、AgentKit 官方公告与停用通知、Harbor 官方 docs。
+6. 下轮必查各仓库 releases 页在 2026-10-27 之后是否有更新。

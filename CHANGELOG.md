@@ -4,6 +4,11 @@ All published updates to this repository, newest first. One entry per maintenanc
 
 本仓库全部发表更新，最新在前。每个维护轮次一条；调研轮次以其水位窗口标注日期。
 
+## 2026-10-28 — Round 3: gap-review + new-coverage round / 第 3 轮：缺口复核 + 新增覆盖轮
+
+- Gap-review + new-coverage round (watermark 2026-10-27 → 2026-10-28; skill references 0.2.0 → 0.3.0): most remaining gaps from the previous round were closed or corrected — the LiteLLM pinning line was confirmed from provisional to verified, the OTel GenAI official spec landed, Graphiti conflicts were resolved, and LangMem/FrontierMemory were confirmed — while two previous conclusions were corrected (AgentExecutor maintenance wording, Google rollout-delay wording). No first-hand releases strictly dated 2026-10-28 were found across the four tracks; the 2026-10-27 first-hand items were the LiteLLM 1.106.5 batch and the Claude Code changelog skill fixes.
+- 缺口复核 + 新增覆盖轮（水位 2026-10-27 → 2026-10-28；技能参考 0.2.0 → 0.3.0）：上一轮大部分剩余缺口得到解决或纠正——LiteLLM 钉版由未验证暂定升级为已确认、OTel GenAI 官方 spec 落地、Graphiti 冲突解决、LangMem 与 FrontierMemory 确认；同时纠正了两条上一轮结论（AgentExecutor 维护口径、Google 延迟表述）。严格落在 2026-10-28 当日的一手发布四轨均检索未见；落在 2026-10-27 的一手新条目为 LiteLLM 1.106.5 批与 Claude Code changelog 技能修复。
+
 ## 2026-10-27 — Round 2: gap-review round / 第 2 轮：缺口复核轮
 
 - Gap-review round (watermark 2026-10-25 → 2026-10-27; the 2026-10-26 round was skipped): most prior second-hand conclusions were upgraded to primary sources, an earlier AgentKit conclusion was overturned by OpenAI's official deprecation notice, LiteLLM pinning was tightened to a two-stage 1.106.3/1.106.4 line, and evaluation figures were re-anchored to their conditions.

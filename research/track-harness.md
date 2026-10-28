@@ -72,3 +72,29 @@
 4. Anthropic 2026 年 harness/evals 后续文章一手原文（仍未读）。
 5. 已解决：LangChain/LangGraph 1.0、Agent Framework 1.0、AgentKit 官方公告与停用通知、Harbor 官方 docs。
 6. 下轮必查各仓库 releases 页在 2026-10-27 之后是否有更新。
+
+
+---
+
+## 2026-10-28 轮次：缺口复核——OTel 官方 spec、AgentExecutor 包级口径、Anthropic 2026 文章
+
+### 已核实（一手为主）
+
+- **OTel GenAI 语义约定官方 spec**：仓库 `open-telemetry/semantic-conventions-genai`（main 分支，2026-10-28；创建于 2026-05-05，Releases 0、Tags 0，无正式版本号）；总纲、Agent spans、MCP 约定页均为 Status: Development；Agent 操作名、create_agent span 命名与 kind、system_instructions Opt-In、MCP span 命名与 `params._meta` 传播、已有外层工具 span 时不另建 span。无单一"MCP 约定版本"（`mcp.protocol.version` 仅为 Recommended 属性，`2025-06-18` 仅为示例值）。
+- **Anthropic 2026 年文章**：Demystifying evals（eval harness vs agent harness 区分）；Managed Agents（2026-04-08 发布、2026-10-18 更新；session / harness / sandbox 解耦，execute / wake / getSession；TTFT 数字厂商自报）；长程应用 harness（Planner / Generator / Evaluator，Playwright MCP 评分，5–15 次迭代/代、最长 4 小时，Opus 4.5 后去掉 context reset）。Demystifying 与长程文章的发布日期未在页面片段中出现，不写日期。
+- **AgentExecutor 维护口径纠正**：LangChain 官方 `langchain-classic` 参考页称该包"will be maintained for security vulnerabilities until December 2026"——包级口径，非 AgentExecutor 单独表述，无 12 月精确日期。上一轮"官方原文无此表述"被推翻。
+- **AutoGen 存档措辞**：当前 README 逐字"Project archived and no longer maintained"；同一页仓库元数据"Archived: No"与正文矛盾，不得凭元数据断定存档开关；存档日期与 2025-10 横幅逐字原文仍不可见。
+- **窗口内新动态**：Claude Code 2026-10-27 changelog 条目（见技能轨）；2026-10-28 当天其余各家检索未见新条目；OpenAI Agents SDK Python v0.24.0 为 2026-10-15（窗口之前）。
+
+### 已同步进 skill 参考
+
+- agent-harness.md：Trace 一节由二手指南升级为官方 spec 口径；MCP 一节删除 1.396 版本说法；LangGraph 行 AgentExecutor 口径改为包级表述；新增 Anthropic 2026 三篇文章；AutoGen 行追加逐字措辞与元数据矛盾警示。
+
+### 剩余未核实缺口（更新）
+
+1. AgentExecutor 精确日期（不存在精确日期，只写包级口径）。
+2. AutoGen 存档具体日期与 2025-10 横幅逐字原文（当前页已不可见）。
+3. Anthropic 折叠 subagent 文章（2026-10-22）一手原文（未打开；2 倍数字厂商自报）。
+4. OTel MCP 约定版本号（不存在单一版本，已排除）。
+5. 已解决：OTel 官方 spec 原文、AgentExecutor 包级口径、Anthropic 2026 三篇文章。
+6. 下轮必查各仓库 releases 页在 2026-10-28 之后是否有更新。

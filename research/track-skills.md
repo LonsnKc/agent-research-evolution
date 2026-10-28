@@ -79,3 +79,29 @@
 4. AAIF 落地文件（版本化发布、提案流程、安全指南）持续检索。
 5. 已解决：OpenCode 开关、Cursor 校验归属、Claude 钩子前移、AAIF 宣布确认、规范页更新戳。
 6. DSH、Hermes/Ekko、Codex、Copilot、Windsurf/Cascade 本轮仍无技能子系统官方更新（检索未见）。
+
+
+---
+
+## 2026-10-28 轮次：缺口复核——Google 延迟口径修正、Claude 10-27 修复、AAIF 仍为提案
+
+### 已核实（一手为主）
+
+- **Google Workspace skills 延迟口径修正（推翻上一轮结论）**：官方帖子（2026-10-13）正文段落写 "those rollouts are slightly delayed"，Rollout pace 表格中 "Skills in Workspace — Rapid and Scheduled Release domains" 一行明确写着 "Delayed until further notice"。上一轮"官方正文无此表述"不准确（只看段落成立，计入表格则不成立）。Gemini app 技能自 2026-10-13 起逐步推出、预计 11 月中完成。
+- **规范页戳仍为 2026-08-04**：执行者直接打开 agentskills.io/specification 核对，页脚仍为 2026-08-04T22:53:14.470Z；`allowed-tools` 仍为实验性字段；总览首页戳 2026-08-09 与规范页不同。
+- **AAIF 落地文件仍为提案**：截至 2026-10-28，版本化发布、正式提案流程、安全指南均未见已发布文件；二手报道一致表述为 Anthropic"提议"的路线图（DataPhoenix 称"拟议的 12 个月路线图"）；AAIF 官方 2026-10-22 公告本身只宣布新增四个项目。
+- **Claude Code 2026-10-27 changelog 技能修复**：修复 per-directory 与 `paths:` 技能在 Bash `cd` 深入 git 仓库后找不到的问题；prompt/agent hooks 上限改为每会话至多 24 个。该条目在官方 changelog 页摘录中未显示 CLI 版本号，二手聚合的 2.1.312 归属未核实，只写日期条目。
+- **窗口内其他**：OpenCode v2.2.0（2026-10-27）仅二手聚合标题，未复核到技能专项条目；Codex CLI 0.165.0（2026-10-27）官方 changelog 所列条目无技能项；Cursor、Copilot、Windsurf、Gemini CLI、DSH / Hermes 窗口内检索未见技能子系统更新。
+
+### 已同步进 skill 参考
+
+- skill-authoring.md：消费级 Gemini 一节追加延迟口径修正行；Claude 钩子一节追加 2026-10-27 修复行（不写版本号）；AAIF 一节更新为截至 2026-10-28 仍为提案 + 规范页戳复核。
+
+### 剩余未核实缺口（更新）
+
+1. `UserPromptExpansion` 首发版本号（changelog 页检索仍未命中）。
+2. Mobb.ai 审计数字原文（仍未打开；34% / 27% 仅见单一 dev.to 转述）。
+3. AAIF 落地文件（版本化发布、提案流程、安全指南）持续检索。
+4. OpenCode v2.2.0 官方发布说明技能专项（未复核）。
+5. 已解决：Google 延迟口径、规范页戳、AAIF 宣布确认。
+6. DSH、Hermes/Ekko、Codex、Copilot、Windsurf/Cascade 本轮仍无技能子系统官方更新（检索未见）。

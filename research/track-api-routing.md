@@ -75,3 +75,29 @@
 4. Portkey Gateway 2.0 正式版是否发布。
 5. Railway / OpenCode Console 事件实际影响范围（仍未决）。
 6. 已解决：LiteLLM 安全版本 1.106.2（事发当日成立）、Portkey 收购完成时间与官方口径。
+
+
+---
+
+## 2026-10-28 轮次：缺口复核 + 新增覆盖——LiteLLM 钉版确认、1.106.5、级联两面证据
+
+### 已核实（一手为主）
+
+- **LiteLLM 1.106.3 / 1.106.4 正式确认（上一轮未验证暂定项闭环）**：执行者直接打开官方 GitHub releases 页核对——1.106.3 批（1.103.8 / 1.104.6 / 1.105.4 / 1.106.3）起改用 commit `e82a3c6` 的新 cosign 密钥并移除 eMudhra 根 CA；1.106.4 批的代理启动 ImportError 修复（自 v1.104.0 起）仅覆盖 1.104.7 / 1.105.5 / 1.106.4，1.103.9 仅含镜像扫描修复。日期口径来自官方文档 changelog（1.106.3 为 2026-10-24、1.106.4 为 2026-10-25）。
+- **LiteLLM 1.106.5 批（2026-10-27）**：1.103.10 / 1.104.8 / 1.105.6 / 1.106.5，被拒绝请求的失败日志仅保留核心请求字段、`tags` 与 guardrail 细节；GCS logger 改用代理上配置的 bucket 与凭证；验签仍用 `e82a3c6` 新密钥。
+- **Portkey Gateway 2.0 仍为预发布**：官方 main 分支 README 仍标 Pre-Release（2026-10-28 复核）。
+- **Dynamo 仍为 v1.6.0 stable、vLLM 仍为 v0.32.0、OpenRouter 窗口内检索未见新公告**。
+- **深化**：级联裁判两面证据（Cluster, Route, Escalate arXiv:2606.27457 实证 vs ICLR 2026 静态策略理论对照；QE 两类错误分解缺失明示）；Dynamo KV 路由哈希确定性约束（`PYTHONHASHSEED=0` 或 `--prefix-caching-algo sha256`）；llm-d v1.0（2026-10-20）多租户 QoS、路由器热备、DisaggregatedSet、稳定 v1 API、会话亲和与轮次优先级（厂商宣称数字不引用）。
+
+### 已同步进 skill 参考
+
+- api-routing.md：LiteLLM 安全注记删除"二手转述"限定、改为已确认口径并追加 1.106.5；Portkey 行追加 2026-10-28 复核戳；llm-d 行追加 v1.0 与 KV 约束；论文一节追加级联两面证据与 QE 错误分解要求。
+
+### 剩余未核实缺口（更新）
+
+1. RouteLLM 提交历史页直接确认最后提交日（仍未决）。
+2. Dynamo v1.5.0 细节（仍仅见二手日志站）。
+3. Portkey Gateway 2.0 正式版是否发布（仍为预发布）。
+4. Railway / OpenCode Console 事件实际影响范围（仍未决）。
+5. 新增：CVE-2026-114612 官方公告与修复版本（仅第三方 CVE 库记录）。
+6. 已解决：LiteLLM 1.106.3/1.106.4 官方确认、Portkey 收购官方口径。

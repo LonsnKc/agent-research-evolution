@@ -71,3 +71,13 @@
 - Harness：AgentExecutor 维护日期；AutoGen 存档日期与旧横幅原文；OTel GenAI 官方 spec；Anthropic 2026 年后续文章一手原文。
 - 记忆：Mem0 分数真实性（口径已统一，仍无独立复现）；Graphiti 版本冲突；LangMem 取证不完整；FrontierMemory 官方原文。
 - 技能：UserPromptExpansion 首发版本；Mobb.ai 原文；Google 铺开「延迟」说法；AAIF 落地文件持续检索。
+
+
+---
+
+## 2026-10-28 轮次小结（缺口复核 + 新增覆盖轮，版本 0.2.0 → 0.3.0）
+
+- 跨轨结论：本轮是缺口复核轮，上一轮的大部分剩余缺口得到解决或纠正——LiteLLM 钉版由未验证暂定升级为已确认、OTel 官方 spec 落地、Graphiti 冲突解决、LangMem 与 FrontierMemory 确认；同时纠正了两条上一轮结论（AgentExecutor 维护口径、Google 延迟表述）。严格落在 2026-10-28 当日的一手发布四轨均检索未见；落在 2026-10-27 的一手新条目为 LiteLLM 1.106.5 批与 Claude Code changelog 技能修复。
+- 文件变更：research/20261028-0950/report.md + sources.md；refined/20261028-0950/delta.md（17 条）+ verification.md（执行者自验：通过 17 条、未验证暂定 0 条、需修正 0 条、否决 0 条；独立抽查 5 条一手来源）；技能正本四篇 references 增量编辑（SKILL.md 本体未改）；旧版快照 versions/v0.2.0/；VERSION 0.3.0；CHANGELOG v0.3.0；STATE.md、PRACTICAL.md（上一轮未验证暂定项闭环，记入已修正）、四轨 track 笔记各追加本轮小节。
+- 剩余未核实缺口汇总：RouteLLM 最后提交日；Dynamo v1.5.0 细节；Railway / OpenCode Console 影响范围；Portkey 2.0 正式版；AutoGen 存档日期与旧横幅原文；UserPromptExpansion 首发版；Mobb.ai 原文；CVE-2026-114612 官方公告；TEPA 论文原文；Mem0 Decay 开源支持范围；Zep Cloud SDK 4.0.1；Anthropic 折叠 subagent 文章一手原文；OpenCode v2.2.0 技能专项。以上均未否决任何条目，或排除在正文之外、或以二手/自报标注保留在线索中。
+- 发表同步：由 agent-research-evolution-publish 任务（约 10:50）承担，本任务不重复推送。

@@ -117,3 +117,30 @@
 4. Zep Cloud SDK 4.0.1（未一手核实）；letta-code v0.34.22 / v0.34.23 缺位原因（需逐条复核）。
 5. TEPA 论文原文（仅见二手转述，未读原文）。
 6. 已解决：Graphiti 版本冲突、LangMem 最新版、FrontierMemory 存在性与结构、Letta 引用基准。
+
+
+---
+
+## 2026-10-29 轮次：缺口复核——TEPA 原文、Mem0 Decay 裁决、Letta 0.34.26
+
+### 已核实（一手为主）
+
+- **TEPA 论文原文（缺口关闭）**：标题《TEPA: Revoking Stale Memories for Conflict-Robust Language Agents》，arXiv:2608.07429 [cs.AI]，v1 提交 2026-08-07、v2 修订 2026-08-10；本轮读 v1 全文，v2 摘要一致但正文改动未逐行比对，引用以 v1 为准。机制：keyed precedent `p=(k, v, s, f, σ, τ)`，σ ∈ {Hypothesis, Active, Revoked}；检索只取 Active 集；撤销规则为后验均值 q(p) < θ_rev（n_min=5 后）或近期成功率 < θ_rec=0.34（n_rec=3）；默认 θ_prop=3、θ_rev=0.3、θ_pro=0.6；TEPA-Full 另加 trial validation（预算 3，≥60% 为正且至少 1 个支持试验成功才晋升）。数字全部论文自报（未独立核实）：受控全反转 TEPA 0.950 vs append-only / last-write-wins 0.210；SH-6k 0.890（与 last-write-wins 持平）；SH-32k 0.680、MH-6k 0.040、SH-262k 0.000。局限：须能抽出有用的冲突键；键噪声增大时平滑退化。
+- **Mem0 Decay 开源支持争议裁决（缺口关闭，推翻上一轮“未裁决”）**：官方 Platform vs Open Source 对照页明确写明 Decay 在 OSS 为 Not supported（传入 `decay` 报错）；Temporal Reasoning 同样 Platform 专属；Graph Memory 外接图存储集成在 v3 管线落地时被 OSS 移除，仅保留实体抽取与排序加权、无可查询图与 `relations` 字段。Decay 机制（官方 Highlights 页与 2026-05-08 博客，旧功能）：仅搜索时重排，0.3×–1.5×，永不删除归零；每次返回即更新访问历史；公开分数钳制 [0,1]；仅 v3 搜索；默认关闭、按项目 opt-in。Platform 客户端 SDK 版本（Python v2.0.2 / TypeScript v3.0.3）与 OSS 包 mem0ai 2.2.1 不是同一版本线。上轮“最近 20 次访问时间戳”细节本轮在官方页面检索片段中未复见，不重申（不删除，未证伪），留待下轮复核。
+- **Decay vs reference_time 对照（仅 track，不进技能正文）**：Decay = 降权（排序层）；Zep reference_time（RFC3339）+ valid_at / invalid_at = 失效（真值层，可按目标时间点切片查询“当时为真”；回填缺 reference_time 时回退到接收时间）；TEPA = 退出 active 集但留档（有效性状态层）。三者正交，可同时需要。
+- **Letta letta-code 新见版本**：npm 侧最新见 0.34.26，npm.io 页脚 Updated 2026-10-28T02:30:56Z（北京时间 2026-10-28 10:30），落在 10-28 当日，不计入 10-28 之后窗口；其变更内容未核实（文档 changelog 仍滞后于 0.33.2）。
+- **五家复核戳（2026-10-29）**：Mem0 检索未见新发布（最新见 mem0ai 2.2.1，2026-09-25）；Graphiti 最新仍为 0.31.2（2026-10-20）；LangMem 最新仍为 0.0.30（2025-10-27）；Zep 4.0.1 本身未一手核实，更无 10-28 之后新版一手证据。“检索未见”不等于“官方确认无更新”。
+
+### 已同步进 skill 参考
+
+- layered-memory.md：新增 TEPA 条目（Reference systems）与 Step 7 指针句；Mem0 v3 extensions 段改为官方对照页裁决口径（Decay / Temporal / Graph 三条 OSS 边界）并保留 20 次时间戳细节的复核标注；Letta Caution 句推进至 npm 侧 0.34.26（变更内容未核实）。
+
+### 剩余未核实缺口（更新）
+
+1. Mem0 全部基准分数仍为厂商自报，无独立复现（口径已统一，但真实性仍未验证）。
+2. REM / EcphoryRAG 效果数字仍为作者自报（提交日已确认，数字未变）。
+3. Zep Cloud SDK 4.0.1 一手核实（PyPI 发布历史直查或 GitHub releases 逐条拉取；本轮 PyPI 直访被 Client Challenge 拦截）。
+4. letta-code v0.34.22 / v0.34.23 缺位原因（需 GitHub releases 列表或 npm 版本时间线逐条比对 0.34.21→0.34.26）；0.34.26 变更内容与确切发布时间（以 npm 注册表时间戳为准再确认）。
+5. TEPA v2 正文改动清单；TEPA 数字的独立复现（全部效果数字目前仅为论文自报）；TEPA“遗忘有效”结论的历史问答准确率 / 误删误留率对照表缺口。
+6. Mem0 Decay“最近 20 次访问时间戳”细节复核（本轮未复见）。
+7. 已解决：TEPA 论文原文、Mem0 Decay 开源支持裁决、Letta 0.34.26 版本见证。

@@ -4,6 +4,11 @@ All published updates to this repository, newest first. One entry per maintenanc
 
 本仓库全部发表更新，最新在前。每个维护轮次一条；调研轮次以其水位窗口标注日期。
 
+## 2026-10-29 — Round 4: gap-review + new-coverage round / 第 4 轮：缺口复核 + 新增覆盖轮
+
+- Gap-review + new-coverage round (watermark 2026-10-28 → 2026-10-29; skill references 0.3.1 → 0.4.0): no first-hand releases strictly dated after 2026-10-28 were confirmed across the four tracks; the round closed two gaps (TEPA paper text, Mem0 Decay open-source ruling) and resolved one item negatively (OpenCode v2.2.0 has no skill-specific changes), while advancing version stamps (LiteLLM 1.106.6, Dynamo v1.6.1, Agent Framework 1.23.0, Agents SDK v0.24.0, Letta 0.34.26).
+- 缺口复核 + 新增覆盖轮（水位 2026-10-28 → 2026-10-29；技能参考 0.3.1 → 0.4.0）：严格落在 2026-10-28 之后的一手发布四轨均未确认；本轮关闭两项缺口（TEPA 论文原文、Mem0 Decay 开源支持裁决），否定性解决一项（OpenCode v2.2.0 无技能专项），并推进版本戳（LiteLLM 1.106.6、Dynamo v1.6.1、Agent Framework 1.23.0、Agents SDK v0.24.0、Letta 0.34.26）。
+
 ## 2026-10-28 — Round 3: gap-review + new-coverage round / 第 3 轮：缺口复核 + 新增覆盖轮
 
 - Gap-review + new-coverage round (watermark 2026-10-27 → 2026-10-28; skill references 0.2.0 → 0.3.0): most remaining gaps from the previous round were closed or corrected — the LiteLLM pinning line was confirmed from provisional to verified, the OTel GenAI official spec landed, Graphiti conflicts were resolved, and LangMem/FrontierMemory were confirmed — while two previous conclusions were corrected (AgentExecutor maintenance wording, Google rollout-delay wording). No first-hand releases strictly dated 2026-10-28 were found across the four tracks; the 2026-10-27 first-hand items were the LiteLLM 1.106.5 batch and the Claude Code changelog skill fixes.

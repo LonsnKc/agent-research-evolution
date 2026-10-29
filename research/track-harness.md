@@ -98,3 +98,35 @@
 4. OTel MCP 约定版本号（不存在单一版本，已排除）。
 5. 已解决：OTel 官方 spec 原文、AgentExecutor 包级口径、Anthropic 2026 三篇文章。
 6. 下轮必查各仓库 releases 页在 2026-10-28 之后是否有更新。
+
+
+---
+
+## 2026-10-29 轮次：缺口复核——Anthropic 折叠文章、AutoGen 残留、Agent Framework 1.23.0、Harbor 迁址
+
+### 已核实（一手为主）
+
+- **Anthropic 折叠 subagent 文章一手原文**：标题《Building agents: When to fold subagents into your main agent loop》，发布 2026-10-22（页面尾部 Published 字段）。核心主张与保留三条件、单循环设计（一个模型、一个上下文窗口、轮次与成本预算、写门禁、首轮写计划）、渐进披露（技能与工具先看简短描述）、迁移步骤（先建端到端 eval，10 个 golden 示例起步，一次只折叠一个并对比任务翻转；样本破坏案例两次运行仅出现一次，故每任务须跑多次）、工具定义 30–50 个退化阈值（厂商经验表述，未独立核实）。厂商自报数字（未独立核实）：单客户单循环约快 2 倍；Claude Code 系统提示词削减超 80%。
+- **配套迁移套件 single-agent-loop-kit**：仓库 README 自我定位 “Reference implementation. Not maintained and not accepting contributions.”；当前提交 c437962，创建 2026-10-15，Apache-2.0，Releases 0、Tags 0；审计四档 fold / merge / call as a tool / keep；真实模型验证范围自述极窄（仅两次示例运行、同一人、同一模型）。
+- **AutoGen 同页矛盾残留**：当前 README 存档横幅逐字确认之外，“Why AutoGen?” 一节后文又写 “Note that AutoGen is now community-managed and responses may be limited.”——已存档与社区管理并存，属未清理历史残留，不作调和；存档日期与 2025-10 横幅原文仍不可见。
+- **Agent Framework releases 复核戳**：最新带日期章节为 `## [1.23.0] - 2026-10-22`；其下 1.22.0（2026-10-15）、1.21.0（2026-10-08）；页顶无标题 Changes 清单的版本与日期未能确认，不得据此断言 2026-10-28 之后有新发布。
+- **LangChain changelog 复核戳（仅 track，不进技能）**：页面 Updated 2026-10-23T09:08:55Z；置顶 `langchain-core` v1.7.0（`tool-call-delta` 逐段发送；搭配 `langchain` 1.4.7+）；置顶条目本身未标发布日期，不得断言其发布于 2026-10-28 之后。
+- **OpenAI Agents SDK Python v0.24.0**：发布日期 2026-10-15（一手发布页标题行）；特性含 MCP 转换工具暴露 `mcp_annotations` 等；2026-10-28 之后新发布“未发现”（releases 列表页未全量打开，非“确认无发布”）。
+- **Harbor 仓库身份**：原 laude-institute/harbor 已重定向至 harbor-framework/harbor（main 分支，30 releases、31 tags，创建 2025-08-04，Apache-2.0，未存档）；README 自称 Terminal-Bench-2.0 官方 harness；releases 日期未取，2026-10-28 之后有无新 release 查不到。
+- **窗口内新动态**：五仓（LangChain/LangGraph、Agent Framework、OpenAI Agents SDK、Harbor、METR）均未确认 2026-10-28 之后的新发布；“未确认”不等于“确认无发布”。
+
+### 已同步进 skill 参考
+
+- agent-harness.md：新增 Anthropic 折叠文章段与迁移套件段；AutoGen 条目追加同页残留句；Agent Framework 句追加 1.23.0 复核戳；Agents SDK 条目追加 Python v0.24.0 戳；Harbor 条目改为迁址后身份。
+
+### 剩余未核实缺口（更新）
+
+1. AutoGen 存档具体日期与 2025-10 横幅逐字原文（当前页已不可见，需历史版本 README）。
+2. Agent Framework 页顶无标题清单对应的版本号与日期；.NET 1.25.0 与 Python 1.23.0 对应关系（未一手统一核对）。
+3. LangChain/LangGraph：GitHub releases 页直查（langgraph 1.2.18 之后、2026-10-28 之后有无新 tag；langchain-core 1.7.0 与 langchain 1.4.7 发布日期）。
+4. OpenAI Agents SDK：openai-agents-python 与 openai-agents-js 的 releases 列表页全量核对（2026-10-28 之后有无新版本；TS 版未单独核对）。
+5. Harbor：releases 列表页逐项日期（30 个 release 的最新几项）与 PyPI 正式版（非 dev 版）最新版本与日期。
+6. METR：各仓库具体清单（Vivaria、Task Standard 参考实现、公开任务仓）逐仓取戳；Vivaria 无版本口径需直开正文确认。
+7. MetaHarness：GitHub 仓库一手确认（2026-10-28 厂商通稿，下载量与星标数字不得引用）。
+8. 深挖续题：工具搜索 85% / 10,000 工具数字一手确认；Claude Code 系统提示词削减超 80% 的原始出处。
+9. 已解决：Anthropic 折叠文章一手原文、AutoGen 当前横幅与残留句、Agent Framework 1.23.0 章节、Agents SDK v0.24.0、Harbor 迁址。

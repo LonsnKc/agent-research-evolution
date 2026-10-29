@@ -81,3 +81,15 @@
 - 文件变更：research/20261028-0950/report.md + sources.md；refined/20261028-0950/delta.md（17 条）+ verification.md（执行者自验：通过 17 条、未验证暂定 0 条、需修正 0 条、否决 0 条；独立抽查 5 条一手来源）；技能正本四篇 references 增量编辑（SKILL.md 本体未改）；旧版快照 versions/v0.2.0/；VERSION 0.3.0；CHANGELOG v0.3.0；STATE.md、PRACTICAL.md（上一轮未验证暂定项闭环，记入已修正）、四轨 track 笔记各追加本轮小节。
 - 剩余未核实缺口汇总：RouteLLM 最后提交日；Dynamo v1.5.0 细节；Railway / OpenCode Console 影响范围；Portkey 2.0 正式版；AutoGen 存档日期与旧横幅原文；UserPromptExpansion 首发版；Mobb.ai 原文；CVE-2026-114612 官方公告；TEPA 论文原文；Mem0 Decay 开源支持范围；Zep Cloud SDK 4.0.1；Anthropic 折叠 subagent 文章一手原文；OpenCode v2.2.0 技能专项。以上均未否决任何条目，或排除在正文之外、或以二手/自报标注保留在线索中。
 - 发表同步：由 agent-research-evolution-publish 任务（约 10:50）承担，本任务不重复推送。
+
+
+---
+
+## 2026-10-29 轮次小结：缺口复核 + 新增覆盖（版本 0.3.1 → 0.4.0）
+
+- 跨轨结论：四轨在 2026-10-28 之后均无以官方页面日期确认的一手新发布；本轮增量全部为缺口复核（两项缺口关闭：TEPA 原文、Mem0 Decay 裁决；一项否定性解决：OpenCode v2.2.0 无技能专项）与版本戳推进（LiteLLM 1.106.6、Dynamo v1.6.1、Agent Framework 1.23.0、Agents SDK v0.24.0、Letta 0.34.26 见 npm 侧）。
+- 文件变更：技能正本四篇 references 增量编辑（18 条技能增量：R1–R5、H1–H4、H6–H7、M1–M3、S1–S4；另 2 条仅 track 笔记：H5、M4）；整合前旧版整目录快照于 `versions/v0.3.1/`；VERSION 0.3.1 → 0.4.0；CHANGELOG 新增 v0.4.0 节（并纠正 STATE 基线滞后：此前记 0.3.0，实为 0.3.1）；STATE.md 新增本轮覆盖节与指针推进；四轨 track 笔记各追加本轮日期小节；本轮调研产出 `research/20261029-0950/report.md + sources.md + track-*-raw.md`；提炼与自验 `refined/20261029-0950/delta.md + verification.md`（执行者自验：通过 20 条、需修正 0 条、否决 0 条、新增未验证暂定 0 条；独立抽查 5 条一手来源全部吻合）。
+- 推翻的旧说法：Dynamo“最新 stable 仍为 v1.6.0”（被 v1.6.1 推翻）；Mem0 Decay“开源支持范围未裁决”（被官方对照页裁决为 OSS 不支持）；OpenCode v2.2.0“技能专项未复核”（解决为无专项）；RouteLLM 第三方 2024-08-10 说法不获提交历史页支持。
+- 剩余未核实缺口汇总：CVE-2026-114612 官方修复版；Dynamo v1.5.0 细节；Portkey 2.0 正式版与 1.15.2 出入；Railway 最终报告与 OpenCode post-mortem；各最新版发布日期；Zep Cloud SDK 4.0.1；letta-code 22/23 缺位原因与 0.34.26 变更内容；TEPA v2 改动清单；UserPromptExpansion 首发版；Mobb.ai 原文；AAIF 落地文件；AutoGen 存档日期与 2025-10 横幅原文；Mem0 / REM / EcphoryRAG 数字独立复现。
+- SKILL.md / SOUL.md 级提案：无新增（落点纪律：SKILL.md 本体不自动改）。
+- 发表同步：由 agent-research-evolution-publish 任务（约 10:50）承担，本任务不重复推送。

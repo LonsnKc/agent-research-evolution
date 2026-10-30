@@ -130,3 +130,34 @@
 7. MetaHarness：GitHub 仓库一手确认（2026-10-28 厂商通稿，下载量与星标数字不得引用）。
 8. 深挖续题：工具搜索 85% / 10,000 工具数字一手确认；Claude Code 系统提示词削减超 80% 的原始出处。
 9. 已解决：Anthropic 折叠文章一手原文、AutoGen 当前横幅与残留句、Agent Framework 1.23.0 章节、Agents SDK v0.24.0、Harbor 迁址。
+
+
+---
+
+## 2026-10-30 轮次：缺口复核——Agent Framework 定性、LangChain 戳、工具搜索 85% 一手确认
+
+### 已核实（一手为主）
+
+- **Agent Framework 页顶清单定性**：经内容比对定性为 dotnet-1.26.0（2026-10-23），标签页本身未直接打开（正文保留限定）；Python 线 1.21.0（2026-10-08）、1.22.0（2026-10-15）、1.23.0（2026-10-22，官方升级页）；python-1.24.0 标签页 404（不存在）；.NET 与 Python 为两条独立发布线。
+- **LangChain 版本戳**：langchain-core 1.7.3（2026-10-29，PyPI 一手）；langchain 1.4.7（2026-10-21，PyPI 一手），官方配对口径 core 1.7.0+ 需配合 langchain 1.4.7+；langgraph 1.2.18（2026-10-26，二手）；2026-10-28 之后新 tag 未发现。
+- **Agents SDK**：Python 最新仍为 0.24.0（2026-10-15，发布页 + PyPI 一手，2026-10-30 仍为最新）；JS @openai/agents 0.21.0（2026-10-20，二手日期），子包联动规则为官方文档一手。
+- **Harbor PyPI 正式版**：`harbor` 0.25.0（2026-10-25，PyPI 一手）；开发版 0.24.1.dev202610230423 不是正式版；`SchemaRouter/harbor` 为 fork，非上游。
+- **METR 两仓**：`METR/inspect-tasks-public` 与 `METR/RE-Bench` 均为公开存档、README 首行 DEPRECATED（仓库页一手）；Vivaria 文档确认 Git 拉取任务与 agent，配置示例默认任务仓为 `METR/mp4-tasks`（示例值）；Task Standard 博客 2024-02，“1000+ 任务”为 METR 自述。
+- **MetaHarness 同名区分**：论文仓 `AmoghM/meta-harness`（创建 2026-04-15，9 提交，MIT，arXiv 2603.28052）vs Cognitum One 商业产品（2026-10-28 通稿二手，仓库页未确认）。
+- **工具搜索 85% 一手确认（执行者亲自复核）**：Anthropic 原文——58 工具约 55K、传统约 72K / 总消耗约 77K、Tool Search 后约 8.7K，结论句 85% reduction，保留 95% 上下文窗口；Opus 4 49%→74%、Opus 4.5 79.5%→88.1%（内部测试自报）；算术注记：77K→8.7K 约 89%、55K→8.7K 约 84%，85% 贴近 55K 基线；“10,000 工具”无出处。
+- **80% 削减出处**：claude.com《The new rules of context engineering for Claude 5 generation models》（2026-07-24）自述，非折叠文章；dev.to 词数二手未入原文。
+- **AutoGen 现版 README（一手）**：存档横幅逐字仍在，同页残留 community-managed 句；2025-10 维护横幅逐字与 2025-10-02 日期仅为二手一致，存档执行日期仍未决。
+
+### 已同步进 skill 参考
+
+- agent-harness.md：Agent Framework 段改为 dotnet-1.26.0 定性 + Python 线日期 + 非锁步警示；LangGraph 行追加版本戳；Agents SDK 行改为 0.24.0 确认仍为最新 + JS 线；Harbor 行追加 PyPI 正式版与 fork 警示；METR 行改为两仓现状；新增 MetaHarness 区分条目与“工具搜索与提示词预算”一节（85% / 80% 出处与算术口径）。
+
+### 剩余未核实缺口（更新）
+
+1. dotnet-1.26.0 标签页本身的一手直接打开。
+2. METR 的 Vivaria 本体仓、Task Standard 参考实现仓、`METR/mp4-tasks` 仓逐仓戳。
+3. ruvnet/metaharness 仓库页一手确认。
+4. “10,000 工具”一手出处。
+5. AutoGen 微软执行存档的具体日期与 2025-10 横幅带日期历史版本。
+6. Harbor GitHub releases 列表页完整逐项日期（方法局限：列表页文本提取丢标题行）。
+7. 已解决：Agent Framework 页顶清单定性、Python 线日期、python-1.24.0 不存在、LangChain 版本戳、Agents SDK 确认、Harbor PyPI 正式版、METR 两仓现状、工具搜索 85% / 80% 出处。

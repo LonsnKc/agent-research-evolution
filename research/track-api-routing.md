@@ -129,3 +129,31 @@
 5. 各最新版发布日期（LiteLLM v1.106.6、Portkey v1.15.0、Dynamo v1.6.1、vLLM v0.32.0，页面文本未显示）。
 6. RouteLLM 2024-07-20 组内单条提交的精确日期/哈希（需单条链接复核）。
 7. 已解决：RouteLLM 提交组一手复核、LiteLLM 1.106.6 回灌线、Dynamo 最新稳定版本、Portkey 2.0 预发布复核。
+
+
+---
+
+## 2026-10-30 轮次：缺口复核 + 新增覆盖——Dynamo v1.5.0/v1.5.1、v1.6.1 撤回、Railway 初步报告
+
+### 已核实（一手为主）
+
+- **Dynamo v1.5.0 官方注记（缺口关闭）**：官方 releases-data 表与注记页一手——稳定版 2026-09-18；自定义选取策略（WorkerScorer/WorkerPicker、过滤器链、硬/软会话亲和）、KV 索引扩展到 Mooncake 与磁盘层、CRD 存储版 `nvidia.com/v1beta1`、Rust EPP 默认、Snapshot 独立 operator、AIConfigurator 更名 AISimulate、KVBM 弃用（计划 v1.7.0 移除）、引擎钉版 SGLang 0.5.18 / TensorRT-LLM 1.3.0rc25 / vLLM 0.28.0；过滤器拒绝全部合格 worker 时返回 503（fail-closed）。第三方 DeployLog 的 10 月 9 日说法与官方表冲突，不采信。
+- **Dynamo v1.5.1 补丁（官方表一手）**：2026-10-06，后端钉版与 v1.5.0 相同。
+- **Dynamo v1.6.1 说法撤回（执行者亲自复核）**：官方 releases-data 表（单一事实源、每次发布 bump 时重新生成）截至 2026-10-30 仍写当前稳定 v1.6.0（Oct 22, 2026），表中无 v1.6.1 行；上一轮基于 GitHub releases 页的 v1.6.1 补丁说法与该表冲突，本轮撤回；Quickstart 的 `:1.6.1` 标签存在不等于稳定发布。
+- **Portkey 2.0 仍为预发布（2026-10-30 复核戳）**：官方 main README 原话仍为 Pre-Release；1.15.2 确为 Docker 镜像标签，但 v1.15.0 发布日期仍未决，通道漂移仅为假说。
+- **Railway 初步报告（一手，非最终报告）**：2026-10-22 官方博客，攻击窗口 2026-10-20 13:58 UTC 至 10-22 03:32 UTC，影响上限至多 1.85% 工作区（约 100,000 个，厂商自报），10-26 更新称现有用户侧已解决、新注册仍暂停，源码是否被访问未排除；最终报告截至本轮仍未发布。
+- **窗口内新动态**：2026-10-29 之后 LiteLLM、Dynamo、Portkey、vLLM、llm-d 均无新稳定发布；OpenRouter 最新公告为 2026-10-28 路由重建帖（厂商自报）。
+
+### 已同步进 skill 参考
+
+- api-routing.md：Dynamo 条目改为 v1.6.1 撤回口径并补 v1.5.0 / v1.5.1；Portkey 行追加 2026-10-30 复核戳与 1.15.2 线索限定；Design checks 追加故障转移语义三项（触发条件、退化目标、回切条件）与初步报告/最终报告区分句。
+
+### 剩余未核实缺口（更新）
+
+1. Dynamo v1.6.1 最终解释（GitHub 侧说法与 docs 表 reconciled 情况）。
+2. CVE-2026-114612 官方公告与官方修复版本（GHSA 数据不得等同）。
+3. Portkey v1.15.0 发布日期与 1.15.2 出入成因。
+4. Railway 最终调查报告与 OpenCode 官方 post-mortem（均未见）。
+5. RouteLLM 2024-07-20 组内单条提交精确日期/哈希。
+6. LiteLLM v1.106.6 与 vLLM v0.32.0 的官方发布日期。
+7. 已解决：Dynamo v1.5.0 细节、Portkey 2.0 预发布复核（2026-10-30）、Railway 初步报告存在性。

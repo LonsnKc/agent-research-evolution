@@ -132,3 +132,32 @@
 6. MiniMax MCode Stack（2026-10-28）仓库原文与技能清单（待下轮一手复核，目前仅二手报道；属技能库内容发布，非规范/宿主变更）。
 7. 已解决：OpenCode v2.2.0 官方发布说明技能专项（否定性结论）、规范页戳复核、Claude Code 2026-10-28 之后无新条目戳。
 8. DSH、Hermes/Ekko、Codex、Copilot、Windsurf/Cascade 本轮仍无技能子系统官方更新（检索未见；Copilot Fusion 与 Gemini 4 Carbon 属模型/路由层，不计入）。
+
+
+---
+
+## 2026-10-30 轮次：缺口复核——Codex 无技能项、Cursor SDK 语义、MCode 仓库、触发面无收敛
+
+### 已核实（一手为主）
+
+- **Codex 0.165.0 确无技能项（官方 release 页直核）**：全文 169 行，检索 `skill` 0 命中；最接近的仅为 marketplace URL 校验缺口修复（#56263）；发布于 2026-10-27。0.166.0（2026-10-29，二手日期）新功能无技能项，完整 changelog 有 6 条技能周边 plumbing（#56524、#56530、#57197、#57262、#57500、#57598），均不改动发现路径/触发语义。
+- **Cursor Agent SDK `skills/` 语义（官方 changelog 直核）**：原文只说存放“模型按需加载的程序（procedures）”，全文未提 `SKILL.md`，不得等同于 agentskills.io 技能；GA 日期 2026-10-20 为二手，官方页正文未标日期。
+- **MiniMax MCode Stack 仓库原文（创建 2026-10-28，一手）**：MIT（`engineering-*` 另按 CC-BY 3.0），README 原文表共 17 技能（ronny 15 + jiachen 2，见 research 报告）；技能 = 含 `SKILL.md` 的目录，MiniMax Code 内以 `/<skill-name>` 调用或按 description 加载；发现目录：项目级 `.minimax/skills/`（特有）、`.claude/skills/`、`.agents/skills/`，全局 `~/.agents/skills/`（另读 `~/.claude/skills/`、`~/.codex/skills/`）；可经 marketplace `MiniMax-AI/mcode-stack` 安装插件或单技能复制到 `~/.agents/skills/`。“5 checklists / 5 companion notes”数量在 README 文本中无数量陈述，不得照抄。
+- **Claude Code 2026-10-30 新组（官方 changelog 一手）**：无技能子系统新规则（仅存量技能更新：dataviz 两处、`/claude-api` 两处、会话自动标题改用技能/提示型命令、修复 `~/.claude/skills/.trash` 监听负担）；10-30 组版本号未以版本标题呈现，不得指称为 2.1.313；最新已编号版本仍为 2.1.312（2026-10-27，二手镜像一致）。
+- **规范页与 AAIF（2026-10-30 复核戳）**：规范页直核全文 168 行，页脚戳仍为 2026-08-04T22:53:14.470Z，6 个 frontmatter 字段，`allowed-tools` 仍 Experimental，无版本化发布、无提案流程、无 SECURITY 章节；AAIF 三件落地文件在规范页与 AAIF 公告面均未出现（未穷尽 Discussions / Discord）。
+- **OpenCode（2026-10-30 复核戳）**：顶栏仍为 2026-10-29 两组（v2.2.1），无 10-30 组；10-29 顶栏本身无技能子系统新条目。
+- **Gemini CLI 区分**：最新稳定版仍为 v0.66.0（2026-10-27，二手镜像元数据），唯一技能相关项为 SKILL.md frontmatter 单行 description 解析修复（#29769，二手镜像转述）；Gemini 应用 Skills 与 Gemini CLI 技能子系统是两回事，不得混写。
+- **触发面分歧无收敛**：规范页不定义发现目录（仅目录内格式与三级渐进披露），AAIF 移交只改治理、不改格式；2026-10-29 之后未见任一宿主发布统一触发语义；`~/.agents/skills/` 在多家文档中反复出现只是习惯重合，规范并未强制要求扫描它；第三方所称 Claude Code 技能页 10-29 “7 行变动”内容未获证实。
+
+### 已同步进 skill 参考
+
+- skill-authoring.md：追加 Codex 0.165.0/0.166.0 否定性结论、Cursor SDK 语义警示、MiniMax MCode Stack 宿主示例；Claude 钩子段追加 2026-10-30 新组句；AAIF 段追加 2026-10-30 复核戳；消费者 Gemini 段追加 Gemini CLI 区分句与触发面无收敛句。
+
+### 剩余未核实缺口（更新）
+
+1. `UserPromptExpansion` 首发版本号与首发日期（官方 changelog 检索 0 命中；2.1.116 仅为 ccdeck 二手 gating 阈值）。
+2. Mobb.ai 审计数字原文（22,511 / 140,963 仅见 2026-03-22 TNS 具名报道；34% / 27% 仅见单篇 dev.to 转述）。
+3. AAIF 落地文件（版本化发布、提案流程、安全指南）持续检索。
+4. Claude Code 2026-10-30 条目对应的版本号；技能页 10-29 “7 行变动”具体内容；MCode “5 checklists / 5 companion notes”数量。
+5. 已解决：Codex 0.165.0 技能专项（否定性）、Cursor Agent SDK 语义、MiniMax MCode Stack 仓库原文、规范页戳复核、Claude Code 2026-10-30 新组、触发面无收敛判定。
+6. DSH、Hermes/Ekko、Codex、Copilot、Windsurf/Cascade 本轮仍无技能子系统官方更新（检索未见；Copilot Fusion 与 Gemini 4 Carbon 属模型/路由层，不计入）。

@@ -93,3 +93,15 @@
 - 剩余未核实缺口汇总：CVE-2026-114612 官方修复版；Dynamo v1.5.0 细节；Portkey 2.0 正式版与 1.15.2 出入；Railway 最终报告与 OpenCode post-mortem；各最新版发布日期；Zep Cloud SDK 4.0.1；letta-code 22/23 缺位原因与 0.34.26 变更内容；TEPA v2 改动清单；UserPromptExpansion 首发版；Mobb.ai 原文；AAIF 落地文件；AutoGen 存档日期与 2025-10 横幅原文；Mem0 / REM / EcphoryRAG 数字独立复现。
 - SKILL.md / SOUL.md 级提案：无新增（落点纪律：SKILL.md 本体不自动改）。
 - 发表同步：由 agent-research-evolution-publish 任务（约 10:50）承担，本任务不重复推送。
+
+
+---
+
+## 2026-10-30 轮次小结：缺口复核 + 新增覆盖（版本 0.4.0 → 0.5.0）
+
+- 跨轨结论：本轮最大进展是一项上一轮结论的纠正——Dynamo v1.6.1 最新稳定说法被官方 releases-data 表（单一事实源）推翻并撤回，同时 v1.5.0 / v1.5.1 得到官方表确认；另有三项缺口关闭或纠偏（Zep SDK 4.0.1 语言归属、Mem0 Decay 20 次时间戳复核、工具搜索 85% 与 80% 削减出处的一手确认）与多项否定性解决（Codex 0.165.0 确无技能项、触发面分歧无收敛、AAIF 落地文件仍未发布）。严格落在 2026-10-30 当日的一手发布为 Claude Code changelog 10-30 组（无技能规则变更）；langchain-core 1.7.3 为 10-29 边界日；其余四轨 2026-10-29 之后均检索未见新稳定发布（页面未显示日期的最新版不归入窗口）。
+- 文件变更：技能正本四篇 references 增量编辑（21 条技能增量：R1–R5、H1–H7、M1–M4、S1–S5；SKILL.md 本体未改）；整合前旧版整目录快照于 `versions/v0.4.0/`；VERSION 0.4.0 → 0.5.0；CHANGELOG 新增 v0.5.0 节；STATE.md 新增本轮覆盖节与指针推进；四轨 track 笔记各追加本轮日期小节；本轮调研产出 `research/20261030-0950/report.md + sources.md`（另含四路调研员原始报告 raw-*.md）；提炼与自验 `refined/20261030-0950/delta.md + verification.md`（执行者自验：通过 21 条、通过（未验证暂定）0 条、需修正 0 条、否决 0 条；独立抽查 3 条一手来源全部吻合）。
+- 推翻的旧说法：Dynamo“最新 stable 为 v1.6.1”（被官方 releases-data 表推翻）；Zep“Cloud SDK 4.0.1”不区分语言的说法（纠偏为 TypeScript 包）；eMudhra 案例归属“Dyanmo v1.6.1”（纠正为 LiteLLM v1.106.3）。
+- 剩余未核实缺口汇总：Dynamo v1.6.1 最终解释；CVE-2026-114612 官方公告与修复版；Portkey v1.15.0 日期与 1.15.2 出入成因；Railway 最终报告与 OpenCode post-mortem；RouteLLM 单条提交哈希；LiteLLM v1.106.6 / vLLM v0.32.0 官方日期；METR 三仓逐仓戳；ruvnet/metaharness 仓库页；“10,000 工具”出处；Zep Python 4.0.1；letta-code 0.34.26 确切发布时间与 0.34.22 缺位原因；TEPA v2 正文差异；Graphiti 0.31.2 确切发布日；mem0ai 1.0.10 日期；UserPromptExpansion 首发版；Mobb 34% / 27% 与 mobb.ai 原文；AAIF 落地文件；AutoGen 存档执行日期。以上均未否决任何条目，或排除在正文之外、或以二手/自报标注保留在线索中。
+- SKILL.md / SOUL.md 级提案：无新增（落点纪律：SKILL.md 本体不自动改）。
+- 发表同步：由 agent-research-evolution-publish 任务（约 10:50）承担，本任务不重复推送。

@@ -161,3 +161,32 @@
 5. AutoGen 微软执行存档的具体日期与 2025-10 横幅带日期历史版本。
 6. Harbor GitHub releases 列表页完整逐项日期（方法局限：列表页文本提取丢标题行）。
 7. 已解决：Agent Framework 页顶清单定性、Python 线日期、python-1.24.0 不存在、LangChain 版本戳、Agents SDK 确认、Harbor PyPI 正式版、METR 两仓现状、工具搜索 85% / 80% 出处。
+
+
+---
+
+## 2026-10-31 轮次：缺口复核——Agent Framework 10-30 两线、METR 存档、10,000 工具出处、AutoGen 表述修正
+
+### 已核实（一手为主）
+
+- **Agent Framework Python 1.24.0 与 .NET 1.27.0（2026-10-30，标签页一手）**：上一轮“python-1.24.0 不存在 / 未发现 dotnet-1.27.0”只是时点结论，现已失效；两线数字差继续扩大。Harness 要点为厂商自述：Python 实验性 in-run 压缩与技能卸载；.NET harness 本地聊天历史标记（#8708）。
+- **dotnet-1.26.0 标签页身份已一手确认**：首批条目与定性逐项对应；日期仍为二手（页内无日期字段）。
+- **METR Vivaria 与 task-standard 均已公开存档**：Vivaria 转向 Inspect、缩减新功能；Task Standard 不再维护、改用 Inspect（releases 横幅存档日 2026-10-07）；现行示例 standard_version 0.5.0。
+- **METR/mp4-tasks 纠正**：仅为 Vivaria 配置文档 e.g. 示例值，公开仓 404，不得写成默认任务仓。
+- **ruvnet/metaharness 仓库页已确认**：公开、未存档、创建 2026-06-13、MIT，生成自有品牌 harness 的工厂，与论文仓区分成立。
+- **“10,000 工具”出处已找到（推翻“无出处”）**：Claude Agent SDK tool-search 文档 Limits 节逐字 “Maximum tools: 10,000 tools in your catalog”（Updated 2026-10-21），口径为目录上限，非实测规模。
+- **AutoGen 维护提交与存档表述修正**：2025-10-02 提交 #7067（84f21a0）一手确认；仓库页平台 Archived 开关为 No，主分支 2026-10-16、2026-10-28 仍有提交组——存档是 README 声明，不是平台存档动作；横幅逐字句一手出处仍未落定。
+- **LangGraph 1.2.19（2026-10-30，PyPI 一手）**；langchain-core 10-30/31 新版未能确认（PyPI 拦截、官方 changelog 页停留在 2026-10-23）。
+- **严格 2026-10-31 窗口**：截至上午核查时未发现带日期的新发布。
+
+### 已同步进 skill 参考
+
+- agent-harness.md：Agent Framework 段改为 10-30 两线 + 时点结论失效说明 + harness 要点；dotnet-1.26.0 定性改为标签页确认；LangGraph 行改为 1.2.19；METR 行改为存档 + Inspect 转向 + mp4-tasks 纠正；工具搜索一节改为 10,000 上限出处；AutoGen 段追加 #7067 与 README/平台区分句。
+
+### 剩余未核实缺口（更新）
+
+1. dotnet-1.26.0 的 2026-10-23 日期一手字段。
+2. AutoGen 平台存档执行日期（证据指向无平台动作）与横幅逐字句一手出处、横幅引入提交。
+3. Harbor releases 完整逐项日期（列表页方法局限持续）。
+4. langchain-core 10-30/31 新版；Agents SDK JS 线；ruvnet/metaharness 逐项日期。
+5. 已解决：dotnet-1.26.0 标签页身份、METR 两仓、ruvnet/metaharness、“10,000 工具”出处、AutoGen 2025-10-02 提交、python-1.24.0 / dotnet-1.27.0、LangGraph 1.2.19。

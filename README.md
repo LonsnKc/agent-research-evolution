@@ -73,7 +73,7 @@ The files under `research/` are the canonical research record, published verbati
 | Item | State |
 | --- | --- |
 | Baseline research | 2026-10-23 (four-topic deep research) and 2026-10-24 (skills deep research) |
-| Evolution rounds published | Round 1 — 2026-10-25 (watermark 2026-10-24 → 2026-10-25); Round 2 — 2026-10-27 (watermark 2026-10-25 → 2026-10-27; the 2026-10-26 round was skipped); Round 3 — 2026-10-28 (watermark 2026-10-27 → 2026-10-28; gap-review + new-coverage round, skill references 0.2.0 → 0.3.0); Round 4 — 2026-10-29 (watermark 2026-10-28 → 2026-10-29; gap-review + new-coverage round, skill references 0.3.1 → 0.4.0); Round 5 — 2026-10-30 (watermark 2026-10-29 → 2026-10-30; gap-review + new-coverage round, skill references 0.4.0 → 0.5.0) |
+| Evolution rounds published | Round 1 — 2026-10-25 (watermark 2026-10-24 → 2026-10-25); Round 2 — 2026-10-27 (watermark 2026-10-25 → 2026-10-27; the 2026-10-26 round was skipped); Round 3 — 2026-10-28 (watermark 2026-10-27 → 2026-10-28; gap-review + new-coverage round, skill references 0.2.0 → 0.3.0); Round 4 — 2026-10-29 (watermark 2026-10-28 → 2026-10-29; gap-review + new-coverage round, skill references 0.3.1 → 0.4.0); Round 5 — 2026-10-30 (watermark 2026-10-29 → 2026-10-30; gap-review + new-coverage round, skill references 0.4.0 → 0.5.0); Round 6 — 2026-10-31 (watermark 2026-10-30 → 2026-10-31; gap-review + new-coverage round, skill references 0.5.0 → 0.6.0) |
 | Research files | 5 (`research/report.md` + 4 track notes) |
 | Update cadence | Daily, with post-push verification |
 
@@ -132,7 +132,7 @@ This project is shared and discussed with the community at [LINUX DO](https://li
 | 项目 | 状态 |
 | --- | --- |
 | 基线调研 | 2026-10-23 四主题深研、2026-10-24 技能深研 |
-| 已发表轮次 | 第 1 轮——2026-10-25（水位 2026-10-24 → 2026-10-25）；第 2 轮——2026-10-27（水位 2026-10-25 → 2026-10-27；2026-10-26 轮次因平台安全审查跳过）；第 3 轮——2026-10-28（水位 2026-10-27 → 2026-10-28；缺口复核 + 新增覆盖轮，技能参考 0.2.0 → 0.3.0）；第 4 轮——2026-10-29（水位 2026-10-28 → 2026-10-29；缺口复核 + 新增覆盖轮，技能参考 0.3.1 → 0.4.0）；第 5 轮——2026-10-30（水位 2026-10-29 → 2026-10-30；缺口复核 + 新增覆盖轮，技能参考 0.4.0 → 0.5.0） |
+| 已发表轮次 | 第 1 轮——2026-10-25（水位 2026-10-24 → 2026-10-25）；第 2 轮——2026-10-27（水位 2026-10-25 → 2026-10-27；2026-10-26 轮次因平台安全审查跳过）；第 3 轮——2026-10-28（水位 2026-10-27 → 2026-10-28；缺口复核 + 新增覆盖轮，技能参考 0.2.0 → 0.3.0）；第 4 轮——2026-10-29（水位 2026-10-28 → 2026-10-29；缺口复核 + 新增覆盖轮，技能参考 0.3.1 → 0.4.0）；第 5 轮——2026-10-30（水位 2026-10-29 → 2026-10-30；缺口复核 + 新增覆盖轮，技能参考 0.4.0 → 0.5.0）；第 6 轮——2026-10-31（水位 2026-10-30 → 2026-10-31；缺口复核 + 新增覆盖轮，技能参考 0.5.0 → 0.6.0） |
 | 调研文件 | 5 份（总报告 + 四份轨道笔记） |
 | 更新节奏 | 每日，推送后必核验 |
 

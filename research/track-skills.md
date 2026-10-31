@@ -161,3 +161,29 @@
 4. Claude Code 2026-10-30 条目对应的版本号；技能页 10-29 “7 行变动”具体内容；MCode “5 checklists / 5 companion notes”数量。
 5. 已解决：Codex 0.165.0 技能专项（否定性）、Cursor Agent SDK 语义、MiniMax MCode Stack 仓库原文、规范页戳复核、Claude Code 2026-10-30 新组、触发面无收敛判定。
 6. DSH、Hermes/Ekko、Codex、Copilot、Windsurf/Cascade 本轮仍无技能子系统官方更新（检索未见；Copilot Fusion 与 Gemini 4 Carbon 属模型/路由层，不计入）。
+
+
+---
+
+## 2026-10-31 轮次：缺口复核——OpenCode #60315、Claude 10-31 组、MCode 三形态、规范页戳
+
+### 已核实（一手为主）
+
+- **OpenCode 2026-10-30 组技能子系统变更（窗口内唯一一手技能变更，执行者亲自复核）**：托管策略拆分 #60315（breaking change）——`integration.use` 仅控制 integration 账户，新增 `mcp.use`、`skill.use`、`plugin.use`；旧资源前缀规则自动转换，裸 `integration.use` 不再适用于技能。评估“技能是否可用”须区分“已安装 / 已发现”与“策略放行”两层；官方页日期组不标版本号，v2.2.3 / v2.2.4 归属为二手镜像。
+- **Claude Code 2026-10-31 组无技能项（一手）**；10-30 组为存量技能内容更新（dataviz、`/claude-api`、自动标题、`.trash` 监听修复），自动标题只提升元数据可见性；10-30 组版本号三家镜像一致归属 2.1.314，官方页无版本标题，仍标二手一致。
+- **规范页戳复核至 2026-10-31（执行者亲自复核）**：全文 168 行，页脚戳仍为 2026-08-04T22:53:14.470Z，`allowed-tools` 仍 Experimental；AAIF 三件落地文件仍未出现（未穷尽 Discussions / Discord）。
+- **MCode 数量误读来源查明（仓库原文一手）**：README 全文无“5 checklists / 5 companion notes”数量陈述；Articles 表恰好 5 行（01–05）各配 companion skills，二手“5”极可能源于该表误读；三形态（Skill / Checklist / Workflow）应分别计数。
+- **其余宿主窗口内检索未见带日期的一手技能子系统更新**：Codex（仍为 0.166.0，10-29）、Gemini CLI（仍为 v0.66.0，10-27）、Cursor（CLI 三条技能条目 undated）、Copilot、Windsurf/Cascade（已更名 Devin Desktop）、DSH、Hermes/Ekko。
+
+### 已同步进 skill 参考
+
+- skill-authoring.md：OpenCode 段追加 #60315 独立策略位；Claude 钩子段追加 10-31 组与 2.1.314 镜像归属；MCode 段追加三形态计数与误读纠正；AAIF 段推进规范页戳至 2026-10-31。
+
+### 剩余未核实缺口（更新）
+
+1. `UserPromptExpansion` 首发版本号与首发日期（官方 changelog 仍 0 命中；文档出现窗口收窄至 2026 年 4 月下旬；2.1.116 仅 ccdeck 二手 gating 阈值）。
+2. Mobb.ai 审计数字原文（复述载体增至三家，仍无 mobb.ai 原件；34% / 27% 仍仅单篇 dev.to；Cisco 31,000+ / 26% 为另一审计）。
+3. AAIF 落地文件持续检索。
+4. Claude Code 2026-10-30 组版本号一手确认；技能页 10-29“7 行变动”具体内容。
+5. MCode checklists 目录实际数量（未逐项清点）。
+6. 已解决：OpenCode #60315、MCode 仓库原文直核、Claude Code 10-31 组无技能项、规范页戳复核至 2026-10-31。

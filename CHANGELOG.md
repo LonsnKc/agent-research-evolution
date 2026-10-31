@@ -4,6 +4,11 @@ All published updates to this repository, newest first. One entry per maintenanc
 
 本仓库全部发表更新，最新在前。每个维护轮次一条；调研轮次以其水位窗口标注日期。
 
+## 2026-10-31 — Round 6: gap-review + new-coverage round / 第 6 轮：缺口复核 + 新增覆盖轮
+
+- Gap-review + new-coverage round (watermark 2026-10-30 → 2026-10-31; skill references 0.5.0 → 0.6.0): a correction-heavy round — four previous claims were overturned or corrected by first-hand evidence (Agent Framework's 2026-10-30 Python 1.24.0 / .NET 1.27.0 two lines, the 10,000-tool figure's provenance in the SDK docs directory cap, the letta-code bump-only release flow, and Zep Python 4.0.1), alongside a batch of gap closures (LiteLLM v1.106.6 date, Graphiti 0.31.2 date, mem0ai 1.0.10 date, TEPA v2 diff, METR archival, OpenCode #60315). No first-hand releases strictly dated 2026-10-31 were found across the four tracks as of the morning check; the 2026-10-30 releases were first captured this round and do not count into the strict 10-31 window.
+- 缺口复核 + 新增覆盖轮（水位 2026-10-30 → 2026-10-31；技能参考 0.5.0 → 0.6.0）：以纠正为主的一轮——四项上一轮说法被本轮一手证据推翻或修正（Agent Framework 10-30 两线 Python 1.24.0 / .NET 1.27.0、10,000 工具出处落定为 SDK 文档目录上限、letta-code bump-only 流水、Zep Python 4.0.1），并集中关闭一批缺口（LiteLLM v1.106.6 日期、Graphiti 0.31.2 日期、mem0ai 1.0.10 日期、TEPA v2 差异、METR 存档、OpenCode #60315）。严格 2026-10-31 窗口内（截至上午核查时）四轨均未发现带日期的一手新发布；2026-10-30 当日发布为上一轮上午核查后发布，本轮首次捕获，不计入严格 10-31 窗口。
+
 ## 2026-10-30 — Round 5: gap-review + new-coverage round / 第 5 轮：缺口复核 + 新增覆盖轮
 
 - Gap-review + new-coverage round (watermark 2026-10-29 → 2026-10-30; skill references 0.4.0 → 0.5.0): the round's main advance is a correction — the previous Dynamo v1.6.1 "latest stable" claim was overturned and retracted by the official releases-data table, while Dynamo v1.5.0/v1.5.1 were confirmed from the same table; it also closed or corrected three gaps (Zep SDK 4.0.1 language attribution, Mem0 Decay 20-timestamp recheck, tool-search 85% and 80%-reduction provenance) and resolved several items negatively (Codex 0.165.0 has no skill items, trigger-surface divergence unresolved, AAIF landing files still unpublished). The only first-hand release strictly dated 2026-10-30 was the Claude Code changelog 10-30 group (no skill-rule changes); langchain-core 1.7.3 is a 10-29 boundary date.

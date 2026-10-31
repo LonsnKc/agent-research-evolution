@@ -172,3 +172,32 @@
 5. mem0ai 1.0.10 发布日期。
 6. Mem0 / REM / EcphoryRAG 数字独立复现（口径已统一，真实性仍未验证）。
 7. 已解决：Zep SDK 语言归属、letta-code 缺位模式与 0.34.31、Mem0 Decay 20 次时间戳复核、TEPA 遗忘缺口确认、TEPA v2 摘要比对。
+
+
+---
+
+## 2026-10-31 轮次：缺口复核——Zep Python 4.0.1、letta-code 流水、TEPA v2 差异、遗忘验收拆分
+
+### 已核实（一手为主）
+
+- **Zep Python `zep-cloud` 4.0.1 存在（已解决，PyPI 一手）**：tar.gz 与 wheel 均 Uploaded Oct 20, 2026，与 TS 侧对齐；上一轮拦截口径作废。
+- **letta-code 0.34.26 发布时间已解决（GitHub API 一手）**：2026-10-28T02:48:19Z。
+- **letta-code“缺位”旧说法推翻**：0.34.22 / 0.34.23 / 0.34.25 均为真实存在的 bump-only 极简发布，改动由下一份完整说明折入；各自精确 published_at 仍未取得。
+- **PyPI `letta` 线分叉（修正“快照滞后”说法）**：PyPI JSON 显示 info.version 止于 0.34.12（2026-10-12），之后未跟进 GitHub / npm 线（停更、改名还是改道未见官方说明）；引用当前版以 npm / GitHub 为准。
+- **TEPA v2 差异已解决（HTML 渲染行比对）**：唯一差异为 v2 新增一行预印本声明，方法阈值与结果数字未改动；v1/v2 引用可互换但应注明预印本（TeX 字节 diff 未做）。
+- **Graphiti 0.31.2 发布日已解决（PyPI 一手）**：2026-10-20；“截至 Oct 28/29 最新”为观察日，不冲突。
+- **mem0ai 1.0.10 发布日期已解决（PyPI 一手）**：2026-04-01（仅 track，不入技能）。
+- **窗口内新动态**：Letta 0.34.33（npm Updated 2026-10-30T05:29:00Z，变更内容未核实）；Mem0、Graphiti、Zep、LangMem 检索未见窗口发布。
+- **深化**：门控→排序→剪枝三层；遗忘验收拆分为隐式失效（TEPA 式）与显式删除（Bemula 式，作者自报 ≤1.5%）；图记忆等预算下未胜扁平向量基线（作者自报，单流水线限定）；Mem0 两组自报成绩口径差异未核实，不拼成一条引用。
+
+### 已同步进 skill 参考
+
+- layered-memory.md：Zep 段改为 Python 4.0.1 已确认；Letta Caution 句改为 0.34.33 序列、0.34.26 发布时间、bump-only 特征与 PyPI 线分叉；TEPA 段改为 v2 已比对口径；Step 7 追加遗忘验收拆分与三层结构句（ADD-only 原句保留）。
+
+### 剩余未核实缺口（更新）
+
+1. letta-code bump 版精确 published_at；0.34.33 变更内容；PyPI `letta` 线改道原因。
+2. TEPA TeX 源码级 diff。
+3. Mem0 两组自报成绩口径差异；Memora / FAMA 精确数值（仅二手转述）；遗忘探索 39% / 15%（二手转述，预印本限定）。
+4. Mem0 / REM / EcphoryRAG 数字独立复现（维持厂商自报口径）。
+5. 已解决：Zep Python 4.0.1、Graphiti 0.31.2 发布日、mem0ai 1.0.10 发布日、TEPA v2 差异、letta-code 0.34.26 发布时间与 bump-only 流水、PyPI `letta` 分叉原因澄清。

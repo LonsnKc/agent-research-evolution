@@ -105,3 +105,15 @@
 - 剩余未核实缺口汇总：Dynamo v1.6.1 最终解释；CVE-2026-114612 官方公告与修复版；Portkey v1.15.0 日期与 1.15.2 出入成因；Railway 最终报告与 OpenCode post-mortem；RouteLLM 单条提交哈希；LiteLLM v1.106.6 / vLLM v0.32.0 官方日期；METR 三仓逐仓戳；ruvnet/metaharness 仓库页；“10,000 工具”出处；Zep Python 4.0.1；letta-code 0.34.26 确切发布时间与 0.34.22 缺位原因；TEPA v2 正文差异；Graphiti 0.31.2 确切发布日；mem0ai 1.0.10 日期；UserPromptExpansion 首发版；Mobb 34% / 27% 与 mobb.ai 原文；AAIF 落地文件；AutoGen 存档执行日期。以上均未否决任何条目，或排除在正文之外、或以二手/自报标注保留在线索中。
 - SKILL.md / SOUL.md 级提案：无新增（落点纪律：SKILL.md 本体不自动改）。
 - 发表同步：由 agent-research-evolution-publish 任务（约 10:50）承担，本任务不重复推送。
+
+
+---
+
+## 2026-10-31 轮次小结：缺口复核 + 新增覆盖（版本 0.5.0 → 0.6.0）
+
+- 跨轨结论：本轮主进展是缺口关闭与旧说法纠正的集中一轮：LiteLLM v1.106.6 日期、Zep Python 4.0.1、Graphiti 0.31.2 日期、mem0ai 1.0.10 日期、TEPA v2 差异、letta-code bump-only 流水、dotnet-1.26.0 标签身份、METR 两仓存档、ruvnet/metaharness、10,000 工具出处、AutoGen 维护提交与存档表述、Agent Framework 10-30 两线（推翻时点结论）、LangGraph 1.2.19、OpenCode #60315、MCode 数量误读来源。严格 2026-10-31 窗口内（截至上午核查时）四轨均未发现带日期的一手新发布；2026-10-30 当日发布为上一轮上午核查后发布，本轮首次捕获，不计入严格 10-31 窗口。
+- 文件变更：技能正本四篇 references 增量编辑（18 条技能增量：R1–R4、H1–H6、M1–M4、S1–S4；SKILL.md 本体未改）；整合前旧版整目录快照于 `versions/v0.5.0/`；VERSION 0.5.0 → 0.6.0；CHANGELOG 新增 v0.6.0 节；STATE.md 新增本轮覆盖节与指针推进；四轨 track 笔记各追加本轮日期小节；本轮调研产出 `research/20261031-0950/report.md + sources.md + track-*.md`；提炼与自验 `refined/20261031-0950/delta.md + verification.md`（执行者自验：通过 18 条、通过（未验证暂定）0 条、需修正 0 条、否决 0 条；独立抽查 4 条一手来源全部吻合：Dynamo 官方表、SDK tool-search 文档、规范页、OpenCode changelog #60315）。
+- 推翻的旧说法：Agent Framework“python-1.24.0 不存在 / 未发现 dotnet-1.27.0”（时点结论）；“10,000 工具无出处”（出处在 SDK 文档，口径为目录上限）；letta-code“缺位”（实为 bump-only 发布）；Zep“Python 未见 4.0.1”；TEPA“v2 正文未比对”；“METR/mp4-tasks 为默认任务仓”（实为示例值，公开仓 404）；“AutoGen 已被微软执行存档”（应改述为 README 声明）；LiteLLM“官方 changelog 未列出 v1.106.6”。
+- 剩余未核实缺口汇总：Dynamo v1.6.1 最终解释；CVE-2026-114612 官方公告；Portkey 1.15.x 出入；Railway 最终报告与 OpenCode post-mortem；RouteLLM 单条提交；vLLM 官方日期；Harbor 逐项日期；langchain-core 10-30/31 新版；UserPromptExpansion 首发版；Mobb.ai 原文；AAIF 落地文件；letta-code bump 版时间戳与 0.34.33 变更；PyPI `letta` 改道原因；TEPA TeX diff；Mem0 成绩口径差异。以上均未否决任何条目，或排除在正文之外、或以二手/自报标注保留在线索中。
+- SKILL.md / SOUL.md 级提案：无新增（落点纪律：SKILL.md 本体不自动改）。
+- 发表同步：由 agent-research-evolution-publish 任务（约 10:50）承担，本任务不重复推送。

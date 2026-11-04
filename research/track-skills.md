@@ -187,3 +187,62 @@
 4. Claude Code 2026-10-30 组版本号一手确认；技能页 10-29“7 行变动”具体内容。
 5. MCode checklists 目录实际数量（未逐项清点）。
 6. 已解决：OpenCode #60315、MCode 仓库原文直核、Claude Code 10-31 组无技能项、规范页戳复核至 2026-10-31。
+
+
+---
+
+## 2026-11-03 轮次：缺口复核——Claude 10-30 组版本号一手确认、“7 行变动”误植排除、MCode 清点、规范页戳
+
+### 已核实（一手为主）
+
+- **Claude Code 2026-10-30 组版本号已解决（官方 GitHub release 页一手 = v2.1.314）**：条目与日期组逐项对应，不再依赖镜像一致；版本链二手一致：2.1.311（10-26）、2.1.312（10-27）、2.1.314（10-30）、2.1.316（10-31）；10-28、10-29、11-01 无新版本。
+- **技能页 10-29“7 行变动”已解决（排除性结论）**：10-28/29 根本无新版本、无对应 changelog 日期组；唯一已核实的“七”是 2.1.299–2.1.301 七项 hooks 变更（2026-10-14/15），属日期、页面、主题三重误植，应予删除；技能正文从未写入该主张。
+- **MCode checklists 目录实际数量已解决（仓库目录清点一手，commit 仍为 49a3ff4…）**：全仓仅 ronny 栈 1 个 `checklists/` 目录、恰好 5 个文件；`notes/` 亦 5 个文件；修正上一轮裁定为“目录清点为 5 个”，不得写成“README 称有 5 个”。
+- **规范页戳复核至 2026-11-03（执行者亲自复核）**：全文 168 行，页脚戳仍为 2026-08-04T22:53:14.470Z，6 字段，`allowed-tools` 仍 Experimental；AAIF 三件落地文件仍未发布。
+- **Mobb.ai 数字部分推进**：22,511 / 140,963 升格为 TNS 2026-03-22 具名报道背书（仍非 mobb.ai 原件）；34% / 27% 仍仅单篇 dev.to，不得升级。
+- **窗口内**：Claude Code 11-03 组仅 2 条存量技能项（plugin-authoring 一次提示、claude.ai 同步修复），无新规则；版本号 2.1.317 仅 registry + diff 站 corroborated，官方 release 页未打开，技能中不写；OpenCode 顶栏仍 10-30、Codex 仍 0.166.0、Gemini CLI 仍 v0.66.0、Cursor / Copilot 无带日期技能项。
+- **深挖**：触发面分歧仍无收敛；Skill Crossroads 2026-09-10 审计（第三方 linter 自家报告，未独立核实）：216 技能中 69% 描述不可靠触发，触发/召回层是技能收益的第一漏斗。
+
+### 已同步进 skill 参考
+
+- skill-authoring.md：Claude 钩子段改为 10-30 组 = v2.1.314 一手确认 + 11-03 组新增句与窗口否定句；MCode 段改为目录清点 5 个文件口径；AAIF 段推进规范页戳至 2026-11-03；触发准确率小节追加 Skill Crossroads 审计证据句。
+
+### 剩余未核实缺口（更新）
+
+1. `UserPromptExpansion` 首发版本号与首发日期（ccdeck 断言 2.1.116、npm 发布 2026-04-20、文档 4 月下旬窗口一致但均非官方一手；npm 包体二分法已证实走不通）。
+2. Mobb.ai 审计数字原文（22,511 / 140,963 已有 TNS 具名报道背书，仍无 mobb.ai 原件；34% / 27% 仍仅单篇 dev.to）。
+3. AAIF 落地文件持续检索（规范页戳至 2026-11-03 仍为 2026-08-04）。
+4. Windsurf / Devin workflows 转 skills 的一手日期（迁移向导存在有二手佐证，日期无一手证据）。
+5. Claude Code 2026-11-03 组版本号的一手确认（目前为 registry + diff 站 corroborated 的 2.1.317，官方 release 页未打开）。
+6. 已解决：10-30 组版本号（官方 release 页一手）；技能页 10-29“7 行变动”（排除性解决）；MCode checklists 目录数量（逐项清点 5 个文件）。
+
+
+---
+
+## 2026-11-04 轮次：缺口复核——Claude 2.1.317 一手确认、Devin Playbooks 日期、规范页戳
+
+### 已核实（一手为主）
+
+- **Claude Code 2026-11-03 组版本号已解决（官方 GitHub release 页一手 = v2.1.317）**：条目与 CHANGELOG 的 2.1.317 节逐条对应（/schedule 连接器警告、工具发送账号邮箱前确认、onFailure: "block"、网关成本报告等）；上一轮“不写入”限定解除。release 页抓取文本本身未显示发布日期，日期仍为二手 corroborated（追踪站称 2026-11-03；npm 侧 2.1.317 发布于 2026-11-02 23:57 UTC，即北京时间 2026-11-03 07:57）。11-03 组技能项仍为两条存量项，无 SKILL.md 格式、发现机制或 allowed-tools 规则变化。
+- **Claude Code 窗口内新组 2.1.318，无技能子系统新规则**：官方 release 页全文与 CHANGELOG HEAD 首节一致；全文扫描无 SKILL.md 格式、发现、触发、allowed-tools 相关条目（最接近的仅为 mod hook 与 workflows 恢复修复）。日期为二手（追踪站标 2026-11-03；release 页抓取文本未含日期字段）。
+- **Devin Playbooks→Skills 一手日期已锁定：2026-10-24（新账号）**：官方文档页（页脚 Updated: 2026-10-30T22:01:27.263Z）“Skills vs. Playbooks”节原文：“New accounts will start with Skills and have no Playbooks, from October 24, 2026.” 迁移时每个 playbook 成为同指令的 skill，Playbooks 页只读、API 读写 skill。发现机制（一手）：启动时加载全部 skill 的 name + description，调用时读入全文并驻留当会话；`triggers: ["user"]` 可禁自动触发；`allowed-tools` 在 skill 激活期间免提示，其余工具照常提示。**不得挪用**：此日期是 Devin Playbooks 的，不是 Windsurf/Desktop workflows 的。
+- **规范页戳复核至 2026-11-04（执行者亲自复核）**：全文 168 行，页脚戳仍为 2026-08-04T22:53:14.470Z，`allowed-tools` 仍 Experimental；AAIF 三项落地文件（版本化发布、提案流程、安全指南）窗口内零一手命中，仍为提案（未穷尽 AAIF 全站检索，不等同于“已确认不存在”）。
+- **Mobb.ai 数字口径推进**：mobb.ai 原件仍未出现（站内 Vibe Shield 产品发布 2025-06-16 全文无相关数字）；基数 22,511 / 140,963 由 TNS 具名报道 + clawbot wiki 复述升格为二手双源，仍非 mobb.ai 一手；34% / 27% 仍仅单篇 dev.to，不得升级。易混淆的不同口径审计（Liu 等 42,447 采集、26.1% 含漏洞；Queen's 大学 1,527,281 英文 skill 中约 1/17 含“松绑监督”指令）不得与 Mobb 数字混写。
+- **`UserPromptExpansion` 首发版仍未决**：官方 CHANGELOG 全文检索 0 命中；二手分析称 hooks 参考在 2026 年 4 月下旬新增该事件与 PostToolBatch，changelog 从未提及；文档变更追踪称 2026-07-15 的 agent-sdk 文档页新增该事件说明——两者追踪的文档页不同，日期存在张力，须以官方 docs 仓库提交史为准，而该提交史本轮未能通过公开检索获得；ccdeck 断言 2.1.116 不采纳。技能正文“首发版未验证、不得陈述”口径不变。
+- **Windsurf / Devin workflows 转 skills 一手日期仍未决**：FAQ 仅确认 2026-06-02 更名为 Devin Desktop、经典体验仍在；Devin Local 以 rules 与 skills 取代 memories 与 workflows 的表述无日期；迁移向导存在仅二手佐证。Google Antigravity 的 workflows→skills 迁移向导（遗留 workflows 至 2026-10-19 后不再索引/执行）是另一产品，不得记为 Windsurf/Devin 的证据。
+- **窗口内其余否定性结论**：OpenCode（v2.2.5 归属日期分歧：TurboAI 称 11-03 vs gradually/Havoptic 称 10-30/31，内容无技能条目；最近技能变更仍为 v2.2.3 的 #60315 系，窗口外）、Codex（最新稳定版仍 0.166.0，2026-10-29；alpha 0.167.0-alpha.4 为 2026-11-03，二手复述，无技能项）、Gemini CLI（仍 v0.66.0，2026-10-27）、Cursor（无带日期的窗口内技能新发布）均无技能子系统新规则。Skill Crossroads 审计口径窗口内无更新（沿用 2026-09-10 版，数字为二手报道，未取回原站）。SkillsBench 快照（数据截至 2026-11-03，二手聚合）与 SkillzBench 通稿（厂商自报，实质发布日 2026-10-23 在窗口外）均非新评估协议，不写入技能。
+
+### 已同步进 skill 参考
+
+- skill-authoring.md：Claude 11-03 段改为 2.1.317 一手确认 + 2.1.318 窗口否定句；新增 Devin Playbooks→Skills 宿主示例 bullet（含不得挪用警示）；AAIF 段推进规范页戳至 2026-11-04。
+
+### 剩余未核实缺口（更新）
+
+1. `UserPromptExpansion` 首发版本号与首发日期（官方 docs 仓库提交史未获；仅知文档出现不晚于 2026-07-15 的 agent-sdk 页、hooks 参考页约 2026-04 下旬；2.1.116 不采纳）。
+2. Mobb.ai 审计数字原文（mobb.ai 站内未见；34% / 27% 仍为 dev.to 单源二手；基数已升格二手双源）。
+3. AAIF 落地文件持续检索（规范页戳至 2026-11-04 仍为 2026-08-04）。
+4. Windsurf / Devin workflows 转 skills 的一手日期（迁移向导存在有二手佐证，日期无一手证据；Devin Playbooks 的 2026-10-24 已解决，不可挪用）。
+5. OpenCode v2.2.5 的归属日期分歧（TurboAI 称 11-03 vs gradually/Havoptic 称 10-30/31）。
+6. Skill Crossroads 原站新版（窗口内未见；9-10 版口径沿用，数字为二手）。
+7. Claude Code 2.1.317 / 2.1.318 的 GitHub release 页发布日期（抓取文本未含日期字段，日期依赖追踪站 corroboration）。
+8. 已解决：Claude 11-03 组版本号一手确认；Devin Playbooks 日期与发现机制；规范页戳至 2026-11-04。

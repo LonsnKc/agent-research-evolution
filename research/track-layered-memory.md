@@ -201,3 +201,60 @@
 3. Mem0 两组自报成绩口径差异；Memora / FAMA 精确数值（仅二手转述）；遗忘探索 39% / 15%（二手转述，预印本限定）。
 4. Mem0 / REM / EcphoryRAG 数字独立复现（维持厂商自报口径）。
 5. 已解决：Zep Python 4.0.1、Graphiti 0.31.2 发布日、mem0ai 1.0.10 发布日、TEPA v2 差异、letta-code 0.34.26 发布时间与 bump-only 流水、PyPI `letta` 分叉原因澄清。
+
+
+---
+
+## 2026-11-03 轮次：缺口复核——letta bump-only 修正、0.34.39、TEPA 源码 diff、Mem0 口径、Memora 原文、遗忘三档
+
+### 已核实（一手为主）
+
+- **letta-code bump 版性质修正**：0.34.22 / 0.34.23 / 0.34.25 只有 tag、没有 GitHub Release 对象（API 两次 404、100 条列表缺席）；精确时间以 npm 为准：0.34.22 为 2026-10-23T05:36:14Z、0.34.23 为同日 06:32:27Z、0.34.25 为 2026-10-26T23:12:49Z；上一轮“真实存在的 bump-only 极简发布”修正为“有 tag、无 Release 对象的 bump-only tag”；npm 与 GitHub 时间相差约 5 分钟，不得混写。
+- **letta-code 0.34.33 变更已核实**：仅 `docs(skills)` 要求记忆提交附来源 + bump，无功能改动（`published_at` 2026-10-30T05:34:27Z）。
+- **窗口内 Letta 连发四版**：0.34.36（2026-10-31）、0.34.37 / 0.34.38 / 0.34.39（2026-11-02），当前最新 0.34.39；官方 Changelog 文档仍只列至 0.33.x。
+- **PyPI `letta` 线改道原因仍未决**：最新仍 0.34.12，差距拉大到 27 个版本；已排除改名与已公告停用，剩余推断仅为 wheel 发布流水线停滞。
+- **TEPA TeX 源码级 diff 已解决**：v1/v2 源码包实测，`main.tex` 唯一差异为 v2 在 `\maketitle` 后新增 6 行预印本声明，其余文件字节相同；HTML 结论在源码级成立。
+- **Mem0 两组自报成绩口径差异已解释**：迁移快照 91.6 / 93.4（OSS 2026-08-05、Platform 2026-10-07）vs 现行 headline 92.5 / 94.4（Temporal Reasoning 默认开、top_200、托管平台）；TR 博客无 TR 基线 86.1 / 90.4 与迁移页旧基线 71.4 / 67.8 不构成同一链条；top_50 94.8 与 top_200 94.4 不得混写；Takeaways 误标警示保留。
+- **Memora / FAMA 论文原文一手核实**（Findings of ACL 2026，pp. 26814–26841）：FAMA 公式、季档 1,171.4 次操作、纯 LLM 扣减缩小（32.6 → 17.8）vs 记忆 agent 扣减增大（18.2 → 29.5）、Monthly 排名反转；数字作者自报，未独立复现。
+- **遗忘验收第三档**：MemCut（arXiv:2610.21405，2026-10-15）：LLM 引导删除后 residual recovery 仍 39–76%，候选覆盖率是瓶颈；MemLeak（arXiv:2606.29788）：留存文本 18.3% / 图像 12.0%，47% 图像泄漏文本不可见，语义删除 12% → 2.0%；DyadMem（arXiv:2610.03020，2026-10-05）：Gold 78.7–96.3% vs Full-Pipeline 47.7% / 57.4%，写侧先于读侧失败。以上数字均为作者自报。
+- **窗口内**：仅 Letta 有带日期的一手新发布；Mem0、Graphiti、Zep、LangMem 均为检索未见。
+
+### 已同步进 skill 参考
+
+- layered-memory.md：Letta 段改为 tag-only 修正口径 + npm 时间戳 + 5 分钟时差警示；Caution 句改为当前版 0.34.39 与窗口内四版 + PyPI 线 27 版差距；TEPA 段改为 TeX 源码 diff 口径；Mem0 段与 Evaluation 节改为两组并列口径；Step 7 追加遗忘第三档、删除侧候选覆盖约束与 DyadMem 写侧瓶颈句；Reference systems 新增 Memora / FAMA 段。
+
+### 剩余未核实缺口（更新）
+
+1. PyPI `letta` 线改道原因（已排除改名与已公告停用；差距 27 个版本）。
+2. Mem0 / REM / EcphoryRAG / Memora / MemCut / MemLeak / DyadMem 全部效果数字的独立复现。
+3. 《Scaling Discovery Requires Forgetting》39% / 15%（仍为二手转述，预印本限定；本轮未复核原文）。
+4. 已解决：bump 版时间戳性质、0.34.33 变更、窗口内新版本（0.34.36–0.34.39）、TEPA 源码 diff、Mem0 口径差异、Memora 原文复核。
+
+
+---
+
+## 2026-11-04 轮次：缺口复核——Scaling Discovery 原文口径、Memora 消歧、letta 复核戳、Mem0 双口径未解
+
+### 已核实（一手为主）
+
+- **letta-code 当前版仍为 0.34.39（窗口内无新版）**：GitHub Releases 顶部仍为 0.34.39（PR #5464）；npm.io 镜像登记其更新戳为 2026-11-02T21:26:30Z（属上一轮已覆盖）；PyPI `letta` 线仍为 0.34.12（2026-10-12，5 个 wheel），与 npm 线差距仍为 27 个 patch 版本（窗口内两边均未动，差距未拉大也未缩小）；改道官方原因仍未找到（PyPI 页自述仅说明发行形态差异：捆绑 Node.js 运行时的 CLI，非 Python SDK；应用内自更新禁用）。Letta 官方文档 Changelog 页自承“文档可能延迟，以 GitHub releases 为准”，正文节选只列到 0.33.x。0.34.39 的 GitHub 精确 published_at 本轮未取到（仅 npm.io 更新戳交叉印证），不得写出。
+- **Scaling Discovery 39% / 15% 论文原文复核（arXiv:2610.20563v1，2026-10-14，预印本）**：摘要原句逐字属实——“up to 15% improvement compared to parallel agents, and up to 39% compared to a single agent”，正文另称四任务上对最强基线提升 1.9%–15%。口径收窄：两数不是同一比较基线，也不是全任务平均——39% 为 AHC014 上遗忘团队均值对单智能体的增益（均值口径；最佳单次轨迹算出仅约 +19%），15% 为四任务中对并行基线的最大增益。实验边界（原文自述）：4 任务、每配置 3 复本、单一组合（Pi agent + DeepSeek V4.1 Flash，每复本 $20 预算）；遗忘同时清空会话与候选历史，无法归因到二者之一。分任务数字来自 alphaXiv 梳理（二手转述，未独立复算）。全部数字论文自报，未独立核实。
+- **Mem0 两处官方分数不一致（新发现，一手比对）**：README 表新算法 LoCoMo 92.5 / LongMemEval 94.4，并自承“分数反映托管平台，含开源 SDK 没有的专有优化；开源用户应期待方向相似但数字不相同”；迁移指南（更新 2026-10-07）却写 91.6 / 93.4。同一厂商、同一“新算法”，两处数字相差 0.9–1.0 点，官方解释未决，引用时须二选一并注明出处，不得混用。上一轮技能已将两组并列并写入平台限定，本轮不改技能句。
+- **Redis 第三方复现报告方法论警示（窗口外材料，底稿 2026 年 5 月）**：其 LongMemEval 表格中 Mem0 一行“Reported 49.0%，Reproduced —（空）”，即 Redis 没有复现 Mem0；表格另有列值错位行（如 LangMem 行全为 95.4% 重复值），不得引用该表 LangMem 行。反例 Vertex Memory Bank 复现 42.4% vs 论文约 70%（低约 28 点）。意义在方法论层：已发表记忆数字在统一 judge 下经常不复现，七项数字更应维持“自报”标注。
+- **“Memora”一名双指（必须消歧）**：(a) 微软 Memora（谐波记忆表征，ICML 2026，arXiv:2602.03315）：LoCoMo 86.3%、LongMemEval 87.4% LLM-judge 准确率（作者自报），每对话记忆条数 344 vs Mem0 的 651；(b) 同名基准 Memora（《From Recall to Forgetting》，Findings of ACL 2026，FAMA 指标）——上一轮技能中的“Memora / FAMA”指后者，不得把微软框架数字安到基准头上。
+- **窗口内其余否定性结论**：Mem0（PyPI mem0ai 2.2.1，2026-09-25；所谓“Mem0 3.3.1”指的是 TypeScript SDK 线，不是 Python 包）、Graphiti（graphiti-core 0.31.2，2026-10-20）、Zep（最新产品博文 2026-10-29，v4 为 2026-10-14，均窗口外）、LangMem（0.0.30，2025-10-27）均无窗口内新发布。Zep Community Edition 停更说仅二手对照，无官方公告原文，列为未决，不得写入技能正文。REM / EcphoryRAG / MemCut / MemLeak / DyadMem / TEPA 数字本窗口内均无第三方独立复现或官方更新，全部维持作者自报标注。
+- **深挖素材（论文自报，不整段入技能）**：遗忘策略三分法——周期性全量遗忘（Scaling Discovery）、冲突驱动撤销（TEPA：同 key 新证据冲突时被取代先例移入撤销存档，可审计、退出常规检索）、单次暴露后逐出（REM：高成本实现记录只给一次，文档本体留存全程，属“检索时遗忘”）；检索排序互补证据——ARM（高频项晋升免于衰减）、D-Mem 双进程门控（向量快取 + 全量审议兜底，GPT-4o-mini 上 LoCoMo F1 53.5 vs 静态基线 51.2）、Memora 策略引导检索、EcphoryRAG 线索驱动联想检索；Mem0 单遍 ADD-only 与 TEPA 式撤销、MemCut 式删除需求直接冲突——同一系统内“积累”与“遗忘”目标未调和，此为技能中应保留的张力注记，非定论。
+
+### 已同步进 skill 参考
+
+- layered-memory.md：Memora / FAMA 段末追加消歧句；新增 Scaling Discovery 周期性遗忘 bullet（含口径收窄与实验边界）；Letta Caution 段复核戳推进至 2026-11-04（仍 0.34.39、PyPI 差距仍 27 版）。
+
+### 剩余未核实缺口（更新）
+
+1. PyPI `letta` 线改道原因（官方说明仍未见；差距本窗口未变，仍为 27 版）。
+2. Mem0 新算法分数双口径（README 92.5/94.4 vs 迁移指南 91.6/93.4）的官方解释；OSS 评估框架复现平台数的实测结果。
+3. Zep Community Edition 是否停止维护的官方口径（一手公告缺失）。
+4. 七项效果数字（Mem0/REM/EcphoryRAG/Memora/MemCut/MemLeak/DyadMem）与 TEPA、Scaling Discovery 数字的第三方独立复现——本窗口内零新增。
+5. letta-code 0.34.39 的 GitHub Release 精确 published_at（仅 npm.io 更新戳交叉印证）。
+6. LoCoMo 参考答案错误率（Penfield Labs 称 6.4%）仅见 Medium 二手转述，未直读审计原文。
+7. 已解决：Scaling Discovery 39% / 15% 原文口径；“Memora”双指消歧；letta-code 2026-11-04 复核戳。

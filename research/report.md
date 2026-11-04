@@ -117,3 +117,26 @@
 - 剩余未核实缺口汇总：Dynamo v1.6.1 最终解释；CVE-2026-114612 官方公告；Portkey 1.15.x 出入；Railway 最终报告与 OpenCode post-mortem；RouteLLM 单条提交；vLLM 官方日期；Harbor 逐项日期；langchain-core 10-30/31 新版；UserPromptExpansion 首发版；Mobb.ai 原文；AAIF 落地文件；letta-code bump 版时间戳与 0.34.33 变更；PyPI `letta` 改道原因；TEPA TeX diff；Mem0 成绩口径差异。以上均未否决任何条目，或排除在正文之外、或以二手/自报标注保留在线索中。
 - SKILL.md / SOUL.md 级提案：无新增（落点纪律：SKILL.md 本体不自动改）。
 - 发表同步：由 agent-research-evolution-publish 任务（约 10:50）承担，本任务不重复推送。
+
+
+---
+
+## 2026-11-03 轮次小结：缺口复核 + 新增覆盖（版本 0.6.0 → 0.7.0）
+
+- 跨轨结论：本轮距上一轮间隔三日，窗口为 2026-10-31 之后至 2026-11-03 核查时止；窗口内带日期的一手正式发布共五项：langchain-core 1.7.4（11-02）与 letta-code 0.34.36（10-31）、0.34.37 / 0.34.38 / 0.34.39（11-02）；另有两项窗口内公告/组更新不带版本号归属：LiteLLM 周二发布 + 1.108 LTS 试点公告、Claude Code 11-03 组（无技能规则变更）。本轮主进展是缺口关闭与旧说法纠正的集中一轮：Dynamo v1.6.1 存在性（修正上一轮撤回口径）、CVE 修复版本线、Portkey 最新版定版、dotnet-1.26.0 一手日期、letta-code bump-only 说法修正为“有 tag、无 Release 对象”、TEPA 源码级 diff、Mem0 口径差异解释、Memora 原文复核、Claude 10-30 组版本号一手确认、“7 行变动”误植排除、MCode 数量清点。
+- 文件变更：技能正本四篇 references 增量编辑（25 条技能增量：R1–R7、H1–H6、M1–M7、S1–S5；另 8 条仅 track 笔记处理：T1–T8；SKILL.md 本体未改）；整合前旧版整目录快照于 `versions/v0.6.0/`；VERSION 0.6.0 → 0.7.0；CHANGELOG 新增 v0.7.0 节；STATE.md 新增本轮覆盖节与指针推进；四轨 track 笔记各追加本轮日期小节；本轮调研产出 `research/20261103-0950/report.md + sources.md + track-*.md`；提炼与自验 `refined/20261103-0950/delta.md + verification.md`（执行者自验：通过 25 条、通过（未验证暂定）0 条、需修正 0 条、否决 0 条；独立抽查 4 条一手来源全部吻合：Dynamo 官方表、LiteLLM LTS 博客、规范页、PyPI langchain-core 1.7.4）。
+- 推翻的旧说法：Dynamo“撤回 v1.6.1 说法”（修正为仅撤回否定存在）；letta-code“bump-only 极简发布”（修正为有 tag、无 Release 对象）；Claude 10-30 组“仅镜像一致”（官方 release 页一手确认 v2.1.314）；MCode“5 数量不得引用”（修正为目录清点事实成立）；Mem0“无 TR 93.4 / 90.4、有 TR 94.4 / 94.8”口径（修正为迁移快照 vs 现行 headline 并列）；TEPA“未做源码 diff”（已完成，仅 6 行差异）；dotnet-1.26.0“日期仍二手”（NuGet 一手确认）；ruvnet/metaharness“仓库页未直接确认”（2026-10-31 已确认）。
+- 剩余未核实缺口汇总：CVE 独立厂商公告；Portkey v1.15.0 日期与出入成因；Railway 最终报告；OpenCode post-mortem；RouteLLM 单条提交；vLLM 官方页内日期戳；Harbor 0.21.0 及更早日期；metaharness 逐项日期；langchain-core 1.7.4 变更内容与 GitHub 侧日期；langchain 主包窗口核查；AutoGen 横幅引入提交；AgentTriggered Learn 文档节；OTel GenAI 官方变动；PyPI `letta` 改道原因；Memora / MemCut / MemLeak / DyadMem 数字独立复现；Scaling Discovery 39% / 15% 原文；UserPromptExpansion 首发版；Mobb.ai 原件与 34% / 27%；AAIF 落地文件；Windsurf 转 skills 日期；Claude 11-03 组版本号一手确认；LiteLLM LTS 试点细则；Portkey CVE-2026-110719 厂商修复版。以上均未否决任何条目，或排除在正文之外、或以二手/自报标注保留在线索中。
+- SKILL.md / SOUL.md 级提案：无新增（落点纪律：SKILL.md 本体不自动改）。
+- 发表同步：由 agent-research-evolution-publish 任务（约 10:50）承担，本任务不重复推送。
+
+---
+
+## 2026-11-04 轮次小结（缺口复核 + 新增覆盖轮，版本 0.7.0 → 0.8.0）
+
+- 跨轨结论：严格窗口内（2026-11-03 之后至 2026-11-04 上午核查时）四轨均未发现带日期的一手新稳定发布；唯一窗口内新组为 Claude Code 2.1.318（无技能子系统新规则）。本轮价值在缺口复核与口径修正：Portkey 出入成因定位、Claude 11-03 组版本号一手确认、Devin Playbooks 日期锁定、Scaling Discovery 口径收窄、“Memora”消歧四项为实质进展；其余多为复核戳推进与否定性结论。
+- 文件变更：技能正本四篇 references 增量编辑（11 条技能增量：R1–R3、H1–H2、M1–M3、S1–S3；SKILL.md 本体未改）；整合前旧版整目录快照于 `versions/v0.7.0/`；VERSION 0.7.0 → 0.8.0；CHANGELOG 新增 v0.8.0 节；STATE.md 新增本轮覆盖节与指针推进；四轨 track 笔记各追加本轮日期小节；本轮调研产出 `research/20261104-1000/report.md + sources.md`；提炼与自验 `refined/20261104-1000/delta.md + verification.md`（执行者自验：通过 11 条、通过（未验证暂定）0 条、需修正 0 条、否决 0 条；独立抽查 4 条一手来源全部吻合：Claude v2.1.317 release 页、Devin 技能文档页、规范页、Scaling Discovery 摘要原文）。
+- 推翻的旧说法：Portkey“通道漂移假说”（修正为列表页标题行丢失所致）；Claude 11-03 组“版本号不写入”（官方 release 页一手确认 v2.1.317，限定解除）；Agent Framework .NET“1.26.0 为最新”二手说法（与 NuGet 一手表 1.27.0 冲突，属过期口径，拒绝采纳）。
+- 剩余未核实缺口汇总：CVE 独立厂商公告与 1.106.6 含修复确认；Portkey v1.15.0 日期与 CVE-2026-110719 修复版；Railway 最终报告；OpenCode post-mortem；RouteLLM 单条提交（须主题/PR 号）；vLLM 页内日期戳；LiteLLM 1.108 稳定版与 LTS“新端点”清单；Harbor 0.21.0 日期；metaharness 0.4.19 日期；langchain-core 1.7.4 标签页一手日期与完整变更；AutoGen 横幅引入提交与维护句引入日期；AgentTriggered 参数语义；#8708 设计文档；OTel GenAI commit 级核查；PyPI `letta` 改道原因；Mem0 双口径官方解释；Zep CE 停更官方口径；七项效果数字与 Scaling Discovery 数字的独立复现；UserPromptExpansion 首发版；mobb.ai 原件与 34% / 27%；AAIF 落地文件；Windsurf 带日期一手证据；OpenCode v2.2.5 归属日期分歧；Claude 2.1.317 / 2.1.318 页内日期字段。以上均未否决任何条目，或排除在正文之外、或以二手/自报标注保留在线索中。
+- SKILL.md / SOUL.md 级提案：无新增（落点纪律：SKILL.md 本体不自动改）。
+- 发表同步：由 agent-research-evolution-publish 任务（约 10:50）承担，本任务不重复推送。

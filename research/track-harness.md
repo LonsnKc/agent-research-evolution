@@ -190,3 +190,62 @@
 3. Harbor releases 完整逐项日期（列表页方法局限持续）。
 4. langchain-core 10-30/31 新版；Agents SDK JS 线；ruvnet/metaharness 逐项日期。
 5. 已解决：dotnet-1.26.0 标签页身份、METR 两仓、ruvnet/metaharness、“10,000 工具”出处、AutoGen 2025-10-02 提交、python-1.24.0 / dotnet-1.27.0、LangGraph 1.2.19。
+
+
+---
+
+## 2026-11-03 轮次：缺口复核——dotnet-1.26.0 一手日期、langchain-core 1.7.4、Harbor PyPI 日期、harness 文档分层
+
+### 已核实（一手为主）
+
+- **dotnet-1.26.0 的 2026-10-23 日期已解决（改道 NuGet 一手日期表）**：`Microsoft.Agents.AI` 版本表逐行列出 1.27.0 — 10/30/2026、1.26.0 — 10/23/2026；GitHub 标签页旧式格式无日期字段的局限复现并说明原因；deployedbyai 降为印证。
+- **langchain-core 1.7.4（2026-11-02，PyPI 一手，执行者亲自复核）**：sdist 与 wheel 上传均标 Nov 2, 2026；取代 1.7.3；变更内容未打开；窗口内唯一跨轨正式发布之一。
+- **OpenAI Agents SDK 两线复核戳推进**：Python 首项仍 0.24.0（2026-10-15）；JS 首项仍 0.21.0 系（日期未渲染，二手日期 2026-10-20 在窗口之前）。
+- **Harbor 正式版仍 0.25.0（2026-10-25）+ 最新四项 PyPI 日期**：0.24.0（10-05）、0.23.0（09-12）、0.22.0（08-22）；0.21.0 页被拦截未核实；开发版 0.25.1.dev202610310503（10-31）不计正式版。
+- **Agent Framework harness 文档状态分层**：UnloadSkills 有 Learn 官方文档原文；AgentTriggered 仅 1.24.0 changelog 一句话（Learn Compaction 页 2026-10-29 快照全文零命中）；#8708 仅 changelog 一句话，无设计文档语义。
+- **AutoGen 现行存档横幅逐字句一手出处（raw README）**；引入提交收窄为 2026-03-26 或 2026-10-16 组（标题/哈希未渲染，仍未决）；2025-10 二手维护句在 #7067 diff 与当前 README 中均无此句。
+- **ruvnet/metaharness 仓库页上一轮已确认**；本轮 releases 首项仍 0.4.19（日期未渲染），npm 页 403，逐项日期仍未决。
+- **窗口内**：唯一带日期的一手正式发布为 langchain-core 1.7.4；LangGraph 主包仍 1.2.19（搜索片段级）；Agent Framework 仍 10-30 两线；METR 检索未见窗口内发布；langchain 主包未单独核对。
+
+### 已同步进 skill 参考
+
+- agent-harness.md：LangGraph 段改为 1.7.4（并注 langchain 主包未核对）；Agent Framework 段改为 dotnet-1.26.0 NuGet 一手日期 + harness 文档状态分层句；Harbor 行改为最新四项 PyPI 日期与缺口缩小；Agents SDK 行改为两线 2026-11-03 复核戳；MetaHarness 行改为仓库页已确认 + 逐项日期未决；AutoGen 段追加横幅逐字句一手出处与引入提交收窄句。
+
+### 剩余未核实缺口（更新）
+
+1. AutoGen 存档横幅引入提交（2026-03-26 或 2026-10-16 组）；二手维护句逐字出处。
+2. Harbor 0.21.0 及更早的 PyPI 上传日期。
+3. ruvnet/metaharness 逐项日期（首项 0.4.19 日期未渲染；npm 页 403）。
+4. langchain-core 1.7.4 的 GitHub 标签页日期与变更内容；langchain 主包窗口核查。
+5. AgentTriggeredCompactionStrategy 的 Learn 文档节；#8708 设计文档/参数语义。
+6. OTel GenAI 官方 spec 本轮变动（仅二手重申）。
+7. 已解决：dotnet-1.26.0 一手日期；AutoGen 现行横幅逐字句；Harbor 最新四项日期；langchain-core 1.7.4；Agents SDK 两线无新版；harness 文档状态分层。
+
+
+---
+
+## 2026-11-04 轮次：缺口复核——Harbor 防混淆、Agents SDK 复核戳、langchain-core 变更仍二手
+
+### 已核实（一手为主）
+
+- **Harbor 框架版最新稳定版仍为 0.25.0（2026-10-25，PyPI 一手，2026-11-04 项目页抓取）**；开发版 0.25.1.dev202610310503（2026-10-31）不计正式版。本轮补得早期版本 PyPI 上传日期：0.1.14（2025-11-12）、0.1.32（2025-12-30）、0.1.45（2026-02-27）、0.2.0a3（2026-03-19）、0.3.0a1（2026-03-26）、0.7.0（2026-05-15）、0.15.0（2026-06-19）、0.16.1（2026-06-28）、0.20.1.dev202608070026（2026-08-07）。**防混淆**：PyPI `harborapi`（容器镜像仓库客户端）与评估框架 `harbor` 是两个包，harborapi 0.21.0 为 2023-06-08，与框架版 0.21.0 无关；框架版 0.21.0 的 PyPI 上传日期本轮检索仍被同名包淹没而未取到（0.22.0 为 2026-08-22、0.23.0 为 2026-09-12、0.24.0 为 2026-10-05 沿用上一轮一手结论）。
+- **Agents SDK 两线复核戳推进至 2026-11-04（窗口内无新版）**：Python 仍 0.24.0（2026-10-15，PyPI + GitHub release 页一手）；JS 仍 @openai/agents 0.21.0（2026-10-20，二手日期），两线版本号本就不同，不得合并。
+- **langchain-core 1.7.4 变更内容仍仅二手转述**：kenashe.ai 文章（2026-11-02）称 GitHub releases 内容为“避免在 Anthropic translator 中修改消息内容”，并称与 langchain 1.4.8 同批警告 Python 3.10 将在 core 1.8.0 / langchain 1.5.0 中 dropped；pepy.tech 聚合称 1.7.4 发布 2026-11-02。GitHub 标签页本轮未直读成功，标签页日期与完整变更文本仍未决，不写入技能。langchain 主包窗口内无新稳定版，最新仍为 1.4.8（2026-11-02，窗口之前，二手）。
+- **AutoGen 维护句引入日期二手冲突（新增张力，仍未决）**：维护句逐字文本经镜像与第三方引用双重印证；但 intelligenttools 称 README 于 2025-10-02 获得维护横幅，swarms 称横幅在 2026-04，两说冲突；存档横幅引入提交（2026-03-26 / 2026-10-16 组）仍未落定，不得任选。技能口径不变。
+- **Agent Framework .NET 口径**：本轮一家二手源称 .NET 为 1.26.0，与上一轮 NuGet 一手日期表（1.27.0 — 10/30/2026）冲突，属过期口径，拒绝采纳；技能仍以 1.27.0 为准。AgentTriggered / UnloadSkills 参数语义与 #8708 设计文档仍未决（本轮未获 Learn 压紧页新快照证据，不刷新上一轮 2026-10-29 快照戳）。
+- **OTel GenAI spec 页直读窗口内无可确认变动**（Development 状态，含 fetch_response 等节）；commit 级核查未做，不得写成穷尽证明。Harbor / METR trace 格式窗口内变动亦仅为“未发现证据”的否定性结论。
+- **ruvnet/metaharness**：releases 首项 0.4.19 日期仍未决；npm 页本轮再试仍 403（不得写成“包不存在”）；厂商通稿自报成绩（OpenEnv Arena 第 2、平均 22.5%、9/40）未独立核实，不引用。
+
+### 已同步进 skill 参考
+
+- agent-harness.md：Harbor 段追加 harborapi 防混淆句与 2026-11-04 复核戳；Agents SDK 段复核戳推进至 2026-11-04。
+
+### 剩余未核实缺口（更新）
+
+1. AutoGen 存档横幅引入提交；2025-10 维护句引入日期（二手冲突：2025-10-02 vs 2026-04）。
+2. Harbor 0.21.0 PyPI 上传日期（0.22–0.24 已核实）。
+3. ruvnet/metaharness 0.4.19 日期；npm 403 原因。
+4. langchain-core 1.7.4 GitHub 标签页一手日期与完整变更文本；langchain 主包窗口核查已做（无新版）。
+5. AgentTriggered / UnloadSkills 参数语义；#8708 设计文档。
+6. OTel GenAI commit 级窗口核查。
+7. 已解决：Harbor / harborapi 区分；Agents SDK 两线 2026-11-04 复核戳。

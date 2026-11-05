@@ -140,3 +140,14 @@
 - 剩余未核实缺口汇总：CVE 独立厂商公告与 1.106.6 含修复确认；Portkey v1.15.0 日期与 CVE-2026-110719 修复版；Railway 最终报告；OpenCode post-mortem；RouteLLM 单条提交（须主题/PR 号）；vLLM 页内日期戳；LiteLLM 1.108 稳定版与 LTS“新端点”清单；Harbor 0.21.0 日期；metaharness 0.4.19 日期；langchain-core 1.7.4 标签页一手日期与完整变更；AutoGen 横幅引入提交与维护句引入日期；AgentTriggered 参数语义；#8708 设计文档；OTel GenAI commit 级核查；PyPI `letta` 改道原因；Mem0 双口径官方解释；Zep CE 停更官方口径；七项效果数字与 Scaling Discovery 数字的独立复现；UserPromptExpansion 首发版；mobb.ai 原件与 34% / 27%；AAIF 落地文件；Windsurf 带日期一手证据；OpenCode v2.2.5 归属日期分歧；Claude 2.1.317 / 2.1.318 页内日期字段。以上均未否决任何条目，或排除在正文之外、或以二手/自报标注保留在线索中。
 - SKILL.md / SOUL.md 级提案：无新增（落点纪律：SKILL.md 本体不自动改）。
 - 发表同步：由 agent-research-evolution-publish 任务（约 10:50）承担，本任务不重复推送。
+
+---
+
+## 2026-11-05 轮次小结（缺口复核 + 新增覆盖轮，版本 0.8.0 → 0.9.0）
+
+- 跨轨结论：本轮关闭的缺口集中在版本归属与日期口径——GHSA 日期分歧、RouteLLM 单条提交、Portkey v1.15.0 日期、Zep CE 停更、LoCoMo 审计直读、PyPI letta 口径与差距刷新、OpenCode v2.2.5 归属日期、AutoGen 维护句日期裁定；窗口内唯一已确认的新稳定发布是 LiteLLM v1.108.0 与 v1.106.7（均 2026-11-04），其余三轨窗口内均无带日期的一手新稳定发布（Claude Code 2.1.318 与 Gemini CLI v0.67.0 / v0.68.0-preview.0 落在窗口内但均无技能子系统新规则）。深挖层的新共识：路由侧，硬件校准、预算闭环硬约束与 Pool 维是定量模型的三条补强；harness 侧，ATIF 必须钉版本号、OTel GenAI 只是观测趋同层而非对账标准；记忆侧，检索必须写清信号/状态/时间三维、冲突默认撤销留档、基准分数必须附配方；技能侧，同一 SKILL.md 可移植的是文件格式、不是触发语义，触发率与评估完备性须同报。
+- 文件变更：技能正本四篇 references 增量编辑（21 条技能增量：R1–R7、H1–H4、M1–M6、S1–S4；SKILL.md 本体未改）；整合前旧版整目录快照于 `versions/v0.8.0/`；VERSION 0.8.0 → 0.9.0；CHANGELOG 新增 v0.9.0 节；STATE.md 新增本轮覆盖节与指针推进；四轨 track 笔记各追加本轮日期小节；本轮调研产出 `research/20261105-0950/report.md + sources.md`；提炼与自验 `refined/20261105-0950/delta.md + verification.md`（执行者自验：通过 21 条、通过（未验证暂定）0 条、需修正 0 条、否决 0 条；独立抽查 5 条一手来源全部吻合：Portkey v1.15.0 Releases API、LiteLLM v1.108.0 release notes、规范页、RouteLLM Commit API、PyPI letta 页）。
+- 推翻的旧说法：Portkey v1.15.0“仅知 2026-01、早于 01-12”（被一手 API 日期推翻）；RouteLLM“单条提交日期/哈希未示于页面”（被 Commit API 一手确认）；PyPI letta“分叉的 Python 服务器线 / wheel 发布流水线停滞推断”（被 PyPI 当前文案修正为同一 CLI 的第二种安装通道）；AutoGen“2026-04 维护横幅说”（被二手多源一致 + #7067 一手提交驳回）；OpenCode v2.2.5“TurboAI 11-03 归属日”（判为该页刊出日，非 tag 日）；Gemini CLI“最新稳定版仍 v0.66.0”（时点结论，被 v0.67.0 取代）；LiteLLM“首个周二上午未见 1.108 稳定版”（时点结论，11-04 已发布）。
+- 剩余未核实缺口汇总：CVE 独立厂商公告与 1.106.6 含修复确认；Portkey CVE-2026-110719 修复版；Railway 最终报告；OpenCode post-mortem；vLLM v0.32.0 页内日期戳；LiteLLM LTS“新端点”清单；vLLM v0.33.0 稳定版状态；Harbor 0.21.0 日期；metaharness 0.4.19 归属与日期；langchain-core 1.7.4 标签页一手直读；AutoGen 存档引入提交；MAF #8708 与两参数语义；OTel GenAI commit 级一手核查；letta-code 0.34.39 GitHub published_at；Mem0 双口径官方解释；八项数字独立复现；UserPromptExpansion 首发版；mobb.ai 原件与 34% / 27%；AAIF 落地文件；Windsurf 带日期一手证据；Claude 2.1.317 / 2.1.318 published_at；SkillsBench 数字对齐；SkillzBench 方法页；Cursor 技能改进每条日期。以上均未否决任何条目，或排除在正文之外、或以二手/自报标注保留在线索中。
+- SKILL.md / SOUL.md 级提案：无新增（落点纪律：SKILL.md 本体不自动改）。
+- 发表同步：由 agent-research-evolution-publish 任务（约 10:50）承担，本任务不重复推送。

@@ -258,3 +258,30 @@
 5. letta-code 0.34.39 的 GitHub Release 精确 published_at（仅 npm.io 更新戳交叉印证）。
 6. LoCoMo 参考答案错误率（Penfield Labs 称 6.4%）仅见 Medium 二手转述，未直读审计原文。
 7. 已解决：Scaling Discovery 39% / 15% 原文口径；“Memora”双指消歧；letta-code 2026-11-04 复核戳。
+
+---
+
+## 2026-11-05 轮次：缺口复核——Zep CE 停更确认、LoCoMo 审计直读、PyPI letta 口径修正与差距刷新
+
+### 已核实（一手为主）
+
+- **Zep Community Edition 已确认停止维护（一手官方公告，缺口关闭）**：官方博客（2025-04-02 发布，2026-06-03 更新）原话停止维护与发布、仓库保留 Apache 2.0 但不再更新或支持，开源重心全部转向 Graphiti；官方 FAQ（更新 2026-10-13T21:27:46Z，窗口之前）重复 deprecated 且不再支持。窗口内无变化。
+- **LoCoMo 参考答案错误率审计原文已直读（缺口关闭，直读层面）**：Penfield Labs dev.to 原文（2026-04-04）确认：99/1540 题错误（6.4%），理论满分约 93.6%；judge 接受 62.81% 故意错误答案；类别含答案 key 幻觉事实、错误时间推理、说话人归属错误；LoCoMo-Plus 继承全部 1,540 原题（含 99 错）；LongMemEval-S 每题约 115K token，更像上下文窗测试而非记忆测试。利益冲突提示：Penfield Labs 自身是记忆项目竞争方，属有立场的审计方；二手长评称已交叉核对仓库 dial481/locomo-audit。只写“审计原文自述、仓库公开可查”，不写“经独立第三方复现证实”。
+- **PyPI letta 线口径修正并刷新差距数字（执行者亲自直读 PyPI 页）**：PyPI 当前文案（一手）说明 `letta` 包现为 Letta Code CLI 的 pip 分发（捆绑 Node.js 运行时的 `letta` 命令；应用内自更新已禁用；“This distribution is the Letta Code CLI, not a Python SDK or API server. For Python applications calling the Letta API, use `letta-client`”）。“分叉的 Python 服务器线”框架是错的：它是同一 CLI 的第二种安装通道。差距数字已刷新：PyPI 页 release files 仍为 0.34.12（2026-10-12，5 个 wheel），与 npm 0.34.39 的差距仍为 27 个版本（与 2026-11-04 戳一致，未拉大也未缩小）。子代理直读被 Client Challenge 拦截的说法不影响本结论（执行者直读成功）。
+- **npm 最新版仍为 0.34.39**（npm.io 更新戳 2026-11-02T21:26:30Z，窗口之前）；0.34.39 的 GitHub Release 精确 published_at 本轮仍未能直读（npm 时间戳不得替代）。
+- **Mem0 双口径官方解释仍未找到一句话声明**：并存文档可用配置解释（头条 92.5/94.4 为托管平台结果；迁移指南 91.6/93.4 为生产代表性模型栈基准；仓库 top200 计得 LoCoMo 91.6%（1410/1540）、LongMemEval 93.4%（467/500），top50 为 82.7%/90.4%）。Mem0《How to Read Memory Benchmarks》一手承认同一系统不同配置可报 74% 也可报 92.5%。OSS 管线 LongMemEval（厂商自报，仅抽取模型不同）：GPT-5 抽取 91.0%、GPT-OSS-120B 89.8%、Llama 4 Maverick 88.6%、Gemma 4 31B 88.6%——三组数字配置均不同，不可排成复现结论。第三方：TAM 重评称旧 judge 计 88.46%、Mem0 自家 judge 计 94.32%（二手）；Atlaso 读者匹配实验称默认 OSS 管线在其条件下仅 44.2%（自带方法局限声明，二手）。
+- **七项效果数字第三方独立复现：窗口内新增为零**：SurrealDB 重算 BEAM 1M 头条均值 64.1%→严格准确率仅 40.1%（top200），2026-10-14（窗口外，二手）；REM / EcphoryRAG / Memora / MemCut / MemLeak（须区分同名两篇：多模态版 arXiv:2606.29788 与多租户版 arXiv:2610.04195）/ DyadMem / TEPA / Scaling Discovery 均无窗口内新的独立复现。Tether（arXiv:2610.25123，论文自报）：写时记录 verdict 依赖精确版本，读时支撑失效即撤回；Fallout 模拟上游失效对象发布 62% vs Tether 0.3%（关系与 verdict 同述时），检查量少 37%；分会话到达时不安全率 9.4–22.1%。
+- **窗口内新鲜动态：五家均无带日期的一手新稳定发布**：Mem0（mem0ai 2.2.1，2026-09-25；mem0-mcp 归档公告见于 2026-11-03 快照，属 MCP 旧仓库停更、窗口之前）；Letta（npm 0.34.39，窗口之前）；Graphiti（本轮二手聚合称 v0.31.0，2026-10-14，不得回退技能正文已一手确认的 v0.31.2，2026-10-20；未见 v0.32）；Zep（CE 已停更；Cloud 无公开版号）；LangMem（未见专属窗口内发布；langchain 1.4.8 属父框架）。
+- **深挖素材（论文自报，不整段入技能）**：检索三维（信号 + 状态 + 时间）；四种遗忘对比（周期性遗忘仅搜索型任务；冲突驱动撤销默认撤销留档；检索时遗忘 Mem0 Decay / Tether；单次暴露后逐出 REM 属经验复用治理）；TTL 按类型分治；基准分数必须附配方（作答模型、评分模型、评分提示宽松度、检索深度、计入类别）。
+
+### 已同步进 skill 参考
+
+- layered-memory.md：Zep 段追加 CE 停更一手确认句；Evaluation 节追加 Mem0 配方警示（74% / 92.5% 并存说、OSS 抽取 spread）与 LoCoMo 审计警示；Letta 段改为 CLI 分发通道口径 + 差距刷新至 2026-11-05（仍 27 版）；Step 7 追加检索三维与 Tether 依赖撤回；Letta 复核戳推进至 2026-11-05。
+
+### 剩余未核实缺口（更新）
+
+1. letta-code 0.34.39 的 GitHub Release 精确 published_at（仅 npm 更新戳交叉印证）。
+2. Mem0 新算法分数双口径（README 92.5/94.4 vs 迁移指南 91.6/93.4）的一句话官方解释；OSS 评估框架复现平台数的实测结果。
+3. 七项效果数字（Mem0/REM/EcphoryRAG/Memora/MemCut/MemLeak/DyadMem）与 TEPA、Scaling Discovery、Tether 数字的第三方独立复现——本窗口内零新增。
+4. Graphiti v0.31.0 之后、LangMem、Mem0 核心窗口内确无发布（基于公开搜索未见，非发布方正面证明）。
+5. 已解决：Zep CE 停更官方口径；LoCoMo 审计原文直读；PyPI letta 口径与差距刷新。

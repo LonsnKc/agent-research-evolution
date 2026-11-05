@@ -249,3 +249,32 @@
 5. AgentTriggered / UnloadSkills 参数语义；#8708 设计文档。
 6. OTel GenAI commit 级窗口核查。
 7. 已解决：Harbor / harborapi 区分；Agents SDK 两线 2026-11-04 复核戳。
+
+---
+
+## 2026-11-05 轮次：缺口复核——AutoGen 维护句裁定、ATIF 版本漂移、OTel 缓存口径分歧
+
+### 已核实（一手为主）
+
+- **AutoGen 维护句日期裁定推进**：2025-10-02 维护横幅说获得二手多源一致支撑（intelligenttools、atlan，出处指向 Discussion #7066；与 #7067 2025-10-02 提交一手记录一致）；2026-04 说法应弃（横幅后 main 仅 5 提交：2025-10-04 两次、2026-03/04 三次）。存档从维护升级为 archived 的确切日期仍未决；本轮公开检索未找到 2026-03-26 / 2026-10-16 组对应的存档提交，不得把二者写成存档引入提交。当前 README 一手抓取已为存档态，但页面不带引入日期。
+- **Harbor 框架版 0.21.0 上传日仍未决，范围收窄**：存在性二手证据（managed-deepagents PyPI 页钉死 harbor[langsmith]==0.21.0）；时间 bracket：0.17.0（2026-07-03）→0.24.0（2026-10-05），0.22.0 为 2026-08-22、0.23.0 为 2026-09-12，故 0.21.0 落在 2026-07 至 08 之间（约 8 月），仅为 bracket 推断。harborapi 0.21.0 的 2023-06-08 是另一包，绝不能混用。
+- **langchain-core 1.7.4 日期与变更**：发布日 2026-11-02（窗口之前）；核心变更据称引自 GitHub release：唯一值得注意的修复是“avoid mutating message content in the Anthropic translator”（二手转述，标签页一手直读仍未决）；同批 langchain 1.4.8 含 core 兼容层 bump（#41640）等，并重申 Python 3.10 将在 langchain 1.5.0 / langchain-core 1.8.0 移除。
+- **Inspect 0.3.287（2026-10-31，官方 changelog 一手，窗口之前）**：react() 会话可在 turn 边界持有/重写、compaction handler 获 reset()（#6201）；0.3.286（2026-10-28）含 GPT-6.1 Terra 支持等。
+- **OTel GenAI commit 级核查**：窗口内无新标签；最新可钉 commit 仍为 2026-10-06（二手钉点 4f85037）；专用仓创建 2026-05-05，截至 2026-10-12 仍零标签、零发布；约定本身标注 Development。下轮以该仓提交历史一手复核。
+- **ATIF 版本漂移（深挖，须钉版本号）**：DeepWiki 快照为 ATIF-v1.6（schema_version、session_id、steps[]、final_metrics；tool_definitions 自 v1.5 加入）；atif-make 与 NVIDIA NAT 文档均已出现 ATIF v1.7（子 agent 轨迹引用、分文件 trajectory.<agent-id>.json；atif-make 对未知新 minor 字段直接丢弃而非拒绝）。Inspect .eval 日志、METR MALT 转录（树形节点＋branch_id）经 atif-make 桥接至 ATIF v1.7——评估日志格式与轨迹交换格式是两层，MALT 树形转 ATIF 需拍平。
+- **OTel GenAI 缓存口径分歧（深挖，关键反证）**：趋同事件（2026-10-13 至 15，窗口前）：Claude Code 2.1.300 加 GenAI span 属性并拆分 cache_creation_5m/1h_tokens；Codex 0.163.0 支持自定义 OTLP metrics exporter；Gemini CLI v0.65.0-preview.0 加 OTLP 自定义头；Claude Platform 上线 OTel 导出 beta（二手）。但 Claude Code 的 input_tokens 排除缓存读/写，而 GenAI 约定要求计入——同一字段名、不同语义；官方属性表截至 2026-10-23 尚未跟上 2.1.300 新增字段。结论：OTel GenAI 是“可映射的观测趋同层”，不是可直接对账的计费/评估标准。
+- **窗口内新鲜动态：六线均无带日期的一手新稳定发布**：LangChain/LangGraph（仍 1.2.19；langgraph-sdk 0.4.12 为 2026-11-03，窗口之前）；Agent Framework（Python 仍 1.24.0、.NET 仍 1.27.0；本轮一家二手源称 .NET 为 1.26.0，与上一轮 NuGet 一手表冲突，属过期口径，拒绝采纳）；OpenAI Agents SDK 两线（仍 0.24.0；openai-python 3.42.0 是平台 SDK，不是 Agents SDK）；Harbor（仍 0.25.0；仅开发版 0.25.1.dev20261031，窗口前）；METR/Inspect（Inspect 仍 0.3.287，窗口前）。
+
+### 已同步进 skill 参考
+
+- agent-harness.md：AutoGen 段追加维护句日期裁定与 .NET 口径拒绝采纳句；Trace 节追加 ATIF 版本钉定、Inspect 桥接、OTel 缓存口径分歧与 Inspect 最新版戳；Agents SDK / Harbor 复核戳推进至 2026-11-05。
+
+### 剩余未核实缺口（更新）
+
+1. AutoGen 存档引入提交日期（非维护句日期；需 GitHub archived 标记或 README 提交历史一手）。
+2. Harbor 0.21.0 PyPI 上传日期（0.22–0.24 已核实；勿用 harborapi 2023-06-08）。
+3. ruvnet/metaharness 0.4.19 归属、日期与 npm 403 具体原因（本轮公开检索无注册表页面命中，疑为误记版本号；但上一轮仓库页一手首项仍在，不得仅凭检索失败推翻，留待 GitHub releases 页直接复核）。
+4. langchain-core 1.7.4 GitHub 标签页一手直读。
+5. MAF #8708 与 AgentTriggered / UnloadSkills 真实归属与语义（本轮公开检索零命中；但上一轮 Learn 页一手证据确认 UnloadSkillsCompactionStrategy 有文档，短名零命中不得推翻，留待 Learn 页直接复核）。
+6. OTel GenAI 仓提交历史一手复核（最新钉点暂为二手 4f85037，2026-10-06）。
+7. 已解决：AutoGen 维护句日期裁定（2025-10-02 胜出）；Inspect 0.3.287 一手确认。

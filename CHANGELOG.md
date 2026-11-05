@@ -4,6 +4,11 @@ All published updates to this repository, newest first. One entry per maintenanc
 
 本仓库全部发表更新，最新在前。每个维护轮次一条；调研轮次以其水位窗口标注日期。
 
+## 2026-11-05 — Round 9: gap-review + new-coverage round / 第 9 轮：缺口复核 + 新增覆盖轮
+
+- Gap-review + new-coverage round (watermark 2026-11-04 → 2026-11-05; skill references 0.8.0 → 0.9.0): the only first-hand stable releases confirmed inside the window were LiteLLM v1.108.0 and v1.106.7 (both 2026-11-04), while the round's main work was closing date-attribution gaps — Portkey v1.15.0 dated first-hand to 2025-12-23, the RouteLLM single-commit date confirmed via the Commit API, the PyPI letta wording corrected to a second CLI install channel, and Zep CE discontinuation confirmed first-hand.
+- 缺口复核 + 新增覆盖轮（水位 2026-11-04 → 2026-11-05；技能参考 0.8.0 → 0.9.0）：窗口内唯一已确认的一手新稳定发布为 LiteLLM v1.108.0 与 v1.106.7（均 2026-11-04），本轮主线是日期归属缺口的集中关闭——Portkey v1.15.0 一手日期锁定 2025-12-23、RouteLLM 单条提交经 Commit API 一手确认、PyPI letta 口径修正为同一 CLI 的第二安装通道、Zep CE 停更一手确认。
+
 ## 2026-11-04 — Round 8: gap-review + new-coverage round / 第 8 轮：缺口复核 + 新增覆盖轮
 
 - Gap-review + new-coverage round (watermark 2026-11-03 → 2026-11-04; skill references 0.7.0 → 0.8.0): no first-hand stable releases strictly dated inside the window across the four tracks; the only new group in-window was Claude Code 2.1.318 (no skill-subsystem rules). The round's substance is gap review and wording corrections — the Portkey channel-drift hypothesis was withdrawn (the discrepancy traces to dropped title lines on the releases list page), the Claude Code 2026-11-03 group's version was confirmed first-hand as v2.1.317, Devin Playbooks→Skills was dated first-hand to 2026-10-24 with its discovery mechanism, and the Scaling Discovery 39% / 15% figures were narrowed to their original abstract wording.

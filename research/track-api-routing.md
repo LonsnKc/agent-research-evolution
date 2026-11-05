@@ -244,3 +244,34 @@
 5. vLLM v0.32.0 官方 GitHub 页内发布日期戳。
 6. LiteLLM 1.108 稳定版；LTS“新端点”具体清单。
 7. 已解决：Portkey 1.15.x 出入成因；LiteLLM LTS 试点细则。
+
+---
+
+## 2026-11-05 轮次：缺口复核 + 新增覆盖——GHSA 日期分歧、RouteLLM 单条提交、Portkey v1.15.0 日期、LiteLLM 1.108 稳定版
+
+### 已核实（一手为主）
+
+- **GHSA 日期分歧已解决（口径区分）**：2026-10-22 是 CVE 记录发布日（Rapid7 转述 NVD/MITRE，二手），2026-10-27 是 GHSA 咨询本身发布日（Ostorlab 时间线、OSV 镜像，二手），两者不冲突。
+- **RouteLLM 2024-07-20 单条提交已解决（一手，执行者独立抽查复核）**：组内仅一条提交 `88b8dec894809e2a3ed77096623910eb9f861563`，标题“docs: update README.md / minor fix”，实为 README 一行文法修正；committer date 2024-07-20T20:56:36Z（分组依据），author date 2024-07-13T16:25:55Z；作者 Ikko Eltociear Ashimine，提交者 Isaac Ong，父提交 3a85b9e65a587de221e53f534d7a652be96cc985。仓库现状：公开、未归档、0 release，停滞结论不变。
+- **Portkey v1.15.0 精确日期已解决（一手，执行者独立抽查复核）**：published_at 2025-12-23T14:21:27Z（created 2025-12-23T14:10:37Z），发布者 VisargD，收尾 PR #1482，Full Changelog v1.14.3...v1.15.0。v1.15.2 的 2026-01-12 仍为二手，时间顺序自洽；列表页文本抽取仍丢弃标题行；v1.15.2 的 API 查询本轮返回 403 未能读取。
+- **LiteLLM v1.108.0 稳定版已发布（2026-11-04，一手，执行者独立抽查复核内容）**：官方 release notes 确认“v1.108.0 was promoted to stable from v1.107.0rc1”，覆盖自 v1.106.0 以来的全部变更；新增 Gemini 4 Argon、Microsoft 365 Copilot、OpenAI Live /v1/live/sessions、Azure PTU 共享容量，237 个新目录条目；破坏性变更含 enforce_fallback_model_access 默认 true、OpenRouter 移出内置成本表、count 路由改回 provider 报错、Lens 解绑。上一轮“首个周二上午未见稳定版”为时点结论，已被 11-04 发布取代。同日 v1.106.7（一手）：/v1/videos 支持 custom_provider_map；升级前须删 lensWorker.enabled。
+- **CVE-2026-114612 独立厂商公告仍未见；1.106.6 含修复仍未确认（仅谱系推断）**：GHSA 页（一手）只说尽快升级，未逐字列修复版；1.106.5/1.106.6 携带的是另一 advisory GHSA-w4c7-34wj-hqm8 的修复，不得与本 CVE 混写。
+- **Portkey CVE-2026-110719 厂商确认修复版仍未出现**：CVE 记录（2026-10-14）仍称 1.14.0–1.15.2 SSRF；Geekflare 2026-11-04 刷新版称“2026 年 5 月合并的修复尚未发布”（二手，无版本号、无厂商确认）。区分旧案 CVE-2025-66405（已修复于 1.14.0，PR #1372）。
+- **Railway 最终报告与 OpenCode post-mortem 仍未发布（2026-11-05 复核戳）**：Railway 最高文件仍为 2026-10-22 初步报告（更新止于 2026-10-26）；OpenCode post-mortem 未见（二手追踪至 2026-11-02 一致称未发布）。
+- **vLLM v0.32.0 官方页内仍无日期字段**：2026-10-18 仍为多源二手交叉（新增英文维基百科词条信息框标注，可信度略升，不得升级为一手）。v0.33.0 稳定版状态二手冲突（“v0.33.0” vs v0.33.0rc3），官方 release 页直接确认前不得写成已确认稳定版；v0.32.0 仍为最后确认的稳定版。
+- **LiteLLM LTS“新端点”具体清单仍未决**：官方 LTS 试点页全文仅重复三类范围，未列具体端点名；不得把 1.108.0 自带的新端点写成 LTS 补丁清单。
+- **窗口内其余否定性结论**：Dynamo（官方文档 Release Artifacts 页当前稳定仍为 v1.6.0，一手；仅 nightly 1.7.0.dev20261103，窗口外）、Portkey、llm-d（最新仍为 1.0，2026-10-20）、OpenRouter 路由机制均无窗口内新发布/公告。
+- **深挖素材（论文/厂商自报，不整段入技能）**：Calibrate, Then Route（arXiv:2609.16206，模拟器常数代硬件校准丢 4.5 goodput 点、约 40% 尾延迟优势；≤3 实例队列计数已够用；极端稀缺下贪婪成本最小化不如盲 spread）；ParetoBandit（arXiv:2604.00136v1，预算闭环硬约束，1,824 prompt 下超目标不超过 0.4%，单次决策 22.5μs，小样本限制外推）；Workload–Router–Pool 三维（arXiv:2603.21354，成本悬崖取决于 prompt 长度 CDF）；缓存 bandit 背包模型（EMNLP 2026，总成本降低约 12%，论文自报）；OpenRouter Jev Router（ClickHouse 博客 2026-11-02，窗口外，厂商自报：约 30 种任务类型→按任务真实用量排序模型→约束过滤→选端点备 fallback）。
+
+### 已同步进 skill 参考
+
+- api-routing.md：Portkey 段改为 v1.15.0 一手日期口径；LiteLLM 段追加 GHSA 日期归属澄清、1.108.0 稳定版与 1.106.7 段；RouteLLM 段追加单条提交一手确认；事故段复核戳推进至 2026-11-05；Design checks 追加路由定量模型三补强与 Jev Router 第二层 bullet。
+
+### 剩余未核实缺口（更新）
+
+1. CVE-2026-114612 独立厂商公告；1.106.6 含修复的厂商逐字确认。
+2. Portkey CVE-2026-110719 厂商确认修复版。
+3. Railway 最终调查报告与 OpenCode 官方 post-mortem（均未见）。
+4. vLLM v0.32.0 官方 GitHub 页内发布日期戳。
+5. LiteLLM LTS“新端点”具体清单；vLLM v0.33.0 稳定版状态（官方 release 页直接确认）。
+6. 已解决：GHSA 日期分歧；RouteLLM 单条提交；Portkey v1.15.0 日期；LiteLLM 1.108 稳定版。

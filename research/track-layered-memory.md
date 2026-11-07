@@ -299,3 +299,17 @@
 - 已同步进 skill 参考：layered-memory.md 更新 letta 改道原因段（X.Y.0 门控 + force_pypi）、Mem0 TR 博客矛盾段（以提交映射为准）、Mem0 TS SDK 线段、results/ 张力解决段、Step 7 四篇论文版本页复核段（第三轮为零改为第四轮为零）、Letta bullet 追加窗口内四厂商复核戳。
 - 推翻的旧说法：PyPI letta“改道原因仍未找到”；Mem0 TR“无一句话官方句”（已获，但博客内部矛盾新发现）；“Mem0 results/ 张力未决”；“四篇论文版本页未重开”；“七项数字复现连续三轮为零”（改为四轮）。
 - 剩余未核实缺口（更新）：1. Mem0 双口径一句话官方解释。2. 七项效果数字的第三方独立复现——连续四轮为零。3. Letta 服务器仓停滞（0.16.8，2026-05-14）。4. PyPI letta 下次发布时间（0.35.0 或 force_pypi）。5. 已解决：PyPI letta 改道原因；Mem0 results/ 张力；四篇论文版本页复核；Mem0 TS SDK 线。
+
+## 2026-11-07 轮次小节（晚间轮，版本 0.12.0；六路并行之记忆一路）
+
+- 本轮增量：Mem0 官方指南《How to Read Memory Benchmarks》（mem0.ai，2026-10-08）新收：FAQ 原句 top_50 94.8% vs top_200 94.4%、多会话 93.2%→88.0%（记忆越多噪声越大）——只解释检索深度机制，不触及 TR 开关，TR 一句话官方解释仍未见；七项数字第三方复现窗口内新增为零，连续第五轮；相邻独立重测 memtrails（2026-11-03/11-05，LoCoMo strict 76.5%）已登记为非协议级重测，不得后轮误计；letta-ai/letta 服务器仓仍停 0.16.8（2026-05-14），最新提交 2026-10-18 纯文档；仓名补正：2365e012/#5134/release.yml 属于 letta-ai/letta-code（活跃仓），在 letta 仓查无（422/404）；letta-code 仍 0.34.44（npm 2026-11-07T01:36:40Z；GitHub 2026-11-07T01:41:09Z），PyPI 仍 0.34.12，差距仍 32 版；无 0.35.0、无可观测 force_pypi（手动触发是否发生过不可观测，不得写成未发生）；Mem0 SDK：npm mem0ai 仍 3.3.1、PyPI 仍 2.2.1；Graphiti 仍 v0.31.2、Zep Cloud SDK 仍 4.1.0；补漏：Zep Agent Skills（2026-11-05 官宣 + 论文 arXiv:2611.01386，提交 2026-11-01），上两轮均漏记；宣称小模型配 Skills 接近 Opus 5.5（厂商自报）；新论文 arXiv:2611.08341（2026-11-05，LAQ 局部/全局保真度，52 次全部提升 G，p=8.5×10⁻⁴）；MEMOIR 仍 v1；StateBench（2611.03094，提交 11-02，最难任务四家前沿模型 ≤13%）为窗口外边界登记。
+- 已同步进 skill 参考：layered-memory.md 追加 Mem0 基准指南段、七项复现第五轮为零 + memtrails 登记段、letta 服务器仓段、PyPI 仓名补正段、Mem0 SDK 戳推进段、Zep Agent Skills 补漏段、2611.08341 新论文段。
+- 推翻的旧说法：2365e012 引证仓名未注明（补正为 letta-ai/letta-code）；七项复现“连续四轮为零”（改为五轮）。
+- 剩余未核实缺口（更新）：1. Mem0 双口径一句话官方解释。2. 七项效果数字的第三方独立复现——连续五轮为零。3. PyPI letta 下次发布时间（0.35.0 或 force_pypi）。4. 已解决：Mem0 基准指南机制解释；letta 服务器仓停滞确认；2365e012 仓名补正；Zep Agent Skills 补漏。
+
+## 2026-11-08 轮次小节（晨轮，版本 0.13.0；六路并行之记忆一路）
+
+- 本轮增量：Anthropic《The components of agent memory》（2026-11-06）一手补漏——四层架构（transcripts / notes / representations / injected context）+ dreaming 五作用（纠错、建表征、晋升、目标聚焦、补缺口），数字全部厂商自报，性质为设计手记非产品发布；「用后反馈」成为独立排序层（EARM / MEMOIR / dreaming 三路同向）；压缩与保真度可分开优化（LAQ / SUMONE：SUMONE arXiv:2611.06445，2026-11-04，−78%/−75% 论文自报），FlyHash 反例（arXiv:2611.05791，2026-11-04：质量优 ≠ 延迟/内存优）；新论文 EARM（arXiv:2608.22767，2026-08-24，+2.14–6.62% 论文自报）；Mem0 TR 博客重读：第三组切口 top_50 82.7%→91.8%、7 类记忆/7 种时间查询模式、state key 语义、负面结果（开放域 −1.9 pts、p95 +198 ms）、temporal conflict resolution 预告，双口径一句话官方解释仍未见；七项数字第三方复现窗口内新增为零，连续第六轮；五家复核戳推进（letta-code 仍 0.34.44、PyPI letta 仍 0.34.12、差距仍 32 版；Mem0 Python 仍 2.2.1、TS SDK 仍 3.3.1；Graphiti 仍 v0.31.2；Zep Cloud SDK 仍 4.1.0；LangMem 仍 0.0.30；Zep Agent Skills 论文仍 v1，arcXiv Updated 含义未明）。唯一部分失败：`getzep/zep-python` GitHub Releases API 查询回 403 rate limit（PyPI/npm 侧已确认 4.1.0，结论不受影响），待下轮重试。
+- 已同步进 skill 参考：layered-memory.md 追加 Anthropic 记忆长文段、EARM/「用后反馈」排序层段、SUMONE/FlyHash 段、Mem0 TR 博客重读更新段、七项复现第六轮为零段、五家复核戳推进段、Zep 复核段。
+- 推翻的旧说法：七项复现「连续五轮为零」（改为六轮）；Mem0 TR 博客「只读过 Highlights/Takeaways」（本轮全文重读，第三组切口与机制细节已补）。
+- 剩余未核实缺口（更新）：1. Mem0 双口径一句话官方解释。2. 七项效果数字的第三方独立复现——连续六轮为零。3. PyPI letta 下次发布时间（0.35.0 或 force_pypi）。4. Zep Agent Skills 论文是否有 v2；getzep/zep-python releases 侧复核（本轮 403，待下轮重试）。5. Anthropic CL-Bench 均值数字与 Dreams API 细节（仅二手）。6. 已解决：Anthropic 记忆长文补漏；Mem0 TR 博客全文重读；SUMONE/FlyHash/EARM 三篇新论文。

@@ -285,3 +285,17 @@
 3. 七项效果数字（Mem0/REM/EcphoryRAG/Memora/MemCut/MemLeak/DyadMem）与 TEPA、Scaling Discovery、Tether 数字的第三方独立复现——本窗口内零新增。
 4. Graphiti v0.31.0 之后、LangMem、Mem0 核心窗口内确无发布（基于公开搜索未见，非发布方正面证明）。
 5. 已解决：Zep CE 停更官方口径；LoCoMo 审计原文直读；PyPI letta 口径与差距刷新。
+
+## 2026-11-07 轮次小节（版本 0.10.0；六路并行之记忆一路）
+
+- 本轮增量：letta-code 0.34.39 published_at 已解决（2026-11-02T21:31:41Z，一手 API；npm 更新戳 21:26:30Z 是另一时钟）；npm 已到 0.34.44（0.34.40 为上一轮漏检补漏，2026-11-04T23:36:11Z；0.34.41 2026-11-05T04:23:03Z；0.34.42/0.34.43 2026-11-06；0.34.44 2026-11-07T01:41:09Z）；PyPI letta 仍 0.34.12（2026-10-12），差距由 27 拉大到 32 版；0.34.x 线位于作用域包 @letta-ai/letta-code，裸 letta-code 是 1.0.0 指针包；Mem0 双口径拼合解释链已完整（memory-benchmarks 提交 4b61c5d，2026-05-13：93.4→94.4 / 90.4→94.8 是 Temporal Reasoning 默认全开所致；须标注为执行者拼合，非官方原句）；七项效果数字第三方独立复现窗口内新增仍为零（连续第三轮）；Zep Cloud SDK 4.1.0 发布于 2026-11-02T19:17:40Z（仅 SDK 再生成，窗口外补漏）；Graphiti v0.31.2 published_at 再确认 2026-10-20T17:25:21Z；深挖新论文 MEMOIR（arXiv:2611.07631，提交 2026-11-05，窗口内；证据 recall@5 较 bare cosine +11.92pp，论文自报）；窗口外补漏 Human-Inspired Memory Architecture（arXiv:2605.08538，2026-05-08；衰减 λ=0.001/小时，约 29 天半衰期）与 Re³Rank（arXiv:2611.02550，2026-11-02）。
+- 已同步进 skill 参考：layered-memory.md 追加 letta 0.34.39 published_at 与 0.34.40–0.34.44 段、PyPI 差距 32 版与 @letta-ai/letta-code 口径段、Mem0 拼合解释链段、Zep 4.1.0 / Graphiti 再确认 / mem0ai 2.2.1 再确认段、Step 7 追加 MEMOIR 与 Human-Inspired bullet 与独立复现三轮为零 + MemLeak 两篇消歧 bullet。
+- 推翻的旧说法：letta-code“仍 0.34.39”；PyPI 差距“仍 27 版”；上一轮对 letta-code 0.34.40 的漏检；“Zep Cloud 无公开版号”说法。
+- 剩余未核实缺口（更新）：1. PyPI letta 改道原因（仓库 PyPI 发布 workflow 历史）。2. Mem0 双口径一句话官方解释；OSS 框架复现平台数；results/ gitignored 张力。3. 七项效果数字的第三方独立复现——连续三轮为零。4. Mem0 TS SDK 线；MemLeak 多模态版 / TEPA / Scaling / EcphoryRAG 版本页未重开复核。5. 已解决：letta-code 0.34.39 published_at；Mem0 双口径拼合链；Zep Cloud SDK 4.1.0；Graphiti v0.31.2 再确认。
+
+## 2026-11-07 轮次小节（下午轮，版本 0.11.0；六路并行之记忆一路）
+
+- 本轮增量：PyPI letta 改道原因一手解决——commit 2365e012（2026-10-29T01:46:04Z，`ci(release): publish to PyPI only on X.Y.0 releases [LET-14054] (#5134)`）改 `.github/workflows/release.yml`，PyPI 发布仅当版本匹配 `X.Y.0`（手动 `force_pypi` workflow-dispatch 旁路）；0.34.12（2026-10-12）为门控前最后一版，之后 0.34.13–0.34.44 均为补丁版、被门控挡住——停滞是刻意发布策略，非流水线损坏；下个 PyPI 发布应在 0.35.0 或手动 force_pypi（规则推断、无官方排期）；Mem0 TR 博客一句话官方句已获（“Temporal Reasoning is on by default for every Mem0 project”，评估页同句），但博客内部自相矛盾（引言 top_200 vs Takeaways top_50 配对 90.4%），以提交 4b61c5d 映射为准（top_50：90.4%→94.8%；top_200：93.4%→94.4%）；Mem0 TS SDK 线（npm mem0ai 3.3.1，2026-09-25T17:44:47Z；beta 3.0.0-beta.2）与 Python 线（2.2.1）分版本，不得混用；Mem0 results/ 张力解决——.gitignore 否定项 `!results/platform/` 与 `!results/oss/` 豁免两子目录，仓库内 15 条 results/ 路径（8 个平台 JSON、4 个 OSS JSON、其余目录项），README“results/ — Benchmark output (gitignored)”为简化描述；OSS 框架自带 4 次自家 LongMemEval 运行（厂商自家 2026 年 4 月运行，gpt5 91.0% / gemma4_31b 88.6% / llama4_maverick 88.6% / parasail_120b 89.8%，非第三方复现）；四篇论文版本页重开复核（MemLeak 多模态 v1 2026-06-29、TEPA v2 2026-08-10、Scaling v1 2026-10-14、EcphoryRAG v1 2025-10-10，均无新版，上一轮“未重开”限定解除）；七项效果数字第三方独立复现连续第四轮为零；letta 仍 0.34.44、PyPI 差距仍 32 版，四厂商窗口内均无新发布（Mem0 Python 2.2.1、Graphiti 0.31.2、Zep Cloud SDK 4.1.0、LangMem 0.0.30）。
+- 已同步进 skill 参考：layered-memory.md 更新 letta 改道原因段（X.Y.0 门控 + force_pypi）、Mem0 TR 博客矛盾段（以提交映射为准）、Mem0 TS SDK 线段、results/ 张力解决段、Step 7 四篇论文版本页复核段（第三轮为零改为第四轮为零）、Letta bullet 追加窗口内四厂商复核戳。
+- 推翻的旧说法：PyPI letta“改道原因仍未找到”；Mem0 TR“无一句话官方句”（已获，但博客内部矛盾新发现）；“Mem0 results/ 张力未决”；“四篇论文版本页未重开”；“七项数字复现连续三轮为零”（改为四轮）。
+- 剩余未核实缺口（更新）：1. Mem0 双口径一句话官方解释。2. 七项效果数字的第三方独立复现——连续四轮为零。3. Letta 服务器仓停滞（0.16.8，2026-05-14）。4. PyPI letta 下次发布时间（0.35.0 或 force_pypi）。5. 已解决：PyPI letta 改道原因；Mem0 results/ 张力；四篇论文版本页复核；Mem0 TS SDK 线。

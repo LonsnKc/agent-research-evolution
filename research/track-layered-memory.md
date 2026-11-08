@@ -327,3 +327,10 @@
 - 已同步进 skill 参考：layered-memory.md 追加 letta-code v0.34.45 段、Route to Remember 全文数字段、三篇补漏论文段、记忆轨复核戳段。
 - 推翻的旧说法：七项复现「连续七轮为零」（改为八轮）；PyPI letta 差距「32 版」（改为 33 版）。
 - 剩余未核实缺口（更新）：1. Mem0 双口径一句话官方解释。2. 七项效果数字的第三方独立复现——连续八轮为零。3. PyPI letta 下次发布时间（0.35.0 或 force_pypi）。4. Zep Agent Skills 论文是否有 v2（仍 v1）；DolphinBench Empirical PR 审定结果。5. 已解决：letta-code v0.34.45；Route to Remember 全文；三篇补漏论文。
+
+## 2026-11-08 轮次小节（深夜轮，版本 0.16.0；六路并行之记忆一路）
+
+- 本轮增量：Mem0 双口径机制拼图基本完成（2026-07-21 对比博客方法论节全文一手：平台 v3 管线 + top_200 + "retrieval depth is the simplest explanation for why you'll see other Mem0 numbers floating around"；10-08 基准指南 top_50 94.8% vs top_200 94.4%；09-04 评估页 top_200 预算 + ±1 分评判置信区间；三者合起来解释约 1.0 分差距；仍缺一句点名 91.6/93.4 vs 92.5/94.4 并调和的官方原话，不得把机制解释写成那句话；同博客厂商自报数字：LangMem 58.1%/p95 60s/≈130 tokens、OpenAI Memory 52.9%/0.9s；Mem0 OSS 已移除 enable_graph/graph_store 配置；BEAM contradiction_resolution 仅 35.7%（1M）/32.5%（10M），为当前记忆系统最弱环节）。六篇补漏记忆论文摘要级收录（均为论文自报、摘要级，全文未验）：RememberStack（arXiv:2611.06019v1，栈式记忆 push/pop/peek/squash/replace，0.90 vs 0.71，少 24.4% tokens）、ReCap（arXiv:2511.05311v1，近因加权检索）、The Memory Wall（arXiv:2611.05727v1，窗口减半 Sonnet 4.5 准确率减半）、Memorization is not Memory（arXiv:2611.05200v1，参数记忆 vs 非参数记忆系统比较）、RECON（arXiv:2611.05766v1，检索式上下文压缩）、WALDEN（arXiv:2611.05972v1，5,000+ 用例、17 项细粒度指标，最佳 GPT-5 0.65，未达 0.8 实战门槛）。Dreams API 口径收窄：默认写新 store、不改输入 store；`output_behavior=update_existing` 时写回输入 store（官方 API 参考 POST /v1/dreams 一手）。复核戳：七项复现连续第九轮为零；letta-code 仍 0.34.45（0.34.46 不存在；GitHub 无 Release 对象）；PyPI letta 仍 0.34.12，差距仍 33 版；DolphinBench PR #13/#14 仍 open；Zep npm 包名 @getzep/zep-cloud 再确认；Anthropic 记忆文章与 Dreams API 窗口内无更新；arXiv 周日 0 提交。
+- 已同步进 skill 参考：layered-memory.md Mem0 双口径段追加机制拼图与同博客数字、Dreams API 段改写口径收窄句、复核戳段追加深夜轮复核（第九轮为零、letta-code/PyPI/DolphinBench/Zep 包名）、文件末尾追加六篇补漏论文段。
+- 推翻的旧说法：Dreams API「输入 store 永不修改」（未加限定的过度概括，收窄为仅默认行为）；七项复现「连续八轮为零」（改为九轮）。
+- 剩余未核实缺口（更新）：1. Mem0 双口径一句话官方解释（机制拼图已基本完成，仅缺一句点名调和的原话）。2. 七项效果数字的第三方独立复现——连续九轮为零。3. PyPI letta 下次发布时间（0.35.0 或 force_pypi）。4. DolphinBench PR #13/#14 审定结果。5. 六篇补漏论文全文核实。6. RememberStack harness 下轮跟进。7. 已解决：Mem0 双口径机制拼图；Dreams API 口径收窄；六篇补漏论文摘要级收录。

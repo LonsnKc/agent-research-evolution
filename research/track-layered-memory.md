@@ -313,3 +313,10 @@
 - 已同步进 skill 参考：layered-memory.md 追加 Anthropic 记忆长文段、EARM/「用后反馈」排序层段、SUMONE/FlyHash 段、Mem0 TR 博客重读更新段、七项复现第六轮为零段、五家复核戳推进段、Zep 复核段。
 - 推翻的旧说法：七项复现「连续五轮为零」（改为六轮）；Mem0 TR 博客「只读过 Highlights/Takeaways」（本轮全文重读，第三组切口与机制细节已补）。
 - 剩余未核实缺口（更新）：1. Mem0 双口径一句话官方解释。2. 七项效果数字的第三方独立复现——连续六轮为零。3. PyPI letta 下次发布时间（0.35.0 或 force_pypi）。4. Zep Agent Skills 论文是否有 v2；getzep/zep-python releases 侧复核（本轮 403，待下轮重试）。5. Anthropic CL-Bench 均值数字与 Dreams API 细节（仅二手）。6. 已解决：Anthropic 记忆长文补漏；Mem0 TR 博客全文重读；SUMONE/FlyHash/EARM 三篇新论文。
+
+## 2026-11-08 轮次小节（中午轮，版本 0.14.0；六路并行之记忆一路）
+
+- 本轮增量：Anthropic《The components of agent memory》CL-Bench 均值数字升级为一手（Opus 5.5：0.655→0.838；Sonnet 5.5：0.644→0.833；Opus 5：0.564→0.828；Opus 4.7：0.383→0.700；Sonnet 5：0.306→0.610；Sonnet 4.6：0.330→0.364；均出自 figure alt 文本）；Dreams API 细节升级为一手（异步任务、1–100 个会话、输入 store 永不修改、beta 头 `dreaming-2026-04-21`）。纠正：Zep LongMemEval 63.8% 是厂商自报（Zep 自家论文 gpt-4o-mini 配置），不是独立复现；agentos 引用的 arXiv:2512.13564 是综述、非复现研究。getzep/zep-python releases 侧 403 闭环（v4.1.0，2026-11-02T19:17:38Z）；Zep Agent Skills 论文无 v2（仅 v1）。DolphinBench 首个第三方独立跑分（Empirical，2026-11-06，75.2% vs 官方行 70.7%，PR 待审、作者自报、未验证）与 Maximem 复现（2026-05-27，73.8% vs 头条 93.4%，二手转述）补充登记，不计入七项口径。Route to Remember（arXiv:2611.05636v1，2026-11-03）：权重记忆（OPSD 自蒸馏）作长期事实存储的第三条线。七项效果数字第三方独立复现连续第七轮为零；五家无新版（letta-code 仍 0.34.44、PyPI letta 仍 0.34.12 差距 32 版、Mem0 2.2.1/3.3.1、Graphiti v0.31.2、Zep 4.1.0、LangMem 0.0.30）；Mem0 双口径官方解释仍未出现。
+- 已同步进 skill 参考：layered-memory.md 追加 Anthropic CL-Bench 均值数字与 Dreams API 细节一手段、Zep 63.8% 纠正段、zep-python 403 闭环段、DolphinBench/Maximem 补充登记段、Route to Remember 段、七项复现第七轮为零段、五家复核戳推进段、Mem0 双口径复核段。
+- 推翻的旧说法：「Zep 63.8% 是独立复现」（厂商自报）；七项复现「连续六轮为零」（改为七轮）。
+- 剩余未核实缺口（更新）：1. Mem0 双口径一句话官方解释。2. 七项效果数字的第三方独立复现——连续七轮为零。3. PyPI letta 下次发布时间（0.35.0 或 force_pypi）。4. Zep Agent Skills 论文是否有 v2（仍 v1）；DolphinBench Empirical PR 审定结果；Route to Remember 全文。5. 已解决：Anthropic CL-Bench 均值数字与 Dreams API 细节；Zep 63.8% 纠正；getzep/zep-python releases 侧 403 闭环。

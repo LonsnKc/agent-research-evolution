@@ -306,3 +306,10 @@
 - 已同步进 skill 参考：agent-harness.md 追加 MAF 1.25.0 完成发布段、AgentTriggered 区间收窄段、Agents SDK alpha 全文段、Trace 两处 stripped_reason 纠正段与 gen_ai.workflow.name 待确认段、LangGraph 2026-11-08 复核段、METR hawk 推送段、Inspect 2026-11-08 复核段。
 - 推翻的旧说法：MAF 1.25.0「仅 6/44 包上架、Release 对象仍 404」（本轮 44/44 + Release 对象已补发）；OTel「stripped_reason 为现行约定」（被删提案字段）；AgentTriggered「Learn 压紧页上线时间未决」（区间已收窄至 2026-10-29→11-07，张力消解）。
 - 剩余未核实缺口（更新）：1. MAF 1.25.0 tag→PyPI 间隔原因（约 23.6 小时，分阶段发布推断）。2. AgentTriggered 精确上线日期。3. OTel aabmass 提案（属性别名 + #161 对齐）；gen_ai.workflow.name 是否入规范注册表。4. Agents SDK alpha.7 / 稳定化时间表。5. METR hawk 具体提交日期。6. 已解决：MAF 1.25.0 完成发布；stripped_reason 纠正；AgentTriggered 区间收窄；Agents SDK alpha 轨全文。
+
+## 2026-11-08 轮次小节（中午轮，版本 0.14.0；六路并行之 Harness 一路）
+
+- 本轮增量：METR hawk 窗口内新提交 220a425（2026-11-08T03:05:04Z，AMI 升级应对内核 CVE-2026-98432，infra 维护）；#2820 提交日期纠正为 2026-11-06T23:16:11Z（推送 11-07，须区分推送时间与提交时间）；org 仍 69 仓/10 存档。`gen_ai.workflow.name` 已移除——折叠进 `gen_ai.agent.name`（提交 aa3b7f4，2026-11-05，PR #571），Trace 节口径修正为以 `gen_ai.agent.name` 为准，workflow.name 记为已移除旧名。MAF 1.25.0 tag→PyPI 间隔（约 23.6h）仍无官方解释；新增机制证据（python-release.yml 注释证实 Azure DevOps + ESRP 多阶段门控）与对照时延（1.24.0 约 10.2h、dotnet-1.28.0 约 3.4h）；仍为推断。OTel aabmass 全字段可选提案仅为 fork 分支三条提交，无独立 PR、未合并；任务书括号「属性别名 + #161 对齐」未能对应一手记录（#161 是 sampling_relevant 的 PR），不采纳。Agents SDK alpha.7 未出现，稳定化时间表仍无官方说法；版本戳：Inspect 仍 0.3.288、Harbor 仍 0.25.0、LangChain 1.4.9、LangGraph 1.2.20、core 1.7.6、MAF.NET 1.28.0；AgentTriggered 精确上线日期仍未决（区间 2026-10-29→11-07，最可能 ~11-01）。
+- 已同步进 skill 参考：agent-harness.md 追加 METR hawk 220a425 段与 #2820 日期纠正段、Trace 节 workflow.name 移除纠正段、aabmass fork 分支段、MAF 间隔机制证据段、Agents SDK alpha.7 复核段、版本戳推进段（LangChain/LangGraph/Harbor/Inspect/MAF.NET）。
+- 推翻的旧说法：`gen_ai.workflow.name`「待确认 discrepancy」（已移除，折叠进 `gen_ai.agent.name`）；MAF 1.25.0 间隔「纯推断」（升级为带机制证据的推断）；#2820「提交日期 2026-11-07」（实为推送日期，提交本身为 2026-11-06）。
+- 剩余未核实缺口（更新）：1. MAF 1.25.0 tag→PyPI 间隔官方解释（约 23.6 小时；机制证据已补，官方说法仍缺）。2. AgentTriggered 精确上线日期。3. OTel aabmass 提案（fork 分支三提交，未合并）。4. Agents SDK alpha.7 / 稳定化时间表。5. METR hawk 后续提交。6. 已解决：hawk 220a425；#2820 提交日期；gen_ai.workflow.name 移除；MAF 间隔机制证据与对照时延。

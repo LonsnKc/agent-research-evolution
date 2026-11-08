@@ -313,3 +313,10 @@
 - 已同步进 skill 参考：agent-harness.md 追加 METR hawk 220a425 段与 #2820 日期纠正段、Trace 节 workflow.name 移除纠正段、aabmass fork 分支段、MAF 间隔机制证据段、Agents SDK alpha.7 复核段、版本戳推进段（LangChain/LangGraph/Harbor/Inspect/MAF.NET）。
 - 推翻的旧说法：`gen_ai.workflow.name`「待确认 discrepancy」（已移除，折叠进 `gen_ai.agent.name`）；MAF 1.25.0 间隔「纯推断」（升级为带机制证据的推断）；#2820「提交日期 2026-11-07」（实为推送日期，提交本身为 2026-11-06）。
 - 剩余未核实缺口（更新）：1. MAF 1.25.0 tag→PyPI 间隔官方解释（约 23.6 小时；机制证据已补，官方说法仍缺）。2. AgentTriggered 精确上线日期。3. OTel aabmass 提案（fork 分支三提交，未合并）。4. Agents SDK alpha.7 / 稳定化时间表。5. METR hawk 后续提交。6. 已解决：hawk 220a425；#2820 提交日期；gen_ai.workflow.name 移除；MAF 间隔机制证据与对照时延。
+
+## 2026-11-08 轮次小节（晚间轮，版本 0.15.0；六路并行之 Harness 一路）
+
+- 本轮增量：Agents SDK Python v0.24.0-alpha.7（tagger 2026-11-08T06:56:18Z，提交 c27b24cc，61 提交，GitHub-only）与 JS v0.22.0-alpha.2（提交 3b8fe808，2026-11-08T08:14:35Z，41 提交，GitHub-only）窗口内发布，均无稳定化时间表；上一轮「仍无 alpha.7」作废。重大纠正：aabmass 提案已有独立 PR #688 且 Open（2026-11-05 ready for review，头提交 e69f0e7 与 fork 分支头一致），fork 分支实为两条提交（b4bfb5a0d、e69f0e7）不是三条；lmolkova 提 null 分支异议（建议 SkipJsonSchema[None]）；#144 前置已于 11-06 合并。langgraph-sdk JS（1.15.0 / cli 1.7.0）与 Python（0.4.14 / 0.4.42）为两条版本线，不得混用。Google ADK 2.14.0（PyPI 11-07T01:03:32Z 一手版本，内容二手：TeamsRunner、MultiRunConfig、26 模块毕业、23%/9% 厂商自报未核实；官方 release notes 待复核，未验证暂定 H4）。版本戳：Inspect 0.3.288、Harbor 0.25.0、LangChain 1.4.9、LangGraph 1.2.20、core 1.7.6、MAF.NET 1.28.0；MAF 间隔仍无官方解释；AgentTriggered 精确日期仍未决；OTel HEAD 仍 e6658f1；hawk 窗口内零提交；AutoGen HEAD d07c667a。**仅记本笔记、不入技能正文**：HF harness-hub LoRA 适配器公告（11-06）为二手线索，未一手复核。
+- 已同步进 skill 参考：agent-harness.md 追加 Agents SDK alpha.7/alpha.2 段、aabmass PR #688 纠正段、langgraph-sdk 两条版本线段、Google ADK 2.14.0 新条目（未验证暂定标注）、版本复核戳段。
+- 推翻的旧说法：OTel aabmass「仅 fork 三提交、无独立 PR」（PR #688 存在且 Open，分支实为两条提交）；Agents SDK「仍无 alpha.7」（alpha.7/alpha.2 窗口内发布）。
+- 剩余未核实缺口（更新）：1. MAF 1.25.0 tag→PyPI 间隔官方解释（约 23.6 小时；机制证据已补，官方说法仍缺）。2. AgentTriggered 精确上线日期。3. OTel PR #688 审定结果（lmolkova 异议待决）。4. Agents SDK alpha.7 后续与稳定化时间表。5. METR hawk 后续提交。6. ADK 官方 release notes 一手复核（H4 未验证暂定）。7. 已解决：aabmass PR #688 存在性；Agents SDK alpha.7/alpha.2；langgraph-sdk 两条版本线。

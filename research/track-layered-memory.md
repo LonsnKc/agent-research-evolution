@@ -320,3 +320,10 @@
 - 已同步进 skill 参考：layered-memory.md 追加 Anthropic CL-Bench 均值数字与 Dreams API 细节一手段、Zep 63.8% 纠正段、zep-python 403 闭环段、DolphinBench/Maximem 补充登记段、Route to Remember 段、七项复现第七轮为零段、五家复核戳推进段、Mem0 双口径复核段。
 - 推翻的旧说法：「Zep 63.8% 是独立复现」（厂商自报）；七项复现「连续六轮为零」（改为七轮）。
 - 剩余未核实缺口（更新）：1. Mem0 双口径一句话官方解释。2. 七项效果数字的第三方独立复现——连续七轮为零。3. PyPI letta 下次发布时间（0.35.0 或 force_pypi）。4. Zep Agent Skills 论文是否有 v2（仍 v1）；DolphinBench Empirical PR 审定结果；Route to Remember 全文。5. 已解决：Anthropic CL-Bench 均值数字与 Dreams API 细节；Zep 63.8% 纠正；getzep/zep-python releases 侧 403 闭环。
+
+## 2026-11-08 轮次小节（晚间轮，版本 0.15.0；六路并行之记忆一路）
+
+- 本轮增量：letta-code v0.34.45 窗口内发布（npm 2026-11-08T07:44:31Z，GitHub 07:49:26Z；sharp 0.35.5、memfs 修复、停用已退役托管模型默认值；无记忆功能变更）；PyPI letta 仍 0.34.12，差距 32 → 33 版；PyPI 下次发布仍无信号。Route to Remember 全文数字（arXiv:2611.05636v1 全文一手）：OPSD 59.9% vs 检索 47.8%/抽取 51.9%/SFT 36.9%；VtR +6.2 points；门控保留 22% pooled / 37.9% native（切口区分）；对检索约 10⁵ 查询回本；边界：缺席不可检视、随年龄幻觉上升、fabrication 率高估约 1/5。补漏三篇：2611.05306（256K→16K 提速 3.6×/5.6×/7×）、EvalMem v2（检索缺陷 22.1% 最频；recall-first 70.2%→95.6%）、What Eviction Destroys（8k 预算不可逆损失占比 1.00）。复核戳：七项复现连续第八轮为零；DolphinBench PR #13/#14 仍 open；Mem0 双口径解释仍未出现；Zep 论文仍 v1；Zep npm 包名 @getzep/zep-cloud。
+- 已同步进 skill 参考：layered-memory.md 追加 letta-code v0.34.45 段、Route to Remember 全文数字段、三篇补漏论文段、记忆轨复核戳段。
+- 推翻的旧说法：七项复现「连续七轮为零」（改为八轮）；PyPI letta 差距「32 版」（改为 33 版）。
+- 剩余未核实缺口（更新）：1. Mem0 双口径一句话官方解释。2. 七项效果数字的第三方独立复现——连续八轮为零。3. PyPI letta 下次发布时间（0.35.0 或 force_pypi）。4. Zep Agent Skills 论文是否有 v2（仍 v1）；DolphinBench Empirical PR 审定结果。5. 已解决：letta-code v0.34.45；Route to Remember 全文；三篇补漏论文。

@@ -361,3 +361,9 @@
 
 - 本轨增量（M1–M7）：2512.13564 内表细节关闭（"63.8"/"71.2" 全文 0 命中，Table 7 仅列 Zep 行无数字，引用链立于 TEM Table 8 + Memanto Table IX + Zep 论文 Table 2）；Zep 90.2% 官方原文核对（LongMemEval 90.2% = 451/500、LoCoMo 94.7% = 1,459/1,540，gpt-5.4 reader/judge；非同一测量，禁止"71.2%→90.2% 提升"叙事）；letta-code v0.34.47/v0.34.48 窗口内两版（PyPI 差距 34 → 36 版，v0.34.46 发布说明已补读，无记忆功能变更）；Anthropic 记忆报告直链取得（CL-Bench alt 文本限定：上轮记录未被推翻亦未被本轮复核）；MemoryAtlas 新浮现旧重跑记录登记（不计为复现，阳性第三方独立复现仍为零）；11-06 批次五篇检索排序/遗忘论文摘要级（Compaction vs RAG +6.8pp p=5.5e-08、BEAM 预算、MemoryDojo 155 轨迹全系统可投毒、ENGRAM、HiMEM）；The Memory Wall / WALDEN 仍未定位（`ti:"memory wall"` 38 篇全读、`ti:WALDEN` 1 篇无关）。
 - 剩余未核实缺口：The Memory Wall / WALDEN 定位线索（作者/会议/产品）；Mem0 93.4 vs 94.4 变更；Mem0 双口径官方解释（仍缺失）；DolphinBench PR #13/#14 合并动向；五篇 11-06 批次论文全文深读（Compaction vs RAG 优先）；MemoryAtlas 各重跑行方法核实。
+
+## 2026-11-09 深夜轮（版本 0.20.0；窗口 2026-11-09 17:37 → 23:37 CST）
+
+- 本轨增量（M1–M7）：MemoryAtlas LiCoMemory 六行方法已确认（arXiv:2511.01448v1 Table 1 + §4.1，附四项限定：竞品重跑、基线版本未声明、裁判未声明、分母 1,986 vs 1,540 不可拼比）；Hindsight 两行（66.88/71.2）原始方法未定位；Mem0 LongMemEval 49 行归属错误（数字另有出处 arXiv:2603.04814v1 Table 3，49.00%，但日期/backbone/归属三项与行元数据不符）；2611.09807 全文深读（成对评测，四类 71.4% vs 64.6%、+6.8pp、p=5.5e-08，−34% tokens；temporal +25.5pp、adversarial −14.6pp；衰减公式 λ₀ 分类型；剪除=降级非删除；默认排序不读权重；<4pp 效应跨运行不可信）；MemoryDojo 全文深读（155 轨迹、五系统均可投毒，A-MEM BR 45.70%、Letta 历史前缀下 BRT 归零）；11-06 批次其余三篇仍 v1；复核戳：letta-code 仍 v0.34.48（窗口开始前约 2 小时发布）、PyPI 差距仍 36 版、DolphinBench PR #13/#14 仍 open、Mem0 93.4/94.4 未变、The Memory Wall / WALDEN 第三轮未定位（建议按主题标签处理）、五家版本戳全不变；arXiv 11-07–11-09 提交仍未进 API 索引，待 11-10 公告后补查。窗口内新稳定发布为零。
+- 纠正：MemoryAtlas M5「各重跑行方法未逐项验证」（LiCoMemory 六行已定位，暂定拆分登记）；2611.09807「己方臂慢数倍」（作者此前说法错误并撤回，成对实测 p50/p90 两臂无差别）。
+- 剩余未核实缺口：The Memory Wall / WALDEN 定位线索（作者/会议/产品）；Mem0 93.4 vs 94.4 变更；Mem0 双口径官方解释（仍缺失）；DolphinBench PR #13/#14 合并动向；MemoryAtlas A-MEM 48.38 行核查；Dual-Layer Agentic Memory arXiv:2608.22215 全文深读（对 ENGRAM）；arXiv 11-07–11-09 批次补查。

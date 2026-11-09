@@ -345,3 +345,8 @@
 - 本轨增量（H1–H4）：MAF 1.25.0 23.6h 锚点纠正（release created → PyPI 上传，轻量 tag 无独立时间；上传早于 published_at 约 11 分钟，先传包后点发布；ADK 同流程约 5 分钟；官方解释仍缺失）；Agents SDK alpha created/published 字段纪律；OTel PR #688 复核戳（仍 Open，updated_at 仍 2026-11-06T00:59:26Z，窗口内零动向）；hawk +11 提交（HEAD 008399f，含 SEC-507）与 Inspect +2 提交（HEAD 319a319，#6401）；其余版本戳全不变。
 - 纠正：Harness 腿「Inspect/Harbor slug 更正」针对的是派发书背景错误，技能正本早已正确，不入技能。
 - 剩余未核实缺口：MAF 1.25.0 间隔官方解释；AgentTriggered 精确上线日期（已冻结，见上）；OTel GenAI PR #688 合并动向（仍 Open）；Agents SDK 稳定化时间表；METR 组织计数未复核。
+
+## 2026-11-09 晚间轮（版本 0.19.0；窗口 2026-11-09 11:37 → 17:37 CST）
+
+- 本轨增量（H1–H4）：OTel PR #688 复核戳（仍 Open，updated_at 仍 2026-11-06T00:59:26Z，窗口内零动向，HEAD 仍 e6658f1）；Agents SDK alpha.6 字段纪律补充（created 与 published 相差约 6.4 小时，alpha.7 仅约 9 分钟；仍无 alpha.8/alpha.3、无稳定化时间表）；METR hawk 窗口内提交 804f743f（2026-11-09T04:33:32Z，#1473，Ruff 规范化，300 文件，组织仍 69 仓/10 归档）；Rethinking Verification in Agent Harnesses arXiv:2610.34577v1 轮间补漏（17 种验证设计 × 7 前沿编码模型）。其余版本戳全不变（Inspect 0.3.288、Harbor 0.25.0、LangChain 1.4.9、LangGraph 1.2.20、core 1.7.6、ADK 2.14.0、AutoGen HEAD d07c667a）。
+- 剩余未核实缺口：MAF 1.25.0 间隔官方解释；AgentTriggered 精确上线日期（已冻结，见上）；OTel GenAI PR #688 合并动向（仍 Open）；Agents SDK 稳定化时间表；METR 组织计数未复核。

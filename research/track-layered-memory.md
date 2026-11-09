@@ -356,3 +356,8 @@
 
 - 本轨增量（M1–M6）：Mem0 第三方实测首次入技能（Atlaso 44.2% 与 arXiv:2603.04814 49.0%，均附限定）；七项复现表述修正；Zep 63.8% 转引链确认（TEM Table 8 + Memanto Table IX）；Mem0 官方双口径再分歧（README 94.4%/94.8% vs 迁移页 93.4%）；Scalaris（92.2%/90.77%）等五篇 11 月记忆论文登记；letta-code v0.34.46 窗口内发布（2026-11-09T02:43:10Z），PyPI 差距 33 → 34 版；RememberStack `remember` 0.19.0。
 - 剩余未核实缺口：The Memory Wall / WALDEN 仍未定位；arXiv 周一 2026-11-09 批次枚举；2512.13564 内表细节；Mem0 93.4 vs 94.4 变更；Anthropic 报告直链；Zep 90.2% 官方原文核对；letta-code v0.34.46 release notes 内容；Mem0 双口径官方解释（仍缺失）；DolphinBench PR #13/#14 合并动向。
+
+## 2026-11-09 晚间轮（版本 0.19.0；窗口 2026-11-09 11:37 → 17:37 CST）
+
+- 本轨增量（M1–M7）：2512.13564 内表细节关闭（"63.8"/"71.2" 全文 0 命中，Table 7 仅列 Zep 行无数字，引用链立于 TEM Table 8 + Memanto Table IX + Zep 论文 Table 2）；Zep 90.2% 官方原文核对（LongMemEval 90.2% = 451/500、LoCoMo 94.7% = 1,459/1,540，gpt-5.4 reader/judge；非同一测量，禁止"71.2%→90.2% 提升"叙事）；letta-code v0.34.47/v0.34.48 窗口内两版（PyPI 差距 34 → 36 版，v0.34.46 发布说明已补读，无记忆功能变更）；Anthropic 记忆报告直链取得（CL-Bench alt 文本限定：上轮记录未被推翻亦未被本轮复核）；MemoryAtlas 新浮现旧重跑记录登记（不计为复现，阳性第三方独立复现仍为零）；11-06 批次五篇检索排序/遗忘论文摘要级（Compaction vs RAG +6.8pp p=5.5e-08、BEAM 预算、MemoryDojo 155 轨迹全系统可投毒、ENGRAM、HiMEM）；The Memory Wall / WALDEN 仍未定位（`ti:"memory wall"` 38 篇全读、`ti:WALDEN` 1 篇无关）。
+- 剩余未核实缺口：The Memory Wall / WALDEN 定位线索（作者/会议/产品）；Mem0 93.4 vs 94.4 变更；Mem0 双口径官方解释（仍缺失）；DolphinBench PR #13/#14 合并动向；五篇 11-06 批次论文全文深读（Compaction vs RAG 优先）；MemoryAtlas 各重跑行方法核实。

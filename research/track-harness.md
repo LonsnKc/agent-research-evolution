@@ -355,3 +355,8 @@
 
 - 本轨增量（H1–H5）：hawk 窗口内 3 提交（含破坏性沙箱收紧 b8d1004 #2393）；Agents SDK JS 窗口内 13 提交（含 tracing 导出容错 #2277）；Inspect 窗口内 2 提交（含 eval-sharding merge 命令设计文档 #6345）；轮间补漏 6 篇 harness 论文摘要级（Trace2Eval、The Harness Is the Model、Agent Harness Awareness、AgenticFinBench、Trial by Trace、VCC；CLEO 仅二手转述未读原文，不得引用）；复核戳：OTel PR #688 仍 Open 零动向、Agents SDK 无 alpha.8/alpha.3、MAF 仍 1.25.0/1.28.0（间隔官方解释仍缺，#10151 页面可见文本无解释）、ADK 无 2.14.1/2.15.0、版本戳全不变。窗口内新稳定发布为零。本轮 GitHub API 额度轮内耗尽，耗尽后改道 git 协议与注册表 JSON。
 - 剩余未核实缺口：MAF 1.25.0 间隔官方解释；AgentTriggered 精确上线日期（已冻结，见上）；OTel GenAI PR #688 合并动向（仍 Open）；Agents SDK 稳定化时间表；CLEO 原文直读。
+
+## 2026-11-10 凌晨轮（版本 0.21.0；窗口 2026-11-09 23:37 → 2026-11-10 05:37 CST）
+
+- 本轨增量（H1–H6）：CLEO 全文首读（arXiv:2611.03434v1，CIKM '26；83.8% / ~3k LOC vs Claude Code SDK 85.0% / ~512k，作者自认 1.2pp≈3 题属实质平手；~512k 须附论文自注「闭源压缩、无公开可验精确行数」）；hawk 窗口内 10 提交（含沙箱 glovebox RuntimeClass #2367，接续 b8d1004 收紧方向）；Inspect 窗口内 9 提交（HEAD a0ce5ab5，#6303 sentinel sidecar）；ADK 窗口内 12 提交（88b3afe 关闭 FastAPI 原生 tracing 防双重追踪；112491d RAG 内存搜索 6× 宣称为作者自报）；复核戳：Harbor 仍 0.25.0（窗口开发版 0.25.1.dev202611090753 非正式版）、MAF 仍 1.25.0/1.28.0（1.25.0 间隔官方解释仍缺）、Agents SDK 两线 HEAD 不变、无 alpha.8/alpha.3、OTel PR #688 仍 Open 零动向（updated_at 仍 2026-11-06T00:59:26Z）。边界：hawk bbe41e2 与 Harbor 三提交落在窗口关闭后 19 秒–4 分钟，计入下轮。窗口内新稳定发布为零。
+- 剩余未核实缺口：MAF 1.25.0 间隔官方解释；AgentTriggered 精确上线日期（已冻结，见上）；OTel GenAI PR #688 合并动向（仍 Open）；Agents SDK 稳定化时间表；hawk bbe41e2 / Harbor 窗口外三提交（下轮起始 HEAD）；CLEO 同类最小化 harness 追踪。

@@ -220,3 +220,17 @@
 - 剩余未核实缺口汇总：CVE-2026-114612 厂商逐字确认；Portkey CVE-2026-110719 修复版；Railway 最终报告；OpenCode post-mortem；LiteLLM LTS“新端点”清单、v1.109 正式版、vLLM v0.33.1/v0.34.0（下一稳定窗口约 2026-11-10 周二）；Dynamo kimi tag 本身直接再验；OpenRouter 基准页直读复核（R3）；ADK 官方 release notes 一手复核（H4）；MAF 1.25.0 tag→PyPI 间隔官方解释、AgentTriggered 精确上线日、OTel PR #688 审定结果、Agents SDK alpha.7 后续与稳定化时间表、METR hawk 后续提交；Mem0 双口径一句话官方解释、七项复现（连续八轮为零）、PyPI letta 下次发布、DolphinBench Empirical PR 审定结果；UserPromptExpansion 运行时测试、Gemini v0.68.0/Codex 0.168.0/0.169.0 稳定版、AAIF 落地文件、Skill Crossroads 首行版本/日期、ETUDE 97.6%/95.9% 聚合口径（只查 v2）、Cursor Agent SDK 一手确认、OpenCode #60315 归属版本、Windsurf v3.12.17 是否重现。以上均未否决任何条目，或排除在正文之外、或以二手/自报标注保留在线索中。
 - SKILL.md / SOUL.md 级提案：无新增（落点纪律：SKILL.md 本体不自动改）。
 - 发表同步：由 agent-research-evolution-publish 任务（约 18:37）承担，本任务不重复推送。
+
+## 第 17 轮（2026-11-09 晨轮，窗口 2026-11-08 23:37 → 2026-11-09 05:37；版本 0.16.0 → 0.17.0）
+
+- **执行者误报纠正**：本轮 cron 执行者曾报告「路由 B 路与技能 B 路未回齐、本轮失败」；主会话磁盘核验确认六路均已回齐（research/20261109-0537/ 六腿文件共 1,038 行，去重来源 144 个），误报系快照时点早于最后一路回齐约 24 秒；整合由主会话直接完成，delta.md（22 条增量）与 verification.md 均已落盘。
+- 跨轨结论：窗口内无新发布，本轮为缺口复核轮——上一轮 2 项暂定全部关闭（R7 三家定价悬崖阈值、R3 llm-d published_at），新增 2 项暂定子项（R9 v0.10.0 日期、S4 `@grok/agent-sdk` 0.6.0 时间戳）；三项重大纠正（Dynamo v1.6.2 存在性裁定驳回路由 A 路结论、六篇记忆论文编号全部纠正、arXiv:2611.04456 任务书勘误）；自验 22 条：通过 19、通过（未验证暂定）2、需修正 1（R6，已修正）、否决 0（执行者自验，独立抽查 6 项一手来源全部吻合或裁定有据）。
+- 文件变更：skill/references/ 四篇增量编辑（api-routing.md 8 处、agent-harness.md 1 处、layered-memory.md 3 处、skill-authoring.md 7 处，共 19 处替换，全部断言锚点唯一）；VERSION 0.16.0 → 0.17.0；旧版快照 versions/v0.16.0/；CHANGELOG.md v0.17.0 节、STATE.md 版本与轮次节、PRACTICAL.md（2 项暂定转已修正 + 任务书勘误登记已修正 + 2 项新暂定子项）、四轨 track 笔记各追加轮次节。
+- 剩余未核实缺口汇总：CVE-2026-114612 厂商逐字命名、Portkey CVE 修复版本、Railway 终报、OpenCode post-mortem、Dynamo v1.7.0-kimi 线、LiteLLM LTS 端点清单、llm-d v0.6 日期、ETUDE v2、Mem0 双口径官方解释、七项复现（第十轮为零）、arXiv 周一 2026-11-09 批次补填、The Memory Wall 与 WALDEN 定位、UserPromptExpansion 实机测试。
+
+## 第 18 轮（2026-11-09 中午轮，窗口 2026-11-09 05:37 → 2026-11-09 11:37；版本 0.17.0 → 0.18.0）
+
+- 六路并行全部回齐（路由 A/B、Harness、记忆、技能 A/B；research/20261109-1137/legs/ 六腿文件，去重来源约 60 个一手 + 约 30 个二手 + 1 个存疑未采信；arXiv API 三路限流/超时，方法限制已记录）。
+- 跨轨结论：窗口内新稳定发布两件（letta-code v0.34.46、Windsurf v3.12.32）；上一轮 2 项暂定全部一手闭合（R9 llm-d 日期、S4 grok 时间戳），新增 3 项暂定（R6 Cloudflare 细节、R7 OpenRouter 十月数据、R8 子项 DeepSeek/Kimi）；本轮最重的新证据是 Mem0 的两条公开第三方实测（Atlaso 44.2%、arXiv:2603.04814 49.0%），七项复现表述随之修正；五项腿内结论被执行者纠正（Haiku 悬崖重复、OpenAI 整单重定价与一手原文冲突、Inspect/Harbor slug 为派发书背景错误、ServerBench 仅二手、Anthropic 直链未取得不降级既有一手记录）；arXiv 周一 11-09 批次截至 11:45 CST 尚未发布（三路列表页一致，不得作「无论文」定论）。
+- 文件变更：skill/references/ 四篇增量编辑（api-routing.md +3 行、agent-harness.md 0 行、layered-memory.md 0 行、skill-authoring.md 0 行，均为行内追加与新条目，共 25 条增量）；VERSION 0.17.0 → 0.18.0；旧版快照 versions/v0.17.0/；CHANGELOG.md v0.18.0 节、STATE.md 中午轮小节、PRACTICAL.md（R9/S4 划除记入已修正，R6/R7/R8 子项新登记）、四轨 track-*.md 各追加本轮小节；research/20261109-1137/report.md + sources.md、refined/20261109-1137/delta.md + verification.md。
+- 剩余未核实缺口汇总：CVE-2026-114612 厂商逐字命名、Portkey CVE 修复版本、Railway 终报、OpenCode post-mortem、LiteLLM LTS 端点清单、v1.109 正式版、vLLM v0.33.1/v0.34.0（下一稳定窗口约 2026-11-10 周二）、arXiv 周一批次枚举、真实流量级联校准、MAF 间隔官方解释、AgentTriggered 精确上线日期（已冻结）、OTel PR #688、The Memory Wall / WALDEN 未定位、Mem0 双口径官方解释、Zep 90.2% 官方原文、ETUDE 聚合口径（读 v1 方法节）、Windsurf v3.12.28 是否重现、UserPromptExpansion 实机测试（无本地 Claude 环境）。

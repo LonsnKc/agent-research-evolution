@@ -334,3 +334,25 @@
 - 已同步进 skill 参考：layered-memory.md Mem0 双口径段追加机制拼图与同博客数字、Dreams API 段改写口径收窄句、复核戳段追加深夜轮复核（第九轮为零、letta-code/PyPI/DolphinBench/Zep 包名）、文件末尾追加六篇补漏论文段。
 - 推翻的旧说法：Dreams API「输入 store 永不修改」（未加限定的过度概括，收窄为仅默认行为）；七项复现「连续八轮为零」（改为九轮）。
 - 剩余未核实缺口（更新）：1. Mem0 双口径一句话官方解释（机制拼图已基本完成，仅缺一句点名调和的原话）。2. 七项效果数字的第三方独立复现——连续九轮为零。3. PyPI letta 下次发布时间（0.35.0 或 force_pypi）。4. DolphinBench PR #13/#14 审定结果。5. 六篇补漏论文全文核实。6. RememberStack harness 下轮跟进。7. 已解决：Mem0 双口径机制拼图；Dreams API 口径收窄；六篇补漏论文摘要级收录。
+
+## 2026-11-09 晨轮（第 17 轮，窗口 2026-11-08 23:37 → 2026-11-09 05:37）
+
+- 本轮增量 M1–M4（4 条，其中 M4 为 track-only）；版本 0.16.0 → 0.17.0。
+- M1：**六篇补漏论文 arXiv 编号全部纠正**（上一轮重大台账错误）：上一轮登记的六个编号均与题名不符——RememberStack 2611.06019、ReCap 2511.05311、The Memory Wall 2611.05727、Memorization is not Memory 2611.05200、RECON 2611.05766、WALDEN 2611.05972。按题名重定位：ReCap → arXiv:2609.40118v1（2026-09-30；约 95% 延迟降低，论文自报）；RECON → arXiv:2607.16716v1（2026-07-18；最强非 Oracle 系统 22.4%，论文自报）；Memorization is not Memory → 近似命中 arXiv:2604.27707v2（实题《Contextual Agentic Memory is a Memo, Not True Memory》，v1 2026-04-30、v2 2026-08-05；概念性，无基准数字）；RememberStack → 无 arXiv 论文（remember.dev 产品；PyPI `remember` 0.17.1、2026-09-25；`rememberstack` 0.1.0）；The Memory Wall 与 WALDEN → 未定位。均仅摘要页级核实；数字为论文自报。
+- M2：Zep Agent Skills 论文（arXiv:2611.01386v1，2026-11-01；Zep 博客 2026-11-05）——技能由已验证轨迹编译，三名较弱执行器 pass 率 +4.5–18.8pt（论文自报）。
+- M3：letta-code 仍 0.34.45（2026-11-08T07:49:26Z），0.34.46 未出现；PyPI letta 仍 0.34.12，差距仍 33 版；letta server 仓库仍 0.16.8。
+- M4（track-only）：DolphinBench PR #13（Empirical 451/600 = 75.2%，厂商自报）与 PR #14（提交格式）均仍 open（更新于 2026-11-05）；Mem0 双口径官方解释仍缺失；七项第三方复现连续**第十轮为零**。三项窗口外旧复现线索（Atlaso 读者匹配 Mem0 44.2%、Vectorize Mem0 49.0 2026-03-15、arXiv:2512.13564 Zep 71.2%→63.8%）记为待查，不入增量。
+- 五家厂商版本戳全不变：Mem0 2.2.1/3.3.1、Graphiti v0.31.2、Zep 4.1.0、LangMem 0.0.30。
+
+### 剩余未核实缺口（本轨）
+
+- The Memory Wall 与 WALDEN 论文定位（未找到）。
+- RememberStack 记忆系统后续跟进（产品，非论文）。
+- Mem0 双口径官方解释（仍缺失）。
+- 七项第三方复现：阳性复现仍为零，但 Mem0 93.4% 一项首次出现两条公开第三方实测（Atlaso 44.2%、arXiv:2603.04814 49.0%），均为不复现/低值（2026-11-09 中午轮已入技能；旧「连续十轮为零」表述已修正）。
+- DolphinBench PR #13/#14 合并动向。
+
+## 2026-11-09 中午轮（版本 0.18.0；窗口 2026-11-09 05:37 → 11:37 CST）
+
+- 本轨增量（M1–M6）：Mem0 第三方实测首次入技能（Atlaso 44.2% 与 arXiv:2603.04814 49.0%，均附限定）；七项复现表述修正；Zep 63.8% 转引链确认（TEM Table 8 + Memanto Table IX）；Mem0 官方双口径再分歧（README 94.4%/94.8% vs 迁移页 93.4%）；Scalaris（92.2%/90.77%）等五篇 11 月记忆论文登记；letta-code v0.34.46 窗口内发布（2026-11-09T02:43:10Z），PyPI 差距 33 → 34 版；RememberStack `remember` 0.19.0。
+- 剩余未核实缺口：The Memory Wall / WALDEN 仍未定位；arXiv 周一 2026-11-09 批次枚举；2512.13564 内表细节；Mem0 93.4 vs 94.4 变更；Anthropic 报告直链；Zep 90.2% 官方原文核对；letta-code v0.34.46 release notes 内容；Mem0 双口径官方解释（仍缺失）；DolphinBench PR #13/#14 合并动向。

@@ -327,3 +327,21 @@
 - 已同步进 skill 参考：agent-harness.md 改写 ADK 2.14.0 段（一手复核 + 分类纠正 + 破坏性变更）、PR #688 段追加仓名补正、Agents SDK 段追加仓名补正与复核戳、MAF 复核戳段追加包名纠正与 #10151 结论、AgentTriggered 段追加下界收紧与穷尽记录、复核戳段追加深夜轮全量版本戳。
 - 推翻的旧说法：ADK 2.14.0「内容二手，未读官方 release notes」（现全文一手复核）；「26 个运行时模块毕业」（官方分类无 "runtime"）；OTel PR #688「在 open-telemetry/semantic-conventions 仓」（实为独立仓）；MAF .NET 包名「Microsoft.AgentFramework」（官方 NuGet ID 为 Microsoft.Agents.AI）；AgentTriggered「最可能 ~2026-11-01」（下界收紧后记为未决，不再写最可能日期）。
 - 剩余未核实缺口（更新）：1. MAF 1.25.0 tag→PyPI 间隔官方解释（机制证据已补，官方说法仍缺；#10151 已排除）。2. AgentTriggered 精确上线日期（可及一手途径已穷尽）。3. OTel PR #688 审定结果（lmolkova 异议已落实，生产者义务缺口待决）。4. Agents SDK alpha 后续与稳定化时间表。5. METR hawk 后续提交。6. ADK 2.14.1/2.15.0。7. 已解决：ADK 2.14.0 一手复核；OTel PR #688 仓名；Agents SDK 仓名；MAF .NET 包名；AgentTriggered 下界收紧。
+
+## 2026-11-09 晨轮（第 17 轮，窗口 2026-11-08 23:37 → 2026-11-09 05:37）
+
+- 本轮增量 H1–H2（2 条）；版本 0.16.0 → 0.17.0。
+- H1：AgentTriggered 精确上线日期缺口**冻结**（track-only，无技能正文改动）：Learn 页仍有该节（5 命中）、公共镜像源码仍 404，可及一手途径已穷尽；区间封存 2026-10-29 → 11-07（代码合并 2026-10-28T16:25:33Z 为下界）；今后各轮不再重搜，除非出现新线索。
+- H2：METR hawk——窗口内 2 提交（8956c4c 2026-11-08T16:14:36Z k8s 只读角色 #2691；68680b4 2026-11-08T21:20:10Z 搜索 rls_bypass 修复 #2514）+ 窗口外 2 提交（6d00080 21:38:11Z 文档 #2828；0ff9098 21:40:29Z runner 错误 spans #2809，现 HEAD），已标注防下轮重复计数；组织仍 69 仓库 / 10 归档。
+- 其余版本戳全不变：ADK 2.14.0、Agents SDK Python alpha.7 / JS alpha.2 + 稳定版 0.24.0/0.21.0、MAF Python 1.25.0 / .NET 1.28.0、Inspect 0.3.288、Harbor 0.25.0、LangChain/LangGraph/langchain-core 各线不变、AutoGen HEAD d07c667 不变、OTel GenAI HEAD e6658f1 不变；OTel PR #688 仍 Open，updated_at 仍 2026-11-06T00:59:26Z，窗口内零活动。
+
+### 剩余未核实缺口（本轨）
+
+- AgentTriggered 精确上线日期（已冻结，见上）。
+- OTel GenAI PR #688 合并动向（仍 Open）。
+
+## 2026-11-09 中午轮（版本 0.18.0；窗口 2026-11-09 05:37 → 11:37 CST）
+
+- 本轨增量（H1–H4）：MAF 1.25.0 23.6h 锚点纠正（release created → PyPI 上传，轻量 tag 无独立时间；上传早于 published_at 约 11 分钟，先传包后点发布；ADK 同流程约 5 分钟；官方解释仍缺失）；Agents SDK alpha created/published 字段纪律；OTel PR #688 复核戳（仍 Open，updated_at 仍 2026-11-06T00:59:26Z，窗口内零动向）；hawk +11 提交（HEAD 008399f，含 SEC-507）与 Inspect +2 提交（HEAD 319a319，#6401）；其余版本戳全不变。
+- 纠正：Harness 腿「Inspect/Harbor slug 更正」针对的是派发书背景错误，技能正本早已正确，不入技能。
+- 剩余未核实缺口：MAF 1.25.0 间隔官方解释；AgentTriggered 精确上线日期（已冻结，见上）；OTel GenAI PR #688 合并动向（仍 Open）；Agents SDK 稳定化时间表；METR 组织计数未复核。

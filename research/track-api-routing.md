@@ -324,3 +324,32 @@
 - 已同步进 skill 参考：api-routing.md 改写 OpenRouter 基准表段（一手升级 + 聚合口径注记）、改写 Dynamo kimi tag 段（直接再验 + v1.6.2）、llm-d 段追加细节补充、Conformal Cascade 段追加成本闭式与校准落点、文件末尾追加 CascadeFilter 联合阈值段、长上下文定价悬崖段、Beyond K/V Caches 段与本轮复核戳段。
 - 推翻的旧说法：OpenRouter 基准表「二手转述、未直读」（现一手复核）；Dynamo kimi tag「未直接再验」（现直接再验）；delta.md R3 原「llm-d 基线停于 v0.5，v0.6–v1.0 回填」说法（与技能正本现状冲突，整合前已改写为增量补充）。
 - 剩余未核实缺口（更新）：1. CVE-2026-114612 厂商逐字确认 1.106.6 含修复。2. Portkey CVE-2026-110719 修复版。3. Railway 最终报告与 OpenCode post-mortem。4. LiteLLM LTS"新端点"清单、v1.109 正式版、vLLM v0.33.1/v0.34.0（下一稳定窗口约 2026-11-10 周二）。5. AgentRouter v1.2.1 published_at 未验证。6. llm-d v1.0.0 tag published_at 未验证（R3 子项，未验证暂定）；v0.6–v0.10 回填。7. Portkey #1372 与 CVE-2026-110719 消歧；Portkey 1.15.1/1.15.2 有无 Release 对象。8. 三家厂商定价悬崖阈值定价页原文直读（R7 残余，未验证暂定）。9. 真实流量级联校准实测仍无一手证据。10. 已解决：OpenRouter 基准表一手复核；Dynamo kimi tag 直接再验；Conformal Cascade 成本闭式与校准落点。
+
+## 2026-11-09 晨轮（第 17 轮，窗口 2026-11-08 23:37 → 2026-11-09 05:37）
+
+- 本轮增量 R1–R10（10 条），全部落入 `references/api-routing.md`；版本 0.16.0 → 0.17.0。
+- R1：llm-d v1.0.0 tag published_at 一手定稿 2026-10-20T02:30:10Z（GitHub Releases API；release id 417939524；执行者自验独立抽查确认），上一轮 R3 暂定子项关闭。
+- R2：R7 其余三家厂商定价悬崖阈值全部升级为一手（OpenAI GPT-5.5/GPT-6 >272K、xAI Grok ≥200k、Google Gemini >200k；执行者自验独立抽查三家官方定价页全部吻合）；Google 输出 1.5× 纠正（上一轮 2× 错误）；整单重定价句不在 Developer API 定价页上的限定（全页 7,930 行 0 命中，Vertex AI 侧仅二手引文）；上一轮 R7 暂定关闭。
+- R3：AgentRouter v1.2.1 published_at 一手 2026-11-06T16:24:47Z，tag 创建 2026-10-28。
+- R4：Portkey 1.15.1/1.15.2 Release 对象存在；1.15.2 为 2026-01-12T08:46:07Z；"released 2026-10-21" 为测试执行日期，撤回。
+- R5：Portkey #1372 消歧——引入校验器的 PR，非 CVE 修复；CVE-2026-110719 仍无厂商确认修复版本。
+- R6：**Dynamo 存在性裁定（自验驱动修正）**：路由 A 路「v1.6.2 不存在 / 最新稳定 v1.6.1」结论被执行者以 PyPI 一手驳回（ai-dynamo 1.6.2 轮子 2026-11-05 上传）；最新稳定仍为 v1.6.2；文档侧仍滞后于 v1.6.0（安装页）/v1.6.1（版本表）；原结论不入技能正文。
+- R7：LiteLLM 状态束——仍无 v1.109 正式版（最新 RC v1.109.0-rc.1）、无 v1.108.4（最新 LTS 补丁 1.108.3，2026-11-07）、v1.110.0-dev.2 2026-11-08T02:25:47Z（窗口外）、LTS 端点清单仍未公布。
+- R8：vLLM 状态——仍无 v0.33.1/v0.34.0，最新稳定 v0.33.0（2026-11-02）。
+- R9：llm-d v0.6–v0.10 回填（v1.0.0 Release 组件表一手；博客日期 v0.7 2026-05-12、v0.8 2026-06-24、v0.9 2026-08-28；v0.10.0 = 2026-09-29 二手双源，**新暂定子项**；v0.6 日期仍缺失；无 v1.0.1/v1.1.0）。
+- R10：basal engine 2.5 级联（厂商自报，边界项）：--escalate pico→mini→ultra，阈值 0.95，同精度 ±0.5pt、约 1.5× 请求/H100。
+
+### 剩余未核实缺口（本轨）
+
+- CVE-2026-114612 厂商逐字命名 1.106.6 仍缺失（GHSA 固定表止于 1.104.0-rc.2）。
+- Portkey CVE-2026-110719 厂商确认修复版本仍缺失。
+- Railway 终报、OpenCode post-mortem 仍未发布。
+- Dynamo v1.7.0-kimi-k3.1-pro-dev.1 搜索未命中。
+- LiteLLM LTS "new endpoints" 清单仍未公布。
+- llm-d v0.6 日期已解决（2026-11-09 中午轮：v0.6.0 published_at 2026-04-03T16:48:54Z、v0.10.0 2026-09-29T00:00:25Z，均 GitHub Releases API 一手；R9 暂定已划除）。
+
+## 2026-11-09 中午轮（版本 0.18.0；窗口 2026-11-09 05:37 → 11:37 CST）
+
+- 本轨增量（R1–R8）：llm-d v0.10.0/v0.6.0 日期一手闭合（R9 暂定划除）；CVE-2026-114612 与 Portkey CVE-2026-110719 复核戳（厂商确认与修复版仍缺）；中继审计 arXiv:2611.07650 与 ADP-HT arXiv:2611.05835 新增；Cloudflare 模型别名新增（标题级，细节未读，R6 暂定）；OpenRouter 十月数据补充（二手双源，R7 暂定）；定价悬崖复核戳 + DeepSeek/Kimi 无悬崖（二手多源一致，R8 子项暂定）。窗口内无网关新发布；LiteLLM 仍无 v1.109 正式版/无 v1.108.4、vLLM 仍无 v0.33.1/v0.34.0。
+- 纠正：路由 B 路「Haiku 5.5 悬崖新发现」为重复（技能正本已有该条目一手记录）；路由 B 路「OpenAI 整单重定价官方页未明文」与既有一手证据冲突，不采纳；ServerBench 仅二手转述，不入技能。
+- 剩余未核实缺口：arXiv 周一 2026-11-09 批次系统枚举（API 限流后补查）；真实流量级联校准（最大缺口）；Cloudflare 别名原文直读；OpenRouter 十月回顾页直读；DeepSeek/Kimi 官方定价页直核；CVE 厂商逐字确认；Portkey CVE 修复版；Railway 终报；OpenCode post-mortem；LiteLLM LTS 端点清单、v1.109 正式版、vLLM v0.33.1/v0.34.0（下一稳定窗口约 2026-11-10 周二）。

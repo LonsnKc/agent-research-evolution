@@ -328,3 +328,27 @@
 - 已同步进 skill 参考：skill-authoring.md OpenCode 2026-10-30 组段追加归属纠正、SkillzBench 段追加 23:39 快照、Windsurf 段追加再核结果、文件末尾追加 Cursor Agent SDK 新段与深夜轮复核戳段。
 - 推翻的旧说法：OpenCode v2.2.3/v2.2.4 归属「二手镜像数据，非官方标题」（现官方 release notes 钉死）；Cursor Agent SDK「GA 2026-10-20 与包名 @cursor/agent-sdk 为二手多方一致」（GA 日期仍二手，但 skills/ 机制已一手确认；包名仍未确认）。
 - 剩余未核实缺口（更新）：1. UserPromptExpansion 运行时测试（2.1.116 实机触发）。2. Gemini v0.68.0 / Codex 0.168.0/0.169.0 稳定版。3. AAIF 落地文件持续检索。4. Skill Crossroads 下轮复核报告页首行版本/日期。5. ETUDE 97.6%/95.9% 聚合口径（只查 v2）。6. Cursor Agent SDK GA 日期一手日期戳。7. `@cursor/agent-sdk` 公共 npm 上架与否。8. arXiv:2611.04456 下轮评估。9. SkillzBench 计数波动解释。10. Windsurf v3.12.17 是否重现。11. 已解决：Cursor Agent SDK skills/ 机制一手确认；OpenCode #60315 归属版本；Windsurf v3.12.17 再核。
+
+## 2026-11-09 晨轮（第 17 轮，窗口 2026-11-08 23:37 → 2026-11-09 05:37）
+
+- 本轮增量 S1–S6（6 条）；版本 0.16.0 → 0.17.0。
+- S1：arXiv:2611.04456《How Agent Skills Evolve》全文一手收录（Huang 等，v1 2026-11-03，仅 [v1]）：84,200 技能 / 7,776 仓库 / 750,898 提交（非「23 技能」、非「四个维度」，结构为 RQ1–RQ4 + 5 条启示）；核心组件元数据/工作流/知识在 99.9%/98.2%/97.8% 的技能中，资源 50.6%、脚本 14.6%；仅 35.2% 有验证步骤、49.6% 有故障恢复指引、28.9% 缺触发条件；工作流+知识+元数据占组件变更 86.0%（工作流 40.0%）；完善性维护占演进动机 50.37%；安全增强提交扫描确认风险降低平均仅 13.01%（Cisco 15.2% 降 / Snyk 10.8% 降，N=876）。数字均为论文自报。
+- S2：**任务书勘误（修正）**：第 17 轮任务书关于 arXiv:2611.04456 的三处说法（「23 技能纵向研究」「指令越长错误越多」「工具调用指令随模型升级变脆」）全文 0 命中，无依据；最近似的另一篇论文 2610.04832 §5.1.5 说的是相反结论（新老模型代际收益相近），§5.1.6 是「技能填满窗口时收益缩水」（不同主张）。「变脆」措辞永不作为技能主张进入正文；skill-authoring.md 第 113 行尾句与本轨第 16 轮小节尾句均已纠正。
+- S3：Cursor Agent SDK GA 日期升级为一手——官方博客发布于 2026-10-20T12:00:00Z，"The Agent SDK is generally available today."
+- S4：`@cursor/agent-sdk` 不在公共 npm 上（注册表 404，一手）；实际包为 `@grok/agent-sdk`，最新 0.6.0（**发布时间戳尚未取得，新暂定子项**）；官方博客/更新日志安装示例仍写 `@cursor/agent-sdk`（文档缺陷观察，不入技能正文）。
+- S5：SkillzBench 快照刷新——已发表 875、已测效果 163→167、试验 21,041→21,166、扫描 3,024→3,026、已判 2,981→2,983；已发现 2,627、仓库 112、已证 43/84 不变；方法论页不变（trust-2026-10-15.1，每日队列文案完整，仍无波动解释）。注：已发现 2,627 低于上一轮 23:39 快照的 2,639，计数器非单调，记为波动注记，非回归。
+- S6：Gemini CLI #29980 升级为一手（预览版发布说明正文内）；AAIF HEAD #648 一手确认（提交 83021e2，"AAIF Donation: Add governance and maintainers"，2026-11-04 采纳；提交列表页提取为陈旧/渲染滞后，已弃用）。
+- 窗口内无新技能论文（arXiv 最新公告日仍为 2026-11-06 周五；周一 2026-11-09 批次核查时尚未发布，下一轮补填）；ETUDE 仍仅 [v1]（API + 摘要页双重确认）；Skill Crossroads 仍 rubric v1.2（2026-09-10 生成，页面字节一致）；各宿主稳定版全不变（Gemini CLI v0.67.0、Codex rust-v0.167.0、Claude Code v2.1.319、OpenCode v2.2.6、Cursor CLI v2026.10.22、Windsurf v3.12.28）。
+
+### 剩余未核实缺口（本轨）
+
+- ETUDE 97.6%/95.9% 聚合数字仍未解决（仍仅 [v1]）。
+- `@grok/agent-sdk` 0.6.0 发布时间戳已解决（2026-11-09 中午轮：2026-11-03T16:45:14.613Z，npm 注册表一手；S4 暂定已划除）。
+- arXiv 周一 2026-11-09 批次补填（下一轮）。
+- UserPromptExpansion 实机测试仍无法本地执行（无 Claude 环境）。
+- Windsurf v3.12.17 连续第四轮零命中（2026-11-09 中午轮：官方稳定页顶部现为 v3.12.32；v3.12.28 未见于 .md 版，异常已记录）。
+
+## 2026-11-09 中午轮（版本 0.18.0；窗口 2026-11-09 05:37 → 11:37 CST）
+
+- 本轨增量（S1–S7）：`@grok/agent-sdk` 0.6.0 时间戳一手闭合（S4 暂定划除）；Windsurf v3.12.32 窗口内新稳定版（2026-11-08，.md 一手，0 处 "skill"；v3.12.28 未见于 .md、内容与 v3.12.32 逐条相同，异常如实记录）；Cursor CLI 安装脚本现供 2026.11.05-86047df（一手）；SkillzBench 快照刷新（875/169/21,318/3,027/2,984/2,627/112，proven 43/84）；ETUDE v2 前提撤回（仅 v1，97.6%/95.9% 已在 v1 摘要中）；周五批次技能论文六篇（ENGRAM、LoRA→Language、Feedback Backdoor、Skillware、DelegateEval、DefectSkills）；UserPromptExpansion Hooks 页重构（3,531→4,303 行，核心措辞不变，仍无实机环境）。
+- 剩余未核实缺口：arXiv 周一 2026-11-09 批次补填（下一轮；More with Less、From Procedures to Permissions 两篇编号待确认）；Cursor 桌面/CLI 版本映射；Windsurf v3.12.28 是否重现；ETUDE 聚合口径读 v1 方法节；Gemini v0.68.0 / Codex 0.168.0/0.169.0 / OpenCode v2.2.7 / Claude v2.1.320；UserPromptExpansion 实机测试仍无法本地执行（无 Claude 环境）；Skillware 方法/仓库核查；SWE-Skills-Bench v2 页重核。

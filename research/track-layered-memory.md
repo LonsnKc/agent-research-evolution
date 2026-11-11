@@ -426,3 +426,18 @@
 - 纠正：AgentOS「自己的 LongMemEval 重跑正在进行」撤回（本轮取回页面 0 命中，状态改为未核查）；LLMSlim round 6「协议/harness/逐题答案未公开」部分更新（round 3 代码已公开，round 6 仍未公开）。
 - 剩余未核实缺口：Mem0 双口径官方解释；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM 代码与数据集发布动向；PyPI letta 下次发布；arXiv 11-12 批次补查；2611.09807 成对 A/B；MIRIX-2.0 代码合入状态与 72.6/70.0 出入调和；LLMSlim round 6 harness 公开情况与 AgentOS 重跑状态。
 - 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略）。
+
+## 2026-11-11 22:09 轮（版本 0.31.0；窗口 2026-11-11 19:09 → 22:09 CST）
+
+- 本轮增量：FGSE 全文深读（证伪门控准入、阈值 η=0.03/δ=0.05/β=0.01、探针 8/16/16、380→104 提交、记忆域有害更新率最高 12.4%/13.1%、移除证伪探针 0.748→0.713；准入时遗忘为第五种遗忘位置、三统计量为准入排序信号）；Mem0 双口径新反证（自家博客引低位对 93.4/91.6；基准指南泛述不构成调和）；MIRIX 基线算术观察（两值同推最强基线 58.3，出入仅在自身分数；仍未调和）；DolphinBench PR #10–#14 评论数复核（2/1/1/2/2）；arXiv 11-11 批次 4 篇新记忆论文摘要级登记（FGSE 全文、SHARP、机器人时序捷径、Continual-ARC 相邻）。
+- 纠正：2611.09807「answer-type gate / 无成对 A/B」（实为参考答案长度分层 Table 2，Table 1 已是成对 A/B）；AgentOS「自己的 LongMemEval 重跑正在进行」撤回为未核查（两文档页全文重读 "re-run" 0 命中）；DolphinBench 仓库路径纠正为 mem0ai/dolphinbench。
+- 剩余未核实缺口：Mem0 双口径官方解释；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM 代码与数据集发布动向；PyPI letta 下次发布；arXiv 11-12 批次补查；2611.09807 上下文 token 数出入核查（964/1,454 vs 963/1,461）；MIRIX-2.0 代码合入状态与 72.6/70.0 出入调和；LLMSlim round 6 harness 公开情况与 AgentOS 重跑状态。
+- 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略）。
+
+## 2026-11-12 01:09 轮小节
+
+- 本轮增量：2611.09807 上下文 token 数出入已定位并调和（scored (4) 964/1,454 vs all (5) 963/1,461；§5.4 引 all (5) 行；字符/4 近似、主张的是比率）——缺口闭合；Mem0 基准指南句现为一手直读（"74% and 92.5%…neither is wrong" 逐字确认），但仍不调和 91.6/93.4（页内 0 命中）。
+- 复核戳：DolphinBench PR #10–#14 全部 open（零窗口内动向）；Dual-Layer 仍 v2「upon acceptance」未发布；ENGRAM 仍 v1，匿名代码链接连续第九轮 HTTP 401；letta-code 仍 v0.34.51，PyPI letta 仍 0.34.12，差距仍 39 版；MIRIX-2.0 仍无 2.0 分支与发布，72.6/70.0 出入仍未调和（基线一致观察继续有效）；LLMSlim round 6 仍只公开聚合结果；AgentOS 重跑状态仍未核查（不得恢复旧表述）；MemoryAtlas 无新增行（"49.00" 0 命中）；七项效果数字第三方独立复现仍零新增；版本戳全部未变（Mem0 PyPI 2.2.1 / npm 3.3.1、Graphiti 0.31.2、Zep 4.1.0、LangMem 0.0.30）；arXiv 11-12 批次尚未公告。
+- 纠正：2611.09807 token 出入「未调和」→ 已调和（两行聚合，非笔误）。
+- 剩余未核实缺口：Mem0 双口径官方解释；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM 代码与数据集发布动向；PyPI letta 下次发布；MIRIX-2.0 代码合入状态与 72.6/70.0 出入调和；LLMSlim round 6 harness 公开情况与 AgentOS 重跑状态；七项效果数字第三方独立复现；arXiv 11-12 批次补查。
+- 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略）。

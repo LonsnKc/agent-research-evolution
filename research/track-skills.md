@@ -420,3 +420,18 @@
 - 纠正：Vibing Talk「仍 #1/#3/#11」更正为实际 11 帖（browser 提取 artifact；执行者亲自 grep 原始 HTML 裁决）；Skillware「PR #471/#472 均仍 open 未合并」更正为窗口内均已合并；Hooks 水位文件勘误主张本轮未再出现（16:09 轮已裁决不再受理）。
 - 剩余未核实缺口：ETUDE 聚合公式（邮件联系是否尝试由主轮定）；Skillware 作者澄清（邮件联系是否尝试由主轮定）；Cursor 桌面/CLI 版本映射与 CLI 新版变更内容；Windsurf v3.12.28 是否重现（已 16 轮）；Gemini nightly 根因；Codex rust-v0.168.0/0.169.0 稳定版；AAIF 落地文件；SkillzBench +150 原因；arXiv 11-12 批次补查。
 - 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议深化）。
+
+## 2026-11-11 22:09 轮（版本 0.31.0；窗口 2026-11-11 19:09 → 22:09 CST）
+
+- 本轮增量：Dr. RTL 全文深读（组相对技能学习、47 个模式–策略对、20 设计 WNS 21.3%/TNS 16.9%/面积 −5.8%、SEC 86% 为筛选后口径、RTL-OPT 36 任务、评估协议四条教训）；代码检索方法注记（未认证检索 401、须用已认证 gh api；ETUDE 64 / Skillware 88 / Skill++ 82，前 10 均为第三方聚合）；Gemini nightly run #566 作业级重读（两 mac 构建成功、发布作业第 12/29 步失败）；SkillzBench 快照刷新（published 1,175 第四轮持平、effect 190 +2、trials 22,875 +36、scans 3,206 +10、Judged 3,163 +10；proven 本轮首页不可见）；arXiv `all:skill` 仍 52 篇、18 篇全部仍 v1。
+- 纠正：2611.13818「skill-specific LoRA adapters」（实为 BEHAVIOR-1K 第二名解法，LoRA 仅为方法细节）；上一轮「代码检索 total_count 0」（未记查询字符串，不可复现，由本轮带查询字符串记录取代）。
+- 剩余未核实缺口：ETUDE 聚合公式（邮件联系是否尝试由主轮定）；Skillware 作者澄清（邮件联系是否尝试由主轮定）；Cursor 桌面/CLI 版本映射与 CLI 新版变更内容；Windsurf v3.12.28 是否重现（已 17 轮）；Gemini nightly 根因；Codex rust-v0.168.0/0.169.0 稳定版；AAIF 落地文件；SkillzBench +150 原因；arXiv 11-12 批次补查。
+- 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议深化）。
+
+## 2026-11-12 01:09 轮小节
+
+- 本轮增量：AgentScript-Eval 全文深读（v1 28.0% → v2 14.0% → v3 37.0% pass@1、98.0% 编译、61.1% pass rate；四项限定必须同引；10:09 轮摘要级登记确认并精确化）；Claude Code 同名优先表 9 条规则首次一手捕获（基线补漏，窗口归属未定）；OpenCode V2 发现机制一手官方确认（六目录、六级优先——自验纠正腿稿五级说法、路径派生 ID、HTTP catalogs）；Hooks 参考页 L2344 措辞改写，UPE 仍 L1589 未变，UPE 实机测试仍无环境；SkillzBench 快照（published 1,175 第五轮持平，effect 191、trials 22,891、scans 3,209、Judged 3,166、Discovered 2,736、repos 120 持平，proven 不可见；跨腿冲突已裁决）；宿主版本戳（Claude 2.1.322、Codex 0.167.1/alpha.11、Gemini 0.68.0、OpenCode 2.2.7、Cursor CLI 2026.11.11-043ef28、Windsurf v3.12.43、v3.12.28 第 18 轮未重现）。
+- 复核戳：ETUDE/Skillware/Skill++ 均仍仅 v1（同名第二篇 Skillware 仍 v3；SkillsBench 仍 v4；SkillCache 仍 v1；SWE-Skills-Bench 仍 v2）；Skillware 作者仓窗口内零事件（stars 180 / forks 78 / open 47，pushed_at 2026-11-11T09:12:48Z）；Vibing Talk 仍 11 帖，全文 "97.6"/"95.9"/"84.8"/"18.5" 均为 0 命中，邮件联系未尝试；AAIF 三件落地文件仍未出现（规范页逐字节相同，HEAD 仍 83021e2）；Skill Crossroads 仍 rubric v1.2（63,985 B 逐字节相同）；Gemini nightly 仍 7 连败（失败收敛于 Publish Release 步骤，根因仍未决）；Cursor 桌面 changelog 本轮 curl 受阻（方法失败，非「无变化」）；评估协议（Wild 五档阶梯 / ACES Skill Lift）无新一手来源；技能论文版本页全部仍 v1（PASE / Continual-ARC / AgentScript-Eval / Teaching the Harness 等）；arXiv `all:skill` 仍 52 篇、全部仍 v1，11-12 批次尚未公告（公告 2026-11-13 01:00 UTC）。
+- 纠正：SkillzBench 跨腿冲突裁决（repos +2 说法不成立，A 腿持平正确；Judged/Discovered 以 A 腿为准）；OpenCode 优先顺序腿稿五级→六级（自验纠正）；Vibing Talk 帖数口径（11 帖，见 19:09 轮）本轮复核无变化。
+- 剩余未核实缺口：ETUDE 聚合公式（邮件联系是否尝试由主轮定）；Skillware 作者澄清（邮件联系是否尝试由主轮定）；Cursor 桌面/CLI 版本映射与 CLI 新版变更内容；Windsurf v3.12.28 是否重现（已连续 18 轮未重现）；Gemini nightly 根因；Codex rust-v0.168.0/0.169.0 稳定版；AAIF 落地文件；SkillzBench +150 原因；arXiv 11-12 批次补查；UserPromptExpansion 实机测试（无本地 Claude 环境）；Teaching the Harness（2611.13144）全文深读待排；《MCP vs CLI vs Skills》技能轨登记（结转下轮）。
+- 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议深化）。

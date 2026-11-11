@@ -410,3 +410,20 @@
 - 剩余未核实缺口：Harbor 0.25.1（#4127 之后首个稳定版，仓库新址 harbor-framework/harbor）；MAF 1.25.0 间隔官方解释与 #10152 发布载体；OTel GenAI span 格式 PR 簇审定结果；Agents SDK 稳定化时间表；inspect-ai 0.3.290 与更名时间；arXiv 11-12 批次补查。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式）。
 - 下轮起始 HEAD：hawk d3383bf、Harbor 500af91、inspect-ai（新组织）67873ea、LangGraph py 5ea88ec、langgraphjs f404576、MAF 7e2ba54、ADK 9687bae、AutoGen d07c667a、Agents SDK py d689616 / js 7589b9c、LangChain py c6ec96a、OTel main e6658f1 / PR #688 head eca7862。
+
+## 2026-11-11 22:09 轮（版本 0.31.0；窗口 2026-11-11 19:09 → 22:09 CST）
+
+- 本轮增量：Harbor 任务格式一手（分离验证器模式、格式与运行器解耦、ATIF v1.8 八个音频内容类型）；METR Task Standard 现行版 0.5.0 + README 冻结声明（改用 Inspect）；MAF #10152 已合并（2026-11-11T09:17:59Z，窗口前）但发布载体未定；OTel GenAI 仅两项窗口活动（#688 评论、#516 上游合并）；Agents SDK py 一窗口提交（Dependabot），alpha 仍 py alpha.7 / js alpha.2，alpha.7 发布说明无稳定化时间表；inspect-ai 0.3.290 未发布（更名时间仍未定）；arXiv 11-11 批次 24 篇零窗口内修订；CLEO 仍 v1。
+- 纠正：本轮 Harness 轨无旧说法推翻。
+- 剩余未核实缺口：Harbor 0.25.1；MAF 1.25.0 间隔官方解释与 #10152 发布载体；OTel GenAI span 格式 PR 簇审定结果；Agents SDK 稳定化时间表；inspect-ai 0.3.290 与更名时间；arXiv 11-12 批次补查。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式）。
+- 下轮起始 HEAD：hawk d3383bf、Harbor 500af91、inspect-ai 67873ea、LangGraph py 5ea88ec、langgraphjs f404576、langchainjs 267ebca、MAF 6d79abf、ADK 9687bae、AutoGen d07c667a、Agents SDK py 64fbde5 / js 7589b9c、LangChain py c6ec96a、OTel main e6658f1 / PR #688 head eca7862 / PR #516 head f96d095。
+
+## 2026-11-12 01:09 轮小节
+
+- 本轮增量：LangChain Python 1.5.0 / core 1.8.0 / typesafe 0.1.0 窗口内发布（决策模型 + 模型路由/自动模式中间件，beta）；MAF #10152 前置依赖已解除（hyperlight-sandbox v0.9.0 已发布 + 依赖下限 >=0.9.0，载体仍未定）；MAF #10151 分阶段门控旁证（23.6 小时间隔仍无官方解释）；OTel GenAI PR 簇六项仍 open + 新增相邻 PR #702/#696/#694/#689；Harbor dev 构建 0.25.1.dev202611110847；ATIF v1.8 LLMJudge 媒体转发细节；本轮破坏性变更 2 项（MAF #10266、LangChain Python 3.10 移除）；inspect-ai 0.3.290 未发布 + AISI 更名警示。
+- 复核戳：Agents SDK 稳定化时间表仍无官方表述；hawk/ADK/langgraph py/langchainjs/AutoGen 零提交；langgraphjs 2 提交（StreamOrchestrator）；arXiv 11-12 批次尚未公告（公告 2026-11-13 01:00 UTC）；11-11 批次 12 篇直接相关论文全部仍 v1；CLEO 仍 v1；METR Task Standard 仍冻结 0.5.0；OTel GenAI 议题 #703/#697/#695/#693/#682 与 #1075 本轮未复核（API 额度耗尽），下轮须重核。
+- 纠正：MAF #10152「前置未发布」部分已过时（见本轮增量）；LangChain 默认分支为 master（非 main）。
+- 剩余未核实缺口：Harbor 0.25.1；MAF 1.25.0 间隔官方解释与 #10152 发布载体；OTel GenAI span 格式 PR 簇审定结果（议题重核）；Agents SDK 稳定化时间表；inspect-ai 0.3.290 与组织更名时间；arXiv 11-12 批次补查。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式）。
+- 下轮起始 HEAD：hawk d3383bf、Harbor 500af91、inspect-ai 7f5a2b5、LangGraph py 5ea88ec、langgraphjs 737e53b、langchainjs 267ebca、MAF 22b5e75、ADK 9687bae、AutoGen d07c667a、Agents SDK py 64fbde5 / js 7589b9c、LangChain py 771d11b（master 分支）、OTel main e6658f1 / PR #688 head eca7862 / PR #516 head f96d095。

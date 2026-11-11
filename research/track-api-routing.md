@@ -433,11 +433,18 @@
 - 纠正：本轮路由轨无旧说法推翻。
 - 剩余未核实缺口：LiteLLM v1.109.1/v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；OpenCode post-mortem；Cloudflare smart-routing 排序信号；OpenRouter $6.43 口径调和（未结台账，下轮优先补做）；11 因子权重；arXiv 11-12 批次补查；llm-d `pushed_at` 移动成因；2611.01747v1 疑似既有检索遗漏（下轮核查）；在线学习阈值真实流量证据仍无（CascadeRec/HIRA 仍为仅有的两项生产级联证据；Counterfactual OCP 为理论结果，非流量证据）。
 - 下轮起点：先清上述缺口（OpenRouter $6.43 重算为未结台账首项），再按子主题轮转（成本/延迟权衡定量模型）。
-
 ## 2026-11-12 01:09 轮小节
 
 - 本轮增量：LangChain 1.5.0 决策模型 + 模型路由/自动模式中间件（beta）交叉引用登记；veduis 生产分层路由器案例（作者自报，未独立核实，新增未验证暂定）；OMCE 2611.01747v1 真实遗漏确认；OpenRouter 博客 7 篇补登记 + 429 教程 fallback 语义 + Extractions API；LiteLLM LTS「新端点」澄清（仅 v1.108.0 一批，LTS 页滞后两个补丁）；arXiv API `<updated>` 元数据触碰异常方法论警示（不入技能正文）。
 - 复核戳：LiteLLM v1.109.1/v1.110.0、vLLM v0.33.1/v0.34.0 均未出现；CVE-2026-114612 厂商逐字确认仍缺；Portkey CVE 仍无修复版；OpenCode post-mortem 仍未见；llm-d `pushed_at` 窗口内再次移动至 2026-11-11T16:18:52Z，成因仍未确认；OpenRouter 基准数据接口仍 401（$6.43 本轮未重算，台账项保留）；计数器 2,416,741 → 2,417,180（+439）；目录仍 466、decisions 仍 36；Jev 11 因子权重仍未披露；Cloudflare 排序信号仍未披露（方法修正：改以渲染文本 diff 为准）；Dynamo 表仍缺 v1.6.1/v1.6.2 两行（抓取口径修正：上轮保存文件实为 v1.4.1 版页面）；arXiv 11-12 批次尚未公告（公告 2026-11-13 01:00 UTC，路由 B 腿 00:00 UTC 不采纳）。
 - 纠正：上一轮「OpenRouter 博客 11-06 后无更新」系镜像核查漏检，本轮官方 RSS 一手纠正（7 篇补登记）；arXiv 公告时刻以已裁决的 2026-11-13 01:00 UTC 为准。
 - 剩余未核实缺口：LiteLLM v1.109.1/v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；OpenCode post-mortem；llm-d `pushed_at` 移动成因；OpenRouter $6.43 口径调和（未结台账）；Jev 11 因子权重与实际运行版本；arXiv 11-12 批次补查；在线学习阈值真实流量证据（CascadeRec/HIRA 仍为仅有的两项生产级联证据）。
+- 下轮起点：先清上述缺口（OpenRouter $6.43 重算为未结台账首项），再按子主题轮转（成本/延迟权衡定量模型）。
+
+## 2026-11-12 04:09 轮小节
+
+- 本轮增量：vLLM v0.34.0rc1 标签重新出现（新提交 52aeb580，窗口内；推翻连续三轮“已撤回”结论）；Extractions API 全文深读（三模型 + 定价 + alpha 端点，/docs/api-reference/extractions 为 404）；OpenRouter 基准板 13→18（2,417,640 task evaluations；抓取超窗 6 分钟，记为本轮首次捕获）、decisions 36→37（gemini-decision-1 为 decisions-only，不在 /models 列表）；SHADOWPREFILL 全文深读（切换税量化 + 方法 + 仿真限定）；LTS 页滞后三个补丁；Rust 核说法来源收紧（仅 Changelog 摘要条目）。
+- 复核戳：LiteLLM 无 v1.109.1/v1.110.0/v1.108.6；vLLM 无 v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认仍缺；Portkey CVE 仍无修复版；OpenCode post-mortem 仍未见；llm-d `pushed_at` 本窗口未动（ForkEvent 未推动，削弱“ForkEvent 巧合”假说）；Dynamo 表仍缺 v1.6.1/v1.6.2 两行；Jev 权重与 Cloudflare 信号仍未披露；博客 RSS +576 字节未定位；arXiv 11-12 批次尚未公告（公告 2026-11-13 01:00 UTC）。
+- 纠正：vLLM rc1“已撤回”结论被推翻（标签重新出现，新提交）；LiteLLM Rust 核说法来源收紧为仅 Changelog 摘要（GitHub 发布正文无 "rust"）。
+- 剩余未核实缺口：LiteLLM v1.109.1/v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；OpenCode post-mortem；llm-d `pushed_at` 移动成因；OpenRouter $6.43 口径调和（未结台账，连续四轮 401）；Jev 11 因子权重与实际运行版本；Cloudflare 智能路由信号；Dynamo 文档表缺行；arXiv 11-12 批次补查；在线学习阈值真实流量证据（CascadeRec/HIRA 仍为仅有的两项生产级联证据）；方法论页 Scans on record 读数冲突（3194 vs 3197 vs 首页 3,236）。
 - 下轮起点：先清上述缺口（OpenRouter $6.43 重算为未结台账首项），再按子主题轮转（成本/延迟权衡定量模型）。

@@ -427,3 +427,12 @@
 - 剩余未核实缺口：Harbor 0.25.1；MAF 1.25.0 间隔官方解释与 #10152 发布载体；OTel GenAI span 格式 PR 簇审定结果（议题重核）；Agents SDK 稳定化时间表；inspect-ai 0.3.290 与组织更名时间；arXiv 11-12 批次补查。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式）。
 - 下轮起始 HEAD：hawk d3383bf、Harbor 500af91、inspect-ai 7f5a2b5、LangGraph py 5ea88ec、langgraphjs 737e53b、langchainjs 267ebca、MAF 22b5e75、ADK 9687bae、AutoGen d07c667a、Agents SDK py 64fbde5 / js 7589b9c、LangChain py 771d11b（master 分支）、OTel main e6658f1 / PR #688 head eca7862 / PR #516 head f96d095。
+
+## 2026-11-12 04:09 轮小节
+
+- 本轮增量：OTel #688 落地共识补记（aabmass 2026-11-10 同意按原样落地，util-genai 修复拆为 #1075）+ #1075 窗口内 2 提交推进；Harbor 分离验证器全文深读（两种配置、5 行解析表、镜像优先级链、artifact 消毒）；METR Task Standard 0.5.0 口径澄清（README 声明值，非 tag）；langchainjs 决策模型移植合并（#12178/#12183，尚无 JS 发布）；本轮破坏性变更 1 项（hawk #2893，Kubernetes Baseline v1.35 强制 runner 命名空间）；inspect-ai 0.3.290 未发布（3 修复提交）。
+- 复核戳：六核心 PR 全仍 open，main HEAD 仍 e6658f1，零合并；五议题本轮逐项重核（上轮额度耗尽未决项闭合），全 open 零活动；待决 15 项；Harbor 0.25.1 未发布；MAF 零动向（#10152 载体仍未定）；Agents SDK 无新 alpha/稳定/时间表（README grep 0 命中为新的否定证据）；LangGraph py 零提交；ADK 1 提交；组织更名时间仍未定。
+- 纠正：OTel *_ref 属性 PR 编号 #702→#704（#702 实为 conformance runner pin）；langchain-core 1.7.7“无 1.7.7+”旧句过时（1.7.7 发布已于 2026-11-10 轮登记于正本，腿“补漏”说法不成立）。
+- 剩余未核实缺口：Harbor 0.25.1；MAF 1.25.0 间隔官方解释与 #10152 发布载体；OTel GenAI span 格式 PR 簇审定结果（#688/#516 合并时间、#1075 落地）；Agents SDK 稳定化时间表；inspect-ai 0.3.290 与组织更名时间；LangChain 1.5.0 路由信号/自动触发条件源码深读；langchain-core 1.7.7 load() 深度上限阈值；arXiv 11-12 批次补查。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式）。
+- 下轮起始 HEAD：hawk b0a6958、Harbor 500af91、inspect-ai 36294bb、LangGraph py 5ea88ec、langgraphjs a1d9f2b、langchainjs e220aee、MAF 22b5e75、ADK 59b0dd6、AutoGen d07c667a、Agents SDK py 64fbde5 / js 7589b9c、LangChain py 771d11b（master 分支）、OTel main e6658f1 / PR #688 head eca7862 / PR #516 head f96d095 / PR #1075 head e192f66、hyperlight-sandbox fa20a98、task-standard 83ad6fd。

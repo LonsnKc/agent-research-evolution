@@ -419,3 +419,10 @@
 - 本轨增量（M1–M7）：窗口内新发布零，letta-code 窗口内 1 条 main 提交 #5642（`ad308cd`，前台客户端工具调用超时；ahead_by 10→11；`pushed_at` 06:42:17Z 成因未定位）。PyPI letta 仍 0.34.12，差距仍 39 版；force_pypi 窗口内无触发。Mem0 双口径三端全部未变（字节数亦未变）。**DolphinBench 待审定 PR 现为 5 个**（#10–#14 全部 open，首次全量取回；#12 Graphon 84.0%、#10 AtMem 79.83%，均为作者自报）。Dual-Layer 仍 v2；ENGRAM 仍 v1，匿名链接仍 **HTTP 401（连续第六轮）**，仅记现象。**Maximem 73.8% 由二手升级为一手核实**（官方原文直读：57.5% → 73.8%，+16.3 点，官方主张 93.4%，差距 19.6 点；归因于 prompt 工程；不复现计数 2→3，其中 Maximem 一条现为一手；三条均为竞争方或非中立运行）。LLMSlim 竞争方实测新浮现（Mem0 OSS 2.2.1，LoCoMo 91.0%/91.6%，LongMemEval 60 题子集 76.7%，不计入阳性复现）；AgentOS 重跑待发布。2611.09807 仍 v1，成对 A/B 仍无新证据；七项复现仍零新增阳性。MIRIX-2.0 合入状态仍未确认（无 2.0 分支；`pushed_at` 06:37:36Z 成因未定位）。arXiv 11-11 批次 10 篇全部仍 v1、无遗漏；11-12 批次尚未公告（预期 11-13 01:00 UTC）；方法发现：export API 不索引未公告投稿（范围查询两式 totalResults 0）。版本戳全部未变（Mem0 2.2.1/3.3.1、Graphiti 0.31.2、Zep 4.1.0、LangMem 0.0.30、Zep Agent Skills 论文仍 v1）。
 - 纠正：无（本轨腿文件无窗口归属错误；Maximem 由二手升级为一手，13:09 轮「二手线索未计入」口径已被取代）。
 - 剩余未核实缺口：Mem0 双口径官方解释；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM 代码与数据集发布动向；PyPI letta 下次发布时间（0.35.0 或 force_pypi 触发）；arXiv 11-12 批次补查；2611.09807 答案类型门成对 A/B；MIRIX-2.0 合入状态；LLMSlim harness 公开情况与 AgentOS 重跑结果。
+
+## 2026-11-11 19:09 轮（版本 0.30.0；窗口 2026-11-11 16:09 → 19:09 CST）
+
+- 本轨增量（M1–M6）：窗口内唯一新进展——**MIRIX-2.0 PR #153 合并**（README Results 节 + 雷达图，无代码改动；雷达分数论文自报；**未调和出入：论文 LongMemEval-S 72.6% vs 雷达图 70.0%**；仍无 2.0 分支/发布，2.0 代码合入状态仍未核查）。DolphinBench #10–#12 评论数首次登记（2/1/1，#13/#14 各 2，review_comments 全部 0）。**LLMSlim round 3 代码已公开、round 6 仍只聚合结果**；AgentOS「正在重跑」表述撤回（重跑状态改为未核查）。EviCover 摘要级登记（支撑召回 0.526→0.575、最终十轮 0.349→0.379；正确率增益未确立）。Mem0 三端未变；ENGRAM 401 连续第七轮；letta-code 零窗口提交，PyPI 差距仍 39 版；Dual-Layer 仍 v2；2611.09807 仍 v1；七项复现仍零新增阳性。方法债：arXiv `updated` 正则错位（历史值须以 ElementTree 重读）。
+- 纠正：AgentOS「自己的 LongMemEval 重跑正在进行」撤回（本轮取回页面 0 命中，状态改为未核查）；LLMSlim round 6「协议/harness/逐题答案未公开」部分更新（round 3 代码已公开，round 6 仍未公开）。
+- 剩余未核实缺口：Mem0 双口径官方解释；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM 代码与数据集发布动向；PyPI letta 下次发布；arXiv 11-12 批次补查；2611.09807 成对 A/B；MIRIX-2.0 代码合入状态与 72.6/70.0 出入调和；LLMSlim round 6 harness 公开情况与 AgentOS 重跑状态。
+- 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略）。

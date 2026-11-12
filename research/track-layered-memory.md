@@ -470,3 +470,10 @@
 - 纠正：MIRIX-2.0 "record both, do not reconcile" 旧口径撤回（正文内改写）；ENGRAM "401 连续第十三轮"不得记录（取回失败，无 HTTP 状态）。
 - 剩余未核实缺口：Mem0 双口径官方一句话调和；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向；PyPI letta 下次发布（差距 44 版）；MIRIX-2.0 代码合入状态；LLMSlim round 6 与 AgentOS 重跑状态；七项效果数字第三方独立复现（dev.to 32.4% 待核对线索 1 条）。
 - 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略）。
+
+## 2026-11-12 19:09 轮（第 37 轮）
+
+- 本轮增量（D-M01–D-M05，落入 skill/references/layered-memory.md）：dev.to 32.4% 线索闭合（LongMemEval R@5 检索召回，非端到端准确率，不计入不复现；点值仅见开篇句、作者维护竞品 Awareness 非中立）；WikiTrace 全文深读（证据链接记忆三层 + 下潜核对，八套件平均 90.2（+10.7）、Regression 4.5%、52% 退化可追溯；无遗忘、靠用时核对；检索排序显式留白）；ENGRAM 匿名链接 HTTP 401 第十三轮（25 字节 `{"error":"not_connected"}`；16:09 轮无状态码不计入）；AgentOS 公告栏旧文纠正（所链博客为 2026-04-29 旧文；S 85.6%/M 70.2% 厂商自报；bench 代码公开，逐案 JSON 仅 LFS 指针）；letta-code 零发布零提交（仍 v0.34.56；PyPI 差距仍 44 版）、Mem0 四端点未变、DolphinBench PR #10–#14 全 open、MIRIX 仍无 2.0 分支/发布、LLMSlim round 6 仍仅结果、MemoryAtlas 逐字节相同、七项复现零新增（Mnemoverse ≈0.62 vs ≈0.79 为未核查线索，不计入）。
+- 纠正：dev.to 32.4%"待核对"改为"已闭合为 R@5"；AgentOS 公告栏"新内容"改为 2026-04-29 旧文；ENGRAM"401 连续第十三轮"计数规则说明（16:09 轮无状态码不计入，本轮为第十三轮）。
+- 剩余未核实缺口：Mem0 双口径官方一句话调和；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向；PyPI letta 下次发布；MIRIX-2.0 代码合入状态；LLMSlim round 6 与 AgentOS 重跑状态；七项复现（Mnemoverse 线索未核查）；M5 排序信号 vs 遗忘三态联合约束（WikiTrace 为第三种策略对照，仍暂定）；M2 MemoryAtlas 余项（Hindsight 66.88/71.2、Mem0 49 归属）。
+- 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略：WikiTrace 下潜核对机制与排序信号的关系）。

@@ -460,3 +460,11 @@
 - 剩余未核实缺口：Harbor 0.25.1；MAF 1.25.0 间隔官方解释与 #10152 发布载体；OTel GenAI span 格式 PR 簇审定结果（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；Agent Harness Awareness ID/日期表面不一致成因（arXiv API 本轮 429 未重取原始字段）。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式）。
 - 下轮起始 HEAD：hawk 90b84e2、Harbor 7c8c1f6、inspect-ai 88eef6a、LangGraph py b4cb0f1、langgraphjs a1d9f2b、langchainjs 609cc46、MAF 22b5e75、ADK 9620b42、AutoGen d07c667a、Agents SDK py 64fbde5 / js 7589b9c、LangChain py 771d11b（master 分支）、OTel main e6658f1 / PR #688 head eca7862 / PR #1075 已合并（py-genai main b164937）、hyperlight-sandbox a4f4a77、task-standard 83ad6fd。
+
+## 2026-11-12 19:09 轮（第 37 轮）
+
+- 本轮增量（D-H01–D-H04，落入 skill/references/agent-harness.md）：hawk v4.1.0 窗口内发布（2026-11-12T09:13:17Z，"cut as 4.1.0, not 5.0.0"；四轨窗口内唯一新稳定版）；OTel GenAI 待决 15→16 订正（#704 为 `*_ref` 属性 PR，open，head 3317f26；#688 仍 open，head eca7862；#1075 仓映射钉死为 opentelemetry-python-genai）；Harbor vs METR vs OTel 格式对照（Harbor 声明式 + schema_version 默认 "1.4"；METR 0.5.0 已冻结转向 Inspect；OTel 13 种 span 类型；现状 = 13 种已合并 + 11 项 PR + 5 项议题）；Harbor 发现 API 晚到站（5 提交为上轮窗口晚到站，Serve/MCP/SDK 发现 API；0.25.1 仍未发布；inspect-ai 0.3.290 未发布；MAF #10152 载体仍未定；Agents SDK 无 alpha.8/alpha.3；ADK 1 提交，仍 2.14.0；AHA 仍 v1，2611 前缀 vs 九月日期表面不一致仍未决）。
+- 纠正：OTel GenAI 待决"15 项"→"16 项"（正文内改写）；Harbor 5 提交为上轮窗口晚到站（不计入本轮窗口）。
+- 剩余未核实缺口：Harbor 0.25.1；MAF 1.25.0 间隔官方解释与 #10152 发布载体；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；Harbor schema_version 适配机制（METR 承诺 per-standard_version 适配器，Harbor 未见对应机制）；AHA 2611 前缀 vs 九月日期表面不一致成因。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：Harbor schema_version 适配机制深查）。
+- 下轮起始 HEAD：hawk（v4.1.0，2026-11-12T09:13:17Z）、Harbor feea734、inspect-ai 88eef6a、OTel semconv main e6658f1、opentelemetry-python-genai（#1075 已合并 b164937）。

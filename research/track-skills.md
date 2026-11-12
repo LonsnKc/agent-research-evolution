@@ -464,3 +464,10 @@
 - 纠正：Skill++ 限定"main experiment single addition order"改为"仅检验了一次添加顺序置换，未多 seed 遍历"（正文内改写）。
 - 剩余未核实缺口：ETUDE 聚合公式 / Skillware 作者澄清（邮件联系是否尝试由主轮定）；2607.10569 逐臂绝对通过率；AAIF 落地文件；SkillzBench 快照；Skill Crossroads 报告页；SWE-Skills-Bench 版本；Windsurf v3.12.28 是否重现；Gemini nightly 是否恢复（#568）；Codex rust-v0.168.0/0.169.0 稳定版；UserPromptExpansion 实机测试（无本地 Claude 环境）。
 - 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-12 19:09 轮（第 37 轮）
+
+- 本轮增量（D-S01–D-S06，落入 skill/references/skill-authoring.md）：2607.10569 逐臂绝对通过率（作者仓库 paired_marginals.csv 已发布 12 臂值；口径由"未发布、不得引用"改为"数据文件已发布、正文未刊载"；Table 2 题注亲自定位）；Skillware 18.5% 全文定位完成（§6.10 参数损坏 18.5%→0.0%、§8.4/图 20 总失败 18.5%→8.4%；同一数字双重分母未调和，S3 仍未决；54.4% vs 重算 54.6% 差 0.2pp 存疑；PR #471 关闭时刻闭合 2026-11-11T09:03:50Z）；Skill++ 首个第三方实现 Gjusev/skillpp（作者仓仍未出现；其小规模自测只登记、不采纳）；MMDM TSS 边界登记（工具与技能选择为独立可测决策类别；255 选项 100.0%/100.0%、512 选项 91.7%/91.7%；单步决策模型，不得等同于技能触发准确率）；宿主版本戳 + SkillzBench 快照（四宿主窗口内零新稳定版；Windsurf v3.12.28 第 22 轮未重现；Gemini nightly 8 连败，#568 尚未运行；SkillzBench published 1,288，+51；AAIF 元数据取回失败闭合，三份落地文件仍未出现；UPE 实机测试仍无环境）；ETUDE 证据更新（仍仅 v1；GitHub 搜索 total_count 0，无作者仓渠道；二手复述无澄清；邮件联系未尝试；S1 仍未决）。
+- 纠正：2607.10569 逐臂绝对通过率"仍未给出"改为"数据文件已发布、正文未刊载"（正文内改写）；Skillware 18.5%"正文定位未复核"改为"三处定位完成"；PR #471"关闭时刻无法确定"改为 closed_at 2026-11-11T09:03:50Z；AAIF"元数据取回失败"闭合（全端点 HTTP 200）。
+- 剩余未核实缺口：ETUDE 聚合公式 / Skillware 作者澄清（邮件联系是否尝试由主轮定）；Skill++ 作者仓；Gemini nightly #568 恢复（2026-11-13 00:19Z 后复核）；7 个 p0 issue 逐条复核；Codex rust-v0.168.0/0.169.0 稳定版；AAIF 落地文件；SkillzBench published 跳变原因；Windsurf v3.12.28 是否重现；UserPromptExpansion 实机测试；MCP vs CLI vs Skills 第三方证据仍无。
+- 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化：MMDM TSS 与 Wild/ACES 触发–检索–通过率分离的对照）。

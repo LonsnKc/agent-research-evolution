@@ -463,3 +463,10 @@
 - 纠正：无（本轮无推翻项；2610.07701 由摘要级升级为全文深读）。
 - 剩余未核实缺口：Mem0 双口径官方一句话调和（机制已验证，官方表述仍缺失）；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向（ENGRAM 401 连续十二轮）；PyPI letta 下次发布（差距 42 版）；MIRIX-2.0 代码合入状态与 72.6/70.0 出入调和；LLMSlim round 6 harness 公开情况与 AgentOS 重跑状态；七项效果数字第三方独立复现（dev.to 32.4% 待核对线索 1 条）；FGSE 底座模型核对；arXiv 11-11 批次补查。
 - 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略）。
+
+## 2026-11-12 16:09 轮（13:09 轮补做轮）
+
+- 本轮增量（D-M01–D-M06，落入 skill/references/layered-memory.md）：MIRIX-2.0 72.6/70.0 出入已调和（M1 70.0% vs M2 72.6%，缺口闭合）；MIRIX-2.0 全文深读（arXiv:2611.12068v1：LoCoMo 91.4%、LongMemEval-S M0 58.8 / M1 70.0 / M2 72.6、SHDocQA 83.0 / MHDocQA 71.0 / DetectiveQA 64.8 例外、ALFWorld 76.4%、MetaClaw 转引值、单轮运行与部分 LLM 裁判局限、建图摄入慢 3.8–4.0 倍；代码合入仍只到 README 结果）；letta-code v0.34.55/v0.34.56 尾窗两版（执行者亲自复核，均无记忆功能变更；PyPI 差距 42 → 44 版）；Mem0 双口径四端点未变（94.8% 出处精确化为指南页）；ENGRAM 纠正（不得续记第十三轮 401，计数停留第十二轮）；DolphinBench PR #10–#14 全 open（评论 2/1/1/2/2）、七项复现零新增。
+- 纠正：MIRIX-2.0 "record both, do not reconcile" 旧口径撤回（正文内改写）；ENGRAM "401 连续第十三轮"不得记录（取回失败，无 HTTP 状态）。
+- 剩余未核实缺口：Mem0 双口径官方一句话调和；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向；PyPI letta 下次发布（差距 44 版）；MIRIX-2.0 代码合入状态；LLMSlim round 6 与 AgentOS 重跑状态；七项效果数字第三方独立复现（dev.to 32.4% 待核对线索 1 条）。
+- 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略）。

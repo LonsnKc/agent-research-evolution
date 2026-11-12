@@ -457,3 +457,10 @@
 - 纠正：Cursor CLI 安装脚本"取回失败"（本轮取回真实脚本，G2 缺口关闭）；Skill Crossroads "rubric v1.2" 计数 8→6（计数方法差，非内容变化）。
 - 剩余未核实缺口：ETUDE 聚合公式（邮件联系是否尝试由主轮定）；Skillware 作者澄清（邮件联系是否尝试由主轮定）；2607.10569 逐臂绝对通过率；Arize 评估时仓库实例问题（acme-corp vs seldo）；Scalekit 7 次失败 run 无原始文件；Cursor 桌面/CLI 版本映射；Windsurf v3.12.28 是否重现（已连续 21 轮未重现）；Gemini nightly 是否恢复（#568）；Codex rust-v0.168.0/0.169.0 稳定版；AAIF 落地文件；SkillzBench published 跳变原因；arXiv 11-12 批次补查；UserPromptExpansion 实机测试（无本地 Claude 环境）；Skill++ 全文与仓库链接。
 - 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议深化）。
+
+## 2026-11-12 16:09 轮（13:09 轮补做轮）
+
+- 本轮增量（D-S01–D-S07，落入 skill/references/skill-authoring.md）：Skill++ 全文深读（arXiv:2611.00544v1：S9 FC@5 76.3% vs 36.4%、五路均值 +23.1pp、Codex Luna 线均值 +34.3pp / Sol 线 +11.1pp、误差分解、消融、Tab. A6 跨基准、ℓ_max=298、无作者代码仓）；Skill++ 限定表述修正（附录 C.5 Tab. A8 做了添加顺序置换检验 −3.0pp）；ETUDE 证据更新（全文重取 438,898 字节；97.6% 真实命中 2 处；`aggregate` 全文 0 命中；§5.1 等权均值与附录 B 宏均值已逐字定位，headline 池化集合仍未钉死；仍未决）；Skillware 证据更新（84.8% 为摘要 "up to" 上限表述；18.5% 摘要页 0 命中，正文定位本轮未复核；PR #471 现为 closed，关闭时刻无法确定；Vibing Talk 无澄清；仍未决）；2607.10569 Table 2 全精度转录（四格 Δpass 全部 NS；Table 3 数字为一致性矩阵，非通过率；逐臂绝对通过率仍未给出）；宿主版本戳全未变（Claude v2.1.322、Codex 稳定版 rust-v0.167.2、Gemini v0.68.0、OpenCode v2.2.7；Gemini nightly 连续 8 次失败；Cursor CLI 安装脚本逐字节相同；桌面 changelog 内容无变化）；AAIF 落地文件本轮未复核（元数据取回失败，原因不明）。
+- 纠正：Skill++ 限定"main experiment single addition order"改为"仅检验了一次添加顺序置换，未多 seed 遍历"（正文内改写）。
+- 剩余未核实缺口：ETUDE 聚合公式 / Skillware 作者澄清（邮件联系是否尝试由主轮定）；2607.10569 逐臂绝对通过率；AAIF 落地文件；SkillzBench 快照；Skill Crossroads 报告页；SWE-Skills-Bench 版本；Windsurf v3.12.28 是否重现；Gemini nightly 是否恢复（#568）；Codex rust-v0.168.0/0.169.0 稳定版；UserPromptExpansion 实机测试（无本地 Claude 环境）。
+- 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化）。

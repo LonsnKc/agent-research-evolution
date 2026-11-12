@@ -452,3 +452,11 @@
 - 剩余未核实缺口：Harbor 0.25.1；MAF 1.25.0 间隔官方解释与 #10152 发布载体；OTel GenAI span 格式 PR 簇审定结果（#688/#1075 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290 与组织更名时间；Agent Harness Awareness ID/日期表面不一致成因；arXiv 11-11 批次补查。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式）。
 - 下轮起始 HEAD：hawk 90b84e2、Harbor d10223a、inspect-ai 88eef6a、LangGraph py b4cb0f1、langgraphjs a1d9f2b、langchainjs 609cc46、MAF 22b5e75、ADK 9620b42、AutoGen d07c667a、Agents SDK py 64fbde5 / js 7589b9c、LangChain py 771d11b（master 分支）、OTel main e6658f1 / PR #688 head eca7862 / PR #1075 head e092a5e、hyperlight-sandbox fa20a98、task-standard 83ad6fd。
+
+## 2026-11-12 16:09 轮（13:09 轮已完成腿）
+
+- 本轮增量（D-H01–D-H04，落入 skill/references/agent-harness.md）：OTel GenAI #1075 已合并（merged_at 2026-11-12T05:12:36Z，合并提交 b164937；窗口内新提交 0bf06a0 + 三条评审；#688 仍 open；待决总数仍 15 项）；inspect-ai 组织"更名"说法撤回（UKGovernmentBEIS 自 2020-12-23 起即为组织名，UKGovernmentBE 零快照、现 404，系路径笔误）；Harbor 窗口内 10 提交（Serve/jobs API 簇 + CI 迁移 Blacksmith；0.25.1 仍未发布）；arXiv 11-11 批次 harness 枚举（已登记 14 篇全部仍 v1；8 篇新候选摘要级登记；直接相关：2606.11337 SciConHarness、2609.36630 Agent Distillation 综述 v2）。
+- 纠正：inspect-ai 组织"更名 UKGovernmentBE → UKGovernmentBEIS"撤回——无更名事件；"更名时间未决"缺口关闭。
+- 剩余未核实缺口：Harbor 0.25.1；MAF 1.25.0 间隔官方解释与 #10152 发布载体；OTel GenAI span 格式 PR 簇审定结果（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；Agent Harness Awareness ID/日期表面不一致成因（arXiv API 本轮 429 未重取原始字段）。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式）。
+- 下轮起始 HEAD：hawk 90b84e2、Harbor 7c8c1f6、inspect-ai 88eef6a、LangGraph py b4cb0f1、langgraphjs a1d9f2b、langchainjs 609cc46、MAF 22b5e75、ADK 9620b42、AutoGen d07c667a、Agents SDK py 64fbde5 / js 7589b9c、LangChain py 771d11b（master 分支）、OTel main e6658f1 / PR #688 head eca7862 / PR #1075 已合并（py-genai main b164937）、hyperlight-sandbox a4f4a77、task-standard 83ad6fd。

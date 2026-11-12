@@ -436,3 +436,19 @@
 - 剩余未核实缺口：Harbor 0.25.1；MAF 1.25.0 间隔官方解释与 #10152 发布载体；OTel GenAI span 格式 PR 簇审定结果（#688/#516 合并时间、#1075 落地）；Agents SDK 稳定化时间表；inspect-ai 0.3.290 与组织更名时间；LangChain 1.5.0 路由信号/自动触发条件源码深读；langchain-core 1.7.7 load() 深度上限阈值；arXiv 11-12 批次补查。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式）。
 - 下轮起始 HEAD：hawk b0a6958、Harbor 500af91、inspect-ai 36294bb、LangGraph py 5ea88ec、langgraphjs a1d9f2b、langchainjs e220aee、MAF 22b5e75、ADK 59b0dd6、AutoGen d07c667a、Agents SDK py 64fbde5 / js 7589b9c、LangChain py 771d11b（master 分支）、OTel main e6658f1 / PR #688 head eca7862 / PR #516 head f96d095 / PR #1075 head e192f66、hyperlight-sandbox fa20a98、task-standard 83ad6fd。
+
+## 2026-11-12 07:09 轮（版本 0.34.0；窗口 2026-11-12 04:09 → 07:09 CST）
+
+- 本轨增量（H1–H4）：LangChain JS 线窗口内三件发布（langchain@1.6.5、@langchain/core@1.4.0、@langchain/typesafe@0.1.0，2026-11-11T22:02–22:03Z；BaseDecisionModel 四类有型问题 Noul/Choice/Score/Box；modelRouterMiddleware/autoModeMiddleware；Zod GHSA-mrhx-c7xc-m3w5 钉版；typesafe 0.1.0 带破坏性标记；同批 8 个 patch 包）；OTel #1075 窗口内获批（aabmass APPROVED 2026-11-11T22:45:59Z）仍未合并，六项 PR 全 open，待决 15 项不变；Agent Harness Awareness 编号确认 arXiv:2611.05391（仍 v1；ID 前缀 2611 与「Submitted on 13 Sep 2026」表面不一致，arXiv 原始字段）；复核戳：inspect-ai 0.3.290 未发布（窗口内 2 修复提交 #6511/#6489，HEAD 88eef6a）；hawk 窗口内 4 提交无破坏性（682b761 窗口外）；Harbor 仍 0.25.0（CHANGELOG 逐字节相同，ATIF 仍 v1.8）；MAF 0 提交（#10152 载体仍未定、#10151 仍仅一句旁证）；Agents SDK 两线 0 提交（稳定化时间表 README grep 仍 0 命中）；LangChain py / LangGraph 两线 0 提交；ADK 2 提交仍 2.14.0；arXiv 11-12 批次未公告，11-11 批次 12 篇 + CLEO + Teaching the Harness 全部仍 v1。
+- 纠正：无（本轮无推翻项；arXiv 公告时刻勘误见记忆轨 D-M04）。
+- 剩余未核实缺口：Harbor 0.25.1；MAF 1.25.0 间隔官方解释与 #10152 发布载体；OTel GenAI span 格式 PR 簇审定结果（#688/#1075 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290 与组织更名时间；LangChain 决策模型/路由中间件源码深读（判定信号与 auto 触发条件）；Agent Harness Awareness ID/日期表面不一致成因；hawk 682b761（窗口外提交，下轮起点）；arXiv 11-12 批次补查。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式）。
+- 下轮起始 HEAD：hawk 682b761、Harbor d10223a、inspect-ai 88eef6a、LangGraph py 5ea88ec、langgraphjs a1d9f2b、langchainjs 609cc46、MAF 22b5e75、ADK 9620b42、AutoGen d07c667a、Agents SDK py 64fbde5 / js 7589b9c、LangChain py 771d11b（master 分支）、OTel main e6658f1 / PR #688 head eca7862 / PR #516 head f96d095 / #1075 head e192f66（已获 aabmass 批准，仍未合并）、hyperlight-sandbox fa20a98（本轮未重查）、task-standard 83ad6fd。
+
+## 2026-11-12 10:09 轮
+
+- 本轮增量（D-H01–D-H04，落入 skill/references/agent-harness.md）：LangChain 决策模型/路由中间件源码深读（Python 1.5.0/core 1.8.0、JS 1.6.5/core 1.4.0 一手解包；modelRouterMiddleware 每轮恰好分类一次、无阈值门、置信度只记录；autoModeMiddleware 阈值 0.5 硬编码不可配置、拦截不执行不请求人工批准；JS 显式 assertAnswered vs Python 依赖子类 pydantic 校验——闭合"路由信号/自动触发条件未展开"缺口）；OTel #1075 窗口内推进（新提交 e092a5e + 3 条评审，仍未合并；六项核心 PR 全 open；待决 15 项不变）；Agent Harness Awareness 仍 v1（published = updated = 2026-09-13T15:01:55Z 与 ID 前缀 2611 表面不一致，成因未核实，只记原始字段）；复核戳：Harbor 0.25.1/inspect-ai 0.3.290 未发布、MAF 0 提交（#10152 载体仍未定）、Agents SDK 0 提交、hawk 3 提交（推理 infra）、LangGraph py 1 提交、arXiv 11-11 批次不可见、14 篇论文全 v1。
+- 纠正：无（本轮无推翻项；LangChain 决策模型缺口由"未展开"改为"已闭合"）。
+- 剩余未核实缺口：Harbor 0.25.1；MAF 1.25.0 间隔官方解释与 #10152 发布载体；OTel GenAI span 格式 PR 簇审定结果（#688/#1075 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290 与组织更名时间；Agent Harness Awareness ID/日期表面不一致成因；arXiv 11-11 批次补查。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式）。
+- 下轮起始 HEAD：hawk 90b84e2、Harbor d10223a、inspect-ai 88eef6a、LangGraph py b4cb0f1、langgraphjs a1d9f2b、langchainjs 609cc46、MAF 22b5e75、ADK 9620b42、AutoGen d07c667a、Agents SDK py 64fbde5 / js 7589b9c、LangChain py 771d11b（master 分支）、OTel main e6658f1 / PR #688 head eca7862 / PR #1075 head e092a5e、hyperlight-sandbox fa20a98、task-standard 83ad6fd。

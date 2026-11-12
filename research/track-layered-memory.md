@@ -477,3 +477,17 @@
 - 纠正：dev.to 32.4%"待核对"改为"已闭合为 R@5"；AgentOS 公告栏"新内容"改为 2026-04-29 旧文；ENGRAM"401 连续第十三轮"计数规则说明（16:09 轮无状态码不计入，本轮为第十三轮）。
 - 剩余未核实缺口：Mem0 双口径官方一句话调和；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向；PyPI letta 下次发布；MIRIX-2.0 代码合入状态；LLMSlim round 6 与 AgentOS 重跑状态；七项复现（Mnemoverse 线索未核查）；M5 排序信号 vs 遗忘三态联合约束（WikiTrace 为第三种策略对照，仍暂定）；M2 MemoryAtlas 余项（Hindsight 66.88/71.2、Mem0 49 归属）。
 - 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略：WikiTrace 下潜核对机制与排序信号的关系）。
+
+## 2026-11-12 22:09 轮（第 38 轮）
+
+- 本轮增量（D-M01–D-M06，落入 skill/references/layered-memory.md）：Mnemoverse 线索闭合为不计入（≈0.62 vs ≈0.79 为自家引擎两轮 variant-s 运行，非 Mem0 复现；Mem0 ≈65.0 仅为引用行；裁判严格度警示作方法论注记；Recallium/Vertiso 厂商自报线索仅登记）；ENGRAM 匿名链接 HTTP 401 第十四轮（25 字节原文；不得写成代码下线）；letta-code 窗口内零发布零提交（仍 v0.34.56；PyPI 差距仍 44 版）、Mem0 四端点未变、DolphinBench PR #10–#14 全 open、16 篇论文全未变、MIRIX 仍无 2.0 分支/发布、LLMSlim round 6 仍仅结果、MemoryAtlas 逐字节相同、七项复现零新增。
+- 纠正：WikiTrace“代码中无任何排序”过度表述（正文内改写，L223）：run 层 top-3 embedding 推荐确实存在于代码中（recommend.py，text-embedding-3-small，余弦 top k=3，平局按 step id 升序，写入 recommendations/<suite>.json，渲染为 `<similar_past_runs>` 块），论文未写；但排序不做过滤（render_inject() "Every insight inlined"，归档顺序）；下潜核对为 prompt 驱动的 agent 行为，非代码评分器；无遗忘机制代码级确认；M5 改写为排序信号 / 遗忘状态 / 用时核对三轴表述，下潜核对裁定为相邻证据（非直接证据），联合约束仍暂定。
+- 剩余未核实缺口：Mem0 双口径官方一句话调和；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向；PyPI letta 下次发布；MIRIX-2.0 代码合入状态；LLMSlim round 6 与 AgentOS 重跑状态；七项复现（Mnemoverse 已闭合不计入，四条不复现记录不变）；M5 排序信号 vs 遗忘三态联合约束（WikiTrace 相邻证据 + 三轴改写，仍暂定）；M2 MemoryAtlas 余项（Hindsight 66.88/71.2、Mem0 49 归属）。
+- 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略：run 层推荐与 insight 层排序的分离是否可推广）。
+
+## 2026-11-13 01:09 轮（第 39 轮）
+
+- 本轮增量（D-M01–D-M06，落入 skill/references/layered-memory.md）：letta-code 窗口内零发布零提交（仍 v0.34.56；PyPI 差距仍 44 版，语义版本重算确认）；Mem0 双口径四端点逐字节相同，官方调和句仍缺；ENGRAM 匿名链接 HTTP 401 第十五轮（25 字节原文；不得写成代码下线）；DolphinBench PR #10–#14 全 open；Dual-Layer 仍 v2、ENGRAM 仍 v1、FGSE 仍 v1；MIRIX 仍无 2.0 分支/发布；LLMSlim round 6 仍仅结果；MemoryAtlas 逐字节相同；七项复现零新增；深挖：ExpeL 同型分离设计（arXiv:2308.10144v2 §4.3 全量内联 + 轨迹层 Faiss kNN top-k；§6 自承规模上限；§4.2 投票删除机制）与 A-MEM 相反设计（arXiv:2502.12110v3 selective top-k 检索）一手确认，M5 联合约束继续暂定。
+- 纠正：无（本轮无推翻项；PyPI 差距初算 52 版为字符串比较 artifact，已纠正为 44，未入正文）。
+- 剩余未核实缺口：Mem0 双口径官方一句话调和；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向；PyPI letta 下次发布；MIRIX-2.0 代码合入状态；LLMSlim round 6 与 AgentOS 重跑状态；七项复现；M5 排序信号 vs 遗忘三态联合约束（ExpeL/A-MEM 为相邻证据，三轴表述不变）；M2 MemoryAtlas 余项（Hindsight 66.88/71.2、Mem0 49 归属）。
+- 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略：分离设计随规模退化为两层皆排序的边界条件）。

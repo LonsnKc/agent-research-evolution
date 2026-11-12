@@ -468,3 +468,19 @@
 - 剩余未核实缺口：Harbor 0.25.1；MAF 1.25.0 间隔官方解释与 #10152 发布载体；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；Harbor schema_version 适配机制（METR 承诺 per-standard_version 适配器，Harbor 未见对应机制）；AHA 2611 前缀 vs 九月日期表面不一致成因。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：Harbor schema_version 适配机制深查）。
 - 下轮起始 HEAD：hawk（v4.1.0，2026-11-12T09:13:17Z）、Harbor feea734、inspect-ai 88eef6a、OTel semconv main e6658f1、opentelemetry-python-genai（#1075 已合并 b164937）。
+
+## 2026-11-12 22:09 轮（第 38 轮）
+
+- 本轮增量（D-H01–D-H04，落入 skill/references/agent-harness.md）：OTel GenAI 16 项待决全部仍 open、窗口内零动向（#688 head eca7862、#704 head 3317f26；semconv main 仍 e6658f1）；Harbor 0.25.1 仍未发布（窗口内 0 提交）；MAF #10152 载体仍未定（窗口内 4 提交，全 Python）；Agents SDK 无新 alpha（窗口内 0 提交）；inspect-ai 0.3.290 未发布（窗口内 1 提交 df46cc1）；hawk 仍 v4.1.0（窗口内 1 提交 f18befc）；LangChain master 窗口内 1 提交（980e4a8，14:08:03Z）；langgraphjs 窗口内 2 提交；arXiv 8 篇新候选版本钉死（4 v1、3 v2、1 v3，修订日均为 2026-11-10）；AHA 原始字段重取（published = updated = 2026-09-13，v1）。
+- 纠正：Harbor/METR 版本字段“适配承诺”说法不成立（正文内改写，L193 末句作废）：两边同构为声明值 + 无适配——Harbor schema_version 仅声明值（config.py:854 普通 `str` 默认 "1.4"，无枚举/校验/版本分支；handle_version_rename 仅改名垫片；CLI 打包无条件盖戳 "1.4"；运行器 Task 类 0 命中；任务模型包内代码搜索 total_count 1）；METR STANDARD.md Versioning 仅一句 SemVer，adapter/adapt/migrat 0 命中，template.py:16–18 仅要求声明，驱动从不读取该字段；另 Harbor `server/schema.py` 代码搜索命中为索引误报（HEAD 全文 grep 0 命中），不得引用。
+- 剩余未核实缺口：Harbor 0.25.1；MAF 1.25.0 间隔官方解释与 #10152 发布载体；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；AHA 2611 前缀 vs 九月日期表面不一致成因；8 篇修订论文的相关度裁定（本轮仅版本钉死）。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：OTel GenAI 待决项合并动向与 Harbor 0.25.1）。
+- 下轮起始 HEAD：Harbor feea734、inspect-ai df46cc1、OTel semconv main e6658f1、opentelemetry-python-genai b164937、LangChain master 980e4a8。
+
+## 2026-11-13 01:09 轮（第 39 轮）
+
+- 本轮增量（D-H01–D-H06，落入 skill/references/agent-harness.md）：langgraph `cli==0.4.43` 窗口内发布（2026-11-12T16:20:16Z；PyPI 上传 16:19:59Z；核心 langgraph 仍 1.2.20；本轮唯一窗口内新稳定发布）；MAF `python-1.26.0` 标签已打且含 #10152（载体已定），但 Release 对象仍 404、PyPI 仍 1.25.0，不计入已发布（标签创建时间仅界定在 16:59:37Z 之后、17:16 UTC 之前，含 7 分钟窗口外缝隙）；OTel GenAI 16 项待决全部仍 open、窗口内零动向；Harbor 0.25.1 仍未发布（窗口内 0 提交）；inspect-ai 0.3.290 未发布（窗口内 7 提交，两处密钥防泄漏修复 + 沙箱 bridge 身份作用域；918246a 为窗口外）；hawk 仍 v4.1.0（0 提交）；Agents SDK 无新 alpha；LangChain master 0 提交；langgraphjs 5 提交（SDK 流式引擎）；上轮 8 篇候选论文相关度裁定完成（相关 3 / 相邻 3 / 无关 2）；AHA 成因仍未决（仅一条弱文本线索）。
+- 纠正：无（本轮无推翻项；MAF #10152 载体由「未定」推进为「python-1.26.0 标签已定、发布未完成」）。
+- 剩余未核实缺口：Harbor 0.25.1；MAF python-1.26.0 Release 对象与 PyPI 上架（下轮复核）、1.25.0 间隔官方解释（#10151 仍 0 评论）；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；AHA 2611 前缀 vs 九月日期表面不一致成因；arXiv 11-12 批次枚举。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：MAF 1.26.0 发布完成情况与 Harbor 0.25.1）。
+- 下轮起始 HEAD：Harbor feea734、inspect-ai 918246a（含窗口外提交）、OTel semconv main e6658f1、opentelemetry-python-genai b164937、MAF 4f2d146（python-1.26.0 标签指向此提交）、hawk f18befc、LangChain master 980e4a8、langgraph 595223d、langgraphjs c354854。

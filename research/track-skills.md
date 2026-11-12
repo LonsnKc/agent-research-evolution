@@ -471,3 +471,17 @@
 - 纠正：2607.10569 逐臂绝对通过率"仍未给出"改为"数据文件已发布、正文未刊载"（正文内改写）；Skillware 18.5%"正文定位未复核"改为"三处定位完成"；PR #471"关闭时刻无法确定"改为 closed_at 2026-11-11T09:03:50Z；AAIF"元数据取回失败"闭合（全端点 HTTP 200）。
 - 剩余未核实缺口：ETUDE 聚合公式 / Skillware 作者澄清（邮件联系是否尝试由主轮定）；Skill++ 作者仓；Gemini nightly #568 恢复（2026-11-13 00:19Z 后复核）；7 个 p0 issue 逐条复核；Codex rust-v0.168.0/0.169.0 稳定版；AAIF 落地文件；SkillzBench published 跳变原因；Windsurf v3.12.28 是否重现；UserPromptExpansion 实机测试；MCP vs CLI vs Skills 第三方证据仍无。
 - 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化：MMDM TSS 与 Wild/ACES 触发–检索–通过率分离的对照）。
+
+## 2026-11-12 22:09 轮（第 38 轮）
+
+- 本轮增量（D-S01–D-S08，落入 skill/references/skill-authoring.md）：MMDM TSS 与 Wild/ACES 三方对照完成（TSS 不能作技能触发准确率代理；有条件可作组件级补充：多选严格度量 + SB-F 作“候选集内选择”子阶段指标，31 题 catalog-grounded 请求作检索–选择接口对照；引用 TSS 数字须同时注明“单步决策模型、选项给定、不执行工具”三项边界；62.2%（任一）vs 49%（全部）口径差必须注明）；FactualMinds 第三方实测新登记（窗口外补漏：MCP vs Agent Skills on Bedrock with Strands，120 次运行；MCP + Skill 30/30，其余三格 0/30；作者自报，未独立核实）；Gemini nightly #568 尚未运行 + 7 个 p0 issue 逐条复核闭合（全部 OPEN，各 0 评论；#30253 为 PR 非 issue）；AAIF 落地文件闭合缺失（CHANGELOG.md blob 页 404、tags 空列表、SECURITY.md 404）；四宿主窗口内零新稳定版；Cursor CLI 安装脚本本轮被 Vercel 拦截页挡住、未核查；Windsurf v3.12.28 第 23 轮未重现；SkillzBench published 1,288 持平；ETUDE/Skillware/Skill++ 均仍仅 v1（Skill++ 作者仓仍未出现，代码检索 total_count=83）；SkillEvaluator 仍 v0.8.0（PyPI 仍 0.7.2）；skill-reach 零活动；UPE 实机测试仍无环境。
+- 纠正：MMDM TSS 题量 103/36 颠倒（正文内改写，L271）：实为单选 278 / 多选 103，36 为表 A10 共同队列子集；子类别与选项数分布已补入正文。
+- 剩余未核实缺口：ETUDE 聚合公式 / Skillware 作者澄清（邮件联系是否尝试由主轮定）；Skill++ 作者仓；Gemini nightly #568 恢复（2026-11-13 00:19Z 后复核）；Codex rust-v0.168.0/0.169.0 稳定版；AAIF 落地文件；SkillzBench published 跳变原因；Windsurf v3.12.28 是否重现；UserPromptExpansion 实机测试；Cursor CLI 安装脚本复核（Vercel 拦截是否持续）；MCP vs CLI vs Skills 第三方证据（独立实测现为 3 篇：FactualMinds、topuzas、ComputingForGeeks，另有厂商关联实测 2 篇：pikapika/OpenRouter、twitterapi.io；Smithery 原文仍 404，二手口径；Microsoft trace 与 SWE 49 技能切片待读一手来源）。
+- 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化：TSS 组件级补充指标的落地口径）。
+
+## 2026-11-13 01:09 轮（第 39 轮）
+
+- 本轮增量（D-S01–D-S07，落入 skill/references/skill-authoring.md）：四宿主窗口内零新稳定版；Gemini nightly #568 尚未运行（任务书窗口归属括号纠正：00:19Z = 08:19 CST，属下轮窗口；连败仍 8 次；7 个 p0 issue 逐条复核闭合，全部 OPEN/0 评论；#30253 为 PR）；Cursor CLI 安装脚本缺口闭合（curl 默认 UA 取回真实脚本，6,333 字节 / 217 行 / 2026.11.11-b912975，逐字节相同；Mozilla UA 得 307 → 营销页）；Windsurf v3.12.28 第 24 轮未重现；SkillzBench 全持平（published 1,288），方法论页 Scans v2: 3366 + v1: 12 = 3,378 与首页收敛；AAIF 落地文件仍全部缺失；ETUDE/Skillware/Skill++ 均仍仅 v1（Skill++ 代码检索 total_count=83）；SkillEvaluator 仍 v0.8.0（PyPI 仍 0.7.2，pushed_at 前移为分支推送）；skill-reach 零活动；Skill Crossroads 仍 rubric v1.2；SWE-Skills-Bench 仍 v2；UPE 仍 L1589；深挖：MCP vs CLI vs Skills 独立实测新增 4 篇（topuzas 全文、ComputingForGeeks、pikapika/OpenRouter、twitterapi.io），TSS 结论不变，「≈100 tokens/技能」为规范建议值、实测 56.7–147，FactualMinds 719 tokens 口径不同不得拼比。
+- 纠正：「MCP vs CLI vs Skills 独立实测仍仅 FactualMinds 一则」过时（独立实测现为 3 篇 + 厂商关联 2 篇）；任务书「#568 下一次 run 在本轮窗口内」括号有误（属下轮窗口）；22:09 轮正文 Claude changelog 字节数（1,213,662）与该轮存档文件（1,214,776）不符，以存档文件为准。
+- 剩余未核实缺口：ETUDE 聚合公式 / Skillware 作者澄清（邮件联系是否尝试由主轮定）；Skill++ 作者仓；Gemini nightly #568 恢复（下轮窗口，2026-11-13 ~00:19Z 运行后复核）；Codex rust-v0.168.0/0.169.0 稳定版；AAIF 落地文件；SkillzBench published 跳变原因；Windsurf v3.12.28 是否重现；UserPromptExpansion 实机测试；Cursor 桌面/CLI 版本映射；MCP vs CLI vs Skills 第三方证据（独立实测现为 3 篇 + 厂商关联 2 篇；Microsoft 三轮 trace 与 SWE 49 技能切片待读一手来源；SEP-2640 线索待核）。
+- 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化：Microsoft trace 与 SWE 49 技能切片一手核对）。

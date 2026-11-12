@@ -476,3 +476,17 @@
 - 纠正：Cloudflare 附加池"23 个"缺口正式闭合（既往漏计）；Dynamo 表"仅缺 v1.6.2"改为"表缺 v1.6.1/v1.6.2 两行"（与版本化文档站不同页）；2611.12953 §5 数字不得引用；2611.13412"吞吐约减半"为约数（引用实测 0.35–0.46 vs 1.27 turns/s）；OpenRouter 计数器 −198 异常本轮 +198 回弹（原因仍不明）。
 - 剩余未核实缺口：arXiv 11-12 批次枚举（公告 2026-11-13 01:00 UTC）；OpenRouter $6.43 口径调和（未结台账，连续八轮 401；计数器 ±198 回弹原因不明）；LiteLLM v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认（PR #51254 内容下轮追问）；Portkey CVE 修复版；OpenCode post-mortem；Dynamo 文档表缺行；Jev 11 因子权重与 Cloudflare 排序信号；2611.12953 §5 数字待作者 v2；2611.13412 生产侧验证；在线学习阈值真实流量一手证据仍无（R7 暂定继续）。
 - 下轮起点：先清上述缺口，再按子主题轮转（成本/延迟权衡定量模型：KV 感知期望值模型与生产级联校准）。
+
+## 2026-11-12 22:09 轮（第 38 轮）
+
+- 本轮增量（D-R01–D-R09，落入 skill/references/api-routing.md）：PR #51254 内容追问闭合（6 字段禁令 + 401 机制 + 豁免项，回 port #51263/#51264/#51260/#51261；与 CVE-2026-114612 无关）；vLLM v0.34.0rc2 Release 对象存在（窗口外，PyPI 无 0.34.x），v0.33.1 不存在；OpenRouter 第九次 401（计数器 2,416,209 → 2,416,014，−195 回落；目录 468 未变；博客 178 → 183；**decisions 计数口径失效**：旧路由 /decisions 404，已迁 /labs/decisions（JS 渲染），旧值 37 记未决、不沿用）；Cloudflare/Jev 文档零变化（Auto Router md5 十连相同；jev-latest 仍 1.14.0）；llm-d `pushed_at` 窗口外再次移动（14:20:09Z，分支未定位，新未定位项）；AgentRouter 本轮未复核（GitHub API 403 限流），沿用 v1.2.1；11-11 批次 KV/级联新论文为零（相邻候选 2611.12959/2611.14413 摘要级登记 + BadMoE v3；DMR API `updated` 字段异常记为现象，不写成 v5）。
+- 纠正：无（本轨无正文内改写；decisions 37 由“本轮实测值”改为“未决、不沿用”，由 D-R06 新戳覆盖）。
+- 剩余未核实缺口：arXiv 11-12 批次枚举（公告 2026-11-13 01:00 UTC）；OpenRouter $6.43 口径调和（未结台账，连续九轮 401；计数器 ±198/−195 回弹原因不明；decisions 新计数方法待定）；llm-d `pushed_at` 14:20:09Z 移动分支定位（先查各分支 HEAD 提交时间戳）；AgentRouter v1.2.1 补做复核；DMR API `updated` 字段异常复核；LiteLLM v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；OpenCode post-mortem；Dynamo 文档表缺行；Jev 11 因子权重与 Cloudflare 排序信号；在线学习阈值真实流量一手证据仍无（R7 暂定继续）。
+- 下轮起点：先清上述缺口（AgentRouter 与 llm-d 优先），再按子主题轮转（成本/延迟权衡定量模型：KV 感知期望值模型与生产级联校准）。
+
+## 2026-11-13 01:09 轮（第 39 轮）
+
+- 本轮增量（D-R01–D-R09，落入 skill/references/api-routing.md）：OpenRouter $6.43 第十次 401（计数器 2,416,014 → 2,416,212，+198；目录 468、博客 183 均零增减；$6.37 沿用值不得写成重算）；decisions 新计数方法未定（旧索引页已改为单 recipe 的 Decisions Lab，JSON-LD 仅 1 项 Platform race；/api/v1/decisions 与 /api/v1/alpha/decisions 均 404；47 个 JS chunk 已拉取核查，无列表拉取端点；旧值 37 仍记未决）；AgentRouter v1.2.1 一手证实（403 限流已解除）；llm-d `pushed_at` 14:20:09Z 定位为 gh-pages 3966feb，窗口内又移至 16:26:04Z（ce173b2），窗口内徽章推送共 8 次，成因模式确立；LiteLLM v1.110.0 正式版仍无（最新稳定 v1.109.1；LTS 仍滞后 4 补丁）；vLLM v0.34.0rc2 纠正为有 tag、无 Release 对象；CVE 厂商确认仍缺、Portkey 修复版仍无、OpenCode post-mortem 仍无、Dynamo 表仍缺两行；Cloudflare/Jev 文档零变化（Auto Router md5 十一连相同；jev-latest 仍 1.14.0）；11-11 批次 KV/级联新论文为零，R7 继续暂定；11-12 批次尚未公告。
+- 纠正：vLLM v0.34.0rc2「有 Release 对象」（实为仅 tag，「2 assets」为 tag 自动生成的源码压缩包）；DMR「API updated 字段异常」（上轮误读 feed 级 `<updated>`，条目级在上轮证据文件内已是 2026-11-10T02:19:39Z；方法口径纠正为一律取 entry 内 `<updated>`）。
+- 剩余未核实缺口：arXiv 11-12 批次枚举（公告 2026-11-13 01:00 UTC）；OpenRouter $6.43 口径调和（未结台账，连续十轮 401；计数器 +198 回弹原因不明；decisions 新计数方法待定，盯 recipe 数增长或等官方列表端点）；LiteLLM v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；OpenCode post-mortem；Dynamo 文档表缺行；Jev 11 因子权重与 Cloudflare 排序信号；在线学习阈值真实流量一手证据仍无（R7 暂定继续）。
+- 下轮起点：先清上述缺口（OpenRouter $6.43 重算为未结台账首项；decisions recipe 数盯梢），再按子主题轮转（成本/延迟权衡定量模型：KV 感知期望值模型与生产级联校准）。

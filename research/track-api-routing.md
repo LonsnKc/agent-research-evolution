@@ -490,3 +490,10 @@
 - 纠正：vLLM v0.34.0rc2「有 Release 对象」（实为仅 tag，「2 assets」为 tag 自动生成的源码压缩包）；DMR「API updated 字段异常」（上轮误读 feed 级 `<updated>`，条目级在上轮证据文件内已是 2026-11-10T02:19:39Z；方法口径纠正为一律取 entry 内 `<updated>`）。
 - 剩余未核实缺口：arXiv 11-12 批次枚举（公告 2026-11-13 01:00 UTC）；OpenRouter $6.43 口径调和（未结台账，连续十轮 401；计数器 +198 回弹原因不明；decisions 新计数方法待定，盯 recipe 数增长或等官方列表端点）；LiteLLM v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；OpenCode post-mortem；Dynamo 文档表缺行；Jev 11 因子权重与 Cloudflare 排序信号；在线学习阈值真实流量一手证据仍无（R7 暂定继续）。
 - 下轮起点：先清上述缺口（OpenRouter $6.43 重算为未结台账首项；decisions recipe 数盯梢），再按子主题轮转（成本/延迟权衡定量模型：KV 感知期望值模型与生产级联校准）。
+
+## 2026-11-13 04:09 轮（第 40 轮）
+
+- 本轮增量（D-R01–D-R09，落入 skill/references/api-routing.md）：OpenRouter benchmarks API 第十一次 401（67 字节逐字节一致；计数器 2,416,212 → 2,415,516，−696，首次分项定位 GPQA Diamond −594 + τ²-Bench Airline −102；目录 468 → 473，窗口内新上架 `google/gemini-4-hydrogen` 及其 `:batch` 变体；$6.37 沿用值不得写成重算）；decisions 新方法仍未定（/labs/decisions JSON-LD 仍 1 项 Platform race；两 API 端点仍 404；旧值 37 记未决）；Extractions 指南页窗口内更新（dateModified 2026-11-12T19:40:36Z，新增 `perplexity/pplx-decider-v1.3` 与 `perplexity/pplx-decider-flash-v1.3`，`locate` 能力，模型表 4 → 6；端点仍 alpha，定价未给出）；复核戳：LiteLLM 最新稳定仍 v1.109.1；vLLM 无 v0.33.1/v0.34.0，v0.34.0rc2 仍仅 tag、无 Release 对象；AgentRouter 仍 v1.2.1；Dynamo GitHub 仍 v1.6.2 但文档表仍缺 v1.6.1/v1.6.2 行、稳定仍写 v1.6.0；CVE-2026-114612 厂商逐字确认仍缺；Portkey CVE 修复版仍无；OpenCode post-mortem 仍无；Railway 最终报告仍无（初步报告页 dateModified 变为 2026-11-10T14:05:19Z，正文仍称调查进行中，定性为元数据级修改）。
+- 方法纠正：arXiv API `submittedDate` 检索索引滞后约 2 天，范围查询 0 结果不得作为批次证据，今后以列表页 `list/cs.AI/new` md5 为准；arXiv 11-12 批次尚未公告（公告 2026-11-13 01:00 UTC），结转下轮。
+- 剩余未核实缺口：arXiv 11-12 批次枚举（公告 2026-11-13 01:00 UTC）；OpenRouter $6.43 口径调和（未结台账，第十二次重试；计数器下调成因；decisions 新计数方法待定，盯 recipe 数增长或等官方列表端点）；LiteLLM v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；OpenCode post-mortem；Railway 最终报告；Dynamo 文档表缺行；Jev 11 因子权重与 Cloudflare 排序信号；Perplexity Decider 定价；在线学习阈值真实流量一手证据仍无（R7 暂定继续）。
+- 下轮起点：先清上述缺口（OpenRouter $6.43 重算为未结台账首项；decisions recipe 数盯梢；arXiv 11-12 批次枚举），再按子主题轮转（成本/延迟权衡定量模型：KV 感知期望值模型与生产级联校准）。

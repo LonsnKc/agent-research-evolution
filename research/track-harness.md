@@ -484,3 +484,11 @@
 - 剩余未核实缺口：Harbor 0.25.1；MAF python-1.26.0 Release 对象与 PyPI 上架（下轮复核）、1.25.0 间隔官方解释（#10151 仍 0 评论）；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；AHA 2611 前缀 vs 九月日期表面不一致成因；arXiv 11-12 批次枚举。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：MAF 1.26.0 发布完成情况与 Harbor 0.25.1）。
 - 下轮起始 HEAD：Harbor feea734、inspect-ai 918246a（含窗口外提交）、OTel semconv main e6658f1、opentelemetry-python-genai b164937、MAF 4f2d146（python-1.26.0 标签指向此提交）、hawk f18befc、LangChain master 980e4a8、langgraph 595223d、langgraphjs c354854。
+
+## 2026-11-13 04:09 轮（第 40 轮）
+
+- 本轮增量（D-H01–D-H04、D-H06，落入 skill/references/agent-harness.md；D-H05 为 track-only 两项纠正）：langgraph 核心 1.2.21 窗口内发布（PyPI 2026-11-12T18:06:30Z、GitHub Release 18:06:43Z；#9615/#9614 子图命名空间修复）；langgraphjs 8 包经 #3322 集中升版（`@langchain/langgraph` 1.7.4、sdk 1.16.0、api/cli/ui 各 1.7.2、checkpoint-postgres 1.1.3、checkpoint-validation 1.2.1、`@langchain/react` 1.2.14；`@langchain/langgraph-sdk-react` 不存在，实为 `@langchain/react`）；MAF python-1.26.0 进行中，不计入已发布（PyPI 28/28 已上架，Release 对象截至 20:23 UTC 仍 404；官方清单 28 包）；复核戳：OTel GenAI 16 项待决全部 open、零动向；Harbor 0.25.1 仍未发布（ATIF 仍 v1.8）；inspect-ai 0.3.290 未发布（窗口内 4 提交，含 `fix!`）；Agents SDK 无新 alpha；hawk 仍 v4.1.0；arXiv 22 篇版本全未变；AHA 仍仅 v1。
+- 纠正（D-H05，track-only）：22:09 轮「GitHub GHSA 端点查 LiteLLM CVE」一节中「五条 first_patched_version 全为 null」不成立（ra 腿取自仓库级 security-advisories 端点；全局 advisories 端点仍填 1.100.4 / 1.101.3 / 1.102.2 / 1.103.1 / 1.104.0rc2）；01:09 轮「Harbor dev 构建上传 06:58 UTC」纠正为 14:58:16Z（版本号后缀误读）。
+- 剩余未核实缺口：Harbor 0.25.1；MAF python-1.26.0 Release 对象与 PyPI 上架（下轮复核）、1.25.0 间隔官方解释（#10151 仍 0 评论）；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；AHA 2611 前缀 vs 九月日期表面不一致成因；arXiv 11-12 批次枚举。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：MAF 1.26.0 发布完成情况与 Harbor 0.25.1）。
+- 下轮起始 HEAD：Harbor d774888（窗口外 20:12:09Z，ATIF reasoningText→reasoning_content 映射）、inspect-ai 26f6d05（窗口外 20:10:36Z）、adk-python f9d948c（窗口外 20:17:57Z）；OTel semconv main e6658f1、opentelemetry-python-genai b164937、MAF 4f2d146、hawk f18befc、LangChain master 980e4a8、langgraphjs c354854 均未变；langgraph HEAD 待下轮复核（1.2.21 已发布，上轮值 595223d）。

@@ -491,3 +491,10 @@
 - 纠正：无（本轮无推翻项；PyPI 差距初算 52 版为字符串比较 artifact，已纠正为 44，未入正文）。
 - 剩余未核实缺口：Mem0 双口径官方一句话调和；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向；PyPI letta 下次发布；MIRIX-2.0 代码合入状态；LLMSlim round 6 与 AgentOS 重跑状态；七项复现；M5 排序信号 vs 遗忘三态联合约束（ExpeL/A-MEM 为相邻证据，三轴表述不变）；M2 MemoryAtlas 余项（Hindsight 66.88/71.2、Mem0 49 归属）。
 - 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略：分离设计随规模退化为两层皆排序的边界条件）。
+
+## 2026-11-13 04:09 轮（第 40 轮）
+
+- 本轮增量（D-M01–D-M06，落入 skill/references/layered-memory.md）：ExpeL v2 → v3、A-MEM v3 → v11（引文已在新版全文逐字复核成立，实质不变）；Mem0 四端点字节变但句子集合与数字全同，系 Mintlify 重渲染，不得写成内容更新，官方调和句仍缺；ENGRAM 匿名链接第 16 次 401（25 字节原文）；复核戳：letta-code 仍 v0.34.56，PyPI 差距仍 44 版；DolphinBench PR #10–#14 全 open；MemoryAtlas 174,071 字节逐字节相同；七项复现零新增；DyadMem 删除侧定量锚点（op-F1 18.6%/24.5%、unsafe-deletion 84.1%/78.1%，论文自报）仅作 M5 相邻证据。
+- 纠正：ExpeL/A-MEM 版本标签（v2→v3、v3→v11）；Mem0「字节变 = 内容更新」误读纠正（Mintlify 重渲染）。
+- 剩余未核实缺口：Mem0 双口径官方一句话调和；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向；PyPI letta 下次发布；MIRIX-2.0 代码合入状态；LLMSlim round 6 与 AgentOS 重跑状态；七项复现；M5 排序信号 vs 遗忘三态联合约束（DyadMem 删除侧锚点为相邻证据，三轴表述不变）；M2 MemoryAtlas 余项（Hindsight 66.88/71.2、Mem0 49 归属）。
+- 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略：分离设计随规模退化为两层皆排序的边界条件）。

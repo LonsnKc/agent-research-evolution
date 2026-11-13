@@ -516,3 +516,11 @@
 - 剩余未核实缺口：Harbor 0.25.1；MAF python-1.26.0 Release 对象与 PyPI 上架（下轮复核）、1.25.0 间隔官方解释（#10298 仍 1 评论）；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；AHA 2611 前缀 vs 九月日期表面不一致成因；arXiv 11-12 批次枚举。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：MAF 1.26.0 发布完成情况与 Harbor 0.25.1）。
 - 下轮起始 HEAD：Harbor 06d0e86、inspect-ai e4435ba、langgraphjs 82a7d07；OTel semconv main e6658f1、opentelemetry-python-genai b164937、MAF c7e50cc、hawk ba03f5f、LangChain master 980e4a8、langgraph 3183e90、langchainjs eed4c32 均未变。
+
+## 2026-11-13 16:09 轮（第 44 轮）
+
+- 本轮增量（D-H01–D-H06，落入 skill/references/agent-harness.md）：窗口内新稳定发布 0 件；MAF python-1.26.0 仍未完成发布（Release 对象终查仍 404；PyPI 仍 1.26.0；#10298 仍 1 评论；#10317 仍 open；44 包齐全性未核实）；Harbor 0.25.1 仍未发布（窗口内 2 提交 #2957/#2958 执行可靠性，hawk）；inspect-ai 0.3.290 未发布；OTel 16 项待决全部 open、零动向；Agents SDK JS 0.22.0 / Python alpha.7；AHA 仍仅 v1；22 篇版本复核窗口内修订 0；arXiv 11-12 批次 Harness 枚举完成（32 篇，EvoX 2611.15006、guardscope 2611.15223、ReA-Bench 2611.16493 为候选线索）。
+- 纠正：无新推翻项（arXiv 11-12 批次枚举闭合，第三轮结转划除）。
+- 剩余未核实缺口：Harbor 0.25.1；MAF python-1.26.0 Release 对象与 PyPI 上架（下轮复核）、1.25.0 间隔官方解释（#10298 仍 1 评论）；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；AHA 2611 前缀 vs 九月日期表面不一致成因；EvoX/guardscope/ReA-Bench 候选线索全文深读。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：MAF 1.26.0 发布完成情况与 Harbor 0.25.1；三篇候选线索深读）。
+- 下轮起始 HEAD：Harbor 06d0e86、inspect-ai e4435ba、langgraphjs 82a7d07；OTel semconv main e6658f1、opentelemetry-python-genai b164937、MAF c7e50cc、hawk ba03f5f、LangChain master 980e4a8、langgraph 3183e90、langchainjs eed4c32 均未变（13:09 轮 HEAD 未变，本轮未复测 HEAD）。

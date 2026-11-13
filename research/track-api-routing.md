@@ -519,3 +519,11 @@
 - 剩余未核实缺口：arXiv 11-12 批次枚举（第三轮结转）；OpenRouter $6.43 口径调和（未结台账，第十六次重试；decisions 新计数方法待定）；LiteLLM v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；Dynamo 文档表 v1.6.2 缺行；Jev 11 因子权重与 Cloudflare 排序信号；在线学习阈值真实流量一手证据仍无（R7 暂定继续）；api-routing.md 已 398 行，下轮起须先拆分再增量（拆分方案记为提案，等用户裁定）。
 - 下轮起点：先清上述缺口（OpenRouter $6.43 重算为未结台账首项；decisions recipe 数盯梢；arXiv 11-12 批次枚举为未结台账项），再按子主题轮转（成本/延迟权衡定量模型：KV 感知期望值模型与生产级联校准）。
 - 下轮起始 HEAD：llm-d main 565373b7、gh-pages c8da61c3；其余见 research/20261113-1309/rb-report.md。
+
+## 2026-11-13 16:09 轮（第 44 轮）
+
+- 本轮增量（D-R01–D-R12，原位替换 api-routing.md 13:09 轮复核行，净增长 0 行）：OpenRouter benchmarks API 第 17 次 401（67 字节，md5 与上十六轮相同；计数器 2,419,560 → 2,421,232，+1,672，恒等式第五轮闭合：GPQA +594、VGI +878、τ² +200；$6.37 沿用值不得写成重算）；decisions 新方法仍未定（/labs/decisions 85,314 字节，numberOfItems 仍 1；两 API 仍 404；旧值 37 记未决）；目录 475 持平、博客 184 持平；LiteLLM 仍 v1.109.1（v1.111.0-dev.1 窗口前）、vLLM 仍 v0.33.0；CVE-2026-114612 厂商逐字确认仍缺；Portkey CVE 修复版仍无；Dynamo 文档表缺行仍未补；Cloudflare Auto Router 文档由 index.md（已 404）迁为 auto-router.mdx（内容实质等价，md5 基线因格式迁移重置；执行者自验归一化比对相似度 0.9376）；Jev 权重首次源码一手值（planning 0.15/0.05、code 0.45/0.20、writing 0.80/0.50、other 0.50/0.25）；11 因子口径纠正（属 OpenRouter 新一代 Auto Router）；llm-d pushed_at 06:50:56Z（gh-pages 徽章推送）；Schematron 定价未变；AgentRouter 仍 v1.2.1；arXiv 11-12 批次枚举完成（路由 136 篇中 8 篇相关）。
+- 纠正：Railway 最终报告「新发布」不成立（42 轮已入正本，本轮仅为再确认）；AgentRouter「仓名纠正」不成立（theagentrouter/agent-router 自 01:09 轮起即为取证所用仓名）；Jev「11 因子清单未找到」找错了地方（11 因子属 OpenRouter Auto Router）。
+- 剩余未核实缺口：OpenRouter $6.43 口径调和（未结台账，第十七次重试；decisions 新计数方法待定）；LiteLLM v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；Dynamo 文档表缺行；OpenRouter 11 因子权重；在线学习阈值真实流量一手证据（R7 暂定继续）；veduis 生产数字（D-R02 暂定继续）。
+- 下轮起点：先清上述缺口（OpenRouter $6.43 重算为未结台账首项；decisions recipe 数盯梢），再按子主题轮转（成本/延迟权衡定量模型：KV 感知期望值模型与生产级联校准）。
+- 下轮起始 HEAD：llm-d pushed_at 06:50:56Z（gh-pages 驱动）；其余见 research/20261113-1609/rb-report.md。

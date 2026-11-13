@@ -513,3 +513,10 @@
 - 纠正：无新推翻项（Xia 准则句「转述，待正文核对」已由执行者自验逐字确认，见 verification.md）。
 - 剩余未核实缺口：ETUDE 聚合公式 / Skillware 作者澄清（邮件联系是否尝试由主轮定）；Skill++ 作者仓；Gemini nightly #569（约 2026-11-14 00:19Z）；Codex rust-v0.170.0 稳定版；AAIF 落地文件；SkillzBench published 跳变原因；Windsurf v3.12.28 是否重现；UserPromptExpansion 实机测试；Cursor 桌面/CLI 版本映射；SkillEvaluator 20:14 推送具体 ref 与 stars 激增原因；Xia v2 全文深读。
 - 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化：TSS 组件级补充指标的落地口径；Xia v2 全文深读）。
+
+## 2026-11-13 16:09 轮（第 44 轮）
+
+- 本轮增量（D-S01–D-S10，落入 skill/references/skill-authoring.md）：Codex rust-v0.171.0-alpha.2 窗口内预发布（07:59:06Z，25 字符占位正文，skill 0 命中；执行者亲自查 GitHub API 确认）；其余三宿主无新版（Claude 仍 v2.1.323、Gemini 仍 v0.68.0、OpenCode 仍 v2.2.7、Windsurf 仍 v3.12.59；v3.12.28 第 29 轮未重现）；Gemini nightly #569 未运行（连败仍 9 次；p0 总数 12，OPEN 10）；AAIF 三件落地文件仍缺失；SkillzBench published 1,288 → 1,290（+2，四轮持平后首次变动）；SkillEvaluator 仍 v0.8.0，stars 912 → 955（激增第四轮；执行者后取 961）；Hooks 页仅 L260 一处措辞变化，UPE 仍 L1589，实机测试仍无环境；ETUDE/Skillware/Skill++ 均仍仅 v1，S1/S2/S3 仍未决；Xia v2 全文深读完成（准则句为 v2 新增，v1 全文 0 命中，执行者亲自直查两版全文确认；72 格逐格复核，前三层 47/48，证据层无条件 R 仅 1 格；Hermes Agent 为 Nous Research 的，与 MIT Hermes Agent 不同；TSS 不在该文，结论不变）；MCP vs CLI vs Skills 独立实测 5 → 6 篇（Slack Engineering《Agentic Testing》2026-06-11，200+ 运行，MCP ~3.8M/~40 turns vs CLI ~6M/~85 turns，方向与既有五篇相反；执行者亲自读原文逐字核实三表，附模型标注张力注记）；arXiv 11-12 批次技能枚举完成（all:skill 8 篇，直接相关 1 篇：Skill Adapter 2611.17007，+11.43pp vs SkillRL，论文自报）。
+- 纠正：无新推翻项（Xia v2 全文深读完成，13:09 轮「准则句已逐字确认」结论不变；arXiv 11-12 批次枚举闭合）。
+- 剩余未核实缺口：ETUDE 聚合公式 / Skillware 作者澄清（邮件联系是否尝试由主轮定）；Skill++ 作者仓；Gemini nightly #569（约 2026-11-14 00:19Z）；Codex rust-v0.170.0 稳定版；AAIF 落地文件；SkillzBench published 跳变原因；Windsurf v3.12.28 是否重现；UserPromptExpansion 实机测试；Cursor 桌面/CLI 版本映射；SkillEvaluator 20:14 推送具体 ref 与 stars 激增原因；Skill Adapter 2611.17007 全文深读。
+- 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化：TSS 组件级补充指标的落地口径；Skill Adapter 全文深读）。

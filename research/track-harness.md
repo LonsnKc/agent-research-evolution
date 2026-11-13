@@ -548,3 +548,11 @@
 - 剩余未核实缺口：MAF #10317 合并与否；Harbor 0.25.1；inspect-ai 0.3.290；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；AHA 2611 前缀 vs 九月日期表面不一致成因；MAF 记忆 API 弃用迁移指南缺口；ADK semconv-units 修复（56b25c6，窗口后）；OTel #596 对 langchain-openai 1.8.0 Decisions 分类的跟进。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：Harbor 0.25.1 发布与 ADK semconv-units 修复）。
 - 下轮起始 HEAD：见 research/20261114-0109/h-report.md；OTel semconv e6658f1 未变。
+
+## 2026-11-14 04:09 轮（第 48 轮）
+
+- 本轮增量（D-H01–D-H05，落入 skill/references/agent-harness.md）：**窗口内新稳定发布 4 件，同属一个 langchainjs 版本包批次**（commit 7704471，npm 18:28–18:29Z：@langchain/core 1.4.1、langchain 1.6.6、@langchain/anthropic 1.6.5、@langchain/google 0.2.15）；MAF #10317 仍 open 未合并（auto-merge 已启用，窗口内 timeline 零新事件，已开近 5 小时未合入）、#10318 载体仍未定（无 python-1.27.0/dotnet-1.29.0 标签）、#10298 仍 1 评论；记忆 API 弃用独立迁移指南仍未出现；Harbor 0.25.1 仍未发布（窗口内 2 提交，均不涉任务/ATIF）、ATIF 仍 v1.8；inspect-ai 0.3.290 未发布（窗口内 7 提交）；Agents SDK JS 0.22.0 / Python alpha.7；ADK 仍 2.14.1，56b25c6（semconv 单位修复）与 1de9760（推理 token 指标 v1 全量记录）均已合入；LangChain Python 线窗口内 6 提交含 LangSmith gateway 路由四连（仅登记）；langgraphjs SDK 方向连续第十轮改动，仍无新版；hawk 窗口内 2 提交；OTel #516/#688/#596 均仍 open、16 项待决全部 open 零窗口内动静（search API 全量核对 71 PR / 154 issue）；#204 updated_at 又 bump（19:36:57Z）但 timeline 69 条事件最后一条仍为 11-09，成因未确立，不计为进展；AHA 仍仅 v1；**深挖：窗口内任务/trace 格式零新进展**（ADK 两项 telemetry 提交均为 metric 层收敛，与 #516/#695 同属 token 用量归属主题，约定侧仍未收敛）。
+- 纠正：无新推翻项（ADK 56b25c6 由「窗口后待复核」转为「窗口内已合入」，语义定性为 metric 单位对齐、不改 span 格式）。
+- 剩余未核实缺口：MAF #10317 合并与否；Harbor 0.25.1；inspect-ai 0.3.290；OTel GenAI span 格式 16 项待决（#688 合并时间；#596 对 Decisions API 的跟进；#204 看板更新成因）；Agents SDK 稳定化时间表；AHA 2611 前缀 vs 九月日期表面不一致成因；MAF 记忆 API 弃用迁移指南缺口；ADK 下一版是否收纳两项 telemetry 改动；langgraphjs SDK 第十轮改动仍无新版。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：#516/#695 是否因 ADK 的 token 指标落地而推进；#596 是否跟进 Decisions API）。
+- 下轮起始 HEAD：见 research/20261114-0409/h-report.md；MAF 92838b6、Harbor b06002e、inspect-ai 4748612、ADK 1de9760、LangChain master 5569924、langgraph 3183e90、langgraphjs abea7e8、langchainjs 7704471、hawk 6e3bea8、OTel semconv e6658f1 未变。

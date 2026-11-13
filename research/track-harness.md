@@ -532,3 +532,19 @@
 - 剩余未核实缺口：MAF #10318 发布载体与 #10317 合并与否；Harbor 0.25.1；inspect-ai 0.3.290；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；AHA 2611 前缀 vs 九月日期表面不一致成因。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：MAF 1.26.0 发布完成情况与 Harbor 0.25.1）。
 - 下轮起始 HEAD：MAF 739a387、hawk 497d0f6、langgraphjs 749403f、langchainjs c266deb；Harbor 06d0e86、inspect-ai e4435ba、ADK 5ce1d0c、Agents SDK py 64fbde5/js 8aeac0e、langchain 980e4a8、langgraph 3183e90、AutoGen 8390985、OTel semconv e6658f1/py-genai b164937、METR task-standard 83ad6fd 均未变。
+
+## 2026-11-13 22:09 轮（第 46 轮）
+
+- 本轮增量（D-H01–D-H05，落入 skill/references/agent-harness.md）：窗口内新稳定发布 0 件，窗口内提交 4 项（ADK #7312 遥测凭据脱敏、hawk #2797、langgraphjs #3364 SDK 方向连续第八轮、langchainjs #11289）；**MAF #10317 窗口内草稿→待评审**（13:06:57Z + 6 次评审请求，仍未合并）、#10318 载体未定（无 python-1.27.0/dotnet-1.29.0 标签）、#10298 仍 1 评论；**OTel #516 窗口内获第二批准**（11:29:47Z，仍未合并）、16 项待决全 open；**MAF 1.26.0 后续文档**：FIDES 两份文档已在先（`b89eaeb` 2026-11-12T11:09:56Z）、记忆 API 弃用无独立迁移指南；Harbor 0.25.1 仍未发布（连续第三轮窗口内 0 提交）、inspect-ai 0.3.290 未发布、Agents SDK JS 0.22.0 / Python alpha.7、AHA 仍仅 v1。
+- 纠正：无。
+- 剩余未核实缺口：MAF #10318 发布载体与 #10317 合并与否；Harbor 0.25.1；inspect-ai 0.3.290；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；AHA 2611 前缀 vs 九月日期表面不一致成因；MAF 记忆 API 弃用迁移指南缺口。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：MAF 1.26.0 发布完成情况与 Harbor 0.25.1）。
+- 下轮起始 HEAD：见 research/20261113-2209/h-report.md（h-ls-remote.txt）；OTel semconv e6658f1、py-genai b164937 未变。
+
+## 2026-11-14 01:09 轮（第 47 轮）
+
+- 本轮增量（D-H01–D-H06，落入 skill/references/agent-harness.md）：**窗口内新稳定发布 1 件：langchain-openai 1.8.0**（PyPI 2026-11-13T16:48:10Z；OpenAIClassifier 对应 GA Decisions API #41787；OTel #596 仍 open 未收敛）；MAF #10317 仍 open 未合并（auto-merge 已启用 15:18:13Z）、**#10318 前提纠正：非发布准备 PR，是已合并的 breaking shell 路径校验 PR（2026-11-13T09:54:36Z），载体仍未定**、#10298 仍 1 评论；记忆 API 弃用无独立迁移指南；Harbor 0.25.1 仍未发布但**三轮零提交断裂**（窗口内 3 提交：#4282 遥测、#4286 查看器、#4284 推出分发）、ATIF 仍 v1.8、Daytona 泄漏修复在 Unreleased；inspect-ai 0.3.290 未发布（窗口内 13 提交）、Agents SDK JS 0.22.0 / Python alpha.7、ADK 仍 2.14.1、langgraphjs SDK 方向连续第九轮；OTel #516 仍未合并、16 项待决全 open 零窗口内动静、#688 仍 open；AHA 仍仅 v1；**深挖：窗口内任务/trace 格式零新进展**（MAF 1.26.0 与 Harbor 0.25.1 均无格式变化；ADK 遥测/trace 修复收紧语义不改格式；langchain-openai 1.8.0 Decisions 分类无 OTel 对应动作）。
+- 纠正：MAF #10318「发布准备 PR」→ 已合并的 breaking 变更 PR（agent-harness.md L287 旧文案随本次整合更新为已合并状态，载体仍未定）。
+- 剩余未核实缺口：MAF #10317 合并与否；Harbor 0.25.1；inspect-ai 0.3.290；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；AHA 2611 前缀 vs 九月日期表面不一致成因；MAF 记忆 API 弃用迁移指南缺口；ADK semconv-units 修复（56b25c6，窗口后）；OTel #596 对 langchain-openai 1.8.0 Decisions 分类的跟进。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：Harbor 0.25.1 发布与 ADK semconv-units 修复）。
+- 下轮起始 HEAD：见 research/20261114-0109/h-report.md；OTel semconv e6658f1 未变。

@@ -533,3 +533,17 @@
 - 纠正：M 腿「取证事故仅覆盖单次取回文件」→ 实际 37 个数据文件 + 日志（执行者亲自核对 1609/m/ mtime）。
 - 剩余未核实缺口：Mem0 双口径官方一句话调和；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向；PyPI letta 下次发布；MIRIX-2.0 代码合入状态；LLMSlim round 6 与 AgentOS 重跑状态；七项复现；M5 排序信号 vs 遗忘三态联合约束（暂定继续）；MemoryAtlas 余项（M2 暂定继续）。
 - 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略：分离设计随规模退化为两层皆排序的边界条件；以 ExpeL v3 §6 自承 + 2610.31303 v4 恢复/修订成本框架为起点，待 11-13 批次新论文深读）。
+
+## 2026-11-13 22:09 轮（第 46 轮）
+
+- 本轮增量（D-M01–D-M05，落入 skill/references/layered-memory.md）：letta-code 仍 v0.34.59（窗口内零发布、零提交；#5711 仍未发布；PyPI 差距仍 47 版）；Mem0 四端点内容未变（评估/迁移页各丢 18 个 U+200B 零宽空格 + 部署包轮换，不得写成内容更新）；点名调和仍缺；ENGRAM 第 22 次 401；DolphinBench PR #10–#14 全 open；MemoryAtlas 174,071 字节不变（md5 变仅 dpl token）；七项复现零新增（连续第十五轮）；**M5：2611.17316 CoReMem 全文深读**（写侧相邻证据，全文级；forget/evict/sort/ranking/decay 全文 0 命中）+ 2611.17068 MAPE 摘要级相邻证据，**直接证据仍为零**；18 篇已登记 + 11-12 批次 10 篇全未变、2610.31303 仍 v4、Dual-Layer 仍 "upon acceptance"、MIRIX-2.0 仍只到 README 结果。
+- 纠正：Mem0 指南页 "neither is wrong"「2 处」→ **5 处**（小写原形 2 + 句首大写 3，上轮仅计小写原形；文件逐字节相同，内容未变）。
+- 剩余未核实缺口：Mem0 双口径官方一句话调和；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向；PyPI letta 下次发布；MIRIX-2.0 代码合入状态；LLMSlim round 6 与 AgentOS 重跑状态；七项复现；M5 排序信号 vs 遗忘三态联合约束（暂定继续；CoReMem/MAPE 为相邻证据）；MemoryAtlas 余项（M2 暂定继续）；MAPE 全文深读（下轮）。
+- 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略：分离设计随规模退化为两层皆排序的边界条件；以 ExpeL v3 §6 自承 + 2610.31303 v4 恢复/修订成本框架 + CoReMem 写侧估值为起点，待 11-13 批次新论文深读）。
+
+## 2026-11-14 01:09 轮（第 47 轮）
+
+- 本轮增量（D-M01–D-M05，落入 skill/references/layered-memory.md）：letta-code 仍 v0.34.59（窗口内零发布零提交；#5711 仍未发布；PyPI 差距仍 47 版）；Mem0 四端点内容未变（评估/迁移页 md5 变仅部署包轮换，清洗词级 diff 零真实改动；"neither is wrong" 仍 5 处；点名调和仍缺）；ENGRAM 第 23 次 401；DolphinBench PR #10–#14 全 open；MemoryAtlas 174,071 字节不变（本轮 md5 亦相同，dpl token 未轮换）；七项复现零新增（连续第十六轮）；**M5：2611.17068 MAPE 全文深读**（设计发现侧相邻证据，升级为全文级；forget/evict/decay/demot/revok/delet/prun/merge 全文 0 命中；`consolidat` 2 命中均为他系统引用；排序只在检索阶段代码；作者自报 MAPE-PLCM 81.33%、+12.01pp、35% 服务成本；**直接证据仍为零**，为第三项成本侧相邻证据）；18 篇已登记 + 11-12 批次 10 篇全未变、2610.31303 仍 v4、Dual-Layer 仍 "upon acceptance"（摘要页字节数再证不是内容信号）、MIRIX-2.0 仍只到 README 结果。
+- 纠正：Mem0「评估/迁移页 md5 变 = 内容更新」→ 部署包轮换，零真实改动（清洗词级 diff 为证）；摘要页字节数不得作内容变化信号（本轮第三例：Dual-Layer 摘要页 +1,159 字节，可见词差仅 +16 词，均为页脚资助信息）。
+- 剩余未核实缺口：Mem0 双口径官方一句话调和；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向；PyPI letta 下次发布；MIRIX-2.0 代码合入状态；LLMSlim round 6 与 AgentOS 重跑状态；七项复现；M5 排序信号 vs 遗忘三态联合约束（暂定继续；MAPE 为第三项成本侧相邻证据，直接证据仍为零）。
+- 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略：分离设计随规模退化为两层皆排序的边界条件；以 ExpeL v3 §6 自承 + 2610.31303 v4 恢复/修订成本框架 + CoReMem 写侧估值 + MAPE 成本侧相邻证据为起点，待 11-13 批次新论文深读）。

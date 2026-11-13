@@ -535,3 +535,19 @@
 - 剩余未核实缺口：decisions 新计数方法待定；arXiv 11-13 批次枚举（预期 2026-11-14 01:00 UTC 公告后）；`/api/v1/benchmarks` 401 观察（不再阻塞重算）；LiteLLM v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；Dynamo 文档表缺行；OpenRouter 11 因子权重；在线学习阈值真实流量一手证据（R7 暂定继续）；veduis 生产数字（D-R02 暂定继续）。
 - 下轮起点：先清上述缺口（arXiv 11-13 批次枚举；decisions recipe 数盯梢），再按子主题轮转（成本/延迟权衡定量模型：KV 感知期望值模型与生产级联校准）。
 - 下轮起始 HEAD：llm-d main 565373b7；其余见 research/20261113-1909/ra-report.md。
+
+## 2026-11-13 22:09 轮（第 46 轮）
+
+- 本轮增量（D-R01–D-R07，落入 skill/references/api-routing-rounds.md + api-routing-papers.md）：`/api/v1/benchmarks` 仍 401，第 19 次连续失败；**$6.37 本轮亲自重算完成**（302 runs，Auto Code $1.6427 精确、Opus 5.5 $6.3675；板面 $6.43 缺口 $0.0625 未闭合，双值并列引用）；计数器 2,363,118 → 2,347,015（−16,103），恒等式第七轮闭合（GPQA −16,153、τ² +50）；decisions 新方法仍未定（numberOfItems 仍 1；两 API 仍 404；旧值 37 记未决）；目录 472 → 470（移除 `liquid/lfm-2.5-2.6b` 及其 `:free` 变体）、博客 184 持平；LiteLLM 仍 v1.109.1、vLLM 仍 v0.33.0；CVE-2026-114612 厂商逐字确认仍缺；Portkey 仍 v1.15.2；Dynamo 文档表缺行仍未补；Cloudflare .mdx md5 相同；Jev 权重仍未披露；AgentRouter 仍 v1.2.1；llm-d 14:11:08Z 为窗口边缘徽章推送，不计入窗口内；**11-12 批次重筛补登记 3 篇**（TraceKV 2611.15569、OSCAR 2605.17757v2、DForkTree 2611.12356v2，摘要级）；**2611.16414 全文深读**（FP/FN→成本映射定量模板：14B 路由器下游 token −68.7%、延迟 −80.5%，均不含路由开销；路由与下游延迟分环境测量不可加；非 R7 证据）；9 篇版本复核全部无新版；RouteLLM 仍 `0b64fda`（2024-08-10，休眠 2 年 3 个月）。
+- 纠正：RB 腿「11-13 批次枚举闭合」→ 未闭合、第二次结转（周五列表页三方 md5 逐字节相同，即 11-12 提交批次，16:09 轮已枚举；RB 腿 §1.1 自承批次对应 11-12 提交，与其结论自相矛盾）。
+- 剩余未核实缺口：decisions 新计数方法待定；arXiv 11-13 批次枚举（第二次结转，预期 2026-11-14 01:00 UTC 公告后；SB 腿所称 00:00 UTC 与 H 腿/台账的 01:00 UTC 有出入，记为未决小口径，下轮以实测为准）；`/api/v1/benchmarks` 401 观察（第 19 次，不再阻塞重算）；LiteLLM v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；Dynamo 文档表缺行；OpenRouter 11 因子权重；在线学习阈值真实流量一手证据（R7 暂定继续；2611.16414 为 FP/FN→成本映射模板、非 R7 证据）；veduis 生产数字（D-R02 暂定继续）。
+- 下轮起点：先清上述缺口（arXiv 11-13 批次枚举；decisions recipe 数盯梢），再按子主题轮转（成本/延迟权衡定量模型：KV 感知期望值模型与生产级联校准）。
+- 下轮起始 HEAD：llm-d main 565373b7（未变，本轮仅窗口边缘徽章推送）；其余见 research/20261113-2209/ra-report.md。
+
+## 2026-11-14 01:09 轮（第 47 轮）
+
+- 本轮增量（D-R01–D-R08，落入 skill/references/api-routing-rounds.md + api-routing-papers.md）：`/api/v1/benchmarks` 仍 401，第 20 次连续失败；**$6.43 缺口本轮闭合**（板页现为完整服务端渲染 828,195 字节，直接读得 Opus 5.5 (high) $6.43、Auto Code $1.64、Auto (Medium) $0.58；swe_atlas_qa 高档 $0.79 为前端统计接口内无源的高档运行，代入后 $6.429881，精确解释缺口；**双值并列引用规则更新**：板面 $6.43（厂商自报，现有一手页面证据）与项目重算 $6.37 并列；新缺口：高档运行源数据不在公开统计接口内）；计数器 2,347,015 → 2,289,984（−57,031），恒等式第八轮闭合（GPQA −45,906、τ² −11,125），连续第三轮下修，累计 −131,247，原因未知；decisions 新方法仍未定（numberOfItems 仍 1；两 API 仍 404；`/decisions` 改为 40,753 字节 Next.js 错误壳，模板变化非内容进展；旧值 37 记未决）；目录 470 持平，`qwen/qwen3.5-9b` 真涨价 +55%（prompt $0.067/M → $0.104/M），minimax/hy4/hy3 顶层价动为时段 override 轮换非真调价，`z-ai/glm-5.3-flashx` 加 `structured_outputs`；博客 184 持平；LiteLLM 仍 v1.109.1、vLLM 仍 v0.33.0；CVE-2026-114612 厂商逐字确认仍缺（v1.106.6 正文 1,436 字节内 0 命中）；Portkey CVE-2026-110719 advisory 的 `vulnerabilities` 数组为空、无 `first_patched_version`；Dynamo 文档 Support Matrix v1.6.1/v1.6.2 行仍缺；Cloudflare .mdx md5 相同；OpenRouter auto-router 文档可见文本相同（204,650 字符）；Jev 11 因子权重仍未披露；arXiv 11-13 批次仍未公告，**第三次结转**；**2611.16414 全文复核通过**（7 项结论逐条复核无误，窗口标题检索零新论文；R7 未变，生产级联证据仍仅 CascadeRec + HIRA）。
+- 纠正：$6.43 缺口「未闭合/待解释」→ 已解释（板面完整服务端渲染 + swe_atlas_qa 高档 $0.79 代入精确复算），双值并列引用规则更新；Mem0 相关纠正见记忆轨（本轨不重复）。
+- 剩余未核实缺口：decisions 新计数方法待定；arXiv 11-13 批次枚举（第三次结转，2026-11-14 01:00 UTC 公告后补做；00:00 UTC vs 01:00 UTC 出入仍未决，下轮以实测为准）；`/api/v1/benchmarks` 401 观察（第 20 次，不再阻塞重算）；LiteLLM v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；Dynamo 文档表缺行；OpenRouter 11 因子权重；在线学习阈值真实流量一手证据（R7 暂定继续）；veduis 生产数字（D-R02 暂定继续）；高档运行源数据不在公开统计接口内（新缺口，待上游同步或披露）。
+- 下轮起点：先清上述缺口（arXiv 11-13 批次枚举；decisions recipe 数盯梢），再按子主题轮转（成本/延迟权衡定量模型：KV 感知期望值模型与生产级联校准）。
+- 下轮起始 HEAD：llm-d main 565373b7（未变，本轮仅窗口边缘徽章推送）；其余见 research/20261114-0109/ra-report.md。

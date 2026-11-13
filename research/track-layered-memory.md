@@ -498,3 +498,17 @@
 - 纠正：ExpeL/A-MEM 版本标签（v2→v3、v3→v11）；Mem0「字节变 = 内容更新」误读纠正（Mintlify 重渲染）。
 - 剩余未核实缺口：Mem0 双口径官方一句话调和；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向；PyPI letta 下次发布；MIRIX-2.0 代码合入状态；LLMSlim round 6 与 AgentOS 重跑状态；七项复现；M5 排序信号 vs 遗忘三态联合约束（DyadMem 删除侧锚点为相邻证据，三轴表述不变）；M2 MemoryAtlas 余项（Hindsight 66.88/71.2、Mem0 49 归属）。
 - 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略：分离设计随规模退化为两层皆排序的边界条件）。
+
+## 2026-11-13 07:09 轮（第 41 轮）
+
+- 本轮增量（D-M01–D-M06，落入 skill/references/layered-memory.md）：Mem0 双口径口径收窄（指南页 "neither is wrong" 原句自至少上轮起即存在——正本 L23/L187 早已记录，记忆腿「纠正」降格为复核戳；针对 91.6↔92.5、93.4↔94.4 的点名调和仍缺失；评估页/迁移页 md5 变仅为 Cloudflare 邮箱哈希轮换，不得写成内容更新）；ENGRAM 匿名链接第 17 次 401（25 字节原文）；复核戳：letta-code 仍 v0.34.56（窗口内 1 提交，CI-only），PyPI 差距仍 44 版；DolphinBench PR #10–#14 全 open；MemoryAtlas 174,071 字节逐字节相同；七项复现零新增（causal-memory 页对 Maximem 73.8% 的二手引用不构成新复现）；MIRIX 仍只到 README 结果；深挖分离退化边界窗口内新证据零（Anatomy 综述为相邻证据）；M5 继续暂定。
+- 纠正：Mem0「`neither is wrong` 0 命中」说法已由上轮记录证伪（本轮为再确认，非新纠正）；评估页/迁移页 md5 变「内容更新」误读纠正（Cloudflare 邮箱哈希轮换）。
+- 剩余未核实缺口：Mem0 双口径官方一句话调和；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向；PyPI letta 下次发布；MIRIX-2.0 代码合入状态；LLMSlim round 6 与 AgentOS 重跑状态；七项复现；M5 排序信号 vs 遗忘三态联合约束（Anatomy 综述与 causal-memory 厂商自报为相邻证据，三轴表述不变）；M2 MemoryAtlas 余项（Hindsight 66.88/71.2、Mem0 49 归属）。
+- 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略：分离设计随规模退化为两层皆排序的边界条件）。
+
+## 2026-11-13 10:09 轮（第 42 轮）
+
+- 本轮增量（D-M01–D-M05，落入 skill/references/layered-memory.md）：letta-code v0.34.57 窗口内发布（npm 2026-11-13T00:42:02Z；PyPI 差距 44 → 45 版）；Mem0 迁移页 +5,889 字节为 Mintlify 再部署（清洗词级 diff 全同，不得写成内容更新；"neither is wrong" 仍在；点名调和仍缺失）；ENGRAM 匿名链接第 18 次 401（25 字节原文）；相邻证据补登记 1 项 + 重述 1 项（CLADE 2611.14355 新登记；2610.31303 v4 已登记于 api-routing.md L280，本轮只作 M5 相邻证据重述）；复核戳：DolphinBench PR #10–#14 全 open；MemoryAtlas 174,071 字节逐字节相同；MIRIX-2.0 仍只到 README 结果；七项复现零新增；M5 继续暂定。
+- 纠正：「11-11 批次 10 篇无遗漏」仅对当时登记的记忆主论文成立，不覆盖相邻证据层（相邻证据补登记 1 项 + 重述 1 项）；2610.31303 v4「补登记」降格为重述（已登记于 api-routing.md L280）。
+- 剩余未核实缺口：Mem0 双口径官方一句话调和；DolphinBench PR #10–#14 审定；Dual-Layer/ENGRAM/FGSE 代码与数据集发布动向；PyPI letta 下次发布；MIRIX-2.0 代码合入状态；LLMSlim round 6 与 AgentOS 重跑状态；七项复现；M5 排序信号 vs 遗忘三态联合约束（2610.31303 v4 与 CLADE 仅为相邻证据，三轴表述不变）；M2 MemoryAtlas 余项（Hindsight 66.88/71.2、Mem0 49 归属）。
+- 下轮起点：先清上述缺口，再按子主题轮转（检索排序信号与遗忘策略：分离设计随规模退化为两层皆排序的边界条件；下轮候选 2610.31303 v4 全文深读）。

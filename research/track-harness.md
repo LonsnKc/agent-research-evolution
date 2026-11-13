@@ -492,3 +492,19 @@
 - 剩余未核实缺口：Harbor 0.25.1；MAF python-1.26.0 Release 对象与 PyPI 上架（下轮复核）、1.25.0 间隔官方解释（#10151 仍 0 评论）；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；AHA 2611 前缀 vs 九月日期表面不一致成因；arXiv 11-12 批次枚举。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：MAF 1.26.0 发布完成情况与 Harbor 0.25.1）。
 - 下轮起始 HEAD：Harbor d774888（窗口外 20:12:09Z，ATIF reasoningText→reasoning_content 映射）、inspect-ai 26f6d05（窗口外 20:10:36Z）、adk-python f9d948c（窗口外 20:17:57Z）；OTel semconv main e6658f1、opentelemetry-python-genai b164937、MAF 4f2d146、hawk f18befc、LangChain master 980e4a8、langgraphjs c354854 均未变；langgraph HEAD 待下轮复核（1.2.21 已发布，上轮值 595223d）。
+
+## 2026-11-13 07:09 轮（第 41 轮）
+
+- 本轮增量（D-H01–D-H05，落入 skill/references/agent-harness.md）：google-adk v2.14.1 窗口内发布（2026-11-12T21:30:11Z，单项 tracing 修复：关闭 Agent Engine 上 FastAPI 原生 tracing；另有 live 方向 3 提交）；MAF python-1.26.0 仍未完成发布（Release 对象终查仍 404；PyPI 仍 1.26.0；.NET 仍 1.28.0；#10151 仍 0 评论）；复核戳：Harbor 0.25.1 仍未发布（窗口内 10 提交，配置快照/版本化三连 + serve API 三连修复；ATIF 仍 v1.8）；inspect-ai 0.3.290 未发布（窗口内 6 提交）；OTel GenAI 16 项待决全部 open、零动向；Agents SDK 无新 alpha、稳定化时间表仍无表述；hawk 仍 v4.1.0（窗口内 3 提交）；langgraphjs #3355（连续第五轮改动）、langchainjs #12214 各 1 提交；arXiv 22 篇版本全未变；AHA 仍仅 v1。
+- 纠正：无（本轮无推翻项；MAF 1.26.0「发布进行中」继续）。
+- 剩余未核实缺口：Harbor 0.25.1；MAF python-1.26.0 Release 对象与 PyPI 上架（下轮复核）、1.25.0 间隔官方解释（#10151 仍 0 评论）；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；AHA 2611 前缀 vs 九月日期表面不一致成因；arXiv 11-12 批次枚举。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：MAF 1.26.0 发布完成情况与 Harbor 0.25.1）。
+- 下轮起始 HEAD：Harbor cc5c508、inspect-ai b4aa05b、hawk 3851917；OTel semconv main e6658f1、opentelemetry-python-genai b164937、MAF 4f2d146、LangChain master 980e4a8 均未变；langgraph/langgraphjs HEAD 待下轮复核（1.2.21 已发布；langgraphjs #3355 连续第五轮改动）。
+
+## 2026-11-13 10:09 轮（第 42 轮）
+
+- 本轮增量（D-H01–D-H05，落入 skill/references/agent-harness.md）：Agents SDK JS 0.22.0 窗口内发布（纯补丁：依赖刷新 + Zod 4.6.6；Python 仍 alpha.7）；MAF python-1.26.0 仍未完成发布（Release 对象终查仍 404；PyPI 仍 1.26.0；.NET 仍 1.28.0；1.26.0 预备 issue 编号纠正为 #10298；#10317 为开放 PR 而非 issue，其正文证明 1.26.0 标签已移动以纳入 Hyperlight 依赖下限修复 #10313 与发布标题指引 #10311）；复核戳：Harbor 0.25.1 仍未发布（窗口内 1 提交；ATIF 仍 v1.8）；inspect-ai 0.3.290 未发布（窗口内 1 提交）；OTel GenAI 16 项待决全部 open、零动向；ADK v2.14.1 后无新版；langgraph 11 提交性能批（#9628–#9639）、langgraphjs 12 提交（性能批 + #3356 SDK 修复，SDK 方向连续第六轮改动）、hawk 4 提交；langchainjs HEAD SHA 纠正（eed4c3250…）；AHA 仍仅 v1。
+- 纠正：MAF 1.26.0 预备 issue「#10151」（实为 #10298）；#10317「为 issue」（实为开放 PR）；langchainjs HEAD SHA 漏印。
+- 剩余未核实缺口：Harbor 0.25.1；MAF python-1.26.0 Release 对象与 PyPI 上架（下轮复核）、1.25.0 间隔官方解释（#10298 仍 0 评论）；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；AHA 2611 前缀 vs 九月日期表面不一致成因；arXiv 11-12 批次枚举。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：MAF 1.26.0 发布完成情况与 Harbor 0.25.1）。
+- 下轮起始 HEAD：Harbor 本轮新增提交 3bf4cb3、inspect-ai 本轮新增提交 e4435ba；langgraph/langgraphjs/hawk 本轮 HEAD 未在 delta 中钉死，下轮复核时以 compare API 重取为准。

@@ -508,3 +508,11 @@
 - 剩余未核实缺口：Harbor 0.25.1；MAF python-1.26.0 Release 对象与 PyPI 上架（下轮复核）、1.25.0 间隔官方解释（#10298 仍 0 评论）；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；AHA 2611 前缀 vs 九月日期表面不一致成因；arXiv 11-12 批次枚举。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：MAF 1.26.0 发布完成情况与 Harbor 0.25.1）。
 - 下轮起始 HEAD：Harbor 本轮新增提交 3bf4cb3、inspect-ai 本轮新增提交 e4435ba；langgraph/langgraphjs/hawk 本轮 HEAD 未在 delta 中钉死，下轮复核时以 compare API 重取为准。
+
+## 2026-11-13 13:09 轮（第 43 轮）
+
+- 本轮增量（D-H01–D-H09，落入 skill/references/agent-harness.md）：窗口内新稳定发布 0 件；MAF python-1.26.0 仍未完成发布（Release 对象终查仍 404；PyPI 仍 1.26.0；.NET 仍 1.28.0；#10298 仍 1 评论；#10317 仍 open）；Harbor 0.25.1 仍未发布（窗口内 1 提交 #4277 pipefail 可移植修复）；inspect-ai 0.3.290 未发布；OTel 16 项待决全部 open、零动向；Agents SDK 两线无新版；langgraphjs #3363（SDK 方向连续第七轮改动）；22 篇版本复核窗口内修订 0；AHA 仍仅 v1；深挖格式口径窗口内无新变动。
+- 纠正：2611.13028（GTAGym）由上轮所记 v1 纠正为 v2（revised 2026-11-11T11:55:08Z，摘要页一手；上轮 API 查询返回旧版，疑似 API 索引滞后，成因未核实；不属窗口内修订）；派发书前提「arXiv 11-12 批次已于 2026-11-13 01:00 UTC 公告」与实测不符（截至 05:15:13 UTC 列表页仍为 11-11 批次）。
+- 剩余未核实缺口：Harbor 0.25.1；MAF python-1.26.0 Release 对象与 PyPI 上架（下轮复核）、1.25.0 间隔官方解释（#10298 仍 1 评论）；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；AHA 2611 前缀 vs 九月日期表面不一致成因；arXiv 11-12 批次枚举。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：MAF 1.26.0 发布完成情况与 Harbor 0.25.1）。
+- 下轮起始 HEAD：Harbor 06d0e86、inspect-ai e4435ba、langgraphjs 82a7d07；OTel semconv main e6658f1、opentelemetry-python-genai b164937、MAF c7e50cc、hawk ba03f5f、LangChain master 980e4a8、langgraph 3183e90、langchainjs eed4c32 均未变。

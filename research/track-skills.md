@@ -506,3 +506,10 @@
 - 纠正：Continual-ARC「全部仍 v1」（现为 v2）；SkillEvaluator 20:14 推送途径穷尽（不再重复检索）。
 - 剩余未核实缺口：ETUDE 聚合公式 / Skillware 作者澄清（邮件联系是否尝试由主轮定）；Skill++ 作者仓；Gemini nightly #569（下轮窗口）；Codex rust-v0.168.0/0.169.0 稳定版；AAIF 落地文件；SkillzBench published 跳变原因；Windsurf v3.12.28 是否重现；UserPromptExpansion 实机测试；Cursor 桌面/CLI 版本映射；SkillEvaluator 20:14 推送具体 ref 与 stars 激增原因；Claude v2.1.323 docs changelog 收录情况（本轮已闭合）。
 - 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化：TSS 组件级补充指标的落地口径）。
+
+## 2026-11-13 13:09 轮（第 43 轮）
+
+- 本轮增量（D-S01–D-S13，落入 skill/references/skill-authoring.md）：Codex rust-v0.168.0 窗口内稳定版（2026-11-13T03:54:29Z；5 处 skill 均为权限收紧 + 指标，无新功能；0.169.0 稳定版跳号）与 rust-v0.171.0-alpha.1 预发布（04:15:28Z，正文 25 字符）；其余三宿主无新版（Claude 仍 v2.1.323、Gemini 仍 v0.68.0、OpenCode 仍 v2.2.7、Windsurf 仍 v3.12.59；v3.12.28 第 28 轮未重现）；Gemini nightly #569 未运行（连败仍 9 次；p0 总数仍 12，OPEN 10）；Cursor 逐字节相同；AAIF 三件落地文件仍缺失；SkillzBench published 仍 1,288（连续四轮持平）；SkillEvaluator 仍 v0.8.0，stars 892 → 912（激增第三轮；执行者后取 915）；ETUDE/Skillware/Skill++ 均仍仅 v1，S1/S2/S3 仍未决；Hooks 页逐字节相同，UPE 仍 L1589；Crossroads 仍 rubric v1.2；SWE 仍 v2；MCP vs CLI vs Skills 仍独立 5 篇 + 厂商关联 3 篇；TSS 组件级补充新证据 2 件（Null Signal 落地规程 + Xia 等 2606.20631 v2；Xia 准则句由执行者自验逐字确认；TSS 结论不变）；arXiv 11-12 批次截至 05:22 UTC 仍未上线。
+- 纠正：无新推翻项（Xia 准则句「转述，待正文核对」已由执行者自验逐字确认，见 verification.md）。
+- 剩余未核实缺口：ETUDE 聚合公式 / Skillware 作者澄清（邮件联系是否尝试由主轮定）；Skill++ 作者仓；Gemini nightly #569（约 2026-11-14 00:19Z）；Codex rust-v0.170.0 稳定版；AAIF 落地文件；SkillzBench published 跳变原因；Windsurf v3.12.28 是否重现；UserPromptExpansion 实机测试；Cursor 桌面/CLI 版本映射；SkillEvaluator 20:14 推送具体 ref 与 stars 激增原因；Xia v2 全文深读。
+- 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化：TSS 组件级补充指标的落地口径；Xia v2 全文深读）。

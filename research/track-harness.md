@@ -524,3 +524,11 @@
 - 剩余未核实缺口：Harbor 0.25.1；MAF python-1.26.0 Release 对象与 PyPI 上架（下轮复核）、1.25.0 间隔官方解释（#10298 仍 1 评论）；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；inspect-ai 0.3.290；AHA 2611 前缀 vs 九月日期表面不一致成因；EvoX/guardscope/ReA-Bench 候选线索全文深读。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：MAF 1.26.0 发布完成情况与 Harbor 0.25.1；三篇候选线索深读）。
 - 下轮起始 HEAD：Harbor 06d0e86、inspect-ai e4435ba、langgraphjs 82a7d07；OTel semconv main e6658f1、opentelemetry-python-genai b164937、MAF c7e50cc、hawk ba03f5f、LangChain master 980e4a8、langgraph 3183e90、langchainjs eed4c32 均未变（13:09 轮 HEAD 未变，本轮未复测 HEAD）。
+
+## 2026-11-13 19:09 轮（第 45 轮）
+
+- 本轮增量（D-H01–D-H07，落入 skill/references/agent-harness.md）：**MAF python-1.26.0 发布完成**（Release 对象窗口内 08:28:16Z 出现，57 附件 = 28 包；纠正：28 包不是 44 包；release notes：`loop_return_final_only`、Hyperlight #10152 破坏性 30 秒预算、记忆 API 弃用至 2026-12-31、FIDES 钩子簇、Bedrock/Claude 缓存 token 计入）；MAF #10318 破坏性 shell 路径校验（标签后提交）、#10326 测试跳过；#10317 仍 open 但不再与「未完成」相互印证；#10298 仍 1 评论；Harbor 0.25.1 仍未发布（窗口内 0 提交，连续两轮）；inspect-ai 0.3.290 未发布；OTel 16 项待决全部 open、零动向；Agents SDK JS 0.22.0 / Python alpha.7；hawk #2854；langgraphjs/langchainjs 依赖 bump（SDK 方向仍第七轮）；**EvoX/guardscope/ReA-Bench 三篇候选线索全文深读完成**（均 v1，均未提新任务/trace 格式）；AHA 仍仅 v1。
+- 纠正：MAF 1.26.0「44 包」→ 28 包；MAF 1.26.0「仍不计入已发布」→ 已发布；#10317 open 不再与「未完成」相互印证。
+- 剩余未核实缺口：MAF #10318 发布载体与 #10317 合并与否；Harbor 0.25.1；inspect-ai 0.3.290；OTel GenAI span 格式 16 项待决（#688 合并时间）；Agents SDK 稳定化时间表；AHA 2611 前缀 vs 九月日期表面不一致成因。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：MAF 1.26.0 发布完成情况与 Harbor 0.25.1）。
+- 下轮起始 HEAD：MAF 739a387、hawk 497d0f6、langgraphjs 749403f、langchainjs c266deb；Harbor 06d0e86、inspect-ai e4435ba、ADK 5ce1d0c、Agents SDK py 64fbde5/js 8aeac0e、langchain 980e4a8、langgraph 3183e90、AutoGen 8390985、OTel semconv e6658f1/py-genai b164937、METR task-standard 83ad6fd 均未变。

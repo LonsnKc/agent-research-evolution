@@ -520,3 +520,11 @@
 - 纠正：无新推翻项（Xia v2 全文深读完成，13:09 轮「准则句已逐字确认」结论不变；arXiv 11-12 批次枚举闭合）。
 - 剩余未核实缺口：ETUDE 聚合公式 / Skillware 作者澄清（邮件联系是否尝试由主轮定）；Skill++ 作者仓；Gemini nightly #569（约 2026-11-14 00:19Z）；Codex rust-v0.170.0 稳定版；AAIF 落地文件；SkillzBench published 跳变原因；Windsurf v3.12.28 是否重现；UserPromptExpansion 实机测试；Cursor 桌面/CLI 版本映射；SkillEvaluator 20:14 推送具体 ref 与 stars 激增原因；Skill Adapter 2611.17007 全文深读。
 - 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化：TSS 组件级补充指标的落地口径；Skill Adapter 全文深读）。
+
+## 2026-11-13 19:09 轮（第 45 轮）
+
+- 本轮增量（D-S01–D-S08，落入 skill/references/skill-authoring.md；D-S02 并入 D-S01 同条，7 个 bullet 紧凑格式）：Codex rust-v0.169.0 窗口内稳定版（08:37:05Z，跳号疑案闭合，序列 0.167.2→0.168.0→0.169.0）；OpenCode v2.3.0（08:55:07Z，skill 工具返回值变更 #63616 系，实测待验证——**新增未验证暂定项**）；SkillEvaluator v0.9.0（GitHub 11:03:05Z、PyPI 11:05:48Z/11:08:27Z，GitHub ≠ PyPI 落差闭合；stars 996，+41）；**SkillEvaluator 20:14 推送具体 ref 记为关闭**（阴性证据：12:00–12:30Z 零提交）；SkillzBench published 1,327（+37，连续第二轮跳变，原因仍无解释）；**Skill Adapter 全文深读完成**（+11.43pp 算术复核通过；S^gold 构造未说明等三处局限）；ETUDE/Skillware/Skill++ 均仍仅 v1，S1/S2/S3 仍未决；**MCP vs CLI 独立实测 6 → 7 篇**（Maximilian Fabian Kirchner，18 配置 × 12 运行，方向随 harness 翻转）；**厂商关联取两轮并集 6 项**（纠正 16:09 轮静默替换）；"topuzas" 来源 URL 已定位；Driftproofhq 原文一手读完（TSS 结论不变）；Gemini nightly 连败仍 9 次；Windsurf v3.12.28 第 30 轮未重现；AAIF 三件落地文件仍缺失；Hooks 页逐字节相同，UPE 仍 L1589。
+- 纠正：16:09 轮 MCP vs CLI 厂商关联三元组静默替换 → 取并集 6 项；"topuzas 无对应 URL" → 已定位（dev.to/topuzas 链接，执行者亲自 curl HTTP 200）。
+- 剩余未核实缺口：ETUDE 聚合公式 / Skillware 作者澄清（邮件联系是否尝试由主轮定）；Skill++ 作者仓；Gemini nightly #569（约 2026-11-14 00:19Z）；Codex rust-v0.170.0 稳定版；SkillEvaluator v0.9.1+；AAIF 落地文件；SkillzBench published 跳变原因；Windsurf v3.12.28 是否重现；UserPromptExpansion 实机测试；OpenCode skill 工具返回值实测验证（新增暂定项）。
+- 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化：TSS 组件级补充指标的落地口径；OpenCode skill 工具返回值实测验证）。
+- 体量警示：skill-authoring.md 整合后 400 行，恰触约 400 行红线——下轮起该篇须先拆分再增量（拆分方案记为提案，等用户裁定）。

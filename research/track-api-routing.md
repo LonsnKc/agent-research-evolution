@@ -516,7 +516,7 @@
 
 - 本轮增量（D-R01–D-R14，落入 skill/references/api-routing.md）：OpenRouter benchmarks API 第十六次 401（67 字节逐字节一致；计数器 2,417,024 → 2,419,560，+2,536，恒等式第四轮闭合：GPQA +1,209、VGI +878、τ² +449；$6.37 沿用值不得写成重算）；decisions 新方法仍未定（/labs/decisions 86,032 字节，numberOfItems 仍 1；两 API 端点仍 404；旧值 37 记未决）；目录 475 持平、博客 184 持平；LiteLLM 仍 v1.109.1（新预发布 v1.111.0-dev.1）、vLLM 仍 v0.33.0（rc2 仍仅 tag）；CVE-2026-114612 厂商逐字确认仍缺（#51254 消歧为另一漏洞 GHSA-2rwg-2wh4-7c4f）；Portkey CVE 修复版仍无（1.15.2，仓库零提交自 2026-05-25）；Railway 最终报告无更新；OpenCode 官方博客仍 404；Dynamo 文档表 v1.6.2 缺行仍未补；Cloudflare Auto Router md5 十四连相同；llm-d pushed_at 02:13:42Z（gh-pages 驱动，+3 秒；不得断言 test-nightly 分支被删除）；Schematron 定价未变、Extractions API 参考页仍滞后；AgentRouter 仍 v1.2.1；arXiv 11-12 批次枚举第三轮结转（任务书「01:00 UTC 公告」前提与三腿实测不符）；R7 深挖零新证据（三篇从业者指南仅作相邻证据）；11-11 批次路由论文版本复核全部仍 v1。
 - 纠正：任务书前提「arXiv 11-12 批次已于 2026-11-13 01:00 UTC 公告」与三腿实测不符（截至 05:25 UTC 列表页仍为 11-11 批次）；llm-d「test-nightly 分支被删除」不得断言；#51254 不得读作 CVE-2026-114612 的修复确认。
-- 剩余未核实缺口：arXiv 11-12 批次枚举（第三轮结转）；OpenRouter $6.43 口径调和（未结台账，第十六次重试；decisions 新计数方法待定）；LiteLLM v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；Dynamo 文档表 v1.6.2 缺行；Jev 11 因子权重与 Cloudflare 排序信号；在线学习阈值真实流量一手证据仍无（R7 暂定继续）；api-routing.md 已 398 行，下轮起须先拆分再增量（拆分方案记为提案，等用户裁定）。
+- 剩余未核实缺口：arXiv 11-12 批次枚举（第三轮结转）；OpenRouter $6.43 口径调和（未结台账，第十六次重试；decisions 新计数方法待定）；LiteLLM v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；Dynamo 文档表 v1.6.2 缺行；Jev 11 因子权重与 Cloudflare 排序信号；在线学习阈值真实流量一手证据仍无（R7 暂定继续）；api-routing.md 已 398 行，下轮起须先拆分再增量（拆分方案用户已裁定：2026-11-13 19:08 用户选 A——按「机制表／论文／仓库／轮次复核」分篇拆分，SKILL.md 索引随之更新；第 45 轮起先拆分、拆完核对全部引用不断链后再落增量）。
 - 下轮起点：先清上述缺口（OpenRouter $6.43 重算为未结台账首项；decisions recipe 数盯梢；arXiv 11-12 批次枚举为未结台账项），再按子主题轮转（成本/延迟权衡定量模型：KV 感知期望值模型与生产级联校准）。
 - 下轮起始 HEAD：llm-d main 565373b7、gh-pages c8da61c3；其余见 research/20261113-1309/rb-report.md。
 
@@ -527,3 +527,11 @@
 - 剩余未核实缺口：OpenRouter $6.43 口径调和（未结台账，第十七次重试；decisions 新计数方法待定）；LiteLLM v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；Dynamo 文档表缺行；OpenRouter 11 因子权重；在线学习阈值真实流量一手证据（R7 暂定继续）；veduis 生产数字（D-R02 暂定继续）。
 - 下轮起点：先清上述缺口（OpenRouter $6.43 重算为未结台账首项；decisions recipe 数盯梢），再按子主题轮转（成本/延迟权衡定量模型：KV 感知期望值模型与生产级联校准）。
 - 下轮起始 HEAD：llm-d pushed_at 06:50:56Z（gh-pages 驱动）；其余见 research/20261113-1609/rb-report.md。
+
+## 2026-11-13 19:09 轮（第 45 轮）
+
+- 本轮增量（D-R01–D-R10，落入 skill/references/api-routing-rounds.md + api-routing-papers.md；本轮先行完成 api-routing.md 拆分：74 行机制核心 + papers 36 行 + repos 21 行 + rounds 286 行，SKILL.md 索引已更新，活引用已改道，旧版快照存于 `versions/v0.44.0/` 与 `versions/v0.44.0-split/`）：`/api/v1/benchmarks` 仍 401，第 18 次连续失败；**重算路线恢复**——前端统计端点 HTTP 200（302 runs），执行者亲自重算 Auto Code $1.6427 / Opus 5.5 $6.3675，与既往五轮逐字一致；板面 $6.43 与重算 $6.3675 的 $0.0625 缺口仍未闭合；未结台账首项划除重算部分；计数器 2,421,232 → 2,363,118（−58,114），恒等式第六轮闭合（GPQA −44,557、τ² −13,557）；decisions 新方法仍未定（numberOfItems 仍 1；两 API 仍 404；旧值 37 记未决）；目录 475 → 472（移除 3 项滞后上架）、博客 184 持平；LiteLLM 仍 v1.109.1、vLLM 仍 v0.33.0；CVE-2026-114612 厂商逐字确认仍缺；Portkey 仍 v1.15.2；Dynamo 文档表缺行仍未补（澄清 10:09 轮「v1.6.1 已列」指版本切换器，非表行）；Cloudflare .mdx md5 相同；Jev 文档重组（旧址 404，新址 Updated 2026-11-11T22:08:37Z，权重仍未披露）；Extractions 指南页已迁新址并列两 Schematron 模型，滞后缺口闭合；**R2-Router 新登记**（arXiv:2602.02823v2，成本可控化新分支，4–5× 论文自报）；**GAMCAL/SUPG-IT 为迄今最接近 R7 的相邻证据**（不得写成闭合）；2611.12953/2611.13412 全文再核通过；arXiv 11-13 批次尚未公告，结转下轮。
+- 纠正：台账「无替代数据源」→ 前端端点从未 401；RB 腿「第十八次重试首次成功」→ 重算任务成功，非 `/api/v1/benchmarks`；RA 腿「$6.37 本轮未重算」→ 执行者亲自重算 $1.6427/$6.3675；Dynamo「v1.6.1 已列」→ 指版本切换器，非表行。
+- 剩余未核实缺口：decisions 新计数方法待定；arXiv 11-13 批次枚举（预期 2026-11-14 01:00 UTC 公告后）；`/api/v1/benchmarks` 401 观察（不再阻塞重算）；LiteLLM v1.110.0 正式版、vLLM v0.33.1/v0.34.0；CVE-2026-114612 厂商逐字确认；Portkey CVE 修复版；Dynamo 文档表缺行；OpenRouter 11 因子权重；在线学习阈值真实流量一手证据（R7 暂定继续）；veduis 生产数字（D-R02 暂定继续）。
+- 下轮起点：先清上述缺口（arXiv 11-13 批次枚举；decisions recipe 数盯梢），再按子主题轮转（成本/延迟权衡定量模型：KV 感知期望值模型与生产级联校准）。
+- 下轮起始 HEAD：llm-d main 565373b7；其余见 research/20261113-1909/ra-report.md。

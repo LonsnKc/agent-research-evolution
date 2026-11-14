@@ -572,3 +572,10 @@
 - 剩余未核实缺口：MAF #10317 合并与否；LangChain 5 包 PyPI 上架与否；inspect-ai 0.3.290；OTel GenAI span 格式 16 项待决（#688 合并时间；#596 对 Decisions API 的跟进；#204 看板更新成因）；Agents SDK 稳定化时间表；AHA 2611 前缀 vs 九月日期表面不一致成因；MAF 记忆 API 弃用迁移指南缺口；ADK 下一版是否收纳两项 telemetry 改动；11-12 批次 21 篇标题级候选深读（首选 14581、15276、16591）。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：#516/#695 是否因 ADK 的 token 指标落地而推进；#596 是否跟进 Decisions API；21 篇标题级候选深读）。
 - 下轮起始 HEAD：见 research/20261114-1309/h-report.md；OTel semconv e6658f1 未变。
+
+## 2026-11-14 16:09 轮（第 51 轮）
+
+- 本轮增量（D-H01–D-H11，落入 skill/references/agent-harness.md）：LangChain 5 包 PyPI 仍未上架（滞后约 7.5 小时）；MAF #10317 仍 open（#10318 载体仍未定，记忆 API 迁移指南仍缺）；Harbor 0.26.0 发布后 2 提交，无新版；inspect-ai 0.3.290 未发布；Agents SDK 无新 alpha、无官方稳定化时间表；ADK 窗口内 1 提交（eval 侧）；OTel 16 项待决零动静，#204 第三轮抖动（07:36:02Z，约 3 小时节律，成因未确立）；**深挖：7 篇全文深读全部完成、7/7 直接相关**——14581（policy_event_trace + judge 一致率仅 56.2%、边界检查 11/11）、15276（VbD +3.3/+4.1/+2.3pp）、16591（Harbor v0.15.0 六项全破 + Breakwater 五防护，须注版本限定，不得外推至现行 0.26.0）、16485、14960（终止滞后 35–60%）、15268（技能/权重分工）、14765。
+- 纠正：**Harbor 仓库纠正为 harbor-framework/harbor**（H 腿初查误用 av/harbor 已纠正；上轮 Harbor 结论本身不受影响）；下轮须直接用正确仓名。
+- 剩余未核实缺口：MAF #10317 合并与否；LangChain 5 包 PyPI 上架与否；inspect-ai 0.3.290；OTel GenAI span 格式 16 项待决（#688 合并时间；#596 对 Decisions API 的跟进；#204 看板更新成因）；Agents SDK 稳定化时间表；AHA 2611 前缀 vs 九月日期表面不一致成因；MAF 记忆 API 弃用迁移指南缺口；ADK 下一版是否收纳两项 telemetry 改动；Breakwater 代码落点追踪。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：#516/#695 是否因 ADK 的 token 指标落地而推进；#596 是否跟进 Decisions API；Breakwater 代码落点）。

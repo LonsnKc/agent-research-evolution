@@ -563,3 +563,10 @@
 - 纠正：**「danielvaughan 文 ICL 0.605/0.602 可与论文数字并列」→ 论文原数 0.585/0.582 胜出，该文数字不采纳**（执行者亲自取 v3 PDF 全文裁定）；**「SkillScope HTML 版 7,039 可引用」→ v1 时期数字，只许用 v3 口径 6,590**（执行者亲自查 arXiv API 条目裁定）；**「GitHub 代码检索 64/95/82 可续作趋势」→ 口径断裂，不得连成趋势，自本轮重建基线**；SB 腿「CHANGELOG 含 #53x/#54x/#55x/#49x 字面串」→ 0 命中，SA 的 PR 归属为内容对应（执行者亲自比对两份快照逐字节相同并定位内容映射）。
 - 剩余未核实缺口：skill-authoring.md 拆分（400 行恰触红线，提案待用户裁定；暂持累计 21 条）；Codex rust-v0.170.0 稳定版；SkillEvaluator v0.9.1+；OpenCode skill 工具返回值实测验证（暂定继续）；Gemini nightly #570；AAIF 落地文件；ETUDE/Skillware/Skill++ 作者澄清（S1/S2/S3 暂定继续；Vibing Talk 下轮重取）；SkillLearnBench 全文深读。
 - 下轮起点：先清上述缺口（skill-authoring.md 拆分须等用户裁定，不得先行），再按子主题轮转（技能发现/调用/评估协议：SkillScope 权限约束方向与 TSS 的关系；ContinualSkillBench ICL 对照方向；SkillLearnBench 三层评估框架）。
+
+## 2026-11-14 16:09 轮（第 51 轮）
+
+- 本轮增量（D-S01–D-S04，全部暂持，未落入正本）：四宿主零新稳定版（Claude 仍 v2.1.325、Codex v0.170.0 仍 404、Gemini 仍 v0.68.0、OpenCode 仍 v2.3.0）；Gemini nightly #570 未运行（五连败），p0 仍 13；SkillLearnBench 全文深读完成（D-S01 暂持；「COLM'26」仅见代码仓简介，全文 0 命中）；Cursor Agent SDK skills/ 语义一手闭合（D-S02 暂持；包名 @grok/agent-sdk/skills，@cursor/agent-sdk npm 404）；Gemini CLI 技能机制一手确认（D-S03 暂持）；新相邻论文 2611.08905（D-S04 暂持；TSS 结论不变）；SkillzBench published 1,337（+9）、measured effect 204（−4，只记读数）、trials 24,006、scans 3,643、repos 134；SkillEvaluator stars 1,154；S1/S2/S3 仍未决，Vibing Talk 取证恢复（仍 11 帖、四数字串 0 命中，50 轮 504 结转闭合）。
+- 纠正：**SkillEvaluator pushed_at 前移成因——SA 腿「加星潮解释」不采纳**（加星不能移动 pushed_at）；采纳 SB 腿「成因未定位」，记入 track-skills.md；**CHANGELOG 编号引用——50 轮裁定不变**（SA 的 PR 归属为内容对应；SB 的 0 命中仅指字面串）；**Vibing Talk 帖数——采纳 SA 腿「11 帖」**（线程页直接计数）；**Gemini p0 总数——采纳 SA 腿「13」**（与既往同口径）；**UPE 行号沿用 L1598**（SB 的 L36/L308 为另一提取口径，内容无变化）。
+- 剩余未核实缺口：skill-authoring.md 拆分（400 行恰触红线，提案待用户裁定；暂持累计 25 条）；Codex rust-v0.170.0 稳定版；SkillEvaluator v0.9.1+；OpenCode skill 工具返回值实测验证（暂定继续）；Gemini nightly #570；AAIF 落地文件；ETUDE/Skillware/Skill++ 作者澄清（S1/S2/S3 暂定继续；Vibing Talk 已恢复取证）；SkillLearnBench 全文深读已完成（D-S01 暂持）。
+- 下轮起点：先清上述缺口（skill-authoring.md 拆分须等用户裁定，不得先行），再按子主题轮转（技能发现/调用/评估协议：SkillScope 权限约束方向与 TSS 的关系；ContinualSkillBench ICL 对照方向；SkillLearnBench 三层评估框架）。

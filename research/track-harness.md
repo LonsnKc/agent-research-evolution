@@ -579,3 +579,10 @@
 - 纠正：**Harbor 仓库纠正为 harbor-framework/harbor**（H 腿初查误用 av/harbor 已纠正；上轮 Harbor 结论本身不受影响）；下轮须直接用正确仓名。
 - 剩余未核实缺口：MAF #10317 合并与否；LangChain 5 包 PyPI 上架与否；inspect-ai 0.3.290；OTel GenAI span 格式 16 项待决（#688 合并时间；#596 对 Decisions API 的跟进；#204 看板更新成因）；Agents SDK 稳定化时间表；AHA 2611 前缀 vs 九月日期表面不一致成因；MAF 记忆 API 弃用迁移指南缺口；ADK 下一版是否收纳两项 telemetry 改动；Breakwater 代码落点追踪。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：#516/#695 是否因 ADK 的 token 指标落地而推进；#596 是否跟进 Decisions API；Breakwater 代码落点）。
+
+## 2026-11-14 19:09 轮（第 52 轮）
+
+- 本轮增量（D-H01–D-H06，落入 skill/references/agent-harness.md）：窗口内新稳定发布 0 件，13 仓窗口内 0 提交；LangChain 5 包 PyPI 仍未上架（滞后约 10.5 小时）；MAF #10317 仍 open（近 2 天；#10318 载体仍未定，记忆 API 迁移指南仍缺）；Harbor 0.26.0 发布后窗口内 0 提交，无 0.26.1；inspect-ai 仍 0.3.289；Agents SDK 无新 alpha；ADK 仍 2.14.1，两项 telemetry 改动收纳状态待下一版验证；OTel 16 项待决首次全量核对全部仍 open（#204 第四轮抖动，间隔 2 h 08 m 42 s，「约 3 小时节律」假说被削弱，不计为进展）；**Breakwater 代码落点闭合**（独立仓库 Infini-AI-Lab/singularity-bench，创建 2026-11-13T17:45:49Z，MIT；五防护与代码文件逐一映射；未入 Harbor 代码库，三重证据；论文仍仅 v1，28/28 挡攻击为论文自报；受测 Harbor v0.15.0 vs 现行 0.26.0，不得直接外推）。
+- 纠正：「约 3 小时节律」（OTel #204 updatedAt 抖动）→ 假说被削弱（本轮间隔 2 h 08 m 42 秒，上轮 2 h 59 m 55 秒，再往前约 9 小时；成因仍未确立，不计为进展）。
+- 剩余未核实缺口：MAF #10317 合并与否；LangChain 5 包 PyPI 上架与否；inspect-ai 0.3.290；OTel GenAI span 格式 16 项待决（#688 合并时间；#596 对 Decisions API 的跟进；#204 看板更新成因）；Agents SDK 稳定化时间表；AHA 2611 前缀 vs 九月日期表面不一致成因；MAF 记忆 API 弃用迁移指南缺口；ADK 下一版是否收纳两项 telemetry 改动。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：#516/#695 是否因 ADK 的 token 指标落地而推进；#596 是否跟进 Decisions API）。

@@ -570,3 +570,11 @@
 - 纠正：**SkillEvaluator pushed_at 前移成因——SA 腿「加星潮解释」不采纳**（加星不能移动 pushed_at）；采纳 SB 腿「成因未定位」，记入 track-skills.md；**CHANGELOG 编号引用——50 轮裁定不变**（SA 的 PR 归属为内容对应；SB 的 0 命中仅指字面串）；**Vibing Talk 帖数——采纳 SA 腿「11 帖」**（线程页直接计数）；**Gemini p0 总数——采纳 SA 腿「13」**（与既往同口径）；**UPE 行号沿用 L1598**（SB 的 L36/L308 为另一提取口径，内容无变化）。
 - 剩余未核实缺口：skill-authoring.md 拆分（400 行恰触红线，提案待用户裁定；暂持累计 25 条）；Codex rust-v0.170.0 稳定版；SkillEvaluator v0.9.1+；OpenCode skill 工具返回值实测验证（暂定继续）；Gemini nightly #570；AAIF 落地文件；ETUDE/Skillware/Skill++ 作者澄清（S1/S2/S3 暂定继续；Vibing Talk 已恢复取证）；SkillLearnBench 全文深读已完成（D-S01 暂持）。
 - 下轮起点：先清上述缺口（skill-authoring.md 拆分须等用户裁定，不得先行），再按子主题轮转（技能发现/调用/评估协议：SkillScope 权限约束方向与 TSS 的关系；ContinualSkillBench ICL 对照方向；SkillLearnBench 三层评估框架）。
+
+## 2026-11-14 19:09 轮（第 52 轮）
+
+- 本轮增量（D-S01–D-S07，全部暂持，未落入正本）：四宿主零新稳定版（Claude 仍 v2.1.325、Codex 仍 rust-v0.169.0/alpha.5、Gemini 仍 v0.68.0、OpenCode 仍 v2.3.0）；Gemini nightly #570 未运行（五连败），p0 仍 13；SkillzBench published 1,394（+57，其余四计数器持平）；SkillEvaluator stars 1,171（+17）、pushed_at 前移至 08:36:16Z（窗口内 20 起事件无 PushEvent，成因连续第二次未定位）；S1/S2/S3 仍未决，Vibing Talk 仍 11 帖、四数字串 0 命中；OpenCode #63623 仍 0 评论、无官方补充；深挖：**SkillScope v3 获 ACM CCS 2026 接收**（书目事实，D-S01 暂持；会议 2026-11-15–19，不作已发表推断；引用只许用 v3 口径 6,590）；SkillLearnBench 仍仅 v1、代码仓零变化；ContinualSkillBench 仍 v3（danielvaughan 文仅改时间戳，论文原数 0.585/0.582 胜出）；MCP vs CLI 7+7 不变；代码检索固定口径第三轮读数（ETUDE 937,984 持平、Skillware 1,268 持平、Skill++ 4,632 +32 索引波动）。
+- 纠正：51 轮正文 skill-reach pushed_at「2026-11-13T16:30:49Z」→ 笔误，以 51 轮证据文件 2026-11-14T06:31:53Z 为准，本轮无变化（记入 track-skills 纠正，不触正本）；SkillEvaluator CHANGELOG 编号引用差异沿用 50 轮裁定，不重复裁定；Gemini p0 总数采纳 SA 腿「13」（SB 腿 267 疑为查询语法产物，不采纳）；Vibing Talk 帖数采纳 SA 腿「11 帖」（SB 腿未复核帖数）。
+- 剩余未核实缺口：skill-authoring.md 拆分（400 行恰触红线，提案待用户裁定；暂持累计 32 条）；Codex rust-v0.170.0 稳定版；SkillEvaluator v0.9.1+；OpenCode skill 工具返回值实测验证（暂定继续）；Gemini nightly #570；AAIF 落地文件；ETUDE/Skillware/Skill++ 作者澄清（S1/S2/S3 暂定继续；Vibing Talk 已恢复取证）；SkillLearnBench 三层评估框架；SkillEvaluator pushed_at 前移成因（连续两轮未定位）。
+- 下轮起点：先清上述缺口（skill-authoring.md 拆分须等用户裁定，不得先行），再按子主题轮转（技能发现/调用/评估协议：SkillScope 权限约束方向与 TSS 的关系；ContinualSkillBench ICL 对照方向；SkillLearnBench 三层评估框架）。
+

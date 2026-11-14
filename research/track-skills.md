@@ -549,3 +549,10 @@
 - 纠正：Cursor CLI changelog .md 版现为 550 行，与既往笔记「1,193 行」不符（可能为另一文档或旧版面），以本轮实取（双宿主逐字节相同）为准；OpenCode #63623 对象直取补齐（上轮仅取 #63616 系；已合并 2026-11-12T23:43:46Z，0 评论）；skill-reach 仓库版本/日期补齐（仍无版本化发布；pushed_at 2026-11-13T16:30:49Z，上轮窗口内）。
 - 剩余未核实缺口：skill-authoring.md 拆分（400 行恰触红线，提案待用户裁定）；Claude 2.1.324/325 转正时点；Codex rust-v0.170.0 稳定版；SkillEvaluator v0.9.1+；OpenCode skill 工具返回值实测验证（暂定继续）；Gemini nightly #569（约 2026-11-14 00:19Z）；AAIF 落地文件；ETUDE/Skillware/Skill++ 作者澄清（S1/S2/S3 暂定继续）；SkillzBench measured effect 回落原因与 published 持平原因。
 - 下轮起点：先清上述缺口（skill-authoring.md 拆分须等用户裁定，不得先行），再按子主题轮转（技能发现/调用/评估协议：SkillScope 权限约束方向与 TSS 的关系；ContinualSkillBench ICL 对照方向）。
+
+## 2026-11-14 10:09 轮（第 49 轮）
+
+- 本轮增量（D-S01–D-S07，**暂持未落入正本**，skill-authoring.md 400 行恰触红线，拆分方案仍待用户裁定；暂持累计 14 条）：Claude v2.1.325 稳定版（GitHub 2026-11-13T20:40:01Z，由 07:09 腿记录、本轮复核）+ 4 处 changelog（2.1.324/2.1.325 均未转正留痕已闭合）；Codex rust-v0.171.0-alpha.5 预发布（01:20:37Z，正文空；alpha.4 跳号已确认）；Gemini 仍 v0.68.0；OpenCode 仍 v2.3.0；**Gemini nightly #569 失败**（#565–#569 五连败），**新 p0 #30291**，p0 总数 12→13；**SkillEvaluator stars 1,129**（执行者后取 1,130，活数据漂移），窗口内 main 提交 7 条（窗口内总数 19），仍 v0.9.0；**SkillzBench published 1,328 持平、measured effect 205→206**（执行者亲自复核 1,328/206/3,494）；Windsurf v3.12.28 第 31 轮未重现；Cursor 安装脚本仍 2026.11.13-eacade1；AAIF CHANGELOG.md 与 SECURITY.md 仍 404 缺失；Hooks 页逐字节相同，UPE 仍 L1598；S1/S2/S3 仍未决（三篇 arXiv 仍仅 v1；Skillware 作者仓窗口内零事件；Vibing Talk 仍 11 帖、四数字串 0 命中）；OpenCode #63623 无官方补充、无新讨论；MCP vs CLI 计数不变（独立 7 + 厂商关联 7；wowhow.cloud 为 2026-10-13 旧文且自述估算非实测，不计入第 8 篇）；深挖新证据为零。
+- 纠正：**48 轮「SkillzBench measured effect 首次回落 204→200」→ 07:09 腿（205）与本轮（206）两次抓取均未复现，定性为单次快照读数、未形成持续回落，不作趋势推断**（纠正对象为本 track 与 STATE.md 记录，不触及正本；正本从未载有 204→200 数字，其最新快照为 203）。
+- 剩余未核实缺口：skill-authoring.md 拆分（400 行恰触红线，提案待用户裁定；暂持累计 14 条）；Codex rust-v0.170.0 稳定版；SkillEvaluator v0.9.1+；OpenCode skill 工具返回值实测验证（暂定继续）；Gemini nightly #570；AAIF 落地文件；ETUDE/Skillware/Skill++ 作者澄清（S1/S2/S3 暂定继续）。
+- 下轮起点：先清上述缺口（skill-authoring.md 拆分须等用户裁定，不得先行），再按子主题轮转（技能发现/调用/评估协议：SkillScope 权限约束方向与 TSS 的关系；ContinualSkillBench ICL 对照方向）。

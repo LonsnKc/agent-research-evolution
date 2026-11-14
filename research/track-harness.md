@@ -564,3 +564,11 @@
 - 剩余未核实缺口：MAF #10317 合并与否；LangChain 5 包 PyPI 上架与否；inspect-ai 0.3.290；OTel GenAI span 格式 16 项待决（#688 合并时间；#596 对 Decisions API 的跟进；#204 看板更新成因）；Agents SDK 稳定化时间表；AHA 2611 前缀 vs 九月日期表面不一致成因；MAF 记忆 API 弃用迁移指南缺口；ADK 下一版是否收纳两项 telemetry 改动；11-12 批次 21 篇标题级候选深读（与 45 轮 32 篇对账后进行）。
 - 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：#516/#695 是否因 ADK 的 token 指标落地而推进；#596 是否跟进 Decisions API；21 篇标题级候选深读）。
 - 下轮起始 HEAD：见 research/20261114-1009/h-report.md；OTel semconv e6658f1 未变。
+
+## 2026-11-14 13:09 轮（第 50 轮）
+
+- 本轮增量（D-H01–D-H06，落入 skill/references/agent-harness.md）：**窗口内新稳定发布 0 件**；LangChain 5 个 release 提交已合入（core 1.8.1 #41855、mistralai 1.2.0 #41859、xai 1.4.0 #41857、groq 1.2.0 #41856、deepseek 1.2.0 #41858，00:39–00:43 UTC），**PyPI 截至 ~05:13 UTC 未上架，不得记为已发布**（流水线滞后约 4.5 小时）；MAF #10317 仍 open 未合并（auto-merge 已启用，窗口内 timeline 零新事件）、#10318 已合并（2026-11-13T09:54:38Z，窗口外）、1.27.0/1.29.0 发布载体仍未定、记忆 API 弃用独立迁移指南仍缺；Harbor 0.26.0 发布后 3 提交（#4300/#4212/#4297），无新版；inspect-ai 0.3.290 未发布；Agents SDK 无新 alpha、无官方稳定化时间表（两仓 README 全文 stable/timeline/roadmap/GA/beta/alpha 0 命中）；ADK 仍 2.14.1，两项 telemetry 改动收纳状态待下一版验证；AHA 仍仅 v1；OTel #516/#688/#596 均仍 open、**16 项待决全部 open 零窗口内动静**（semconv main HEAD 仍 e6658f1，自 2026-11-06 零合并；#204 updatedAt 窗口内移至 04:36:07Z 但 timeline 仍 69 事件、最新事件仍 11-09，成因未确立，不计为进展）；hawk 窗口内 10 提交全为 dependabot bump；**深挖：21 篇标题级候选裁定相关 7 / 相邻 12 / 无关 2**（仅摘要级，不写入技能正本；首选全文深读 14581、15276、16591，次优先 16485、14960、15268、14765；13 篇已在 44 轮 33 篇集中，8 篇本轮新见）；窗口内任务/trace 格式零标准级新进展。
+- 纠正：**44 轮「11-12 批次 Harness 枚举 32 篇」→ 实为 33 篇**（44 轮原文自承 A 组 21 + B 组 4 + C 组 8 = 33，标题数字 32 属算术笔误；执行者亲自核对原句）。
+- 剩余未核实缺口：MAF #10317 合并与否；LangChain 5 包 PyPI 上架与否；inspect-ai 0.3.290；OTel GenAI span 格式 16 项待决（#688 合并时间；#596 对 Decisions API 的跟进；#204 看板更新成因）；Agents SDK 稳定化时间表；AHA 2611 前缀 vs 九月日期表面不一致成因；MAF 记忆 API 弃用迁移指南缺口；ADK 下一版是否收纳两项 telemetry 改动；11-12 批次 21 篇标题级候选深读（首选 14581、15276、16591）。
+- 下轮起点：先清上述缺口，再按子主题轮转（评估 harness 任务格式与 trace/span 格式：#516/#695 是否因 ADK 的 token 指标落地而推进；#596 是否跟进 Decisions API；21 篇标题级候选深读）。
+- 下轮起始 HEAD：见 research/20261114-1309/h-report.md；OTel semconv e6658f1 未变。

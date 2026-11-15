@@ -606,3 +606,23 @@
 - 纠正：**55 轮 D-S07 裁定理由「该文为三域平均，论文为六模型–域组合宏均值」→ 不成立**（实际是 v1/v3 版本差异；0.605/0.602 为 v1 §4.3 原文，v3 重算为 0.469/0.585/0.582；结论方向不变，只许引用 v3 数）；**55 轮 D-S03「单 PR #570 簇」解释 → 不能解释 20:18:45Z 前移**（其间无分支推送事件；机制仍未证实，簇级定位四连）；**执行者自验纠正 D-S04 转录错误**（SkillzBench Judged「3,613（+9）」→「3,614（+1）」，SA 腿报告原文为准，见 verification.md §4）。
 - 剩余未核实缺口：skill-authoring.md 拆分（400 行恰触红线，提案待用户裁定；暂持累计 66 条）；Codex rust-v0.170.0 稳定版；SkillEvaluator v0.9.1+；OpenCode skill 工具返回值实测验证（暂定继续）；Gemini nightly #570；AAIF 落地文件；ETUDE/Skillware/Skill++ 作者澄清（S1/S2/S3 暂定继续；Vibing Talk 已恢复取证）；SkillLearnBench 三层评估框架（全文深读已完成，D-S06 暂持）；SkillEvaluator pushed_at 前移机制（簇级定位四连，机制未证实；执行者自验已见窗口外再移至 2026-11-15T00:13:22Z、stars 1,255，下轮核对）；SkillScope 引用数（S2 连续第四轮 429，下轮 UTC 午夜后重试；OA 12 已取回）。
 - 下轮起点：先清上述缺口（skill-authoring.md 拆分须等用户裁定，不得先行），再按子主题轮转（技能发现/调用/评估协议：SkillScope 权限约束方向与 TSS 的关系；ContinualSkillBench ICL 对照方向；SkillLearnBench 三层评估框架）。
+
+## 2026-11-15 10:09 轮（第 57 轮）
+
+- 四宿主窗口内新稳定版 0 件（Claude 仍 v2.1.325；Codex 仍 rust-v0.169.0，v0.170.0 与 v0.171.0 稳定版均未出现；Gemini 仍 v0.68.0；OpenCode 仍 v2.3.0）。
+- Gemini nightly #570 已运行并失败（创建 00:21:19Z、完成 01:19:07Z，窗口内；执行者亲自复核）：十一连败（#560–#570）；新 p0 #30302（01:19:04Z，窗口内）；p0 总数 13 → 14（执行者双标签查询复核）。
+- SkillEvaluator：stars 1,270（+20）；pushed_at 窗口内两次前移（00:13:22Z、01:09:44Z）；第三次前移 05:05:59Z 与 22 起 main 合并（03:54–05:05Z）均在关窗后，属第 58 轮窗口，本轮窗口内 main 合并为 0 起（执行者亲自核对 SA 腿早/晚 commits 文件）；CHANGELOG 扩增 75 行（关窗后）；PR #600「chore(release): prepare v0.10.0」已开未合并，0.9.1 已明确跳过、下一版为 v0.10.0；仍 v0.9.0。
+- SkillzBench（厂商自报，未独立核实；关窗后快照）：published 1,394（0）、effect 209（+1）、trials 24,113（+26）、scans 3,666（+3）、Judged 3,617（+3）。
+- S1/S2/S3 仍未决（三篇 arXiv 仍仅 v1；Vibing Talk 仍 11 帖、四数字串 0 命中；SA 腿纠正正则 "95.9" 命中 CSRF 令牌 "95b9" 的假阳性，改用定长匹配后为 0）。
+- SkillScope S2 citationCount 11 首次取回（SB 腿 05:10Z 关窗后取回；引用列表 11 篇与 55/56 轮逐字节相同）；OA 12 未能复核（429），不得强行等同。SkillLearnBench 引用数首读 66。
+- AAIF 仍缺 2 件（stars 27,301，+4）；Windsurf v3.12.28 第 36 轮未重现；代码检索固定口径第八轮（ETUDE 942,080 持平、Skillware 1,278 +8、Skill++ 4,552 −32）；CL-Bench 与 RSE-Bench 均仍仅 v1。
+- 纠正：SA 腿「pushed_at 三次前移/22 起 main 合并均落窗口内」→ 驳回（第三次前移与 22 起合并均在关窗后）；SA 腿「代码检索第九轮」→ 第八轮；执行者本人 p0 单标签查询误得 203，已纠正为 14。
+- 剩余未核实缺口：skill-authoring.md 拆分（400 行恰触红线，提案待用户裁定；暂持累计 77 条）；Codex rust-v0.170.0 稳定版；SkillEvaluator v0.10.0（PR #600 未合并；0.9.1 已明确跳过，不再作为缺口跟踪）；OpenCode skill 工具返回值实测验证（暂定继续）；Gemini nightly #571；AAIF 落地文件；ETUDE/Skillware/Skill++ 作者澄清（S1/S2/S3 暂定继续）；SkillEvaluator pushed_at 前移机制（簇级定位五连，机制未证实；第三次前移首次出现直接相邻的 main 合并证据，属第 58 轮窗口，供下轮核对）；SkillScope 引用数（S2 11 已取回，下轮复核有无变化；OA 12 待重取）；2611.15911 的 S2 计数（本轮两腿均 429，未能复核）。
+- 下轮起点：先清上述缺口（skill-authoring.md 拆分须等用户裁定，不得先行；SkillEvaluator PR #600 是否合并、v0.10.0 是否发布、pushed_at 是否再前移；Gemini nightly #571；SkillScope OA 12 与 2611.15911 的 S2 计数贴近 UTC 午夜重试），再按子主题轮转（技能发现/调用/评估协议：SkillScope 权限约束方向与 TSS 的关系；ContinualSkillBench ICL 对照方向；SkillLearnBench 三层评估框架）。
+
+## 2026-11-15 13:09 轮（第 58 轮）
+
+- 本轮增量（D-S01–D-S09，**全部暂持**，未落入正本；skill-authoring.md 400 行恰触红线，拆分方案待用户裁定；暂持累计 86 条）：四宿主窗口内新稳定版 0 件（Claude 仍 v2.1.325、Codex 仍 rust-v0.169.0、Gemini 仍 v0.68.0、OpenCode 仍 v2.3.0）；**Gemini nightly #571 未运行，十一连败（#560–#570）维持**；p0 总数仍 14；**SkillEvaluator stars 1,273、pushed_at 窗口内一次前移至 05:05:59Z**；窗口内 main 合并 22 起逐项核对全数通过；「推送驱动」假说直接相邻证据新增两例（#596 窗口内、#598 关窗后），仍未证实因果；PR #600 仍未合并，v0.10.0 未发布；SkillzBench trials 24,115（+2，关窗后区间），其余四计数器持平（厂商自报，未独立核实）；S1/S2/S3 仍未决；**SkillScope 引用数未能复核**（S2 三次 429、OpenAlex 三次 429；57 轮 S2 11 与 56 轮 OA 12 均不得记为变化）；SkillLearnBench 66 与 ContinualSkillBench 13 复核无变化；AAIF 仍缺 2 件（stars 27,302，+1）；Windsurf v3.12.28 第 37 轮未重现；代码检索固定口径第九轮全部持平（ETUDE 942,080、Skillware 1,278、Skill++ 4,552、三个 arXiv 号 60/93/83、仓库检索 18）；深挖三方向均零新证据。
+- 纠正：57 轮 verification §5「11 条技能轨增量已登记到 PRACTICAL.md 未验证暂定清单」→ 不实（PRACTICAL.md 未验证暂定清单仍为 8 条，全文 grep 0 命中；11 条实际载体为 delta.md 暂持 + CHANGELOG + track-skills.md）；本轮 9 条同样记入 delta.md（暂持）+ CHANGELOG + 本轨台账，不记入 PRACTICAL.md。
+- 剩余未核实缺口：skill-authoring.md 拆分（400 行恰触红线，提案待用户裁定；暂持累计 86 条）；Codex rust-v0.170.0 稳定版；SkillEvaluator v0.10.0（PR #600 未合并；0.9.1 已明确跳过，不再作为缺口跟踪）；OpenCode skill 工具返回值实测验证（暂定继续）；Gemini nightly #571；AAIF 落地文件；ETUDE/Skillware/Skill++ 作者澄清（S1/S2/S3 暂定继续）；SkillEvaluator pushed_at 前移机制（直接相邻证据新增两例，机制未证实；关窗后又前移至 06:18:19Z，供下轮核对）；SkillScope 引用数（S2 11 未能复核，OA 12 待重取）；BaRP/UCCI 引用复核（本轮 11 次取回全部 429）。
+- 下轮起点：先清上述缺口（skill-authoring.md 拆分须等用户裁定，不得先行；SkillEvaluator PR #600 是否合并、v0.10.0 是否发布、pushed_at 是否再前移；Gemini nightly #571；SkillScope OA 12 与 BaRP/UCCI 贴近 UTC 午夜重试），再按子主题轮转（技能发现/调用/评估协议：SkillScope 权限约束方向与 TSS 的关系；ContinualSkillBench ICL 对照方向；SkillLearnBench 三层评估框架）。

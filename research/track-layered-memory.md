@@ -691,3 +691,22 @@
 - 记忆轨新论文登记：**2611.17874**（治理腿）、**2611.18338 MEM-SQL**（任务记忆复用腿，HARE 基准 37.1% → 50.0%，论文自报）、**2611.17806《Can Agents Keep Up with Time?》**（时间感知腿）登记为记忆轨新论文，**均不登记为 M5 相邻证据**；MIGRO 2611.15315 v2 与 2610.03713 v2 新登记为记忆轨论文；CarryOn 2611.17808 仍 v1，主分类 cs.CL 已核对（66 轮待核对项闭合）。66 轮 `m-arxiv-versions.xml` 文件损坏（XML 标签不匹配），本轮以 66 轮报告所列逐项 `<updated>` 值为对照完成 18 篇复核，下轮须重建对照文件。
 - 剩余未核实缺口：PyPI letta 是否跟进 0.34.63 / 是否出现 0.35.0；Mem0 双口径点名调和；MIRIX-2.0 代码合入；七项复现；M5 联合约束（暂定继续；直接证据仍为零）；MemoryAtlas 余项（M2 暂定继续）；Graphiti #2154 是否随新版收纳；Mem0 关联包 `@mem0/cli` 0.2.14 / `@mem0/vercel-ai-provider` 3.0.3 复核；66 轮 `m-arxiv-versions.xml` 对照文件重建。
 - 下轮起点：先清上述缺口（PyPI letta 跟进为首项；M5 直接证据筛查；对照文件重建），再按子主题轮转（检索排序信号与遗忘策略：降权≠失效≠删除、按类型 TTL、冲突四规则）。
+
+## 2026-11-16 19:09 轮（第 68 轮）
+
+- 本轮增量（D-M01–D-M04，落入 skill/references/layered-memory.md）：**letta-code 无 v0.34.64**（404 实证，执行者亲自查 releases 端点复核），最新仍 v0.34.63；窗口内 0 提交；c5dffd8 仍未发布；PyPI `letta` 仍 0.34.12，差距仍 51 版（按版本元组计数）；Mem0 四端点可见词 0 差异（评估/迁移页 cfemail 第十一度重随机化；**指南页逐字节相同、本轮窗口内无 Framer 再发布**；双口径官方一句话调和仍缺）；Mem0 TS SDK 仍 3.3.1；@mem0/cli 0.2.14、@mem0/vercel-ai-provider 3.0.3 未变；ENGRAM 第 43 次 401（两路匿名链接均 25 字节 `{"error":"not_connected"}`，执行者亲自取回复核）；**Dual-Layer 摘要页再翻转，第二十例**（43,445 → 44,018 B，可见词 828 → 829；文件与 66 轮逐字节相同，恰好逆转 67 轮的三处站点头部变化；执行者关窗后现取又翻回 43,445 B，第二十一例翻转）；七项复现零新增（**连续第三十六轮**）；七项论文版本页全部无新版；MemoryAtlas md5 未变；**Graphiti #2154 已合并未发布**（2026-11-15T20:27:42Z 合入 main，最新仍 v0.31.2；执行者亲自查 PR 端点复核 merged_at——状态纠正）；MIRIX 新 issue #154 + PR #155（均 2026-11-16T09:20Z，embedding_model 在 openai 端点被忽略；PR open 未合并）；MIRIX stars 3467 → 3472，forks 273 → 274；letta 服务器仓仍停滞（0.16.8，2026-05-14）；DolphinBench PR #10–#14 全 open。
+- M5：**联合约束直接证据仍为零**。arXiv 11-13 索引追赶完成（submittedDate 20261113 totalResults 0 → 960，与 67 轮枚举一致）；`all:memory` 筛查 54 篇，5 篇与 agent 记忆相关且均已登记，无未登记论文。`m-arxiv-versions.xml` 已重建且 XML 有效（`m-arxiv-versions-table.md` 含 48 篇）；66 轮文件损坏位置已定位（1309/m 文件，`mismatched tag: line 6, column 4`）；**66 轮待核对项闭合**。
+- 剩余未核实缺口：PyPI letta 是否跟进 0.34.63 / 是否出现 0.35.0；Mem0 双口径点名调和；MIRIX-2.0 代码合入；七项复现；M5 联合约束（暂定继续；直接证据仍为零）；MemoryAtlas 余项（M2 暂定继续）；Graphiti #2154 是否随新版收纳；MIRIX #155 是否合并。
+- 下轮起点：先清上述缺口（PyPI letta 跟进为首项；M5 直接证据筛查；MIRIX #155 合并与否），再按子主题轮转（检索排序信号与遗忘策略：降权≠失效≠删除、按类型 TTL、冲突四规则）。
+
+## 2026-11-16 22:09 轮（第 69 轮）
+
+- 本轮增量（D-M01–D-M04，落入 layered-memory.md）：Dual-Layer 摘要页第二十一例翻转（44,018 → 44,604 B，与 64 轮逐字节相同，仅三处站点 chrome 逆转）；ENGRAM 第 44 次 401；七项复现零新增（连续第三十七轮）；Mem0 四端点正文无变化（cfemail 第十二度重随机化；指南页逐字节相同，连续七轮未变）；MIRIX stars 3472 → 3473、Graphiti stars 32840 → 32847，updated_at 均移至窗口内（星标/issue 事件，非代码合入）；Graphiti #2154 仍已合并未发布；MIRIX #155 仍 open 未合并；letta-code 无 v0.34.64，PyPI 差距仍 51 版；MemoryAtlas dpl buildId token 首次轮换（新基线 md5 `6e56ba44`）；已登记 48 篇论文版本全未变；M5 联合约束直接证据仍为零，无新增全文深读候选。
+- 剩余未核实缺口：PyPI letta 是否跟进 0.34.63 / 是否出现 0.35.0；Mem0 双口径点名调和；MIRIX-2.0 代码合入；七项复现；M5 联合约束（暂定继续；直接证据仍为零）；MemoryAtlas 余项（M2 暂定继续）；Graphiti #2154 是否随新版收纳；MIRIX #155 是否合并；MemoryAtlas dpl token 轮换后新基线（本轮 6e56ba44）。
+- 下轮起点：先清上述缺口（PyPI letta 跟进为首项；M5 直接证据筛查；MIRIX #155 合并与否；Graphiti #2154 是否随新版发布；Dual-Layer 第二十二例翻转与否），再按子主题轮转（检索排序信号与遗忘策略：降权≠失效≠删除、按类型 TTL、冲突四规则）。
+
+## 2026-11-17 01:09 轮（第 70 轮）
+
+- 本轮增量（D-M01–D-M04，落入 layered-memory.md）：Dual-Layer 摘要页第二十三例翻转（44,018 → 43,445 B；M 腿「第二十二例」与「无取证文件」说法已纠正：69 轮关窗后翻转 44,604 → 44,018 B 为第二十二例，证据文件 44,018 B、md5 `92be68e3…` 在盘）；Mem0 指南页窗口内 Framer 再发布（可见文本 4,630 词逐字未变，终结 8 轮逐字节相同纪录；cfemail 第十三度重随机化）；ENGRAM 第 45 次 401；七项复现零新增（连续第三十八轮）；letta-code 窗口内提交 9e5c6ef7（与记忆无关，未发布），v0.34.64 连续第七轮缺席（文件证据第六次），PyPI 差距仍 51 版；MIRIX stars 3473 → 3474（窗口内），Graphiti stars +4 为关窗后事件（17:13:45Z）；MIRIX #155 仍 open 未合并；Graphiti #2154 仍已合并未发布；已登记 48 篇论文版本全未变；MemoryAtlas dpl token 未轮换；M5 联合约束直接证据仍为零，无新增全文深读候选。
+- 剩余未核实缺口：PyPI letta 是否跟进 0.34.63 / 是否出现 0.35.0；Mem0 双口径点名调和；MIRIX-2.0 代码合入；七项复现；M5 联合约束（暂定继续；直接证据仍为零）；MemoryAtlas 余项（M2 暂定继续）；Graphiti #2154 是否随新版收纳；MIRIX #155 是否合并；MemoryAtlas dpl token 轮换后新基线（本轮未轮换，仍 6e56ba44）。
+- 下轮起点：先清上述缺口（PyPI letta 跟进为首项；M5 直接证据筛查；MIRIX #155 合并与否；Graphiti #2154 是否随新版发布；Dual-Layer 第二十四例翻转与否），再按子主题轮转（检索排序信号与遗忘策略：降权≠失效≠删除、按类型 TTL、冲突四规则）。

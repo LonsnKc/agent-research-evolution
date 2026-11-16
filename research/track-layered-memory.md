@@ -710,3 +710,9 @@
 - 本轮增量（D-M01–D-M04，落入 layered-memory.md）：Dual-Layer 摘要页第二十三例翻转（44,018 → 43,445 B；M 腿「第二十二例」与「无取证文件」说法已纠正：69 轮关窗后翻转 44,604 → 44,018 B 为第二十二例，证据文件 44,018 B、md5 `92be68e3…` 在盘）；Mem0 指南页窗口内 Framer 再发布（可见文本 4,630 词逐字未变，终结 8 轮逐字节相同纪录；cfemail 第十三度重随机化）；ENGRAM 第 45 次 401；七项复现零新增（连续第三十八轮）；letta-code 窗口内提交 9e5c6ef7（与记忆无关，未发布），v0.34.64 连续第七轮缺席（文件证据第六次），PyPI 差距仍 51 版；MIRIX stars 3473 → 3474（窗口内），Graphiti stars +4 为关窗后事件（17:13:45Z）；MIRIX #155 仍 open 未合并；Graphiti #2154 仍已合并未发布；已登记 48 篇论文版本全未变；MemoryAtlas dpl token 未轮换；M5 联合约束直接证据仍为零，无新增全文深读候选。
 - 剩余未核实缺口：PyPI letta 是否跟进 0.34.63 / 是否出现 0.35.0；Mem0 双口径点名调和；MIRIX-2.0 代码合入；七项复现；M5 联合约束（暂定继续；直接证据仍为零）；MemoryAtlas 余项（M2 暂定继续）；Graphiti #2154 是否随新版收纳；MIRIX #155 是否合并；MemoryAtlas dpl token 轮换后新基线（本轮未轮换，仍 6e56ba44）。
 - 下轮起点：先清上述缺口（PyPI letta 跟进为首项；M5 直接证据筛查；MIRIX #155 合并与否；Graphiti #2154 是否随新版发布；Dual-Layer 第二十四例翻转与否），再按子主题轮转（检索排序信号与遗忘策略：降权≠失效≠删除、按类型 TTL、冲突四规则）。
+
+## 2026-11-17 04:09 轮（第 71 轮）
+
+- 本轮增量（D-M01–D-M04，落入 layered-memory.md）：Mem0 docs Mintlify 重新部署（dpl buildId 轮换至 `dpl_4D8r1dHg6bQcRuBgQyL3z9waJJtn`；评估页 +5,889 字节系 toggles 数组填入，非正文）；cfemail 第十四度重随机化；指南页逐字节相同、无再发布；MIRIX 新 issue #156（Victor9467，19:38:01Z）质疑 LongMemEval-S 表 7 数字口径（算术复核成立，仅记质疑）；letta-code 窗口内提交 2 项（与记忆无关）；v0.34.64 连续第八轮缺席、v0.34.65 亦 404；PyPI letta 仍 0.34.12，差距仍 51 版；Dual-Layer 无翻转（仍第二十三例状态，43,445 B）；ENGRAM 第 46 次 401；七项复现零新增连续第三十九轮；48 篇论文版本全未变；MemoryAtlas dpl token 未轮换（仍 69 轮基线 md5 `6e56ba44`）；M5 直接证据仍为零。
+- 剩余未核实缺口：PyPI letta 是否跟进 0.34.64 / 是否出现 0.34.65；Mem0 双口径点名调和；MIRIX-2.0 代码合入；七项复现；M5 联合证据；MIRIX #156 质疑待维护方回应。
+- 下轮起点：先清上述缺口（PyPI letta 跟进为首项；M5 直接证据筛查；MIRIX #155 合并与否；Graphiti #2154 是否随新版发布；Dual-Layer 下一例翻转监测），再按子主题轮转（记忆检索排序与遗忘策略）。

@@ -719,3 +719,11 @@
 - 全文深读：零标准级新进展。arXiv 登记集 14 篇 harness 论文全部仍仅 v1。
 - 剩余未核实缺口：MAF #10317 合并与否；Harbor 0.26.1 切版与否；inspect-ai 0.3.291；OTel GenAI span 格式 19 项待决（#631 仍 mergeable_state: blocked；#680 不纳入 watch，另记参考动态；#712、#516/#695、#596、#706/#707/#709/#711/#708/#710 等）；Agents SDK 稳定化时间表；ADK 下一版是否收纳两项 telemetry 改动；#204 抖动成因（高度可信，待机制直接证据；关窗后第 38 次 17:40:56Z）；hawk `launched_at` 是否进入任务格式讨论；#695 span 语义诉求后续；#711 评审意见采纳与否。
 - 下轮起点：先清上述缺口（#204 第三十八次抖动核对为首项；MAF #10317；Harbor 0.26.1；inspect-ai 0.3.291；#631 合并与否），再按子主题轮转（评估 harness 任务格式与 trace/span 格式：Harbor vs METR、OTel GenAI 约定）。
+
+## 2026-11-17 04:09 轮（第 71 轮）
+
+- 本轮增量（D-H01–D-H06，落入 agent-harness.md）：窗口内新稳定发布 0 件、新预发布 0 件、新开发版上传 0 件；窗口内提交 18 件（hawk 6、Agents SDK Python 5、ADK 3、inspect-ai 2、langchain 1、MAF 1，均不改任务/span 格式；ADK skill 文档 35 文件集中纠错 dd14fa21，执行者亲自查提交复核）；OTel #204 第三十八次 17:40:56Z 与第三十九次 19:33:15Z，配对均未成立（连续未成立十四次）；Age 列补充数据点（#711 观测 3h，updated_at 作为 Age 基准首次被排除）；待决 19 项仍全部 open，窗口内移动 2 项（#688 自 11-11 以来首次移动、#682 新增 2 评论）；#540 未合并关闭（open PRs 75 → 74）；新 issue #713（厂商中立 service tier 属性，主轮裁定纳入 watch）；#680 仍不纳入 watch；#700 连续第十六个零动静窗口；MAF #10317 仍 open（逾 79 小时）；hawk `launched_at` 仍未决；补充捕获 HerAgent（arXiv:2611.18443v1，摘要级登记，两项提升作者自报）；OpenCode post-mortem 仍未发布（改道复核戳 2026-11-16T20:26Z）。
+- 纠正：执行者自验首次误查 `hawk/hawk`（正确为 METR/hawk）与误查 `open-telemetry/semantic-conventions` #204（正确为 semantic-conventions-genai），按腿证据文件中的正确仓名重查后均通过。
+- 全文深读：零标准级新进展。arXiv 登记集 14 篇 harness 论文全部仍仅 v1（与 70 轮相同）。
+- 剩余未核实缺口：MAF #10317 合并与否；Harbor 0.26.1 切版与否；inspect-ai 0.3.291；OTel GenAI span 格式 19 项待决；OTel #204 抖动成因（高度可信，待机制直接证据；连续未成立十四次）；#680 纳入 watch 与否；hawk `launched_at` 是否进入任务格式讨论；OpenCode post-mortem 下轮改道复核。
+- 下轮起点：先清上述缺口（#204 第四十次抖动核对为首项；MAF #10317；Harbor 0.26.1；inspect-ai 0.3.291；OpenCode post-mortem 改道复核），再按子主题轮转（harness 评估与 trace 格式）。

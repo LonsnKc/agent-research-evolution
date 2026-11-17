@@ -719,3 +719,9 @@
 - 本轮增量（D-S39–D-S48，全部暂持，未落入正本）：Claude Code v2.1.326 转正（22:11:05Z；changelog 技能相关 8 行，含 /claude-api 默认走 Managed Agents）；Gemini nightly #572 未出现（#571 十二连败；runs 415 → 414）；SkillEvaluator 窗口内合并 9 起，pushed_at 第七例无事件前移反例（23:05:04Z；CHANGELOG 4,881 行/+16）；#611 21:58:00Z 移动已定位为评审事件，#556 check-run 假说已证伪；SkillzBench effect 208（−1）；OpenCode #64294 发现范围澄清窗口内推进；Windsurf v3.13.3 精确发布时间仍未定位（新线索 Last-Modified 22:21:33Z 未验证）；v3.12.28 第 51 轮未重现；Cursor 映射第三查仍缺一手证据；代码检索第二十三轮。
 - 剩余缺口：暂持累计 206 条（196 + 10；SB 腿建议新增 4 条与 SA 内容重叠，不重复计数）；skill-authoring.md 仍 400 行恰触红线，拆分方案仍为提案、等用户裁定；S1/S2/S3 仍仅 v1；AAIF 仍缺 2 件落地文件；UserPromptExpansion 实机环境仍无；Windsurf v3.13.3 精确发布时间；Cursor 桌面/CLI 版本映射。
 - 下轮起点：先清上述缺口（Gemini nightly #572、引用跟进贴近 UTC 午夜执行为首项），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-17 10:09 轮（第 73 轮）
+
+- 本轮增量（D-S49–D-S58、D-S-73-01–D-S-73-06，10 条本轮首次落入轮次文件，不再暂持）：Codex rust-v0.171.0-alpha.10 预发布（占位正文 26 字节）；Gemini nightly #572 已出现并失败，十三连败（#560–#572）；新 p0 #30324，p0 总数 15 → 16；SkillEvaluator 窗口内合并 13 起，#690 合并，stars 2,765（+127），pushed_at 第八例无事件前移反例；SkillzBench effect 208 持平；Windsurf v3.13.3 发布时间仍未定位，v3.12.28 第 52 轮未重现；OpenCode 窗口内新 PR 14 起；S1/S2/S3 仍仅 v1；Vibing Talk 仍 11 帖；代码检索第二十四轮（ETUDE 899,072、Skillware 1,248、Skill++ 4,584）；SkillScope S2 引用列表 11 篇无新增（连续十五轮）；引用跟进 5 项各三次 429（第九轮错过午夜窗口）；`all:skill` 14,953（+12，新入索引 8 篇已逐篇筛查，相邻 2 篇列为全文深读候选）；AAIF 仍缺 CHANGELOG.md 与 SECURITY.md 两件；Cursor 桌面/CLI 映射仍缺官方一手证据；UserPromptExpansion 仍无实机环境。
+- 剩余缺口：历史暂持 206 条仍待后续轮次陆续落入轮次文件；S1/S2 数字口径（97.6%/95.9%/84.8%）继续暂定；Windsurf v3.13.3 精确发布时间；Cursor 桌面/CLI 版本映射；UserPromptExpansion 实机环境；2611.18818/2611.15436 全文深读候选。
+- 下轮起点：先清上述缺口（Gemini nightly #573；SkillEvaluator v0.10.0 与 pushed_at；AAIF 落地文件；历史暂持陆续落入），再按子主题轮转（技能发现/调用/评估协议的后续深化）。

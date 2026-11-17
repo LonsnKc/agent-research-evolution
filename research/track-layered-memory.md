@@ -722,3 +722,9 @@
 - 本轮增量（D-M01–D-M04）：letta-code v0.34.64 连续第九轮缺席，PyPI 差距仍 51 版；Mem0 docs Mintlify 再部署（dpl 轮换，评估页 −250 B、迁移页 −6,139 B 为 toggles 回吐，正文无变化）；cfemail 第十五度重随机化；Graphiti 窗口内新 issue #2159（同 group 并发丢节点）；MIRIX stars +1，星标事件推动 updated_at 口径本轮确立；ENGRAM 第 47 次 401；七项复现零新增连续第四十轮；M5 直接证据仍为零。
 - 剩余缺口：M5 联合约束直接证据仍为零（本轮无新批次可筛，全文筛查 0 篇）；MIRIX #156 与 Graphiti #2159 维护方回应待跟进；MemoryAtlas dpl token 轮换后新基线；PyPI letta 跟进；Dual-Layer 下一例翻转监测。
 - 下轮起点：先清上述缺口（PyPI letta 跟进为首项；M5 直接证据筛查；MIRIX #155 合并与否；Graphiti #2154 是否随新版发布；Dual-Layer 下一例翻转监测），再按子主题轮转（记忆检索排序与遗忘策略）。
+
+## 2026-11-17 10:09 轮（第 73 轮）
+
+- 本轮增量（D-M01–D-M04）：letta-code 窗口内 6 提交，v0.34.64 连续第十轮缺席，PyPI 差距仍 51 版；Mem0 docs Mintlify 再部署（dpl 轮换，迁移页 toggles 重新填入 +5,889 字节、恰好逆转 72 轮清空，部署配置抖动）；cfemail 第十六度重随机化；MIRIX stars +1、Graphiti stars +1（后者 2 个 WatchEvent 与净 +1 不吻合、updated_at 01:20:13Z 无对应事件，成因未定位）；Graphiti #2159 与 MIRIX #156 均仍无维护方回应；记忆轨新登记 2 篇论文（2611.19199 LoCoMo 评分敏感度、2611.18856 Self-Improvement Memory，相邻证据 #10/#11），登记集 48 → 50；ENGRAM 第 48 次 401；七项复现零新增连续第四十一轮；M5 联合约束直接证据仍为零。
+- 剩余缺口：M5 联合约束直接证据仍为零；Graphiti 星数出入与 updated_at 01:20:13Z 成因未定位；MIRIX #156 与 Graphiti #2159 维护方回应待跟进；PyPI letta 跟进；Dual-Layer 下一例翻转监测。
+- 下轮起点：先清上述缺口（M5 直接证据筛查；#156/#2159 回应），再按子主题轮转（记忆检索排序与遗忘策略）。

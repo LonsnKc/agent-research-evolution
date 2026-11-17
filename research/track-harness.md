@@ -727,3 +727,9 @@
 - 全文深读：零标准级新进展。arXiv 登记集 14 篇 harness 论文全部仍仅 v1（与 70 轮相同）。
 - 剩余未核实缺口：MAF #10317 合并与否；Harbor 0.26.1 切版与否；inspect-ai 0.3.291；OTel GenAI span 格式 19 项待决；OTel #204 抖动成因（高度可信，待机制直接证据；连续未成立十四次）；#680 纳入 watch 与否；hawk `launched_at` 是否进入任务格式讨论；OpenCode post-mortem 下轮改道复核。
 - 下轮起点：先清上述缺口（#204 第四十次抖动核对为首项；MAF #10317；Harbor 0.26.1；inspect-ai 0.3.291；OpenCode post-mortem 改道复核），再按子主题轮转（harness 评估与 trace 格式）。
+
+## 2026-11-17 07:09 轮（第 72 轮）
+
+- 本轮增量（D-H06–D-H10）：Agents SDK JS v0.22.0-alpha.3 预发布（Typed Decisions、应用自有模型后端、原生 Realtime/语音扩展；未上 npm）；窗口内提交 21 件（ADK 8、Agents SDK Python 8、hawk 3、inspect-ai 2，均不改任务/span 格式）；OTel #204 第四十次抖动 22:32:53Z（配对未成立，连续未成立十五次；Age 列唯一一致候选现为最新人类评论时刻）；待决 19 项仍全部 open，窗口内移动 2 项（#682、#713 首次获维护者回应）；#551 清单外移动；#700 连续第十七个零动静窗口；MAF #10317 仍 open（逾 82 小时）；HerAgent 摘要级深读完成（作者自报，未独立核实）；OpenCode post-mortem 仍未发布。
+- 剩余缺口：OTel #204 成因（高度可信，待机制直接证据；连续未成立十五次；第四十一次抖动 23:32:16Z 为关窗后观测，下轮核对）；#680 纳入 watch 与否（本轮仍不纳入）；#713/#682 跟进；Harbor 0.26.1 切版；inspect-ai 0.3.291；Agents SDK 稳定化时间表。
+- 下轮起点：先清上述缺口（#204 第四十一次抖动核对为首项；MAF #10317；Harbor 0.26.1；inspect-ai 0.3.291；OpenCode post-mortem 改道复核），再按子主题轮转（harness 评估与 trace 格式）。

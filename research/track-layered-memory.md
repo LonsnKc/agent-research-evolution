@@ -716,3 +716,9 @@
 - 本轮增量（D-M01–D-M04，落入 layered-memory.md）：Mem0 docs Mintlify 重新部署（dpl buildId 轮换至 `dpl_4D8r1dHg6bQcRuBgQyL3z9waJJtn`；评估页 +5,889 字节系 toggles 数组填入，非正文）；cfemail 第十四度重随机化；指南页逐字节相同、无再发布；MIRIX 新 issue #156（Victor9467，19:38:01Z）质疑 LongMemEval-S 表 7 数字口径（算术复核成立，仅记质疑）；letta-code 窗口内提交 2 项（与记忆无关）；v0.34.64 连续第八轮缺席、v0.34.65 亦 404；PyPI letta 仍 0.34.12，差距仍 51 版；Dual-Layer 无翻转（仍第二十三例状态，43,445 B）；ENGRAM 第 46 次 401；七项复现零新增连续第三十九轮；48 篇论文版本全未变；MemoryAtlas dpl token 未轮换（仍 69 轮基线 md5 `6e56ba44`）；M5 直接证据仍为零。
 - 剩余未核实缺口：PyPI letta 是否跟进 0.34.64 / 是否出现 0.34.65；Mem0 双口径点名调和；MIRIX-2.0 代码合入；七项复现；M5 联合证据；MIRIX #156 质疑待维护方回应。
 - 下轮起点：先清上述缺口（PyPI letta 跟进为首项；M5 直接证据筛查；MIRIX #155 合并与否；Graphiti #2154 是否随新版发布；Dual-Layer 下一例翻转监测），再按子主题轮转（记忆检索排序与遗忘策略）。
+
+## 2026-11-17 07:09 轮（第 72 轮）
+
+- 本轮增量（D-M01–D-M04）：letta-code v0.34.64 连续第九轮缺席，PyPI 差距仍 51 版；Mem0 docs Mintlify 再部署（dpl 轮换，评估页 −250 B、迁移页 −6,139 B 为 toggles 回吐，正文无变化）；cfemail 第十五度重随机化；Graphiti 窗口内新 issue #2159（同 group 并发丢节点）；MIRIX stars +1，星标事件推动 updated_at 口径本轮确立；ENGRAM 第 47 次 401；七项复现零新增连续第四十轮；M5 直接证据仍为零。
+- 剩余缺口：M5 联合约束直接证据仍为零（本轮无新批次可筛，全文筛查 0 篇）；MIRIX #156 与 Graphiti #2159 维护方回应待跟进；MemoryAtlas dpl token 轮换后新基线；PyPI letta 跟进；Dual-Layer 下一例翻转监测。
+- 下轮起点：先清上述缺口（PyPI letta 跟进为首项；M5 直接证据筛查；MIRIX #155 合并与否；Graphiti #2154 是否随新版发布；Dual-Layer 下一例翻转监测），再按子主题轮转（记忆检索排序与遗忘策略）。

@@ -713,3 +713,9 @@
 - 暂持累计：**186 + 10 = 196 条**（skill-authoring.md 400 行恰触红线，拆分方案仍为提案、等用户裁定；SB 腿建议新增 5 条 D-S-71-01–05 与 SA 内容重叠，不重复计数）。
 - 剩余未核实缺口：Claude 2.1.326 转正时点；Codex rust-v0.171.0 稳定版；Gemini nightly #572（预计约 2026-11-17 00:2xZ）与 runs 总数 −2 原因；SkillEvaluator pushed_at 前移机制与加星暴涨归因；SkillzBench effect −5；Windsurf v3.13.3 精确发布时间；Cursor 桌面/CLI 版本映射；UserPromptExpansion 实机环境；S1/S2/S3 作者仓联系（邮件未尝试）。
 - 下轮起点：先清上述缺口（Gemini nightly #572、引用跟进贴近 UTC 午夜执行为首项），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-17 07:09 轮（第 72 轮）
+
+- 本轮增量（D-S39–D-S48，全部暂持，未落入正本）：Claude Code v2.1.326 转正（22:11:05Z；changelog 技能相关 8 行，含 /claude-api 默认走 Managed Agents）；Gemini nightly #572 未出现（#571 十二连败；runs 415 → 414）；SkillEvaluator 窗口内合并 9 起，pushed_at 第七例无事件前移反例（23:05:04Z；CHANGELOG 4,881 行/+16）；#611 21:58:00Z 移动已定位为评审事件，#556 check-run 假说已证伪；SkillzBench effect 208（−1）；OpenCode #64294 发现范围澄清窗口内推进；Windsurf v3.13.3 精确发布时间仍未定位（新线索 Last-Modified 22:21:33Z 未验证）；v3.12.28 第 51 轮未重现；Cursor 映射第三查仍缺一手证据；代码检索第二十三轮。
+- 剩余缺口：暂持累计 206 条（196 + 10；SB 腿建议新增 4 条与 SA 内容重叠，不重复计数）；skill-authoring.md 仍 400 行恰触红线，拆分方案仍为提案、等用户裁定；S1/S2/S3 仍仅 v1；AAIF 仍缺 2 件落地文件；UserPromptExpansion 实机环境仍无；Windsurf v3.13.3 精确发布时间；Cursor 桌面/CLI 版本映射。
+- 下轮起点：先清上述缺口（Gemini nightly #572、引用跟进贴近 UTC 午夜执行为首项），再按子主题轮转（技能发现/调用/评估协议的后续深化）。

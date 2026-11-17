@@ -741,3 +741,39 @@
 - 自验 53 条：通过 53、通过（未验证暂定）0、需修正 0、否决 0（执行者自验，见 refined/20261117-1909/verification.md；独立抽查 5 组一手来源全部通过；可执行验证 0 条——本轮无带命令/代码/配置的条目）。
 - 体量：api-routing-rounds.md 295 → 308 行；agent-harness-rounds.md 90 → 102 行；layered-memory-rounds.md 81 → 86 行；skill-authoring-rounds.md 333 → 356 行，全部在约 400 行红线内；SKILL.md 本体无改动。
 - 下轮起点：先清缺口（引用跟进贴近 UTC 午夜执行、11-17 批次补筛、qwen 第六十二度、#204 第四十六次抖动、Gemini nightly #576、OpenCode post-mortem 改道复核、历史暂持余 201 条陆续落入——skill-authoring-rounds.md 余量约 44 行，下轮起须按拆分口径先评估是否拆分/归档），再按各轨子主题轮转。
+
+## 2026-11-17 22:09 轮（第 77 轮，版本 0.75.0 → 0.76.0）
+
+- API 路由（14 条新项）：计数器第四十轮闭合 2,319,668（−35，首次轮间净减少）；qwen3.5-9b 第六十二度 $1.7e-7（约翻倍）+ 2 项真调价；elo 大面积刷新（184 模型）；前端 runs 312 → 308（−4）；arXiv 11-13/14/15/16 零变、11-17 仍 0；星事件阳性二十八次（主轮裁定 C-77-01，juanrafap +1 秒配对计入，配对口径放宽至 ≤1 秒）；五项目零新稳定版；Dynamo 文档表 nightly 跳号至 1.8.0.dev20261117；decisions 仍 1 个配方、benchmarks API 第 62/63 次 401；CVE 两项仍缺厂商逐字确认；R7 十组筛查零新文；登记集 48 篇零新版；深挖（RouteBalance v2 修订、Conformal Cascade v3、Jev 权重未披露、Cloudflare 文档逐字相同、arXiv 批量 id_list 相邻编号异常方法注记）。
+- Harness（11 条新项）：窗口内新发布 0 件、提交 7 件全不改格式；OTel #204 第 46 次抖动（连续未成立二十一次）；Age 列 #651 4d→14d 跳变（迄今最强反例）；待决 19 项中 #704/#715 窗口内移动；watch 清单主轮裁定纳入 #651（C-77-02），#680 仍待裁定；#713/#551 零动静；MAF #10317 逾 97 小时；OpenCode post-mortem 仍未发布（三条路径）；DetourBench 全文深读完成；登记集 23 篇全部仍仅 v1；纠正两处（76 轮「#704/#715 零动静」已过时、track-harness.md 七处 HEAD 订正）。
+- 分层记忆（5 条新项）：11-17 批次仍为 0，登记集仍 67 篇；七项复现零新增连续第四十五轮（C-77-04，任务书「第四十三轮」为旧口径）；letta-code v0.34.64 连续第十四轮缺席；Mem0 cfemail 第二十度重随机化 + 指南页 Framer 再发布（正文未变）；MIRIX #156 两条社区评论、Graphiti #2159 第二条评论，维护方均未回应；MemoryAtlas 新基线 md5 481aaa47 建立（69 轮起待建项闭合）；M5 直接证据仍为零。
+- 技能（17 条新项 + 历史暂持落入 2 项）：四宿主零新稳定版（Claude v2.1.326、Codex rust-v0.169.0、Gemini v0.68.0、Windsurf v3.13.4）；Gemini nightly 十三连败；SkillEvaluator 静默窗口（0/0/0），#721/#737/#738 已定位、#731 未定位，#600 止住；SkillzBench effect 207（−2）；OpenCode #64434 新 PR、#64427 自纠关闭；S1/S2/S3 仍仅 v1；SkillScope S2 引用列表连续十九轮无新增；AAIF 仍缺两件落地文件；Cursor 第八查仍缺一手证据；`all:skill` 14,982（+0，+1 仍未归因）；历史暂持 D-S46、D-S27 落入，暂持累计 201 → 199 条。
+- 纠正五处（C-77-01～C-77-05）：llm-d 星事件记分 28 与配对口径放宽；OTel #651 纳入 watch；登记集边界三篇仍集外；七项复现轮次纠正为第四十五轮；引用跟进合并余项 17 项（RA §13 遗漏 2611.15911，以 RB 表为准）。
+- 自验 47 条：通过 47、通过（未验证暂定）3（R7/M5/S1 长期暂定续记）、需修正 0、否决 0（执行者自验，见 refined/20261117-2209/verification.md；独立抽查 5 组一手来源全部通过；可执行验证 0 条——本轮无带命令/代码/配置的条目）。
+- 体量：api-routing-rounds.md 308 → 325 行；agent-harness-rounds.md 102 → 116 行；layered-memory-rounds.md 86 → 94 行；skill-authoring-rounds.md 74 → 95 行，全部在约 400 行红线内；SKILL.md 本体无改动。
+- 下轮起点：先清缺口（引用跟进贴近 UTC 午夜执行、11-17 批次补筛、qwen 第六十三度、#204 第四十七次抖动、Gemini nightly #577、OpenCode post-mortem 状态页路径复核、历史暂持余 199 条陆续落入），再按各轨子主题轮转。
+
+## 2026-11-18 轮次小结（01:09 轮，第 78 轮，版本 0.76.0 → 0.77.0）
+
+- 六路并行全部回齐；增量 60 条（路由 14、Harness 14、记忆 5、技能 20、纠正 5、裁定 2）；窗口内新稳定发布 0 件。
+- API 路由（14 条新项）：计数器第四十一轮闭合 2,343,546（+23,878；GPQA +18,999）；qwen3.5-9b 无第六十三度；定价字段差异 7 个模型 = 真调价 3 项 + 分时轮换 3 项 + 缓存微动 1 项；elo 零刷新；前端 runs 308 → 306（−2）；星事件阳性二十八次维持，forks 935 → 936 与 ForkEvent 精确配对；benchmarks API 第 64/65 次 401；decisions 仍 1 个配方；五项目零新稳定版；Dynamo 文档表逐字节相同；arXiv 11-13/14/15/16 零变、11-17 仍 0；博客 feed 滞后新增一篇 11-16 日期文章；R7 十组筛查零新文；登记集 48 篇零新版；引用跟进合并余项 14 项（第十四轮错过午夜窗口）。
+- Harness（14 条新项）：窗口内新稳定版 0 件、提交 20 件全不改格式；OTel #204 第 47 次抖动（连续未成立二十二次）；Age 列双向反例再添；待决 19 项全部 open；#713 承诺的 PR #718 与新 issue #717 窗口内双双出现，主轮裁定 #718 纳入 watch、#717 暂不纳入；#680 实质内容已取回，主轮裁定不纳入 19 项待决清单；MAF #10317 逾 100 小时；2611.18471 全文深读完成；登记集 23 篇全部仍仅 v1；hawk `launched_at` 仍未进入任务格式讨论。
+- 分层记忆（5 条新项）：letta-code v0.34.64 窗口内发布（缺席纪录终结于第十四轮），PyPI 差距 51 → 52 版；Mem0 cfemail 第二十一度重随机化 + 指南页再发布（正文未变）；Graphiti #2158 两条窗口内新评论、#2159 仍无回应、星数出入 1 再现；MIRIX #156 仍无回应；MemoryAtlas 新基线稳固；七项复现零新增连续第四十六轮；M5 直接证据仍为零。
+- 技能（20 条新项）：四宿主零新稳定版（Codex alpha.12 窗口内空占位）；Gemini nightly 十三连败；SkillEvaluator 静默窗口打破（#680 合并，pushed_at 第十二例前移已定位）；SkillzBench effect 207 持平；Windsurf v3.14.30819 关窗后登顶，窗口归属未定；Devin CLI changelog 首次取回全文；S1/S2/S3 仍仅 v1；Vibing Talk 浏览量序列继续有效；`all:skill` 14,982（+0，+1 仍未归因）；历史暂持评估 3 项不落入，暂持累计仍 199 条。
+- 纠正五处（K-78-01～K-78-05）与裁定两处（C-78-01～C-78-02）：Vibing Talk 浏览量序列、letta-code 缺席口径、定价调和、Windsurf 归属、单次取回注记；#718 纳入 watch、#680 不纳入待决清单。
+- 自验 60 条：通过 56、通过（未验证暂定）4（R7/M5/S1 + 单次取回成分）、需修正 0、否决 0（执行者自验，见 refined/20261118-0109/verification.md；独立抽查 5 组：计数器第三时点、letta-code v0.34.64、Codex alpha.12、Vibing Talk 浏览量、UCCI OpenAlex 现取 429；可执行验证 0 条）。
+- 体量：api-routing-rounds.md 325 → 342 行；agent-harness-rounds.md 116 → 133 行；layered-memory-rounds.md 94 → 102 行；skill-authoring-rounds.md 95 → 117 行，全部在约 400 行红线内；SKILL.md 本体无改动。
+- 下轮起点：先清缺口（引用跟进贴近 UTC 午夜执行、11-17 批次补筛、qwen 第六十三度、#204 第四十八次抖动、Gemini nightly #578、Windsurf 归属 Havoptic 复核、历史暂持余 199 条陆续落入），再按各轨子主题轮转。
+
+
+## 2026-11-18 轮次小结（04:09 轮，第 79 轮，版本 0.77.0 → 0.78.0）
+
+- 六路并行全部回齐；增量 61 条（路由 14、Harness 14、记忆 5、技能 20、纠正 6、裁定 2）；窗口内新稳定发布 2 件（Windsurf v3.14.30819、SkillEvaluator v1.0.0）。
+- API 路由（14 条新项）：计数器第四十二轮闭合 2,347,090（+3,544；GPQA +1,750、VGI +1,744、τ² +50；两腿读数差 +1,110 系取回时刻差，主轮调和 K-79-03）；目录 470 → 474，OpenAI GPT-6.2 家族窗口内上架（厂商自报）；真调价 2 项（gemma-4-26b-a4b-it −15.0%、glm-5.3-flash 暴跌）；qwen3.5-9b 无第六十三度；elo 零刷新（210 个 benchmarks 字段变化全部为 schema 扩展）；前端 runs 306 持平；星事件阳性二十九次；benchmarks API 第 66/67 次 401；decisions 仍 1 个配方；五项目零新稳定版；Dynamo 文档表内容零变化、仅域名变更；arXiv 11-13/14/15/16 零变、11-17 仍 0；博客 sitemap 185 → 186（滞后入 feed 的 11-16 文章，窗口外）；LiteLLM 博客 RSS 首取 177 项；R7 十组筛查零新文；登记集 48 篇零新版；引用跟进合并余项 10 项（第十五轮错过午夜窗口）。
+- Harness（14 条新项）：窗口内新稳定版 0 件、提交 11 件全不改格式；OTel #204 第 48 次抖动（连续未成立二十三次）；Age 列双向反例再添，七个候选基准无一全解；待决 19 项仅 #712 移动；新现 #719/#720/#721，主轮裁定三件纳入 watch；#481 窗口内关闭（未合并，被 #721 取代）；MAF #10317 逾 103 小时；11-17 批次 2 篇新候选（2611.19237、2609.33822 v2）待全文深读；登记集 23 篇全部仍仅 v1；hawk `launched_at` 仍未进入任务格式讨论。
+- 分层记忆（5 条新项）：letta-code v0.34.65 未出现，PyPI 差距仍 52 版；Mem0 cfemail 第二十二度重随机化 + Mintlify 再部署（正文未变）；Graphiti #2163/#2164 窗口内开出并合入（发布流水线修复）；#2158 RelateDB PR 仍未开出、#2159 仍无维护方回应；MIRIX #156 仍无回应；MemoryAtlas 新基线第二轮稳固；七项复现零新增连续第四十七轮；M5 直接证据仍为零。
+- 技能（20 条新项）：窗口内新稳定发布 2 件（Windsurf v3.14.30819 归属落定、SkillEvaluator v1.0.0）；四宿主其余零新版；Gemini nightly 十三连败（下一运行应为 #573）；SkillEvaluator pushed_at 第十三例前移已定位（分支推送驱动）；#737/#738 的 16:37 移动原因已定位；SkillzBench effect 208（+1，仍低于 211）；OpenCode 仍 v1.19.6；S1/S2/S3 仍仅 v1；Skillware 窗口内收 2 颗星；代码检索第三十轮；Vibing Talk 浏览量序列继续有效（596 → 598）；`all:skill` 14,982（+0，+1 仍未归因）；SkillScope S2 引用列表连续二十一轮无新增；AAIF 仍缺两件落地文件；Cursor 第十查仍缺一手证据；Kiro 无变化；Hooks 页 4,353 行（+2），L1589 仍无对应；历史暂持 D-S39 优先落入，暂持累计 199 → 198 条。
+- 纠正六处（K-79-01～K-79-06）与裁定两处（C-79-01～C-79-02）：Kiro v3000.13.4 归属、派发书窗口日期笔误、计数器腿间差调和、Windsurf 窗口归属落定、Synapse 收录口径、Hooks L1589 无对应；OTel #719/#720/#721 纳入 watch、D-S39 落入。
+- 自验 61 条：通过 57、通过（未验证暂定）4（R7/M5/S1 + D-S39 评估判断）、需修正 0、否决 0（执行者自验，见 refined/20261118-0409/verification.md；独立抽查 4 组：计数器第三时点、letta-code v0.34.65 404、SkillEvaluator v1.0.0、Vibing Talk 浏览量；可执行验证 0 条）。
+- 体量：api-routing-rounds.md 342 → 359 行；agent-harness-rounds.md 133 → 150 行；layered-memory-rounds.md 102 → 108 行；skill-authoring-rounds.md 117 → 144 行，全部在约 400 行红线内；SKILL.md 本体无改动。
+- 下轮起点：先清缺口（引用跟进贴近 UTC 午夜执行、11-17 批次补筛、qwen 第六十三度、#204 第四十九次抖动、Gemini nightly #573、SkillEvaluator PyPI 1.0.0 同步、Windsurf v3.13.4 精确发布时间、历史暂持余 198 条陆续落入），再按各轨子主题轮转。

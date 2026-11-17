@@ -742,3 +742,23 @@
 - 本轮增量（S-76-01～S-76-18，18 条 + 历史暂持落入 5 项 → skill-authoring-rounds.md）：四宿主零新稳定版（Claude v2.1.326、Codex rust-v0.169.0、Gemini v0.68.0、Windsurf v3.13.4）；Gemini nightly 十三连败；SkillEvaluator 合并 2 起、新建 4 起，第十一例无事件前移反例不成立（与 #709 合并仅差 3 秒）；#757 根因定位 + #763 修复 PR；SkillzBench 八计数器；Kiro 官方 changelog 首次取回；Synapse 与 Experience Rot 全文深读完成；`all:skill` 14,982（+0，+1 仍未归因）；历史暂持 H-75-02、H-75-10、H-75-01、H-75-06、H-75-08 落入，暂持累计 206 → 201 条。
 - 剩余未核实缺口：历史暂持余 201 条仍待后续轮次陆续落入；`all:skill` +1 未归因；Cursor 桌面/CLI 版本映射；UserPromptExpansion 实机环境；SkillEvaluator pushed_at 前移机制与加星暴涨归因；SkillzBench effect −5 原因；skill-authoring-rounds.md 落入后 356 行，下轮大概率越线，须按拆分口径先评估拆分/归档。
 
+
+## 2026-11-17 22:09 轮（第 77 轮）
+
+- 本轮增量（S-77-01～S-77-17，17 条 + 历史暂持落入 2 项 → skill-authoring-rounds.md）：四宿主零新稳定版；Gemini nightly 十三连败；SkillEvaluator 静默窗口（0/0/0），#721/#737/#738 已定位、#731 未定位，#600 止住；SkillzBench effect 207（−2）；OpenCode #64434 新 PR、#64427 自纠关闭；S1/S2/S3 仍仅 v1；SkillScope S2 引用列表连续十九轮无新增；AAIF 仍缺两件落地文件；Cursor 第八查仍缺一手证据；`all:skill` 14,982（+0，+1 仍未归因）；历史暂持 D-S46、D-S27 落入，暂持累计 201 → 199 条。
+- 剩余未核实缺口：历史暂持余 199 条仍待后续轮次陆续落入；`all:skill` +1 未归因；Cursor 桌面/CLI 版本映射；UserPromptExpansion 实机环境；SkillEvaluator pushed_at 前移机制与加星暴涨归因；SkillzBench effect −5 原因；S1/S2 数字口径继续暂定。
+
+## 2026-11-18 01:09 轮（第 78 轮）
+
+- 本轮增量（S-78-01～S-78-20，20 条 → skill-authoring-rounds.md）：四宿主零新稳定版（Codex alpha.12 窗口内发布为空占位）；Gemini nightly 十三连败；SkillEvaluator 静默窗口打破（#680 合并，pushed_at 第十二例前移已定位）；SkillzBench effect 207 持平，−5 耦合假说证伪；Windsurf v3.14.30819 关窗后登顶，窗口归属未定；Devin CLI changelog 首次取回全文；S1/S2/S3 仍仅 v1；Skillware 收 1 颗星；代码检索第二十九轮；Vibing Talk 浏览量序列继续有效（SA 停记建议驳回）；`all:skill` 14,982（+0，+1 仍未归因）；SkillScope S2 引用列表连续二十轮无新增；AAIF 仍缺两件落地文件；Cursor 第九查仍缺一手证据；Kiro 无变化；Hooks 页已取回，L1589 行号待核对；历史暂持评估 3 项不落入，暂持累计仍 199 条。
+- 纠正：Vibing Talk 浏览量序列继续有效（K-78-01，执行者亲自 grep 三份文件确认 589 → 592 → 594/595）；Windsurf v3.14.30819 窗口归属未定（K-78-04）。
+- 剩余未核实缺口：历史暂持余 199 条仍待后续轮次陆续落入；`all:skill` +1 未归因；Cursor 桌面/CLI 版本映射；UserPromptExpansion 实机环境与 Hooks L1589 行号；SkillzBench effect −5 原因；SkillEvaluator #737/#738 移动原因；Windsurf v3.13.4 与 v3.14.30819 精确发布时间；S1/S2 数字口径继续暂定。
+- 下轮起点：先清上述缺口（Gemini nightly #578、引用跟进贴近 UTC 午夜执行、Windsurf 归属 Havoptic 复核为首项），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+
+## 2026-11-18 04:09 轮（第 79 轮）
+
+- 本轮增量（S-79-01～S-79-20，20 条 → skill-authoring-rounds.md）：窗口内新稳定发布 2 件——Windsurf v3.14.30819（归属落定，78 轮暂禁解除）与 SkillEvaluator v1.0.0（18:43:08Z）；四宿主其余零新版（Claude Code 仍 v2.1.326、Codex alpha.13 未出现、Gemini CLI 仍 v0.68.0）；Gemini nightly 十三连败（下一运行应为 #573，任务书 #578 不存在）；SkillEvaluator pushed_at 第十三例前移已定位（分支推送驱动）；#737/#738 的 16:37 移动原因已定位；SkillzBench effect 208（+1，仍低于 211）；OpenCode 仍 v1.19.6；S1/S2/S3 仍仅 v1；Skillware 窗口内收 2 颗星；代码检索第三十轮；Vibing Talk 浏览量序列继续有效（596 → 598）；`all:skill` 14,982（+0，+1 仍未归因）；SkillScope S2 引用列表连续二十一轮无新增；AAIF 仍缺两件落地文件；Cursor 第十查仍缺一手证据；Kiro 无变化；Hooks 页 4,353 行（+2），L1589 仍无对应；历史暂持 D-S39 优先落入，暂持累计 199 → 198 条。
+- 纠正：Kiro 技能发现行属 Devin CLI v3000.13.4（K-79-01，74/78 轮 v3000.13.3 说法作废）；派发书窗口日期笔误（K-79-02）；Windsurf v3.14.30819 窗口归属落定（K-79-04）；Synapse 78 轮「尚未收录」不得沿用（K-79-05）；Hooks L1589 行号口径闭合为「无对应」（K-79-06）。
+- 剩余未核实缺口：历史暂持余 198 条仍待后续轮次陆续落入；`all:skill` +1 未归因（连续第四轮）；Cursor 桌面/CLI 版本映射；UserPromptExpansion 实机环境；SkillzBench effect −5 原因；SkillEvaluator PyPI 1.0.0 同步与 #771 是否合并；Windsurf v3.13.4 精确发布时间；S1/S2 数字口径继续暂定；Gemini nightly #573（预计 11-18 约 00:19Z）。
+- 下轮起点：先清上述缺口（Gemini nightly #573、SkillEvaluator PyPI 1.0.0 同步、Windsurf v3.13.4 精确发布时间为首项），再按子主题轮转（技能发现/调用/评估协议的后续深化）。

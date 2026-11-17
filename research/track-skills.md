@@ -731,3 +731,8 @@
 - 本轮增量（S-74-01–S-74-12）：Windsurf v3.13.4 窗口内新稳定版（同文重发，仅 5 处实质行；执行者亲自 diff 复核）；Devin CLI Kiro 技能发现条目首次落入轮次文件（首见 73 轮 v3000.13.3，非本轮新增）；v3.13.3 一节整节消失、取证途径关闭；Codex 新增预发布 2 件（占位正文）；Gemini nightly #573 未出现（十三连败；runs 415 → 413，−2 原因未定位）；SkillEvaluator 合并 3 起、新建 29 起、stars 2,905（+140）、pushed_at 第九例无事件前移反例；`all:skill` 14,973（+20，19 篇逐篇筛查，+1 未归因）；ESI v2；SkillzBench effect 208 持平；AAIF 路径纠正为 agentskills/agentskills；Cursor 第五查仍无一手证据；代码检索第二十五轮（ETUDE 899,072、Skillware 1,246、Skill++ 4,552）；SkillScope S2 引用列表 11 篇无新增（连续十六轮）；历史暂持 206 条（8 条已覆盖/过时，2 条仍暂持）。
 - 剩余缺口：历史暂持 206 条仍待后续轮次陆续落入轮次文件；S1/S2 数字口径（97.6%/95.9%/84.8%）继续暂定；Windsurf v3.13.4 精确发布时间仍未定位（v3.13.3 本页途径已关闭）；Cursor 桌面/CLI 版本映射仍缺一手证据；UserPromptExpansion 实机环境；`all:skill` +1 未归因；2611.19823 全文深读候选。
 - 下轮起点：先清上述缺口（Gemini nightly #574；SkillEvaluator v0.10.0 与 pushed_at；AAIF 落地文件；历史暂持陆续落入），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-17 16:09 轮（第 75 轮）
+
+- 本轮增量（S-75-01～S-75-17，17 条 → skill-authoring-rounds.md）：四宿主零新稳定版（Claude Code v2.1.326、Codex rust-v0.169.0、Gemini CLI v0.68.0、Windsurf v3.13.4）；Gemini nightly 十三连败（订正 74 轮「最老 #550」为 #543）；SkillEvaluator 合并 3 起、新建 21 起、pushed_at 第十例无事件前移反例；SkillzBench 八计数器；Windsurf Last-Modified 证伪为发布时间钟（74 轮「05:01:47Z 仅作线索」再降级，今后不再记录）；OpenCode v1.19.6 窗口内发布（v1 线）；S1/S2/S3 仍仅 v1，代码检索第二十六轮；AAIF 仍缺两件落地文件；Cursor 第六查仍无一手证据；SkillEvaluator #757 EPIPE 系统性偏差；EfficientSkill 全文深读完成；Synapse 与 Experience Rot 列为全文深读候选；`all:skill` 14,982（+9，+1 未归因），Skill Adapter v2；SkillScope S2 引用列表连续十七轮无新增。
+- 剩余未核实缺口：历史暂持 H-75-01～H-75-10 本轮未落入（体量余量不足），暂持累计仍 206 条，下轮拆分评估后优先落入；`all:skill` +1 未归因；Gemini nightly #575；Cursor 桌面/CLI 版本映射；UserPromptExpansion 实机环境；SkillEvaluator pushed_at 前移机制与加星暴涨归因；SkillzBench effect −5 原因；skill-authoring-rounds.md 落入后 333 行，下轮起须评估拆分/归档。

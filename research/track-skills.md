@@ -725,3 +725,9 @@
 - 本轮增量（D-S49–D-S58、D-S-73-01–D-S-73-06，10 条本轮首次落入轮次文件，不再暂持）：Codex rust-v0.171.0-alpha.10 预发布（占位正文 26 字节）；Gemini nightly #572 已出现并失败，十三连败（#560–#572）；新 p0 #30324，p0 总数 15 → 16；SkillEvaluator 窗口内合并 13 起，#690 合并，stars 2,765（+127），pushed_at 第八例无事件前移反例；SkillzBench effect 208 持平；Windsurf v3.13.3 发布时间仍未定位，v3.12.28 第 52 轮未重现；OpenCode 窗口内新 PR 14 起；S1/S2/S3 仍仅 v1；Vibing Talk 仍 11 帖；代码检索第二十四轮（ETUDE 899,072、Skillware 1,248、Skill++ 4,584）；SkillScope S2 引用列表 11 篇无新增（连续十五轮）；引用跟进 5 项各三次 429（第九轮错过午夜窗口）；`all:skill` 14,953（+12，新入索引 8 篇已逐篇筛查，相邻 2 篇列为全文深读候选）；AAIF 仍缺 CHANGELOG.md 与 SECURITY.md 两件；Cursor 桌面/CLI 映射仍缺官方一手证据；UserPromptExpansion 仍无实机环境。
 - 剩余缺口：历史暂持 206 条仍待后续轮次陆续落入轮次文件；S1/S2 数字口径（97.6%/95.9%/84.8%）继续暂定；Windsurf v3.13.3 精确发布时间；Cursor 桌面/CLI 版本映射；UserPromptExpansion 实机环境；2611.18818/2611.15436 全文深读候选。
 - 下轮起点：先清上述缺口（Gemini nightly #573；SkillEvaluator v0.10.0 与 pushed_at；AAIF 落地文件；历史暂持陆续落入），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-17 13:09 轮（第 74 轮）
+
+- 本轮增量（S-74-01–S-74-12）：Windsurf v3.13.4 窗口内新稳定版（同文重发，仅 5 处实质行；执行者亲自 diff 复核）；Devin CLI Kiro 技能发现条目首次落入轮次文件（首见 73 轮 v3000.13.3，非本轮新增）；v3.13.3 一节整节消失、取证途径关闭；Codex 新增预发布 2 件（占位正文）；Gemini nightly #573 未出现（十三连败；runs 415 → 413，−2 原因未定位）；SkillEvaluator 合并 3 起、新建 29 起、stars 2,905（+140）、pushed_at 第九例无事件前移反例；`all:skill` 14,973（+20，19 篇逐篇筛查，+1 未归因）；ESI v2；SkillzBench effect 208 持平；AAIF 路径纠正为 agentskills/agentskills；Cursor 第五查仍无一手证据；代码检索第二十五轮（ETUDE 899,072、Skillware 1,246、Skill++ 4,552）；SkillScope S2 引用列表 11 篇无新增（连续十六轮）；历史暂持 206 条（8 条已覆盖/过时，2 条仍暂持）。
+- 剩余缺口：历史暂持 206 条仍待后续轮次陆续落入轮次文件；S1/S2 数字口径（97.6%/95.9%/84.8%）继续暂定；Windsurf v3.13.4 精确发布时间仍未定位（v3.13.3 本页途径已关闭）；Cursor 桌面/CLI 版本映射仍缺一手证据；UserPromptExpansion 实机环境；`all:skill` +1 未归因；2611.19823 全文深读候选。
+- 下轮起点：先清上述缺口（Gemini nightly #574；SkillEvaluator v0.10.0 与 pushed_at；AAIF 落地文件；历史暂持陆续落入），再按子主题轮转（技能发现/调用/评估协议的后续深化）。

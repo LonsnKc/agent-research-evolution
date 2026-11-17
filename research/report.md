@@ -730,3 +730,14 @@
 - 自验 44 条：通过 44、通过（未验证暂定）0、需修正 0、否决 0（执行者自验，见 refined/20261117-1609/verification.md；独立抽查 4 组一手来源全部通过——arXiv 159、EfficientSkill 摘要、OpenCode v1.19.6 发布页、Cloudflare 官方文档；可执行验证 0 条——本轮无带命令/代码/配置的条目）。
 - 体量：api-routing-rounds.md 280 → 295 行；agent-harness-rounds.md 78 → 90 行；layered-memory-rounds.md 72 → 81 行；skill-authoring-rounds.md 313 → 333 行，全部在约 400 行红线内；SKILL.md 本体无改动。
 - 下轮起点：先清缺口（引用跟进贴近 UTC 午夜执行、11-17 批次补筛、qwen 第六十一度、#204 第四十五次抖动、Gemini nightly #575、OpenCode post-mortem 改道复核、历史暂持 H-75-01～10 陆续落入——skill-authoring-rounds.md 余量约 70 行，下轮起须按拆分口径先评估是否拆分/归档），再按各轨子主题轮转。
+
+## 2026-11-17 19:09 轮（第 76 轮，版本 0.74.0 → 0.75.0）
+
+- API 路由：窗口内新稳定发布 0 件；计数器第三十九轮闭合 2,319,703（+0）；qwen3.5-9b 第六十一度 $8.4e-8（三档整齐腰斩）+ 3 项真调价；arXiv 列表页第二十五次结转闭合；登记集 46 篇零新版；星事件阳性二十七次（主轮裁定采纳 RA 27）；引用余项合并口径 15 项（旧 11 + 新 4，第十二轮错过午夜窗口）；Cloudflare 分类器四维度与效用公式确有官方出处（博客 2026-09-30），75 轮 R-75-10 修正；decisions 仍 1 个配方；基准 API 第 60/61 次 401。
+- Harness：窗口内事件全为零；OTel #204 第 45 次抖动（连续未成立二十次；Age 列双向反例再添）；待决 19 项仍全部 open；#713 窗口内唯一人类实质进展；watch 清单主轮裁定纳入 #713、#551，#716 暂不纳入，#680 仍待裁定；2611.20595 SilentGuard 与 2611.21407 Harness Leverage 全文深读完成；Harbor 0.26.1 仍未切版、inspect-ai 仍 0.3.290、MAF #10317 逾 94 小时；OpenCode post-mortem 仍未发布。
+- 分层记忆：记忆轨新登记 1 篇论文（2611.18642），登记集 66 → 67；letta-code v0.34.64 连续第十三轮缺席；Mem0 docs 无再部署，cfemail 第十九度重随机化；Graphiti #2159 首条评论出现（社区成员，非维护方）；MIRIX #156 仍 0 评论；ENGRAM 第 51 次 401；七项复现零新增连续第四十四轮；M5 直接证据仍为零，相邻证据仍为 20 项。
+- 技能（18 条新项 + 历史暂持落入 5 项）：四宿主零新稳定版；Gemini nightly 十三连败；SkillEvaluator 合并 2 起、新建 4 起，第十一例无事件前移反例不成立；#757 根因定位 + #763 修复 PR；SkillzBench 八计数器；Kiro 官方 changelog 首次取回；Synapse 与 Experience Rot 全文深读完成；`all:skill` 14,982（+0，+1 仍未归因）；SkillScope S2 引用列表连续十八轮无新增；历史暂持落入 5 项，暂持累计 206 → 201 条。
+- 纠正七处（C-76-01～C-76-07）：星事件记分（采纳 RA 27）、引用余项合并口径（旧 11 + 新 4）、Cloudflare 修正、SkillEvaluator 第十一例反例不成立、watch 清单裁定、AAIF stars 增量 +5、列表页结转表述统一。
+- 自验 53 条：通过 53、通过（未验证暂定）0、需修正 0、否决 0（执行者自验，见 refined/20261117-1909/verification.md；独立抽查 5 组一手来源全部通过；可执行验证 0 条——本轮无带命令/代码/配置的条目）。
+- 体量：api-routing-rounds.md 295 → 308 行；agent-harness-rounds.md 90 → 102 行；layered-memory-rounds.md 81 → 86 行；skill-authoring-rounds.md 333 → 356 行，全部在约 400 行红线内；SKILL.md 本体无改动。
+- 下轮起点：先清缺口（引用跟进贴近 UTC 午夜执行、11-17 批次补筛、qwen 第六十二度、#204 第四十六次抖动、Gemini nightly #576、OpenCode post-mortem 改道复核、历史暂持余 201 条陆续落入——skill-authoring-rounds.md 余量约 44 行，下轮起须按拆分口径先评估是否拆分/归档），再按各轨子主题轮转。

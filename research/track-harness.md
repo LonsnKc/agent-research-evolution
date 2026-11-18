@@ -824,3 +824,11 @@
 - 裁定：#724 纳入 watch 清单（C-86-02）；MAF 404 五项继续记入未结台账，下轮首项复查。
 - 剩余未核实缺口：OTel #204 成因（高度可信，待机制直接证据；连续未成立 4 次）；Age 列 #680 锚点机制归属未钉死；MAF 404 五项复核（#10317、#10318、#8708、AgentTriggered、python-1.25.0 其余包与 Release 对象）；Harbor 0.26.1 切版；Agents SDK 稳定化时间表；OpenCode post-mortem 下轮状态页路径复核；SkillBuffBench v2 结果复核；RagHarnessDebugger 仓库 404；LangChain 3 包 PyPI 上架复核；#724/#725 是否合入。
 - 下轮起点：先清上述缺口（MAF 404 五项复查为首项；#204 第五十六次抖动核对；#680 锚点机制归属；SkillBuffBench v2 复核；LangChain 3 包上架），再按子主题轮转（harness 评估与 trace 格式）。
+
+## 2026-11-19 04:09 轮（第 87 轮）
+
+- 本轮增量（H-87-01～10，10 条 → agent-harness-rounds.md）：LangChain 剩余 3 包窗口内同批上架（deepseek 1.2.1、groq 1.2.1、xai 1.4.1；83 轮 4 包 bump 至此全部落地）；MAF 仓库仍 404（两次三通道复查；#10317 已逾 127 小时）；五项继续阻塞；PyPI 仍 1.26.0、NuGet 仍 1.28.0；OTel #204 第 56 次抖动配对判未成立（20:01:45Z，12 秒口径内 0 条事件，连续计数 5 次）；第 56 次渲染大规模重分区（15 个 PR 移分区，11 件无时间线事件；Age 多行非单调跳变；updated_at 双 88 秒簇，成因未定位）；Age 机制细化（带待办事项的机器人评审移动等待时钟，#721 1h→10m；85 轮口径收窄）；Age #680 锚点四轮吻合，机制归属未钉死；待决 18 项零合并；#700 连续第十三个零动静窗口；窗口内真实提交 17 件全不改格式；#724 仍 open；登记集 23 篇全部仍仅 v1；SkillBuffBench 仍仅 v1（无 v2）；`all:harness` 前 10 项无变化；RagHarnessDebugger 宣称仓库仍 404；OpenCode post-mortem 仍未发布；Railway 无独立「最终报告」；Agents SDK 稳定化时间表仍无官方表述；Gemini nightly 仍 #573（十四连败）。
+- 纠正：Age 机制收窄（K-87-07，85 轮「机器人事件永不计入实质活动」收窄为「无待办事项的机器人评审不移动等待时钟」）；OTel #204 第 56 次抖动配对未成立（K-87-06，连续未成立计数暂记 5 次）；#680 锚点机制归属未钉死。
+- 裁定：#724 继续 watch；MAF 404 五项继续记入未结台账，下轮首项复查。
+- 剩余未核实缺口：OTel #204 成因（高度可信，待机制直接证据；连续未成立 5 次）与第 56 次渲染重分区成因（看板机器人批量更新项目字段假说未证实）；Age 列 #680 锚点机制归属未钉死；MAF 404 五项复核（#10317、#10318、#8708、AgentTriggered、python-1.25.0 其余包与 Release 对象）；Harbor 0.26.1 切版；Agents SDK 稳定化时间表；OpenCode post-mortem 下轮状态页路径复核；SkillBuffBench v2 结果复核；RagHarnessDebugger 仓库 404；#724 是否合入。
+- 下轮起点：先清上述缺口（MAF 404 五项复查为首项；#204 第五十七次抖动核对；#680 锚点机制归属；SkillBuffBench v2 复核），再按子主题轮转（harness 评估与 trace 格式）。

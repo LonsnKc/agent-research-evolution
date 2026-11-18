@@ -848,26 +848,12 @@
 - 自验 51 条增量 + 2 则纠正注记：通过 48、通过（未验证暂定）3（R7/M5/S1 三项长期暂定续记）、需修正 0、否决 0（执行者自验，见 refined/20261119-0109/verification.md；独立抽查 8 组：计数器 2,354,288、llm-d/RouteLLM 星数、MAF 404、qwen 三档与关窗后漂移、v4.1-flash 新低、SkillzBench effect 219、Vibing Talk 浏览量、benchmarks 401；可执行验证 0 条；delta 特征数值已逐项核对腿级报告）。
 - 体量：api-routing-rounds.md 200 → 220 行；agent-harness-rounds.md 221 → 236 行；layered-memory-rounds.md 143 → 150 行；skill-authoring-rounds.md 256 → 274 行，全部在约 400 行红线内；SKILL.md 本体无改动。
 - 下轮起点：先清缺口（S2/OpenAlex 贴近 UTC 午夜执行、MAF 404 五项复查、11-18 批次筛查（公告档 2026-11-19 01:00Z；pastweek 须带 `?show=2000`）、#204 第五十六次抖动、#680 锚点机制归属、Gemini nightly #574、SkillEvaluator pushed_at 第 23 例、SkillScope S2 引用列表复核、历史暂持余 171 条陆续落入、qwen 关窗后新价 $1.3e-7 核查、LangChain 3 包上架与否、Graphiti #2158 PR 是否开出、#2166 是否合入），再按各轨子主题轮转。
-""".format(a0=before['api'], a1=after['api'], h0=before['harness'], h1=after['harness'],
-            m0=before['memory'], m1=after['memory'], s0=before['skill'], s1=after['skill'])
-append(os.path.join(PROJ, 'report.md'), report_section)
-print('report.md appended')
 
-# --- 8. PRACTICAL.md renewals (lines 9/10/11, 1-based) ---
-pr_path = os.path.join(PROJ, 'PRACTICAL.md')
-pr = open(pr_path, encoding='utf-8').readlines()
-assert pr[8].startswith('- [2026-11-10 11:37 轮] skill/references/api-routing-rounds.md（生产级联校准条目，R7）'), 'R7 line mismatch'
-assert pr[9].startswith('- [2026-11-10 11:37 轮] skill/references/layered-memory.md（排序信号 vs 遗忘三态条目，M5）'), 'M5 line mismatch'
-assert pr[10].startswith('- [2026-11-09 深夜轮] skill/references/skill-authoring.md（ETUDE 条目，S1）'), 'S1 line mismatch'
-pr[8] = pr[8].rstrip('\n') + '；2026-11-19 01:09 轮：十组筛查全部闭合、零新增（RA 上限 20261124、RB 上限 20261125/扩展 20261126）；在线学习阈值真实流量一手证据仍为零；生产级联证据仍仅 CascadeRec + HIRA；继续暂定。\n'
-pr[9] = pr[9].rstrip('\n') + '；2026-11-19 01:09 轮：11-18 批次为空，无新登记论文；11-17 迟入筛查 9 篇候选摘要；全文深读 2611.22470（13,211 词，FIFO 容量驱逐 + top-k 核排斥，单 episode 情景记忆；`forget`/`forgetting` 全 0）不登记为相邻证据；直接证据仍为零，相邻仍 22 项；继续暂定。\n'
-pr[10] = pr[10].rstrip('\n') + '；2026-11-19 01:09 轮：ETUDE 2611.01976 仍仅 v1，published = updated 2026-11-01T15:14:02Z；聚合公式仍未复现；作者仓仍未定位；继续暂定。\n'
-open(pr_path, 'w', encoding='utf-8').writelines(pr)
-print('PRACTICAL.md renewals appended')
-
-# --- 9. pending-upstream.md ---
-pend_path = os.path.join(PROJ, 'state', 'pending-upstream.md')
-pend = open(pend_path, encoding='utf-8').read()
-if not pend.endswith('\n'):
-    pend += '\n'
-pend += 
+- API 路由（16 条新项）：计数器第五十轮闭合 2,355,116（+828；VGI +878、τ² −50；两腿逐卡一致；+878 = 439×2，439 倍数假说再添一例整倍数支持，但 85 轮反例仍在）；qwen3.5-9b 第六十九度成立（$1.3e-7/$1.91e-7/$1.17e-7，18:07Z 86 轮执行者自取，K-86-09 登记属实）；z-ai/glm-5.2 疑似真调价（首次观测，下轮复核）；gemma 三档振荡回归（主轮解析 57 个模型文件，86 轮「站住第四轮」定性修正）；deepseek-v4.1-flash-1017 窗口内调价（20:14:37Z $3.6e-8/$5e-7 → 约 20:18Z $3.5e-8/$1.5e-7，关账值取较晚读数）；kimi-k2.7-code 真调价站住第二轮；deepseek-v4.1-flash 新低站住第三轮；r1-0528 调价站住第四轮；mimo 新价站住第五轮；三家分时档位轮换 overrides 未变；auto 三件套两读 64,000；elo 连续第二轮零刷新；artificial_analysis 置空溯源闭合（86 轮「168 个模型置空」出处定位）；星事件记分 36 → 37（RouteLLM +1 逐秒配对）；benchmarks API 401 终值第 101 次；arXiv 裸式区间语法仍 500（括号计数全部闭合）；全量枚举四批零变化；11-18 批次截至核查时未公告；R7 十组筛查全部闭合，生产级联证据仍仅 CascadeRec + HIRA；引用跟进 S2 取回 3 项（BaRP 23、Route Anything 0、ContinualSkillBench 13 首次基线），其余 S2 3 项 + OpenAlex 9 项未取回（第二十二轮连续错过午夜窗口）；前端 runs 316，三档重算 $1.6427/$6.3675/$0.5757，板面 $6.43 缺口 $0.0625 未闭合；窗口内新稳定版 0 件。
+- Harness（10 条新项）：LangChain 剩余 3 包窗口内同批上架（deepseek 1.2.1、groq 1.2.1、xai 1.4.1；83 轮 4 包 bump 至此全部落地）；MAF 仓库仍 404（五项继续阻塞，#10317 逾 127 小时）；OTel #204 第 56 次抖动判未成立（连续计数 5 次）；第 56 次渲染大规模重分区（15 个 PR 移分区，11 件无时间线事件；Age 多行非单调跳变；updated_at 双 88 秒簇，成因未定位）；Age 机制细化（带待办事项的机器人评审移动等待时钟，85 轮口径收窄）；Age #680 锚点四轮吻合，机制归属未钉死；待决 18 项零合并；#700 连续第十三个零动静窗口；窗口内真实提交 17 件全不改格式；#724 仍 open；登记集 23 篇全部仍仅 v1；SkillBuffBench 仍仅 v1（无 v2）；OpenCode post-mortem 仍未发布；Railway 无独立「最终报告」；Agents SDK 稳定化时间表仍无官方表述；Gemini nightly 仍 #573（十四连败）。
+- 分层记忆（7 条新项）：letta-code v0.34.66 仍未出现（404 两次）、v0.35.0 不存在，PyPI 差距仍 53 版，待收纳仍 8 项；v0.34.65 letta.js 下载计数仍 6；Mem0 docs 本轮 Mintlify 再部署，cfemail 第三十度重随机化，新基线 md5 eade880a / 9d1ee474；Graphiti #2158 获 `rfc-approved`（20:04:44Z），RelateDB PR 仍未开出；新 PR #2167/#2168/#2170、新 issue #2169；#2117 第二条评论；星数 32924 → 32927（+3 干净配对）、forks 3389 → 3390（+1 干净配对）；#2159 仍无回应（约 47.0 小时）、#2165 仍 0 评论；MIRIX #156 仍无回应（约 48.7 小时），星数 3497 → 3499；MemoryAtlas 新基线第 3 轮稳固；ENGRAM 第 62 次 401；七项复现零新增连续第五十五轮；登记集 78 篇零新版；M5 直接证据仍为零，相邻证据仍 22 项。
+- 技能（17 条新项）：窗口内新稳定发布 0 件、新预发布 1 件（Codex rust-v0.172.0-alpha.1，占位正文）；Gemini nightly #574/#575 均未出现（最新仍 #573，十四连败；#574 预期落入下轮窗口）；SkillEvaluator 窗口内结束静默（合并 #766/#771、新建 #785–#794，stars 3,584 → 3,651，open_issues 56 → 64 窗口值，CHANGELOG 5,146 → 5,170 行）；pushed_at 第 23 例配对成立（窗口内最终值 19:56:58Z 与 #394 force-push 配对；关窗后 20:15:03Z 移动记为窗外未定位移动）；SkillzBench effect 219 → 220（+1），trials 关账值 25,102；SB 深挖三项（SkillScope 与 TSS 权限方向互补、ContinualSkillBench ICL 对照方向钉死、SkillLearnBench 三层评估框架）；代码检索第三十八轮（ETUDE 882,688，−8,192）；Vibing Talk 浏览量 633；SkillScope S2 引用列表连续第三十轮无新增；`all:skill` 15,005（±0，旧 +1 连续第十三轮未归因）；S1/S2/S3 均仍仅 v1；SkillBuffBench 仍仅 v1（无 v2）；Continual-ARC 仍 v3；AAIF 仍缺两件文件；Windsurf v3.13.4 仍为区间（连续十轮同值）；Devin CLI 归属仍未定；Kiro CLI 3.5.0 补漏；Cursor 第十八查仍缺一手证据；OpenCode #64157/#64294/#64434 均仍 open；历史暂持 10 项不落入，暂持 171 → 161 条。
+- 调和裁定十处（K-87-01～K-87-10）：qwen 第六十九度成立（RB 异议驳回）；gemma 三档振荡（57 个模型文件解析）；deepseek-1017 窗口内调价（两腿原文件核对，关账值取较晚读数）；benchmarks 401 编号统一（终值第 101 次）；星事件记分 36 → 37；OTel #204 第 56 次抖动判未成立（连续 5 次）；Age 机制收窄（带待办事项的机器人评审移动等待时钟）；SkillEvaluator pushed_at 第 23 例调和（窗口内值配对成立，关窗后移动记为窗外未定位移动）；SkillzBench trials 与 Vibing Talk 浏览量取回时刻差口径（关账值取较晚读数）；历史暂持 10 项不落入（171 → 161）。本轮无 SKILL.md/SOUL.md 级提案。
+- 自验 50 条增量 + 10 则主轮调和裁定：通过 47、通过（未验证暂定）3（R7/M5/S1 三项长期暂定续记）、需修正 0、否决 0（执行者自验，见 refined/20261119-0409/verification.md；独立抽查 5 组：计数器 2,355,116、qwen 第六十九度、gemma 三档历史、deepseek-1017 两腿原文件、benchmarks 401 取回时点；可执行验证 0 条；delta 特征数值已逐项核对腿级报告）。
+- 体量：api-routing-rounds.md 220 → 240 行；agent-harness-rounds.md 236 → 249 行；layered-memory-rounds.md 150 → 160 行；skill-authoring-rounds.md 274 → 295 行，全部在约 400 行红线内；SKILL.md 本体无改动。
+- 下轮起点：先清缺口（S2/OpenAlex 贴近 UTC 午夜执行、MAF 404 五项复查、11-18 批次筛查（公告档 2026-11-19 01:00Z；pastweek 须带 `?show=2000`）、#204 第五十七次抖动、#680 锚点机制归属、Gemini nightly #574、SkillEvaluator pushed_at 第 24 例与关窗后 20:15:03Z 移动复核、SkillScope S2 引用列表复核、历史暂持余 161 条陆续落入、z-ai/glm-5.2 疑似调价复核、deepseek-1017 新价复核、Graphiti #2158 RelateDB PR 是否开出、#2166/#2118 是否合入），再按各轨子主题轮转。

@@ -811,3 +811,11 @@
 - 裁定：历史暂持 4 项不落入、暂持 175 → 171（K-86-12）；S1 续记。
 - 剩余未核实缺口：Gemini nightly #574/#575 是否出现；SkillEvaluator pushed_at 第 23 例配对（下轮须多次窗口内取样）；SkillzBench effect −5 成因；`all:skill` 旧 +1 未归因；Windsurf v3.13.4 发布时间；Devin CLI v3000.14.30821 归属；AAIF CHANGELOG.md 与 SECURITY.md 落地；OpenCode #64157/#64294/#64434 合并与否；SkillBuffBench v2 结果；历史暂持余 171 条（下批候选：70 轮 D-S19–D-S28）；SkillScope S2 引用列表复核。
 - 下轮起点：先清上述缺口（Gemini nightly #574 为首项；SkillEvaluator pushed_at 多次取样；历史暂持清点；SkillScope S2 引用列表复核），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-19 04:09 轮（第 87 轮）
+
+- 本轮增量（S-87-01～17，17 条 → skill-authoring-rounds.md）：窗口内新稳定发布 0 件、新预发布 1 件（Codex rust-v0.172.0-alpha.1，占位正文）；Gemini nightly #574/#575 均未出现（最新仍 #573，十四连败；#574 预期落入下轮窗口）；SkillEvaluator 窗口内结束静默（合并 #766/#771、新建 #785–#794，stars 3,584 → 3,651，open_issues 56 → 64 窗口值，CHANGELOG 5,146 → 5,170 行）；pushed_at 第 23 例配对成立（窗口内最终值 19:56:58Z 与 #394 force-push 配对；关窗后 20:15:03Z 移动记为窗外未定位移动）；SkillzBench effect 219 → 220（+1），trials 关账值 25,102；SB 深挖三项（SkillScope 与 TSS 权限方向互补、ContinualSkillBench ICL 对照方向钉死、SkillLearnBench 三层评估框架）；代码检索第三十八轮（ETUDE 882,688，−8,192）；Vibing Talk 浏览量 633；SkillScope S2 引用列表连续第三十轮无新增；`all:skill` 15,005（±0，旧 +1 连续第十三轮未归因）；S1/S2/S3 均仍仅 v1；SkillBuffBench 仍仅 v1（无 v2）；Continual-ARC 仍 v3；AAIF 仍缺 CHANGELOG.md 与 SECURITY.md；Windsurf v3.13.4 仍为区间（连续十轮同值）；Devin CLI v3000.14.30821 归属仍未定；Kiro CLI 3.5.0 补漏；Cursor 第十八查仍缺一手证据；OpenCode #64157/#64294/#64434 均仍 open；历史暂持 10 项不落入，暂持 171 → 161 条。
+- 纠正：SkillEvaluator pushed_at 第 23 例调和（K-87-08，窗口内值配对成立；关窗后 20:15:03Z 移动记为窗外未定位移动）；SkillzBench trials 与 Vibing Talk 浏览量取回时刻差口径（K-87-09，关账值取较晚读数）；历史暂持 10 项不落入（K-87-10）。
+- 裁定：历史暂持 10 项不落入、暂持 171 → 161（K-87-10）；S1 续记。
+- 剩余未核实缺口：Gemini nightly #574 是否出现（预期落入下轮窗口）；SkillEvaluator pushed_at 第 24 例配对与关窗后 20:15:03Z 移动复核（下轮须多次窗口内取样）；SkillzBench effect −5 成因；`all:skill` 旧 +1 未归因；Windsurf v3.13.4 发布时间；Devin CLI v3000.14.30821 归属；AAIF CHANGELOG.md 与 SECURITY.md 落地；OpenCode #64157/#64294/#64434 合并与否；SkillBuffBench v2 结果；历史暂持余 161 条（下批候选：71 轮 D-S29–D-S38）；SkillScope S2 引用列表复核。
+- 下轮起点：先清上述缺口（Gemini nightly #574 为首项；SkillEvaluator pushed_at 多次取样；历史暂持清点；SkillScope S2 引用列表复核），再按子主题轮转（技能发现/调用/评估协议的后续深化）。

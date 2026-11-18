@@ -762,3 +762,52 @@
 - 纠正：Kiro 技能发现行属 Devin CLI v3000.13.4（K-79-01，74/78 轮 v3000.13.3 说法作废）；派发书窗口日期笔误（K-79-02）；Windsurf v3.14.30819 窗口归属落定（K-79-04）；Synapse 78 轮「尚未收录」不得沿用（K-79-05）；Hooks L1589 行号口径闭合为「无对应」（K-79-06）。
 - 剩余未核实缺口：历史暂持余 198 条仍待后续轮次陆续落入；`all:skill` +1 未归因（连续第四轮）；Cursor 桌面/CLI 版本映射；UserPromptExpansion 实机环境；SkillzBench effect −5 原因；SkillEvaluator PyPI 1.0.0 同步与 #771 是否合并；Windsurf v3.13.4 精确发布时间；S1/S2 数字口径继续暂定；Gemini nightly #573（预计 11-18 约 00:19Z）。
 - 下轮起点：先清上述缺口（Gemini nightly #573、SkillEvaluator PyPI 1.0.0 同步、Windsurf v3.13.4 精确发布时间为首项），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+
+## 2026-11-18 10:09 轮（第 81 轮）
+
+- 本轮增量（S-81-01～S-81-20，20 条 → skill-authoring-rounds.md）：窗口内新稳定发布 5 件——Claude Code v2.1.327（2 条技能项）、Codex rust-v0.169.1、OpenCode v2.3.1/v2.3.2、SkillEvaluator v1.0.1（PyPI 同步，v1.0.0 从未上 PyPI，跳号闭合）；Gemini nightly #573 失败（十四连败），新 p0 #30346；SkillzBench effect 211（212 → 211，−1）；Vibing Talk 浏览量 604（602 → 604）；`all:skill` 14,992（+10，已全部分解）；新登记 SkillBuffBench 2611.22017v1；SkillScope S2 引用列表连续二十四轮无新增；Cursor 第十二查仍缺一手证据；Kiro Nov 17 条目 2 则（均不涉技能）；Devin CLI v3000.14.30821 归属仍未定；Windsurf v3.13.4 精确发布时间仍未定位；Hooks 页逐字节相同，L1589 仍无对应；SkillEvaluator pushed_at 第 14/15 例仍未定位、第 16 例关窗后出现；GitHub 事件流不稳定方法论发现；历史暂持 D-S42 落入，暂持累计 198 → 197 条。
+- 纠正：腿编号 80→81 与派发书措辞澄清（K-81-02）；SkillzBench effect 基线（K-81-03，80 轮关账值 212、本轮 211）；Cursor 检查次数（K-81-04，本轮为第 12 查）；Vibing Talk 浏览量基线（K-81-05，602 → 604）。
+- 裁定：历史暂持 D-S42 落入（C-81-01，#611 移动定位与 #556 假说证伪）。
+- 剩余未核实缺口：历史暂持余 197 条仍待后续轮次陆续落入；`all:skill` +1 未归因（连续第七轮）；Cursor 桌面/CLI 版本映射；UserPromptExpansion 实机环境；SkillzBench effect −5 原因；SkillEvaluator pushed_at 第 14/15 例定位与第 16 例配对；Windsurf v3.13.4 精确发布时间；S1/S2 数字口径继续暂定；Gemini nightly #574。
+- 下轮起点：先清上述缺口（Gemini nightly #574、SkillEvaluator pushed_at 第 14/15 例定位、Windsurf v3.13.4 精确发布时间为首项），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-18 13:09 轮（第 82 轮）
+
+- 本轮增量（S-82-01～S-82-20，20 条 → skill-authoring-rounds.md）：窗口内新稳定发布 1 件——Codex rust-v0.170.0（03:40:48Z，skill 0 命中，74 轮起追踪缺口闭合）；Gemini nightly #574 未出现（十四连败），runs 413 → 412（−1 未定位）；SkillEvaluator pushed_at 第 14/15/16/17 例全部定位，机制结论落定（任意分支推送驱动）；事件流两份 100 条取回交集 0/100（方法结论：归因须以稳定端点为准）；SkillzBench 八计数器全部持平（effect 211 三连平）；新登记 3 篇直接相关论文（2611.22525、2611.22610、2611.23203）；`all:skill` 15,005（+13，已全部分解，旧 +1 仍未归因，连续第八轮）；Vibing Talk 浏览量 607（604 → 607，+3）；SkillScope S2 引用列表连续二十五轮无新增；Cursor 第十三查仍缺一手证据；Kiro 无变化；Hooks 页逐字节相同，L1589 仍无对应（连续第五轮）；Skill Crossroads 仍 rubric v1.2；AAIF 仍缺两件落地文件；OpenCode 窗口内技能相关 0 起；历史暂持 D-S-72-01～04 不落入，暂持累计仍 197 条。
+- 纠正：Cursor 检查次数（K-82-05，本轮为第 13 查，SA 腿「第十四查」为误记）；Vibing Talk 浏览量基线（K-82-06，采 SB 较晚读数 607，604 → 607）；81 轮 D-S40/D-S43 结转错误（K-82-07）；81 轮 Vibing Talk 算术笔误（K-82-08）；SkillEvaluator open_issues 点读差（K-82-10，采 SB 较晚读数 55）。
+- 裁定：历史暂持 D-S-72-01～04 不落入（C-82-03）；H-75-07 仍暂缓。
+- 剩余未核实缺口：历史暂持余 197 条仍待后续轮次陆续落入；`all:skill` +1 未归因（连续第八轮）；Cursor 桌面/CLI 版本映射；UserPromptExpansion 实机环境；SkillzBench effect −5 原因；Windsurf v3.13.4 精确发布时间；S1/S2/S3 数字口径继续暂定；Gemini nightly #575；SkillEvaluator pushed_at 第 18 例（#765 合并，窗外）配对确认。
+- 下轮起点：先清上述缺口（Gemini nightly #575、SkillEvaluator pushed_at 第 18 例配对、Windsurf v3.13.4 精确发布时间为首项），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-18 16:09 轮（第 83 轮）
+
+- 本轮增量（S-83-01～S-83-21，21 条 → skill-authoring-rounds.md）：窗口内新稳定发布 0 件、新预发布 1 件（Codex rust-v0.171.0-alpha.13，05:47:55Z，正文 skill 0 命中）；Gemini nightly #574/#575 均未出现（最新仍 #573，十四连败）；SkillEvaluator 窗口内合并 #765 与 #725，pushed_at 第 18 例（#765，+3 秒）与第 19 例（#772，Δ=6 秒）配对确认，机制结论「任意分支推送驱动」五连成立；open_issues 54；SkillzBench effect 211 连续第四轮持平；新登记直接相关论文 0 篇；`all:skill` 15,005（±0，恒等式 10,544+4,315+146 已核对，旧 +1 连续第九轮未归因）；Vibing Talk 浏览量 608（82 轮关账值 607，本轮 +1）；Skillware 窗口内罕见活跃（新开 PR #481 与 issues #482–#485，均为未落地提案）；SkillScope S2 引用列表连续二十六轮无新增；Cursor 第十四查仍缺一手证据；2611.22525 全文深读完成（技能过期反噬定量：−13.0pp/+38.9%、选择性维护 +67pp/−37%、回收期 21.2–41.9 次）；历史暂持 H-75-03/04/05 不落入、H-75-07 仍暂缓，暂持仍 197 条。
+- 纠正：SkillEvaluator pushed_at 主轮序号（K-83-04，#18=#765 合并、#19=#772 分支推送；#725 不单独编号；#15 仍弱定位）；Vibing Talk 浏览量 608（K-83-05，82 轮关账值 607 维持，SA 腿「82 轮报告亦为 606」不成立，「每轮 +2」序列说法不采信）；Cursor 第十四查（K-83-06，SA 腿「第十五查」为 82 轮误记的重犯）；Gemini nightly 任务书口径订正（K-83-07，#574/#575 均未出现，最新仍 #573）；CHANGELOG 行数基线取读时刻差（K-83-17，现值约 5,136–5,137 行）。
+- 裁定：历史暂持 H-75-03/04/05 不落入、H-75-07 仍暂缓（C-83-01）；S1 续记（C-83-03）。
+- 剩余未核实缺口：Gemini nightly #574/#575 是否出现；SkillEvaluator pushed_at 第 20 例配对（下轮须多次窗口内取样）；SkillzBench effect −5 成因；`all:skill` 旧 +1 未归因；Windsurf v3.13.4 发布时间；Devin CLI v3000.14.30821 归属；AAIF CHANGELOG.md 与 SECURITY.md 落地；OpenCode #64157/#64294/#64434 合并与否；SkillBuffBench v2 结果；历史暂持余 197 条（下批为 70 轮及更早未评估暂持项清点）。
+- 下轮起点：先清上述缺口（Gemini nightly #574 为首项；SkillEvaluator pushed_at 多次取样；历史暂持清点），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-18 19:09 轮（第 84 轮）
+
+- 本轮增量（S-84-01～S-84-19，19 条 → skill-authoring-rounds.md）：窗口内新稳定发布 0 件、新预发布 0 件，唯一窗口内发布为 Skillware v0.6.2（08:45:22Z）；Gemini nightly #574/#575 均未出现（最新仍 #573，十四连败）；SkillEvaluator pushed_at 第 20 例配对确认（#782，Δ=2 秒），机制结论「任意分支推送驱动」六连成立；open_issues 56；SkillzBench effect 211 → 214（+3，−5 跌幅完全收复还多 2）；两篇全文深读完成（2611.22610 EvoSkill-S1、2611.23203 Dr. Greens）；`all:skill` 15,005（±0，旧 +1 连续第十轮未归因）；Vibing Talk 浏览量 612（执行者第三时点自取；83 轮关账值 608）；SkillScope S2 引用列表连续二十七轮无新增；Cursor 第十五查仍缺一手证据；AAIF 仍缺两件文件；OpenCode #64635 技能相关（3 分钟内被机器人关闭）；历史暂持 8 项不落入，暂持 197 → 189 条。
+- 纠正：Vibing Talk 浏览量关账值 612（K-84-04，SA 611、SB 610 为同序列不同时点读数）；83 轮 CHANGELOG 行数口径纠正（K-84-14，取时行数 5,137 vs 落盘文件 5,136；本轮 5,146 行以文件实测为准）。
+- 裁定：历史暂持 8 项不落入、暂持 197 → 189（K-84-05）；S1 续记（C-84-05）。
+- 剩余未核实缺口：Gemini nightly #574/#575 是否出现；SkillEvaluator pushed_at 第 21 例配对（下轮须多次窗口内取样）；SkillzBench effect −5 成因；`all:skill` 旧 +1 未归因；Windsurf v3.13.4 发布时间；Devin CLI v3000.14.30821 归属；AAIF CHANGELOG.md 与 SECURITY.md 落地；OpenCode #64157/#64294/#64434 合并与否；SkillBuffBench v2 结果；历史暂持余 189 条（下批为 69 轮 D-S01/D-S03/D-S04/D-S05/D-S07/D-S08/D-S09）；SkillEvaluator #771/#727 定位。
+- 下轮起点：先清上述缺口（Gemini nightly #574 为首项；SkillEvaluator pushed_at 多次取样；历史暂持清点），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-18 22:09 轮（第 85 轮）
+
+- 本轮增量（S-85-01～18，18 条 → skill-authoring-rounds.md）：窗口内新稳定发布 0 件、新预发布 0 件（Claude 仍 v2.1.327、Codex 仍 rust-v0.170.0、Gemini CLI 仍 v0.68.0、OpenCode 仍 v2.3.2）；Gemini nightly #574/#575 均未出现，最新仍 #573，十四连败，runs 412 持平；#574 预期 2026-11-19 约 00:19Z（窗口外）；SkillEvaluator pushed_at 第 21 例不存在（窗口内 0 提交，静默窗口；pushed_at 三读一致 2026-11-18T09:12:59Z）；#727 的 12:33:02Z 移动已定位：评审事件 12:33:04Z（Δ=2 秒）+ fork 提交 750b2ab（12:28:57Z，head 仓为 fork Afloat16/SkillEvaluator）——机制结论收窄为「同仓任意分支推送驱动」（fork 推送不驱动，为阴性对照）；#771 仍 open；open_issues 56 持平；CHANGELOG 5,146 行逐字节相同；SkillzBench effect 214 → 217（+3，连续第二轮 +3），trials SA 24,754 / SB 24,756（取样时刻差）；effect 数值连续两轮与 Benchmarked 阶段计数逐值一致（强关联发现，非官方口径）；−5 成因仍未定位；Vibing Talk：SA 三样本 614/614/619、SB 三样本均为 614；执行者自取第三时点 620 → 关账值取 620（84 轮 612，+8）；`all:skill` 15,005（±0），恒等式 10,544+4,315+146 成立；旧 +1 连续第十一轮未归因；SkillScope S2 引用列表本轮 SB 腿未取回（初取 504、手工重试两次 429），「连续二十七轮无新增」表述本轮不得延续（SA 腿取回 11 篇与 84 轮相同，留待下轮复核确认）；S1/S2/S3 均仍仅 v1；SkillBuffBench 仍仅 v1（无 v2）；Continual-ARC 升为 v3（updated 2026-11-15，窗口外）；2611.22174 机器人技能适配论文不登记、不补评估；AAIF 仍缺 CHANGELOG.md 与 SECURITY.md；stars 27,420（+2）；OpenCode #64157/#64294/#64434 均仍 open；#64635 是 issue 非 PR，84 轮窗口内关闭（10:47:25Z，not_planned，2 分 31 秒，精确化 84 轮「3 分钟内被机器人关闭」）；#64655 评论区命中、非协议变更；Cursor 第十六查仍缺一手证据，CLI 文档页本轮新回 403 Vercel 机器人防护（传输形态变化，不得读成页面存在或消失）；Windsurf v3.13.4 精确发布时间仍为区间、v3000.14.30821 归属仍未定；Skillware 新开 PR #488/#489（均 open）；历史暂持 14 项不落入，暂持 189 → 175 条。
+- 纠正：#727 移动定位两腿一致（K-85-14）；2611.22174 不登记、不补评估（K-85-15）；SkillScope S2 引用列表以未取回为准记录（K-85-13）；Vibing Talk 浏览量关账值 620（K-85-05）。
+- 裁定：历史暂持 14 项不落入、暂持 189 → 175（K-85-10）；S1 续记（C-85-05）；SkillScope S2 引用列表以未取回为准记录（K-85-13）。
+- 剩余未核实缺口：Gemini nightly #574/#575 是否出现；SkillEvaluator pushed_at 第 22 例配对（下轮须多次窗口内取样）；SkillzBench effect −5 成因；`all:skill` 旧 +1 未归因；Windsurf v3.13.4 发布时间；Devin CLI v3000.14.30821 归属；AAIF CHANGELOG.md 与 SECURITY.md 落地；OpenCode #64157/#64294/#64434 合并与否；SkillBuffBench v2 结果；历史暂持余 175 条（下批候选：69 轮剩余 D-S-69-02 与 D-S-69-06，及 68 轮剩余 D-S02、D-S06）；SkillScope S2 引用列表复核（SA 腿 11 篇与 84 轮相同，留待下轮复核确认）。
+- 下轮起点：先清上述缺口（Gemini nightly #574 为首项；SkillEvaluator pushed_at 多次取样；历史暂持清点；SkillScope S2 引用列表复核），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-19 01:09 轮（第 86 轮）
+
+- 本轮增量（S-86-01～15，15 条 → skill-authoring-rounds.md）：窗口内新稳定发布 0 件、新预发布 0 件（Claude 仍 v2.1.327、Codex 仍 rust-v0.170.0、Gemini CLI 仍 v0.68.0、OpenCode 仍 v2.3.2）；Gemini nightly #574/#575 均未出现，最新仍 #573，十四连败，runs 412 持平；#574 预期 2026-11-19 约 00:19Z（窗口外）；SkillEvaluator 第二个连续静默窗口（pushed_at 第 22 例不存在；#727/#784 移动均已定位）；SkillzBench effect 217 → 219（+2），trials 24,754 → 25,030；effect 数值连续三轮与 Benchmarked 阶段计数逐值一致；−5 成因仍未定位；Skillware 窗口内罕见活跃（5 起提交、合并 3 起、新建 4 起，open_issues 59 → 55 算术闭合）；Vibing Talk 浏览量 623（执行者第三时点自取 627 为关窗后漂移）；`all:skill` 15,005（±0），恒等式 10,544+4,315+146 成立；旧 +1 连续第十二轮未归因；SkillScope S2 引用列表连续第二十九轮无新增（表述恢复）；S1/S2/S3 均仍仅 v1；SkillBuffBench 仍仅 v1（无 v2）；Continual-ARC 仍 v3（窗口外）；代码检索第三十七轮（ETUDE 持平、Skillware −44、Skill++ 持平）；Cursor 第十七查仍缺一手证据（CLI 文档页 403 已恢复，一过性）；AAIF 仍缺 CHANGELOG.md 与 SECURITY.md；Windsurf v3.13.4 精确发布时间仍为区间、v3000.14.30821 归属仍未定；OpenCode #64157/#64294/#64434 均仍 open；历史暂持 4 项不落入，暂持 175 → 171 条。
+- 纠正：SkillScope S2 引用列表表述恢复（K-86-15，85 轮未取回故该轮不得延续；本轮复核确认）；Vibing Talk 浏览量关账值 623（K-86-07）；Cursor CLI 文档页 403 一过性（K-86-14）；历史暂持 4 项不落入（K-86-12）。
+- 裁定：历史暂持 4 项不落入、暂持 175 → 171（K-86-12）；S1 续记。
+- 剩余未核实缺口：Gemini nightly #574/#575 是否出现；SkillEvaluator pushed_at 第 23 例配对（下轮须多次窗口内取样）；SkillzBench effect −5 成因；`all:skill` 旧 +1 未归因；Windsurf v3.13.4 发布时间；Devin CLI v3000.14.30821 归属；AAIF CHANGELOG.md 与 SECURITY.md 落地；OpenCode #64157/#64294/#64434 合并与否；SkillBuffBench v2 结果；历史暂持余 171 条（下批候选：70 轮 D-S19–D-S28）；SkillScope S2 引用列表复核。
+- 下轮起点：先清上述缺口（Gemini nightly #574 为首项；SkillEvaluator pushed_at 多次取样；历史暂持清点；SkillScope S2 引用列表复核），再按子主题轮转（技能发现/调用/评估协议的后续深化）。

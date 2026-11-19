@@ -832,3 +832,11 @@
 - 裁定：#724 继续 watch；MAF 404 五项继续记入未结台账，下轮首项复查。
 - 剩余未核实缺口：OTel #204 成因（高度可信，待机制直接证据；连续未成立 5 次）与第 56 次渲染重分区成因（看板机器人批量更新项目字段假说未证实）；Age 列 #680 锚点机制归属未钉死；MAF 404 五项复核（#10317、#10318、#8708、AgentTriggered、python-1.25.0 其余包与 Release 对象）；Harbor 0.26.1 切版；Agents SDK 稳定化时间表；OpenCode post-mortem 下轮状态页路径复核；SkillBuffBench v2 结果复核；RagHarnessDebugger 仓库 404；#724 是否合入。
 - 下轮起点：先清上述缺口（MAF 404 五项复查为首项；#204 第五十七次抖动核对；#680 锚点机制归属；SkillBuffBench v2 复核），再按子主题轮转（harness 评估与 trace 格式）。
+
+## 2026-11-19 07:09 轮（第 88 轮）
+
+- 本轮增量（H-88-01～10，10 条 → agent-harness-rounds.md）：OTel GenAI 首次窗口内合入两件 span 格式变更（#724 推理 span 与操作详情事件共享属性、#721 `gen_ai.tool.definitions` 适用范围澄清，均落入技能 Trace 一节；87 轮「零合并」口径终结）；#726 新建草稿 PR 纳入 watch；OTel #204 第 57 次抖动判未成立（连续计数 6 次；#698 `updated_at` 渲染前 8 秒，连续三轮同构模式）；第 57 次渲染分区变化全部可由窗口内真实事件解释（与 56 次重分区性质不同）；Age 机制修正（#696 的 Copilot 🟢 评审移动了等待时钟，87 轮收窄表述不成立）；#707 锚点新钉为 lmolkova 行内意见 18:45:51Z，#680 锚点第五轮吻合；LangChain 4 包窗口内同批上架（langchain 1.5.2、langchain-google-genai 4.5.1、langchain@1.6.7、@langchain/core 1.4.2）；MAF 仓库仍 404（五项继续阻塞，#10317 逾 130 小时）；待决 18 项零合并；#700 连续第十四个零动静窗口；#445/#551/#552/#561/#604/#653 翻页保留结论闭合；登记集 23 篇全部仍仅 v1；Gemini nightly 仍 #573（十四连败）；OpenCode post-mortem 仍未发布；RagHarnessDebugger 仓库 404。
+- 纠正：Age 机制收窄表述不成立（K-88-07，#696 的 Copilot 🟢 评审与 #721 的 Copilot 🟡 评审均移动了等待时钟；87 轮 H-87-05 / K-87-07 修正；候选因素为评审提交本身即刷新等待时钟、或是否开出/刷新待处理讨论串，未钉死）。
+- 裁定：#724/#721 合入与 Trace 一节（K-88-11，87 轮「待其合并后由主轮裁定是否整合」条件已满足）；#726 纳入 watch；OfficePrism/NexSight/Readie 三篇暂缓登记（K-88-11，11-17 提交、摘要命中、非本轮新发现，留待下轮全文筛查后再裁定）；#204 第 57 次抖动判未成立（K-88-06，连续 6 次）；MAF 404 五项继续记入未结台账，下轮首项复查。
+- 剩余未核实缺口：OTel #204 成因（高度可信，待机制直接证据；连续未成立 6 次）与 #698 `updated_at` 渲染前 8 秒三轮同构模式；Age 列 #680 锚点机制归属未钉死、#696/#721 机器人评审移动等待时钟的候选因素未钉死；MAF 404 五项复核（#10317、#10318、#8708、AgentTriggered、python-1.25.0 其余包与 Release 对象）；Harbor 0.26.1 切版；Agents SDK 稳定化时间表；OpenCode post-mortem 下轮状态页路径复核；SkillBuffBench v2 结果复核；RagHarnessDebugger 仓库 404；#726 合入与否；OfficePrism/NexSight/Readie 全文筛查。
+- 下轮起点：先清上述缺口（MAF 404 五项复查为首项；#204 第五十八次抖动核对；#680 锚点机制归属；SkillBuffBench v2 复核；OfficePrism/NexSight/Readie 全文筛查），再按子主题轮转（harness 评估与 trace 格式）。

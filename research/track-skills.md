@@ -819,3 +819,11 @@
 - 裁定：历史暂持 10 项不落入、暂持 171 → 161（K-87-10）；S1 续记。
 - 剩余未核实缺口：Gemini nightly #574 是否出现（预期落入下轮窗口）；SkillEvaluator pushed_at 第 24 例配对与关窗后 20:15:03Z 移动复核（下轮须多次窗口内取样）；SkillzBench effect −5 成因；`all:skill` 旧 +1 未归因；Windsurf v3.13.4 发布时间；Devin CLI v3000.14.30821 归属；AAIF CHANGELOG.md 与 SECURITY.md 落地；OpenCode #64157/#64294/#64434 合并与否；SkillBuffBench v2 结果；历史暂持余 161 条（下批候选：71 轮 D-S29–D-S38）；SkillScope S2 引用列表复核。
 - 下轮起点：先清上述缺口（Gemini nightly #574 为首项；SkillEvaluator pushed_at 多次取样；历史暂持清点；SkillScope S2 引用列表复核），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-19 07:09 轮（第 88 轮）
+
+- 本轮增量（S-88-01～14，14 条 → skill-authoring-rounds.md）：窗口内新稳定版 0 件、新预发布 0 件；Claude npm `next` 2.1.328 发布于关窗后 31 秒（窗外事件，下轮复核 GitHub 侧是否随后发布 v2.1.328）；Gemini nightly #574 未出现（最新仍 #573，十四连败；#574 预期约 2026-11-19 00:19Z，窗口外）；SkillEvaluator 窗口内新建 3 起 PR（#795/#796/#797）、0 合并，20:31–20:32Z 集中评审横扫（32 起 PR 更新，至少 23 起为 rng1995 评审）；pushed_at 第 24 例配对成立（窗口内最终值 21:04:10Z 与 #797 同仓分支推送三重收敛，机制结论连续第八例成立）；87 轮关窗后 20:15:03Z 移动仍未定位（新增三项排除证据）；SkillzBench effect 220 → 219（−1），trials 关账值 25,226；TSS v1 日期纠正（published = updated 2026-11-06）；SkillScope S2 引用列表连续第三十一轮无新增；`all:skill` 15,005（±0，旧 +1 连续第十四轮未归因）；代码检索第三十九轮（ETUDE 882,688 ±0、Skillware 1,254 ±0、Skill++ 4,680 −16）；Vibing Talk 浏览量 637；S1/S2/S3 均仍仅 v1；AAIF 仍缺两件文件，stars 27,435；Windsurf v3.13.4 仍为区间（连续十一轮同值）；Cursor 第十九查仍缺一手证据；OpenCode #64157/#64294/#64434 均仍 open；历史暂持 10 项不落入，暂持 161 → 151 条。
+- 纠正：TSS v1 日期（K-88-08，主轮亲自重查 SB 原始证据 `sb-arxiv-versions.xml` 与 arXiv 摘要页直读；87 轮 SB §4/§15 误植；2026-11-16 是 Skill Adapter v2 的 updated 日期）。
+- 裁定：历史暂持 10 项不落入、暂持 161 → 151（K-88-10）；S1 续记。
+- 剩余未核实缺口：Gemini nightly #574 是否出现（预期落入下轮窗口）；SkillEvaluator pushed_at 第 25 例配对与关窗后 20:15:03Z 移动复核（下轮须多次窗口内取样）；Claude v2.1.328 GitHub 侧是否发布；SkillzBench effect −5 成因；`all:skill` 旧 +1 未归因；Windsurf v3.13.4 发布时间；Devin CLI v3000.14.30821 归属；AAIF CHANGELOG.md 与 SECURITY.md 落地；OpenCode #64157/#64294/#64434 合并与否；SkillBuffBench v2 结果；历史暂持余 151 条（下批候选：70 轮剩余未评估暂持项与 69 轮剩余 D-S-69-02/D-S-69-06）；SkillScope S2 引用列表复核。
+- 下轮起点：先清上述缺口（Gemini nightly #574 为首项；SkillEvaluator pushed_at 多次取样；历史暂持清点；SkillScope S2 引用列表复核；Claude v2.1.328 复核），再按子主题轮转（技能发现/调用/评估协议的后续深化）。

@@ -871,3 +871,19 @@
 - 裁定：OTel #204 配对证据不纳入 PR 对象 updated_at（派生时间戳，非事件流事件；#680 案为先例）；阈值复议第二例证（第一例证仍为 90 轮 #678 一案）；Gemini nightly 未出现≠逾期（预期日期 11-20/11-21 00:19Z）。
 - 剩余未核实缺口：MAF 404 五项复核（#10317 逾 142 小时）；OTel #204 成因与五件冲突翻红成因；Age 列 #680/#696 锚点机制归属未钉死；#427/#704/#381 锚点事件未定位；Gemini nightly #575/#576（预计 11-20/11-21 00:19Z）；Harbor 0.26.1 切版；Agents SDK 稳定化时间表官方表述；RagHarnessDebugger 404；OpenCode post-mortem 发布。
 - 下轮起点：先清上述缺口（MAF 复查为首项；#204 第六十二次抖动；#680/#696 锚点机制归属），再按子主题轮转（harness 评估与 trace 格式）。
+
+## 2026-11-19 22:09 轮（第 93 轮）
+
+- 本轮增量（H-93-01～08，8 条 → agent-harness-rounds.md）：MAF 404 五项继续阻塞（两次三通道复查均 404；#10317 逾 145 小时）；OTel #204 第 62 次抖动配对未成立（连续第 11 次；正文真实重渲染 14,153 → 14,129 字符；#689 与 #718 由“等作者方”移入“等评审方”；#689 PR 对象 updated_at 距渲染仅 7 秒，记为阈值复议第三例证，不纳入配对证据，12 秒口径维持）；#689/#718 冲突已解决（作者合并主线提交致 mergeable 转 true），五件旧翻红仍无解释；Age 锚点规则获第五/第六例佐证（#689 11h → <1m、#718 7h → 2h，锚点双双前移至窗口内新提交的 Copilot 评审），补充分支（无行内意见的评审取 submitted_at），15 项 Age 验算全部吻合（#680 第十轮全吻合、#696 第六轮一致），归属仍未钉死；#427/#704/#381 锚点事件全部定位、三项闭合（方法纠正：timeline reviewed 事件不带 created_at，改道 reviews 端点）；待决仍 17 项，#700 第十九个零动静窗口，#726 仍草稿，#730 新增一条评论；窗口内新稳定版 0 件，inspect-ai b392aec（支持 Gemini 4 Neon）为唯一主分支提交；Gemini nightly −1 定位尝试未定位（全量普查 412 条，25 个历史缺号无一对应 89 → 90 轮窗口），降级为长期观察项；登记集 41 篇零版本变动，无 v3；RagHarnessDebugger 仍 404；OpenCode post-mortem 仍未发布；SkillBuffBench 仍仅 v1。
+- 纠正：92 轮“#427/#704/#381 锚点事件仍未定位”已终结（三项全部定位闭合）；92 轮“区间内 0 事件”为方法 artifact（timeline reviewed 事件无 created_at）。
+- 裁定：OTel #204 配对证据不纳入 PR 对象 updated_at（派生时间戳，循环证据）；Age 锚点补充分支确认（无行内意见的评审取 submitted_at）；#427/#704/#381 三项闭合确认；Gemini nightly −1 降级为长期观察项（每轮仅核对总数，总数再变时才重普查）。
+- 剩余未核实缺口：MAF 404 五项复核（#10317 逾 145 小时）；OTel #204 成因与五件冲突翻红成因；Age 列 #680/#696 锚点机制归属未钉死；Gemini nightly #575（预计 11-20 00:19Z）；Harbor 0.26.1 切版；Agents SDK 稳定化时间表官方表述；RagHarnessDebugger 404；OpenCode post-mortem 发布。
+- 下轮起点：先清上述缺口（MAF 复查为首项；#204 第六十三次抖动；#680/#696 锚点机制归属），再按子主题轮转（harness 评估与 trace 格式）。
+
+## 2026-11-20 04:09 轮（第 94 轮）
+
+- 本轮增量（H-94-01～13，13 条 → agent-harness-rounds.md）：MAF 404 五项继续阻塞（#10317 逾 151 小时）；OTel #204 第 63 次抖动配对未成立（连续第 12 次，阈值复议第四例证）；#696 合入为 span 格式变更（`gen_ai.prompt.variable` → 结构化 `gen_ai.prompt.variables`，技能 Trace 一节未点名旧属性，无需改动），#725 合入为纯清理；#689 翻红（评审提交触发重算），#370 翻红后由推送修复（92 轮 #718 式双通道张力复现并消解）；16:38 簇五件集中翻红成因假说（通过（未验证暂定））；Age 锚点规则第七/第八例佐证，#680 第十一轮全吻合；#731 纳入 watch，待决 17 → 16 项；窗口内新稳定版 1 件（langchain-openrouter 0.3.0）；Gemini nightly #575 未出现（预期 11-20 00:19Z，在窗口之外，不得记为逾期）；登记集 41 篇零变动；SkillEvaluator 跨轨佐证（不另立 watch）；方法纠正（`mergeable` null 为取证 artifact）。
+- 纠正：派发书「Gemini nightly 04:19 CST 在窗口内」有误（实为 08:19 CST，在窗口之外）；第一段取证 15 个 PR 对象 `mergeable` 返回 null 系合入后重算未完成所致的取证 artifact，非状态变化。
+- 裁定：#696 span 格式变更记入轮次文件，技能 Trace 一节无需改动；#731 纳入 Harness 待决 watch；Harness 腿 SkillEvaluator 新跟踪不另立 watch（与技能轨重复），读数作跨轨佐证。
+- 剩余未核实缺口：MAF 404 五项复核（#10317 逾 151 小时）；OTel #204 成因与 16:38 簇五件翻红成因（假说级）；Age 列 #680/#696 锚点机制归属未钉死；Gemini nightly #575（预计 11-20 00:19Z）；Harbor 0.26.1 切版；Agents SDK 稳定化时间表官方表述；RagHarnessDebugger 404；OpenCode post-mortem 发布。
+- 下轮起点：先清上述缺口（MAF 复查为首项；#204 第六十四次抖动；#680/#696 锚点机制归属），再按子主题轮转（harness 评估与 trace 格式）。

@@ -913,3 +913,17 @@
 - 裁定：关账值取最晚读数（SkillEvaluator stars 4,204、Vibing 700、AAIF stars 27,474）；pre1109 +1 不划除（段内计数异常）；33 轮批 7/7 已落入、核减 0，下批候选为 34 轮批 8 项；#719 残差降级为长期缺口（下轮起不再每轮三路重查）。
 - 剩余未核实缺口：arXiv 11-20 批次筛查（公告档 11-21 01:00Z）；Claude v2.1.330 / Gemini v0.70.1 / Codex 稳定版复核；S2/OpenAlex 引用跟进余项（第三十五轮连续错过午夜窗口）；ETUDE 作者仓定位；历史暂持 34 轮批 8 项评估；Gemini nightly 全量基线逐号比对；SA/SB 腿窗口内多次取样仍未执行；Skillware forks −1 未定位；AAIF updated_at 移动第二轮未定位；Windsurf v3.13.4 精确发布时间未定位。
 - 下轮起点：先清上述缺口（11-20 批次筛查为首项；历史暂持 34 轮批评估；Claude v2.1.330 复核；ETUDE 作者仓），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-20（22:09 轮，第 100 轮）
+- 增量：SkillEvaluator stars 4,222（窗口内新建 #825/#824；pushed_at 未移动，无第 36 例配对）；SkillzBench Scanned +1 已归因、Judged +1 未归因（effect 216、published 1,586 均 ±0）；all:skill 15,059 恒等式精确闭合（第 26 轮）；34 轮批 8/8 已落入（真实余数 140）；AAIF updated_at 移动定位为加星事件（99 轮未定位项闭合）；Skillware #494 窗口内合并；Gemini nightly 409 逐号相同；窗口内多次取样首次执行。
+- 纠正：99 轮 SB 腿报告「Devin CLI changelog 883,747 字节」与磁盘实测 885,191 字节不符，以磁盘实测为准；99 轮「AAIF updated_at 移动第二轮未定位」闭合（加星驱动）。
+- 裁定：关账值取最晚读数（SkillEvaluator stars 4,222、Vibing 704→705、AAIF stars 27,478）；pre1109 +1 不划除（段内计数异常）；下批候选为 35 轮批；AAIF updated_at 移动下轮起不再单独立项；#719 残差为长期缺口，本轮未重查。
+- 剩余未核实缺口：arXiv 11-20 批次筛查（公告档 11-21 01:00Z）；Claude v2.1.330 / Gemini v0.70.1 / Codex 稳定版复核；S2/OpenAlex 引用跟进余项（第三十六轮连续错过午夜窗口）；ETUDE 作者仓定位；历史暂持 35 轮批评估；Gemini nightly 全量基线逐号比对；SA/SB 腿严格窗口内多次取样仍未执行；Skillware forks −1 未定位；Windsurf v3.13.4 精确发布时间未定位；SkillzBench Judged +1 未按技能归因。
+- 下轮起点：先清上述缺口（11-20 批次筛查为首项；历史暂持 35 轮批评估；Claude v2.1.330 复核；ETUDE 作者仓），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-21（01:09 轮，第 101 轮）
+- 增量：SkillEvaluator stars 4,238（+16，关账最晚读数 4,239）、open_issues 60 → 59 算术闭合；**pushed_at 第 36 例配对成立**（#828 commit 84934f25，16:11:16Z，+5 秒；主轮独立抽查复核一致）；SkillzBench Scanned +1 已归因、Judged +1 未归因（effect 216、published 1,586 均 ±0）；all:skill 15,059 恒等式精确闭合（第 27 轮）；**35 轮批 10/10 已落入**（真实余数 140）；**“ExProt”标签纠正为 Experience Rot**（2611.20922；主轮独立抽查复核一致）；OpenCode 窗口内新建 54 起，其中 #65188/#65204 两起真实技能相关；Gemini nightly 409 逐号相同，p0 18；四宿主窗口内零新发布。
+- 纠正：SB 腿「pushed_at 第 36 例配对未成立」不成立（仅核对合并与 PR 创建时刻，未查分支提交时刻）；SA 腿「ExProt S2 未能复核」被 SB 腿取回纠正；任务书「Cursor 第二十七查」与 100 轮记录不符，以 100 轮为准顺延为第三十二查；SB 腿「35 轮批评估为首份」与 SA 腿同轮评估互为复核（结论一致 10/10）。
+- 裁定：关账值取最晚读数（SkillEvaluator stars 4,238、Vibing 707、AAIF stars 27,480）；pre1109 +1 不划除（段内计数异常，第 28 轮）；下批候选为 36 轮批；AAIF updated_at 移动下轮起不再单独立项（100 轮裁定沿用）；#719 残差为长期缺口，本轮未重查；SkillzBench Judged +1 连续第二轮未归因。
+- 剩余未核实缺口：arXiv 11-20 批次筛查（公告档 11-21 01:00Z）；Claude v2.1.330 / Gemini v0.70.1 / Codex 稳定版复核；S2/OpenAlex 引用跟进余项（第三十七轮连续错过午夜窗口）；ETUDE 作者仓定位；历史暂持 36 轮批评估；Gemini nightly 全量基线逐号比对；SA/SB 腿严格窗口内多次取样仍未执行；Skillware forks −1 未定位；Windsurf v3.13.4 精确发布时间未定位；SkillzBench Judged +1 未按技能归因（连续第二轮）。
+- 下轮起点：先清上述缺口（11-20 批次筛查为首项；历史暂持 36 轮批评估；Claude v2.1.330 复核；ETUDE 作者仓），再按子主题轮转（技能发现/调用/评估协议的后续深化）。

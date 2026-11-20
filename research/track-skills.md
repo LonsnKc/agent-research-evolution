@@ -927,3 +927,10 @@
 - 裁定：关账值取最晚读数（SkillEvaluator stars 4,238、Vibing 707、AAIF stars 27,480）；pre1109 +1 不划除（段内计数异常，第 28 轮）；下批候选为 36 轮批；AAIF updated_at 移动下轮起不再单独立项（100 轮裁定沿用）；#719 残差为长期缺口，本轮未重查；SkillzBench Judged +1 连续第二轮未归因。
 - 剩余未核实缺口：arXiv 11-20 批次筛查（公告档 11-21 01:00Z）；Claude v2.1.330 / Gemini v0.70.1 / Codex 稳定版复核；S2/OpenAlex 引用跟进余项（第三十七轮连续错过午夜窗口）；ETUDE 作者仓定位；历史暂持 36 轮批评估；Gemini nightly 全量基线逐号比对；SA/SB 腿严格窗口内多次取样仍未执行；Skillware forks −1 未定位；Windsurf v3.13.4 精确发布时间未定位；SkillzBench Judged +1 未按技能归因（连续第二轮）。
 - 下轮起点：先清上述缺口（11-20 批次筛查为首项；历史暂持 36 轮批评估；Claude v2.1.330 复核；ETUDE 作者仓），再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-21（04:09 轮，第 102 轮）
+- 增量：**SkillEvaluator pushed_at 第 37 例配对成立**（#841 合并提交 cceb3a0d committer 20:08:29Z，+3 秒；merged_at 20:08:30Z，+2 秒；主轮独立抽查复核一致）；窗口内新建 13 起、合并 9 起，open_issues 59 → 63 算术闭合，stars 4,253（关账最晚读数；窗口内终值 4,252）、forks 553（+3）；SkillzBench published 1,586、effect 216（±0，厂商自报），Scanned +3 已归因、Judged +3 仍未按技能归因（连续第三轮）；`all:skill` 15,059 恒等式再次精确闭合（第 28 轮）；**历史暂持 36 轮批 7/7 已落入**，核减 0，真实余数 140，下批 37 轮批；**Windsurf 窗口内新稳定版 v3.14.30833**（17:46:52Z，5 项修复、skill 0 命中；v3.13.4 接受日级 2026-11-17 为终态）；Claude Code v2.1.330 登上 npm next 频道（预发布信号，非稳定版）；Codex rust-v0.173.0-alpha.2 标签新建、无 release 对象；OpenCode 窗口内新建 23 起，PR #65261 新增 `widgets` skill；Skillware PR #504 窗口内新建（GitHub 窗口搜索索引滞后漏收，events 端点交叉核对补回）；Gemini nightly 409 → 407（三腿一致）；ETUDE 作者仓仍未定位（S1 续记）；Cursor 一手证据第三十三查仍缺（桌面 changelog 本轮被 Vercel 安全检查拦截 403，读数缺失）。
+- 纠正：SB 腿 101 轮「pushed_at 第 36 例配对未成立」教训本轮未重现（第 37 例三腿一致成立）；GitHub 窗口搜索索引滞后可漏收窗口尾段新建项，须以 events 端点交叉核对。
+- 裁定：S1 仍暂定（ETUDE 作者仓未定位）；Windsurf v3.13.4 接受日级为终态，不再单独立项追踪精确时刻；pre1109 +1 不划除（第 28 轮）。
+- 剩余未核实缺口：ETUDE 作者仓定位；Skillware forks −1 未定位；pre1109 +1 未定位（第 28 轮）；SkillzBench Judged +3 未按技能归因（连续第三轮）；SA/SB 腿严格窗口内多次取样仍未执行；技能篇轮次文件 395 行，下轮须先评估拆分/归档方案。
+- 下轮起点：先清上述缺口（历史暂持 37 轮批评估为首项），再按子主题轮转（技能发现/调用/评估协议的后续深化）。

@@ -1030,3 +1030,35 @@
 - 裁定：48 轮批 D-S 七项评估完成、不核减（依据 98 轮 S-98-10）；SkillEvaluator 关窗 stars 取 4,348（H 腿 4,349 为较晚样本值）；AAIF 残差取 −2（SB 腿 −1 为漏计 robbcarefree-git）；Vibing 浏览量取 741（最晚样本）；SkillzBench 关窗 effect 取 227；Judged 轮次取连续第十二轮。
 - 剩余未核实缺口：ETUDE 作者仓定位；SkillzBench Judged 未按技能归因（连续第十二轮）；SkillzBench trials +84 残差；历史暂持真实余数 140 条（定义总数 336，下批候选 49 轮批；D-S 统一核减单独立项裁定）；pre1109 清单已取回（113 轮缺口闭合）；OpenAlex 重取；技能篇轮次文件第六次拆分已完成（主文件 385 → 240 → 254 行）。
 - 下轮起点：先清上述缺口（49 轮批评估；ETUDE 作者仓定位；`all:skill` 恒等式复核；OpenAlex 重取）。
+
+## 2026-11-22（19:09 轮，第 115 轮）
+
+- 本轨增量 11 条（S-115-A-01、S-115-01～S-115-09、S-115-10；修正 0 条；过程记录 1 条 S-115-10）：历史暂持 49 轮批评估完成（20/20 非技能项已落入，核减 0；D-S05 已落入指定目标，余 6 项建议核减、不核减，真实余数维持 140；D-S 统一核减单独立项裁定）；`all:skill` 恒等式第 40 次闭合（15,059 = 10,544 + 4,318 + 197；arXiv 导出接口全程无任何限流）；SkillEvaluator 无新配对（第 48 次尝试，仍 40 例；关窗 stars 4,359，窗口残差 −2、累计 −3；#794 驱动已定位）；SkillzBench effect 关窗 232（SB 样本 A 11:16:23Z，按 114 轮先例；2 新 slug 1 正 lift +14.29、1 持平；trials 关窗 26,239，残差 +47；Judged 未按技能归因连续第十三轮；package-development 留待 116 轮基线）；OpenCode 窗口内新建 6 起、合并 1 起（#65541）；AAIF stars 27,521（残差 0）；Skillware #504 窗口内评审；Vibing 浏览量 744；四宿主零新稳定版；Cursor changelog 第四十六查；S1 仍暂定（ETUDE 作者仓未定位）。
+- 纠正：114 轮指针勘误两处（49 轮批候选文件 `refined/20261114-0709/delta.md` 不存在，正确为 `refined/20261114-1009/delta.md`；48 轮批候选文件实为 `refined/20261114-0409/delta.md`）；SA 腿「SkillEvaluator 新残差 −1/累计 −2」为算术笔误，纠正为窗口残差 −2、累计 −3；RA 腿 §15 汇总表 S2 未取回六项误列 ExProt，实为 Conformal。
+- 裁定：49 轮批 D-S 七项评估完成、不核减（依据 98 轮 S-98-10；D-S 统一核减单独立项裁定）；SkillEvaluator 关窗 stars 取 4,359，窗口残差 −2、累计 −3（SA 腿「新 −1/累计 −2」不采纳）；SkillzBench 关窗 effect 取 232；Vibing 浏览量取 744（最晚样本）；Judged 轮次取连续第十三轮。
+- 剩余未核实缺口：ETUDE 作者仓定位；SkillzBench Judged 未按技能归因（连续第十三轮）；SkillzBench trials +47 残差；历史暂持真实余数 140 条（定义总数 336，下批候选 50 轮批，须先核对映射与既往评估史；D-S 统一核减单独立项裁定）；pre1109 +1 机制；OpenAlex 重取。
+- 下轮起点：先清上述缺口（50 轮批评估；ETUDE 作者仓定位；`all:skill` 恒等式复核；OpenAlex 重取）。
+
+## 2026-11-22（22:09 轮，第 116 轮）
+
+- 本轨增量 11 条（S-116-A-01、S-116-01～S-116-09、S-116-10；修正 0 条；过程记录 1 条 S-116-10）：历史暂持 50 轮批评估完成（19/19 非技能项已落入，核减 0；D-S05 已落入指定目标，余 6 项建议核减、不核减，真实余数维持 140；D-S 统一核减单独立项裁定；下批候选 51 轮批）；`all:skill` 恒等式第 41 次闭合（15,059 = 10,544 + 4,318 + 197）；SkillEvaluator 关窗 stars 4,366（新残差 0，累计仍 −3；无新配对，第 49 次尝试）；SkillzBench effect 关窗 234（trials 26,473，残差 +98；Judged 未按技能归因连续第十四轮；首现负 lift 新技能）；OpenCode 窗口内新建 14 起，合并 0；#65261 窗口内 3 提交；AAIF stars 27,525（残差 0）；Skillware #509 窗口内新建；Vibing 浏览量 747；四宿主零新稳定版；Cursor changelog 第四十七查；ETUDE 作者仓仍未定位（暂定续记）。
+- 纠正：SA 腿「SkillEvaluator 累计仍 −2」订正为累计仍 −3（SB 腿 115 轮关窗后星混入假说经两份 events100 原始文件复核被证伪）；SA 腿 SkillzBench trials 残差「+170」订正为 +98；SA 腿 Gemini nightly 范围「#155–#577」订正为 157–577；SB 腿「115 轮关窗 effect 230」订正（115 轮关窗 effect 232 维持不变）。
+- 裁定：50 轮批 D-S 七项评估完成、不核减（依据 98 轮 S-98-10；D-S 统一核减单独立项裁定）；SkillEvaluator 关窗 stars 取 4,366，累计残差仍 −3；SkillzBench 关窗 effect 取 234，trials 残差取 +98；Vibing 浏览量取 747（最晚样本）；Judged 轮次取连续第十四轮。
+- 剩余未核实缺口：ETUDE 作者仓定位；SkillzBench Judged 未按技能归因（连续第十四轮）；SkillzBench trials +98 残差；历史暂持真实余数 140 条（定义总数 336，下批候选 51 轮批，须先核对映射与既往评估史；D-S 统一核减单独立项裁定）；pre1109 +1 机制；OpenAlex 重取；Skillware 脚本缺 PR-created 搜索（下轮修补）。
+- 下轮起点：先清上述缺口（51 轮批评估；ETUDE 作者仓定位；`all:skill` 恒等式复核；OpenAlex 重取）。
+
+## 2026-11-23（01:09 轮，第 117 轮）
+
+- 本轨增量 12 条（S-117-A-01、S-117-01～S-117-09、S-117-10；修正 0 条；过程记录 1 条 S-117-10）：历史暂持 51 轮批评估完成（30/30 非技能项已落入，核减 0；D-S04 实质已在正本，归属记为前轮已载入；D-S01/02/03 建议核减、不执行，真实余数维持 140；D-S 建议核减现横跨 46–51 六批共 37 项，统一核减单独立项裁定；下批候选 52 轮批）；`all:skill` 恒等式第 42 次闭合（15,059 = 10,544 + 4,318 + 197）；SkillEvaluator 关窗 stars 4,377（新残差 −1，累计 −4；无新配对，第 50 次尝试）；SkillzBench effect 关窗 234（trials 26,576，累计残差 98 → 201；Judged 未按技能归因连续第十五轮；无新 slug）；OpenCode 窗口内新建 29 起，合并窄 3／宽 5；#65261 窗口内再增 1 提交；AAIF stars 27,526（残差 0），forks 新残差 −1（首现）；Skillware 窗口内零活动（PR-created 搜索修补已验证有效，116 轮取证缺口闭合）；Vibing 浏览量 751；四宿主零新稳定版；Cursor changelog 第四十八查；ETUDE 作者仓仍未定位（新证据：攻击名与作者已锁定，暂定续记）；方法发现：S2 429 可伪装成 HTTP 200。
+- 纠正：SA 腿 llm-d open_issues「算术差 7 起未定位」闭合（主轮现查关窗后批量关闭 9 起）；SA 腿 SkillzBench trials 26,580 订正为 26,576；SA 腿 Vibing 751 与 SB 749 裁定为 751（最晚样本）。
+- 裁定：51 轮批 D-S 四项评估完成、不核减（依据 98 轮 S-98-10；D-S 统一核减单独立项裁定）；SkillEvaluator 关窗 stars 取 4,377，累计残差 −4；SkillzBench 关窗 effect 取 234，trials 残差取累计 201；Vibing 浏览量取 751（最晚样本）；Judged 轮次取连续第十五轮；S2 跨腿综合取 7/9。
+- 剩余未核实缺口：ETUDE 作者仓定位（论文仅 v1、发表约三周，作者仓可能尚未公开）；SkillzBench Judged 未按技能归因（连续第十五轮）；SkillzBench trials 累计残差 201；历史暂持真实余数 140 条（定义总数 336，下批候选 52 轮批，须先核对映射与既往评估史；D-S 统一核减单独立项裁定）；pre1109 +1 机制；OpenAlex 重取；S2 Conformal 2、SkillDelta 0 未取回。
+- 下轮起点：先清上述缺口（52 轮批评估；ETUDE 作者仓定位；`all:skill` 恒等式复核；OpenAlex 重取）。
+
+## 2026-11-23（04:09 轮，第 118 轮）
+
+- 本轨增量 11 条（S-118-A-01、S-118-01～S-118-09；修正 0 条；过程记录 1 条 S-118-10 不入技能正文）：历史暂持 52 轮批评估完成（30 项中非技能项 23/23 已落入，核减 0；D-S01–D-S07 建议核减、不执行；真实余数维持 140；D-S 建议核减现横跨 46–52 七批共 44 项；下批候选 53 轮批）；`all:skill` 恒等式第 43 次闭合（15,059 = 10,544 + 4,318 + 197）；SkillEvaluator 配对成功（pushed_at 已定位到 PR #862 推送，累计 40 → 41 例，第 51 次尝试成功；关窗 stars 4,383，本轮残差 0、累计 −4）；SkillzBench effect 234（trials 关窗 26,649，累计残差 201 → 274；Judged 未按技能归因连续第十六轮）；OpenCode 窗口内新建 23 起，合并窄 9／宽 13；AAIF stars 27,527，forks 累计残差仍 −1（不强行闭合）；Skillware 窗口内再次零活动；Vibing 浏览量 755；四宿主零新稳定版；Hooks 页真实内容改动（终结连续七轮无变化）；深挖 0 项；ETUDE 作者仓仍未定位（S1 暂定续记）。
+- 纠正：SA 腿 SkillzBench trials 26,653/26,665 订正为 26,649（最早关窗后样本）；SA 腿 Vibing 755 与 SB 753 裁定为 755（最晚样本）；H 腿/SB 腿 SkillEvaluator pushed_at「未定位」订正为已定位（配对 41）。
+- 裁定：52 轮批 D-S 七项评估完成、不核减（D-S 统一核减单独立项裁定）；SkillEvaluator 关窗 stars 取 4,383，累计残差 −4；SkillzBench 关窗 effect 取 234，trials 残差取累计 274；Vibing 浏览量取 755（最晚样本）；Judged 轮次取连续第十六轮；S2 跨腿综合取 9/9；AAIF forks 累计残差 −1 不强行闭合（119 轮用判别方法验证假说 A/B）。
+- 剩余未核实缺口：ETUDE 作者仓定位（论文仅 v1、发表约三周，作者仓可能尚未公开）；SkillzBench Judged 未按技能归因（连续第十六轮）；SkillzBench trials 累计残差 274；历史暂持真实余数 140 条（定义总数 336，下批候选 53 轮批，须先核对映射与既往评估史；D-S 统一核减单独立项裁定，现横跨 46–52 七批共 44 项）；AAIF forks 累计残差 −1（119 轮判别）；OpenAlex 重取；S2 本轮 9/9 已全取回。
+- 下轮起点：先清上述缺口（53 轮批评估；ETUDE 作者仓定位；`all:skill` 恒等式复核；OpenAlex 重取）。

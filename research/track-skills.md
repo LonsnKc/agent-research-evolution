@@ -1210,3 +1210,24 @@
 - 裁定：`all:skill` 恒等式第 62 次闭合、新旧 −1 区分（C-137-01、C-137-02）；SkillzBench 残差 3,224（C-137-01）；AAIF stars 累计残差 −6、forks 本轮 −1 已定位（C-137-04）；72 轮批评估 D-S 累计维持 208、乙扣除数只记录不裁定（C-137-06）；OpenCode 残差 −1 新增（C-137-03）。
 - 剩余未核实缺口：11-24 技能批次终值；2611.30932 表 2 残差 1；pre1109 −1 出集论文（仅 129C→130A 窗口）；73 轮批评估；D-S 口径张力核查（乙扣除数 23/25/26/27/29 与 D-S27 第二标记待核对）；ETUDE 作者仓（S1 暂定续记）；AAIF stars 累计残差 −6 成因、forks 此前 −5 成因；AAIF forks 快照差 +301、SkillEvaluator 差 +9、llm-d 差 +2；SkillEvaluator v1.2.1 发布；OpenCode open 残差 −1 成因与 updated_at/pushed_at 驱动；SkillzBench +37 未归因与两 slug 下架成因。
 - 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-25（19:09 轮，第 138 轮，版本 0.135.0 → 0.136.0）
+
+- 增量：S-138-01–11（`all:skill` 第 63 次闭合 15,178；11-24 直接 11 维持；SkillzBench 残差终值 3,362、负增益新 slug、两枚目录外存活 slug；SkillEvaluator stars 累计残差 −9 纠正；AAIF stars 终值 27,621、规范 md5 第十二轮确认；OpenCode open 4,173 对账残差 0、#66323 唯一实质技能 issue；SkillEvaluator v1.2.1 在途、第 70 次配对未成立；skilldrop 基准报告一手取回；73 轮批评估完成；2611.30932 残差 1、ETUDE 作者仓、pre1109 旧 −1；窗口内新稳定版 0 个、连续第三轮）。
+- 裁定：`all:skill` 恒等式第 63 次闭合（S-138-01）；SkillzBench 残差终值取 SA 最晚 B 样本 3,362，SB 链 3,293 另记链口径（C-138-05）；SkillEvaluator stars 累计残差 −9，SA 腿 −8 链驳回（C-138-01）；AAIF stars 终值 27,621，SA 腿 27,622 含关窗后事件不采纳（C-138-04）；OpenCode open 137 轮 −1 未重现、成因仍未定位、不得写成已解释（C-138-07）。
+- 剩余未核实缺口：11-24 技能批次终值；2611.30932 表 2 残差 1；pre1109 −1 出集论文（仅 129C→130A 窗口）；74 轮批评估；ETUDE 作者仓（S1 暂定续记）；AAIF stars 累计残差 −6 成因；AAIF forks 快照差 +301、SkillEvaluator 差 +9、llm-d 差 +2；SkillEvaluator v1.2.1 发布；OpenCode open updated_at/pushed_at 驱动；SkillzBench 未归因 trials 与目录外 slug 分组假说；#66348 关窗后合并（下轮间隙计入）。
+- 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-25（22:09 轮，第 139 轮，版本 0.136.0 → 0.137.0）
+
+- 增量：S-139-01–11（`all:skill` 恒等式第 64 次闭合；11-24 技能批次直接 11 篇维持；SkillzBench 残差终值 3,709；SkillEvaluator stars 累计残差 −10；AAIF stars 27,624、规范 md5 第十三轮确认；OpenCode open 对账残差 0 闭合、#66323 已关闭；74 轮批评估完成；Codex 技能文档双地址同文；#825/#865/OpenCode updated_at 驱动；ETUDE 作者仓仍未定位；138 轮 SkillzBench 记录订正）。
+- 裁定：`all:skill` 恒等式第 64 次闭合（S-139-01）；SkillzBench 残差终值取 SA 最晚 B 样本 3,709，SB 链 3,393 另记链口径（C-139-05）；SkillEvaluator stars 累计残差 −10，SA 腿 −11 链驳回（C-139-01）；AAIF stars 累计残差 −8、forks 累计残差 −6（B 样本 −1 为关窗后间隙事件，C-139-02/C-139-03）；138 轮 SkillzBench effect/Judged 订正为 246/4,445（C-139-10）。
+- 剩余未核实缺口：11-24 技能批次终值；2611.30932 表 2 残差 1；pre1109 −1 出集论文（仅 129C→130A 窗口）；75 轮批评估；ETUDE 作者仓（S1 暂定续记）；AAIF stars/forks 累计残差成因；AAIF forks 快照差 +301、SkillEvaluator 差 +9、llm-d 差 +2；SkillEvaluator v1.2.1 发布；OpenCode open updated_at 驱动；SkillzBench 未归因 trials 与目录外 slug 分组假说；AAIF forks B 样本 −1 间隙事件（140 轮跟进）。
+- 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化）。
+
+## 2026-11-26（01:09 轮，第 140 轮，版本 0.137.0 → 0.138.0）
+
+- 增量：S-140-01–10（`all:skill` 恒等式第 65 次闭合 15,178；SkillzBench 残差终值 3,881、未归因 A +120/B +7、分组假说第六例佐证、窗口内新增 2 枚技能全部正增益；75 轮批评估完成 44/44 落地、D-S 累计维持 208；AAIF 规范 md5 第十四轮确认、stars 残差 −8、forks 残差 −6、139 B 样本 −1 已定位为分叉删除；SkillEvaluator stars 4,540/4,541、forks 569、open 51、新建 #892–#894、v1.2.1 仍在途；OpenCode open 残差 +1 新增、#66305 窗口内合并落地（约 −47%）、#65817 关闭未合并；宿主窗口内 0 新稳定版、Codex 技能文档 md5 变为 860f7592 可见文本 0 差异、Cursor changelog 第七十二查逐字节相同、Vibing 827（+2）；11-24 批次站住第五轮、11-23 再确认）。
+- 裁定：SkillzBench 残差终值取 SA 最晚 B 样本 3,881，SB 链 3,542 另记链口径（C-140-04，沿用 C-139-05 先例）；AAIF forks 累计残差 −6（C-140-02，SA 链；SB 的 −7 驳回：重复计算已知分叉删除）；SkillEvaluator stars 累计残差 −11（C-140-01）；配对第 72 次未成立采纳 H 链（C-140-03）；#66378 合并于 14:12:32Z、落在 139 轮窗口内，139 轮记录本来正确（任务书前提有误，本轮不重复计入）。
+- 剩余未核实缺口：11-24 技能批次终值；2611.30932 表 2 残差 1；pre1109 旧 −1；76 轮批评估；ETUDE 作者仓（S1 暂定续记）；AAIF stars/forks 累计残差成因；AAIF forks 快照差 +301、SkillEvaluator 差 +9、llm-d 差 +2；SkillEvaluator v1.2.1 发布；SkillEvaluator pushed_at 17:10:31Z / 17:30:49Z 驱动；OpenCode open updated_at 驱动与 open 残差 +1 成因；SkillzBench 未归因 A +120/B +7 与分组假说；Windsurf 取证缺口（常设）。
+- 下轮起点：先清上述缺口，再按子主题轮转（技能发现/调用/评估协议的后续深化）。
